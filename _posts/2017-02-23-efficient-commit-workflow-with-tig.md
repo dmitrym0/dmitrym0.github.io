@@ -9,7 +9,7 @@ One of the recommended source control practices is to [commit frequently, and of
 
 One way to do that is with the interactive git-add facility that can be invoked with `git add -p`:
 
-![](efficient%20commit%20workflow%20with%20tig/885D7D62-4C88-470D-9745-DA5202080E5B.png)
+![]({{ site.url }}/images/efficient%20commit%20workflow%20with%20tig/885D7D62-4C88-470D-9745-DA5202080E5B.png){:class="img-responsive"}
 
 It’s a lovely little interface:
 
