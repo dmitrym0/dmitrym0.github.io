@@ -25,17 +25,17 @@ This is where [tig](http://jonas.nitro.dk/tig/), a *text-mode interface for Git*
 
 Upon launching *tig* you’re presented with the following view:
 
-![]({{ site.url }}/images/efficient%20commit%20workflow%20with%20tig/52EF34AA-B701-4F45-8CF3-639718C7A16B.png)
+![]({{ site.url }}/images/efficient%20commit%20workflow%20with%20tig/52EF34AA-B701-4F45-8CF3-639718C7A16B.png){:class="img-responsive"}
 
 I’m currently interested in the “unstaged changes”. Hitting `enter` shows a diff between HEAD and current working directory. 
 
 But we’re interested more in the stage view that can be activated by hitting `S` (case matters!):
 
 
-![]({{ site.url }}/images/efficient%20commit%20workflow%20with%20tig/40535893-241B-465B-BDBB-1E547CD9F686.png)
+![]({{ site.url }}/images/efficient%20commit%20workflow%20with%20tig/40535893-241B-465B-BDBB-1E547CD9F686.png){:class="img-responsive"}
 This view should be familiar to anyone who has used `git status`.  This main view can be navigated with arrow keys. Hitting `enter` on a file name  will show a secondary window with a diff. This view can be navigated with the `j` and `k` keys (vi-like).
 
-![]({{ site.url }}/images/efficient%20commit%20workflow%20with%20tig/845B9D78-DC30-4AFF-9504-B8EFE7E2BF0D.png)
+![]({{ site.url }}/images/efficient%20commit%20workflow%20with%20tig/845B9D78-DC30-4AFF-9504-B8EFE7E2BF0D.png){:class="img-responsive"}
 At this point, we can select individuals lines to stage with the `1` key, or hit `u` to stage the whole file.  Individual lines can be staged when there’s some cruft you don’t want to commit - such as debugging statements.
 
 When all changes have been staged, you can hit  `C` to commit from inside *tig*, or exit (`q`) and commit as you normally would from command line.
