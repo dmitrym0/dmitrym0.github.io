@@ -2,7 +2,7 @@
 layout: post
 title:  "Adding a second cigarette lighter outlet in Nissan XTerra "
 date:   2017-03-23 07:51:01 -0800
-categories: xterra
+tags: xterra
 ---
 
 For some reason [truck and SUV 12v outlets are always hot](https://www.google.ca/search?q=why+are+truck+12v+always+on).  This is true in my wife’s F150 and my 2010 Nissan XTerra. This is a bit of annoyance since I’d like to use a bluetooth transmitter to connect my iPhone to the radio. Thankfully, it’s fairly easy to add a second, switched outlet in the XTerra.

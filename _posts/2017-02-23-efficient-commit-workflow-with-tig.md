@@ -2,7 +2,7 @@
 layout: post
 title:  "efficient commit workflow with tig"
 date:   2017-02-23 07:58:01 -0800
-categories: console tools devops
+tags: console tools devops
 ---
 
 One of the recommended source control practices is to [commit frequently, and often](http://stackoverflow.com/questions/107264/how-often-to-commit-changes-to-source-control).   I prefer to keep my commits terse and focused, however in practice I’m working on a couple related but independent things in parallel. At commit time, I prefer to tease loosely related things apart and commit them separately. 
