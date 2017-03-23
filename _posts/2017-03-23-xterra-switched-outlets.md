@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Adding a second cigarette lighter outlet in Nissan XTerra "
+title:  "Adding a second cigarette lighter outlet to a Nissan XTerra "
 date:   2017-03-23 07:51:01 -0800
 tags: xterra
 ---
