@@ -27,12 +27,12 @@ This is not a complete list since I’ve had some of this stuff already.
 
 What’ you’ll need:
 
-- [ ] Nissan OEM part 253369B92A, the ring protector. This is the plastic piece that clips into the dash and holds the metal part of the cigarette lighter. Can be purchased at [Nissan Parts and Accessories | NissanPartsWarehouse.com](https://nissanpartswarehouse.com/)
-- [ ] Nissan OEM part 25339ZV60A, the metal part of the cigarette lighter. Can be purchased [Nissan Parts and Accessories | NissanPartsWarehouse.com](https://nissanpartswarehouse.com/).
-- [ ] One add-a-fuse
-- [ ] Some automotive wiring. 18 gauge wiring should be fine. 
-- [ ] (1) Ring terminal for the ground wire. 
-- [ ] (2) Blade terminals to connect on the back of the cigarette lighters
+- Nissan OEM part 253369B92A, the ring protector. This is the plastic piece that clips into the dash and holds the metal part of the cigarette lighter. Can be purchased at [NissanPartsWarehouse.com](https://nissanpartswarehouse.com/)
+- Nissan OEM part 25339ZV60A, the metal part of the cigarette lighter. Can be purchased [NissanPartsWarehouse.com](https://nissanpartswarehouse.com/).
+- One add-a-fuse
+- Some automotive wiring. 18 gauge wiring should be fine. 
+- (1) Ring terminal for the ground wire. 
+- (2) Blade terminals to connect on the back of the cigarette lighters
 
 ![]({{ site.url }}/images/xterra%20switched%20outlet/IMG_7683.JPG){:class="img-responsive"}
 
@@ -59,5 +59,3 @@ This is actually quite straightforward.
 Overall, not a difficult mod at all. Requires some wiring knowledge. The total cost was about $20 for the OEM cigarette lighter parts, another $10 for add a fuse and the rest of the miscellanea I had at home. Not too bad. 
 
 The majority of the info came from this post: [Added A Switched Dash Outlet - Second Generation Nissan Xterra Forums (2005+)](http://www.thenewx.org/forum/12-electrical/55411-added-switched-dash-outlet.html)
-
-#xterra
