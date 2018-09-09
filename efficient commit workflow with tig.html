@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- Part of Blogging with Bear by Steven Frank <stevenf@panic.com> -->
+	<head>
+		<meta charset="utf-8">
+		<title>Dmitry M</title>
+		<link rel="stylesheet" type="text/css" href="https://dmitrym0.github.commain.css">
+	</head>
+	<body>
+
+		<header>
+			<h1><a href="https://dmitrym0.github.com">Dmitry M</a></h1>
+		</header>
+
+		<nav>
+			<span class="time">2018-08-30 @ 2:50 PM</span>
+		</nav>
+
+		<main>
+			<article>
+	
+				<h1>efficient commit workflow with tig</h1>
+<p>One of the recommended source control practices is to <a href="http://stackoverflow.com/questions/107264/how-often-to-commit-changes-to-source-control">commit frequently, and often</a>.   I prefer to keep my commits terse and focused, however in practice I’m working on a couple related but independent things in parallel. At commit time, I prefer to tease loosely related things apart and commit them separately. </p>
+<p>One way to do that is with the interactive git-add facility that can be invoked with <code>git add -p</code>:</p>
+<img src="images/885D7D62-4C88-470D-9745-DA5202080E5B.png">
+<p>It’s a lovely little interface:</p>
+<ul>
+<li>file name is shown at the top of the output</li>
+<li>location of the change set is shown</li>
+<li>the prompt is asking whether I want to stage the change (“y”),  ignore the changes this file (“d”) and various other obscure options.</li>
+</ul>
+<p>This process works for the majority of my commit needs. It allows me to review every change before staging it to ensure that only necessary changes get pushed to the central repo.</p>
+<p>My main issue with this process is that it’s too linear. When the number of changes exceeds a certain threshold I have trouble remembering what functionality I’m currently committing. I can’t easily inspect the existing staged hunks. The process becomes cumbersome. </p>
+<p>This is where <a href="http://jonas.nitro.dk/tig/">tig</a>, a <em>text-mode interface for Git</em> comes in. I’m a huge fan of console tools because they are incredibly fast and <em>tig</em> is no exception. </p>
+<p>Upon launching <em>tig</em> you’re presented with the following view:</p>
+<img src="images/52EF34AA-B701-4F45-8CF3-639718C7A16B.png">
+<p>I’m currently interested in the “unstaged changes”. Hitting <code>enter</code> shows a diff between HEAD and current working directory. </p>
+<p>But we’re interested more in the stage view that can be activated by hitting <code>S</code> (case matters!):</p>
+<img src="images/40535893-241B-465B-BDBB-1E547CD9F686.png">
+<p>This view should be familiar to anyone who has used <code>git status</code>.  This main view can be navigated with arrow keys. Hitting <code>enter</code> on a file name  will show a secondary window with a diff. This view can be navigated with the <code>j</code> and <code>k</code> keys (vi-like).</p>
+<img src="images/845B9D78-DC30-4AFF-9504-B8EFE7E2BF0D.png">
+<p>At this point, we can select individuals lines to stage with the <code>1</code> key, or hit <code>u</code> to stage the whole file.  Individual lines can be staged when there’s some cruft you don’t want to commit - such as debugging statements.</p>
+<p>When all changes have been staged, you can hit  <code>C</code> to commit from inside <em>tig</em>, or exit (<code>q</code>) and commit as you normally would from command line.</p>
+<p>Here’s a small <a href="http://ricostacruz.com/cheatsheets/tig.html">Tig cheatsheet</a>  for reference.</p>	
+			</article>
+		</main>
+
+		<footer>
+			<ul>
+				<li>&copy; 2010-2018 <a href="https://dmitrym0.github.com/"><b>dmitry</b></a></li>
+			</ul>
+		</footer>
+
+	</body>
+</html>
