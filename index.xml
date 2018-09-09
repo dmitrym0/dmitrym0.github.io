@@ -56,29 +56,8 @@
 		<guid isPermaLink="true">https://dmitrym0.github.com/ncdu%20-%20ncurses%20disk%20usage.html</guid>
 	</item>
 	<item>
-		<title><![CDATA[XTerra Switched outlet.html]]></title>
-		<description><![CDATA[<p>&lt;!DOCTYPE html&gt;</p>
-<html lang="en">
-    <!-- Part of Blogging with Bear by Steven Frank <stevenf@panic.com> -->
-    <head>
-        <meta charset="utf-8">
-        <title>Dmitry M</title>
-        <link rel="stylesheet" type="text/css" href="https://dmitrym0.github.com/main.css">
-    </head>
-    <body>
-
-        <header>
-            <h1><a href="https://dmitrym0.github.com/">Dmitry M</a></h1>
-        </header>
-
-        <nav>
-            <span class="time">1969-12-31 @ 4:00 PM</span>
-        </nav>
-
-        <main>
-            <article>
-
-                <h1>XTerra Switched outlet</h1>
+		<title><![CDATA[XTerra Switched outlet]]></title>
+		<description><![CDATA[<h1>XTerra Switched outlet</h1>
 <h6>March 23, 2017 at 5:04 PM</h6>
 <p>For some reason <a href="https://www.google.ca/search?q=why+are+truck+12v+always+on">truck and SUV 12v outlets are always hot</a>.  This is true in my wife’s F150 and my 2010 Nissan XTerra. This is a bit of annoyance since I’d like to use a bluetooth transmitter to connect my iPhone to the radio. Thankfully, it’s fairly easy to add a second, switched outlet in the XTerra.</p>
 <p>The short  of it is:</p>
@@ -132,21 +111,10 @@
 </ol>
 <h2>Closing thoughts</h2>
 <p>Overall, not a difficult mod at all. Requires some wiring knowledge. The total cost was about $20 for the OEM cigarette lighter parts, another $10 for add a fuse and the rest of the miscellanea I had at home. Not too bad. </p>
-<p>The majority of the info came from this post: <a href="http://www.thenewx.org/forum/12-electrical/55411-added-switched-dash-outlet.html">Added A Switched Dash Outlet - Second Generation Nissan Xterra Forums (2005+)</a></p>   
-            </article>
-        </main>
-
-        <footer>
-            <ul>
-                <li>&copy; 2010-2018 <a href="https://dmitrym0.github.com/"><b>dmitry</b></a></li>
-            </ul>
-        </footer>
-
-    </body>
-</html>]]></description>
-		<link>https://dmitrym0.github.com/XTerra%20Switched%20outlet.html.html</link>
+<p>The majority of the info came from this post: <a href="http://www.thenewx.org/forum/12-electrical/55411-added-switched-dash-outlet.html">Added A Switched Dash Outlet - Second Generation Nissan Xterra Forums (2005+)</a></p>]]></description>
+		<link>https://dmitrym0.github.com/XTerra%20Switched%20outlet.html</link>
 		<pubDate>Wed, 31 Dec 1969 16:00:00 -0800</pubDate>
-		<guid isPermaLink="true">https://dmitrym0.github.com/XTerra%20Switched%20outlet.html.html</guid>
+		<guid isPermaLink="true">https://dmitrym0.github.com/XTerra%20Switched%20outlet.html</guid>
 	</item>
     </channel>
 </rss>
