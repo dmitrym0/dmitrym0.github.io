@@ -2,7 +2,7 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Dmitry M</title>
-        <link>https://dmitrym0.github.com</link>
+        <link>https://dmitrym0.github.com/</link>
         <description>Dmitry M blog thing</description>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <language>en</language>
@@ -34,9 +34,9 @@
 <p>At this point, we can select individuals lines to stage with the <code>1</code> key, or hit <code>u</code> to stage the whole file.  Individual lines can be staged when there’s some cruft you don’t want to commit - such as debugging statements.</p>
 <p>When all changes have been staged, you can hit  <code>C</code> to commit from inside <em>tig</em>, or exit (<code>q</code>) and commit as you normally would from command line.</p>
 <p>Here’s a small <a href="http://ricostacruz.com/cheatsheets/tig.html">Tig cheatsheet</a>  for reference.</p>]]></description>
-		<link>https://dmitrym0.github.comefficient%20commit%20workflow%20with%20tig.html</link>
+		<link>https://dmitrym0.github.com/efficient%20commit%20workflow%20with%20tig.html</link>
 		<pubDate>Thu, 30 Aug 2018 14:50:00 -0700</pubDate>
-		<guid isPermaLink="true">https://dmitrym0.github.comefficient%20commit%20workflow%20with%20tig.html</guid>
+		<guid isPermaLink="true">https://dmitrym0.github.com/efficient%20commit%20workflow%20with%20tig.html</guid>
 	</item>
     </channel>
 </rss>
