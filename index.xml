@@ -2,7 +2,7 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Dmitry M</title>
-        <link>https://dmitrym0.github.com/</link>
+        <link>https://dmitrym0.github.io/</link>
         <description>Dmitry M blog thing</description>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <language>en</language>
@@ -34,9 +34,9 @@
 <p>At this point, we can select individuals lines to stage with the <code>1</code> key, or hit <code>u</code> to stage the whole file.  Individual lines can be staged when there’s some cruft you don’t want to commit - such as debugging statements.</p>
 <p>When all changes have been staged, you can hit  <code>C</code> to commit from inside <em>tig</em>, or exit (<code>q</code>) and commit as you normally would from command line.</p>
 <p>Here’s a small <a href="http://ricostacruz.com/cheatsheets/tig.html">Tig cheatsheet</a>  for reference.</p>]]></description>
-		<link>https://dmitrym0.github.com/efficient%20commit%20workflow%20with%20tig.html</link>
+		<link>https://dmitrym0.github.io/efficient%20commit%20workflow%20with%20tig.html</link>
 		<pubDate>Thu, 30 Aug 2018 14:50:00 -0700</pubDate>
-		<guid isPermaLink="true">https://dmitrym0.github.com/efficient%20commit%20workflow%20with%20tig.html</guid>
+		<guid isPermaLink="true">https://dmitrym0.github.io/efficient%20commit%20workflow%20with%20tig.html</guid>
 	</item>
 	<item>
 		<title><![CDATA[XTerra Switched outlet]]></title>
@@ -94,9 +94,9 @@
 <h2>Closing thoughts</h2>
 <p>Overall, not a difficult mod at all. Requires some wiring knowledge. The total cost was about $20 for the OEM cigarette lighter parts, another $10 for add a fuse and the rest of the miscellanea I had at home. Not too bad. </p>
 <p>The majority of the info came from this post: <a href="http://www.thenewx.org/forum/12-electrical/55411-added-switched-dash-outlet.html">Added A Switched Dash Outlet - Second Generation Nissan Xterra Forums (2005+)</a></p>]]></description>
-		<link>https://dmitrym0.github.com/XTerra%20Switched%20outlet.html</link>
+		<link>https://dmitrym0.github.io/XTerra%20Switched%20outlet.html</link>
 		<pubDate>Thu, 23 Mar 2017 17:04:00 -0700</pubDate>
-		<guid isPermaLink="true">https://dmitrym0.github.com/XTerra%20Switched%20outlet.html</guid>
+		<guid isPermaLink="true">https://dmitrym0.github.io/XTerra%20Switched%20outlet.html</guid>
 	</item>
 	<item>
 		<title><![CDATA[ncdu - ncurses disk usage]]></title>
@@ -111,9 +111,9 @@
 </ul>
 <p>There's a commercial app for Mac that I use and love (because my Mac only has a 256 SSD) called <a href="https://daisydiskapp.com/">DaisyDisk</a>.</p>
 <p>/devops</p>]]></description>
-		<link>https://dmitrym0.github.com/ncdu%20-%20ncurses%20disk%20usage.html</link>
+		<link>https://dmitrym0.github.io/ncdu%20-%20ncurses%20disk%20usage.html</link>
 		<pubDate>Wed, 07 Dec 2016 19:03:00 -0800</pubDate>
-		<guid isPermaLink="true">https://dmitrym0.github.com/ncdu%20-%20ncurses%20disk%20usage.html</guid>
+		<guid isPermaLink="true">https://dmitrym0.github.io/ncdu%20-%20ncurses%20disk%20usage.html</guid>
 	</item>
     </channel>
 </rss>
