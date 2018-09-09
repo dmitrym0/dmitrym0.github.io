@@ -38,5 +38,22 @@
 		<pubDate>Thu, 30 Aug 2018 14:50:00 -0700</pubDate>
 		<guid isPermaLink="true">https://dmitrym0.github.com/efficient%20commit%20workflow%20with%20tig.html</guid>
 	</item>
+	<item>
+		<title><![CDATA[ncdu - ncurses disk usage]]></title>
+		<description><![CDATA[<h1>ncdu - ncurses disk usage</h1>
+<img src="images/C4E2CBC7-B430-42C7-A97B-29C687793DA3.png">
+<p>At some point harddrive space was cheap, but with the advent of SSDs and cheap &quot;Cloud VMs&quot; that is no longer the case. For example, the cheapest VM on VULTR is $5/month and has a 15 gig SSD drive. It's suddenly very important to maximize drive usage again. This is where <a href="https://dev.yorhel.nl/ncdu">ncdu</a> comes in. It displays a nice ncurses interface that visualizes the usage breakdown.</p>
+<p>So useful key bindings:</p>
+<ul>
+<li><code>?</code> - help</li>
+<li><code>g</code> - to switch display modes</li>
+<li><code>d</code> - to kill a subdirectory tree</li>
+</ul>
+<p>There's a commercial app for Mac that I use and love (because my Mac only has a 256 SSD) called <a href="https://daisydiskapp.com/">DaisyDisk</a>.</p>
+<p>/devops</p>]]></description>
+		<link>https://dmitrym0.github.com/ncdu%20-%20ncurses%20disk%20usage.html</link>
+		<pubDate>Wed, 31 Dec 1969 16:00:00 -0800</pubDate>
+		<guid isPermaLink="true">https://dmitrym0.github.com/ncdu%20-%20ncurses%20disk%20usage.html</guid>
+	</item>
     </channel>
 </rss>
