@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- Part of Blogging with Bear by Steven Frank <stevenf@panic.com> -->
+	<head>
+		<meta charset="utf-8">
+		<title>Dmitry M</title>
+		<link rel="stylesheet" type="text/css" href="https://dmitrym0.github.io/main.css">
+	</head>
+	<body>
+
+		<header>
+			<h1><a href="https://dmitrym0.github.io/">Dmitry M</a></h1>
+		</header>
+
+		<nav>
+			<span class="time">1969-12-31 @ 4:00 PM</span>
+		</nav>
+
+		<main>
+			<article>
+	
+				<h1>How to check for X-Send-File (or X-Accel-Redirect)</h1>
+<p>Some web requests should not be handled by the application framework. Requests hitting a dynamic API endpoint should be processed by application (in my case typically Ruby on Rails). Static assets (such as files) should be served by the webserver, bypassing Ruby on Rails completely.</p>
+<p>Why?  </p>
+<p>There are a couple of reasons.</p>
+<p>The biggest one is performance. NGINX and Apache are significantly better and faster at serving files than a Ruby process. It’s the whole reason for their existence.</p>
+<p>Secondly, leaving Ruby processes out of serving static files frees that process up to serve dynamic requests.</p>
+<p>For example, here Ruby is serving a font file. It ties the ruby process up for over half a second for no reason.</p>
+<pre><code>I, [2018-09-02T22:50:21.284547 ]  INFO — : Sent file ff133.ttf (0.3ms)
+I, [2018-09-02T22:50:21.284839 ]  INFO — : Completed 200 OK in 633ms (ActiveRecord: 61.4ms)</code></pre>
+<p>It should be noted, that webservers typically have hundreds of threads serving requests, whereas the application (Ruby on Rails) has on the order of tens of processes. So tying a ruby process up to serve files is wasteful.</p>
+<p>The alternative is <a href="https://www.nginx.com/resources/wiki/start/topics/examples/xsendfile/">XSendfile | NGINX</a>. Once the application determines that it does not need to serve the file it can signal the webserver to take over. </p>
+<p>I always struggle to remember how  to identify requests served by Rails vs requests served by the web server.</p>
+<p>Turns out it’s pretty simple.</p>
+<p>If the response contains <code>X-Request-ID</code> header, then it was served by Rails. Otherwise it was served by the webserver.</p>
+<p><a href="https://mattbrictson.com/accelerated-rails-downloads">Matt Bricston</a> has more info.</p>	
+			</article>
+		</main>
+
+		<footer>
+			<ul>
+				<li>&copy; 2010-2018 <a href="https://dmitrym0.github.com/"><b>dmitry</b></a></li>
+			</ul>
+		</footer>
+
+	</body>
+</html>
