@@ -28,8 +28,8 @@
 <p>Final, third demo was related to <em>Extending Safari UI</em>. Safari App Extension can extend Safari’s UI via popovers that house <code>NSView</code>s. It sounded like it’d be relatively easy to extend your app’s existing NSViews to show up in Safari. Not something I’m interested, but nevertheless cool.</p>
 <p>I went searching for more WWDC notes, and haven’t found much[1]. It’s an excellent resource.</p>
 <p>Looks like converting to the new format isn’t so bad. Plus Apple has an <a href="https://developer.apple.com/documentation/safariservices/safari_app_extensions/converting_a_legacy_safari_extension_to_a_safari_app_extension">official conversion how to</a>.</p>
-<p>[0]: More keys in the Info.plist in the <a href="https://developer.apple.com/documentation/safariservices/safari_app_extensions/safari_app_extension_info_property_list_keys/about_safari_app_extension_default_keys">official documentation</a>
-[1]: I did find this though:<a href="https://procrastinative.ninja/2018/07/02/wwdc-2018-notes/">WWDC 2018 Notes — Procrastinative Ninja</a></p>]]></description>
+<p>[0]: More keys in the Info.plist in the <a href="https://developer.apple.com/documentation/safariservices/safari_app_extensions/safari_app_extension_info_property_list_keys/about_safari_app_extension_default_keys">official documentation</a></p>
+<p>[1]: I did find this though:<a href="https://procrastinative.ninja/2018/07/02/wwdc-2018-notes/">WWDC 2018 Notes — Procrastinative Ninja</a></p>]]></description>
 		<link>https://dmitrym0.github.io/Safari%20App%20Extensions%3B%20migrating%20from%20.safariextz.html</link>
 		<pubDate>Mon, 08 Oct 2018 14:22:00 -0700</pubDate>
 		<guid isPermaLink="true">https://dmitrym0.github.io/Safari%20App%20Extensions%3B%20migrating%20from%20.safariextz.html</guid>
