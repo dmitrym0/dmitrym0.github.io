@@ -161,5 +161,30 @@ I, [2018-09-02T22:50:21.284839 ]  INFO — : Completed 200 OK in 633ms (ActiveRe
 		<pubDate>Wed, 07 Dec 2016 19:03:00 -0800</pubDate>
 		<guid isPermaLink="true">https://dmitrym0.github.io/ncdu%20-%20ncurses%20disk%20usage.html</guid>
 	</item>
+	<item>
+		<title><![CDATA[Building a lithium ion battery, part 1: “Why”]]></title>
+		<description><![CDATA[<h1>Building a lithium ion battery, part 1: “Why”</h1>
+<p>Why build a battery? Why build a battery from scratch? I’ll tell you.</p>
+<h2>Why build a battery from scratch?</h2>
+<p>Battery technology is becoming very important. Cell phones, laptops and now cars rely on batteries for power. More importantly, I needed a battery unit for reasons (more on this later). </p>
+<p>I could’ve purchased a battery off the shelf, but consumer units are quite expensive. For example [<a href="https://www.mec.ca/en/product/5055-474/Yeti-400-Lithium">Goal Zero Yeti 400 Lithium</a> is $800. I thought I could build one for about a 1/3 of the price. </p>
+<p>I was also curious to understand how modern lithium batteries work. So really, the combination of wanting to save money and nerd out and learn something about electronics/battery tech were the two driving reasons behind this experiment.</p>
+<h2>Why do I need a battery at all?</h2>
+<p>I’d like to have a massive power bank for when we go camping. I also have a small portable projector for watching movies when we’re car camping. I know purists will disagree, but here we are. Also nerding out.</p>
+<h2>Why lithium batteries?</h2>
+<p>Briefly, there are two types of batteries:</p>
+<ul>
+<li>lead acid  - like the starter battery in your car</li>
+<li>lithium ion- like the one in your cell phone</li>
+</ul>
+<p>Lead acid tend to be easier to maintain, while lithium ion are quite finicky. However lead acid battery are typically 3-5 times heavier than an equivalent lithium ion battery. Lithium ion batteries have a better cycle life and are therefore more energy dense.</p>
+<p>I also thought I could go on craigslist and purchase some reclaimed lithium ion cells to  bring the overall cost down. </p>
+<p>Overall cost to performance ratio is in favour of lithium ion cells.</p>
+<p>In the next instalment I’ll describe my prototyping efforts. Here’s the teaser, a functional 4S6P 18650 battery.</p>
+<img src="images/2019-03-12 at 3.12 PM.png">]]></description>
+		<link>https://dmitrym0.github.io/Building%20a%20lithium%20ion%20battery%2C%20part%201%3A%20%E2%80%9CWhy%E2%80%9D.html</link>
+		<pubDate>Wed, 31 Dec 1969 16:00:00 -0800</pubDate>
+		<guid isPermaLink="true">https://dmitrym0.github.io/Building%20a%20lithium%20ion%20battery%2C%20part%201%3A%20%E2%80%9CWhy%E2%80%9D.html</guid>
+	</item>
     </channel>
 </rss>
