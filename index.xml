@@ -6,9 +6,59 @@
         <description>Dmitry M blog thing</description>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <language>en</language>
-        <pubDate>Tue, 11 Sep 2018 11:08:00 -0700</pubDate>
-        <lastBuildDate>Tue, 11 Sep 2018 11:08:00 -0700</lastBuildDate>
+        <pubDate>Tue, 12 Mar 2019 15:36:00 -0700</pubDate>
+        <lastBuildDate>Tue, 12 Mar 2019 15:36:00 -0700</lastBuildDate>
         <atom:link href="https://dmitrym0.github.com/index.xml" rel="self" type="application/rss+xml"/>
+	<item>
+		<title><![CDATA[Building a lithium ion battery, part 1: “Why”]]></title>
+		<description><![CDATA[<h1>Building a lithium ion battery, part 1: “Why”</h1>
+<p>Why build a battery? Why build a battery from scratch? I’ll tell you.</p>
+<h2>Why build a battery from scratch?</h2>
+<p>Battery technology is becoming very important. Cell phones, laptops and now cars rely on batteries for power. More importantly, I needed a battery unit for reasons (more on this later). </p>
+<p>I could’ve purchased a battery off the shelf, but consumer units are quite expensive. For example [<a href="https://www.mec.ca/en/product/5055-474/Yeti-400-Lithium">Goal Zero Yeti 400 Lithium</a> is $800. I thought I could build one for about a 1/3 of the price. </p>
+<p>I was also curious to understand how modern lithium batteries work. So really, the combination of wanting to save money and nerd out and learn something about electronics/battery tech were the two driving reasons behind this experiment.</p>
+<h2>Why do I need a battery at all?</h2>
+<p>I’d like to have a massive power bank for when we go camping. I also have a small portable projector for watching movies when we’re car camping. I know purists will disagree, but here we are. Also nerding out.</p>
+<h2>Why lithium batteries?</h2>
+<p>Briefly, there are two types of batteries:</p>
+<ul>
+<li>lead acid  - like the starter battery in your car</li>
+<li>lithium ion- like the one in your cell phone</li>
+</ul>
+<p>Lead acid tend to be easier to maintain, while lithium ion are quite finicky. However lead acid battery are typically 3-5 times heavier than an equivalent lithium ion battery. Lithium ion batteries have a better cycle life and are therefore more energy dense.</p>
+<p>I also thought I could go on craigslist and purchase some reclaimed lithium ion cells to  bring the overall cost down. </p>
+<p>Overall cost to performance ratio is in favour of lithium ion cells.</p>
+<p>In the next instalment I’ll describe my prototyping efforts. Here’s the teaser, a functional 4S6P 18650 battery.</p>
+<img src="images/2019-03-12 at 3.12 PM.png">]]></description>
+		<link>https://dmitrym0.github.io/Building%20a%20lithium%20ion%20battery%2C%20part%201%3A%20%E2%80%9CWhy%E2%80%9D.html</link>
+		<pubDate>Tue, 12 Mar 2019 15:36:00 -0700</pubDate>
+		<guid isPermaLink="true">https://dmitrym0.github.io/Building%20a%20lithium%20ion%20battery%2C%20part%201%3A%20%E2%80%9CWhy%E2%80%9D.html</guid>
+	</item>
+	<item>
+		<title><![CDATA[Safari App Extensions; migrating from .safariextz]]></title>
+		<description><![CDATA[<h1>Safari App Extensions; migrating from .safariextz</h1>
+<p>I’ve dabbled with a Safari extension for a project on and off for a while. For Safari 12, I read that .safariextz-style extensions are no longer supported. I went forth to investigate what changed and how I could port my old extension to Safari 12.</p>
+<p>The short story is that the packaging has changed, but the bulk of the existing extension should just work once new conventions are adopted. I imagine the new changes are spurred by Apple’s desire to unify distribution — new extensions are wrapped as a mac application, require a signature and are distributed through the Mac App Store.</p>
+<p>I went looking for documentation and stumbled upon the <a href="https://developer.apple.com/videos/play/wwdc2016/214/">Extending your App with Safari App Extensions - WWDC 2016 - Videos - Apple Developer</a> presentation which laid everything out. </p>
+<p>There are three major parts:</p>
+<ul>
+<li>Content blocking</li>
+<li>Modifying page behaviour</li>
+<li>Extending Safari UI</li>
+</ul>
+<p>The video starts out describing how to develop the new Safari App Extensions. You need Xcode and dev certificate. The new thing here is that Safari App Extensions are distributed as part of a macOS application and therefore can invoke native code from that application. Neat.</p>
+<p>The presenters then go into some specific examples of functionality that Safari App Extensions can have.</p>
+<p>They mention that <em>content blocking</em> is built upon a model at compile time (?) so there’s no run time evaluation. This is to achieve required speed. The content blocking  API is consistent across macOS and iOS. One interesting tidbit is that  the content blockers don’t get access to individual requests, only the “content blocking” model does. This is for privacy reasons.</p>
+<p>The second part was about <em>Modifying page behavior</em>, really the part I was looking for.  The important info here is that CSS/JS from your old extensions simply transition to the new app. These assets need to be described in the app’s Info.plist, for example for JS you’d use <code>SFSafariContentScript</code>[0]. There’s a new messaging API for the JS to talk to the native code. </p>
+<p>Final, third demo was related to <em>Extending Safari UI</em>. Safari App Extension can extend Safari’s UI via popovers that house <code>NSView</code>s. It sounded like it’d be relatively easy to extend your app’s existing NSViews to show up in Safari. Not something I’m interested, but nevertheless cool.</p>
+<p>I went searching for more WWDC notes, and haven’t found much[1]. It’s an excellent resource.</p>
+<p>Looks like converting to the new format isn’t so bad. Plus Apple has an <a href="https://developer.apple.com/documentation/safariservices/safari_app_extensions/converting_a_legacy_safari_extension_to_a_safari_app_extension">official conversion how to</a>.</p>
+<p>[0]: More keys in the Info.plist in the <a href="https://developer.apple.com/documentation/safariservices/safari_app_extensions/safari_app_extension_info_property_list_keys/about_safari_app_extension_default_keys">official documentation</a>.</p>
+<p>[1]: I did find this though:<a href="https://procrastinative.ninja/2018/07/02/wwdc-2018-notes/">WWDC 2018 Notes — Procrastinative Ninja</a>.</p>]]></description>
+		<link>https://dmitrym0.github.io/Safari%20App%20Extensions%3B%20migrating%20from%20.safariextz.html</link>
+		<pubDate>Mon, 08 Oct 2018 14:22:00 -0700</pubDate>
+		<guid isPermaLink="true">https://dmitrym0.github.io/Safari%20App%20Extensions%3B%20migrating%20from%20.safariextz.html</guid>
+	</item>
 	<item>
 		<title><![CDATA[How to check for X-Send-File (or X-Accel-Redirect)]]></title>
 		<description><![CDATA[<h1>How to check for X-Send-File (or X-Accel-Redirect)</h1>
