@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Dmitry M">
+    <meta name="description" content="Dmitry&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Omnifocus style reviews with org-mode"/>
+<meta name="twitter:description" content="I started using Emacs and org-mode in earnest in the middle of 2019. At that point in time I was using Omnifocus to track my tasks and Bearapp for notes. I was missing plaintext functionality. Since then I&rsquo;ve reproduced most of the functionality that Omnifocus offerred except one particular feature: reviews.
+In GTD, reviews occupy a pretty important niche. Without regular task and project reviews task lists tend to grow out of control and become polutted."/>
+
+    <meta property="og:title" content="Omnifocus style reviews with org-mode" />
+<meta property="og:description" content="I started using Emacs and org-mode in earnest in the middle of 2019. At that point in time I was using Omnifocus to track my tasks and Bearapp for notes. I was missing plaintext functionality. Since then I&rsquo;ve reproduced most of the functionality that Omnifocus offerred except one particular feature: reviews.
+In GTD, reviews occupy a pretty important niche. Without regular task and project reviews task lists tend to grow out of control and become polutted." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.example.com/posts/omnifocus-review-with-org-mode/" />
+<meta property="article:published_time" content="2020-01-07T00:00:00-08:00"/>
+<meta property="article:modified_time" content="2020-01-14T11:12:13-08:00"/>
+
+
+    
+      <base href="http://www.example.com/posts/omnifocus-review-with-org-mode/">
+    
+    <title>
+  Omnifocus style reviews with org-mode · Dmitry M - Veridis Quo
+</title>
+
+    
+      <link rel="canonical" href="http://www.example.com/posts/omnifocus-review-with-org-mode/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="http://www.example.com/css/coder.min.28d751104f30c16da1aa1bb04015cbe662cacfe0d1b01af4f2240ad58580069c.css" integrity="sha256-KNdREE8wwW2hqhuwQBXL5mLKz&#43;DRsBr08iQK1YWABpw=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="http://www.example.com/css/custom.css" />
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="http://www.example.com/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://www.example.com/img/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.55.6" />
+  </head>
+
+  
+  
+  <body class="colorscheme-light">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="http://www.example.com/">
+      Dmitry M - Veridis Quo
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://www.example.com/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://www.example.com/tags/">Tags</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://www.example.com/pages/about/">About</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Omnifocus style reviews with org-mode</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2020-01-07T00:00:00-08:00'>
+                January 7, 2020
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              2 minutes read
+            </span>
+          </div>
+          
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="http://www.example.com/tags/emacs/">Emacs</a>
+      <span class="separator">•</span>
+    <a href="http://www.example.com/tags/orgmode/">orgmode</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        <p>I started using Emacs and org-mode in earnest in the middle of 2019. At that point in time I was using Omnifocus to track my tasks and Bearapp for notes. I was missing
+plaintext functionality. Since then I&rsquo;ve reproduced most of the functionality that Omnifocus offerred except one particular feature: reviews.</p>
+
+<p>In GTD, reviews occupy a pretty important niche. Without regular task and project reviews task lists tend to grow out of control and become polutted. One important consideration for a
+task list is for it to closely resemble the actual state of what you have to do.</p>
+
+<p>I went looking for a way to do automated reviews in org, and found <a href="https://github.com/brabalan/org-review">org-review</a>.</p>
+
+<p>org-review relies on the <code>LAST_REVIEW</code> property to determine when the next review (<code>NEXT_REVIEW</code>) should happen and out of the box this property is not generated.</p>
+
+<p>I wrote a bit of elisp to auto generate these properties for all <code>TODO</code> entries when a file is saved. This guarantees that the entry will bubble up for review a month after creation. Month is a default review duration
+that can be configured via <code>REVIEW_DELAY</code> property.</p>
+
+<p>Add this somewhere in <code>~/.emacs</code> or similar.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(defun my/org-add-next-review-property ()
+  <span style="font-style:italic">&#34;Add NEXT_REVIEW property to headlines that don&#39;t have one&#34;</span>
+  (interactive)
+  (org-map-entries &#39;(unless (org-entry-get nil <span style="font-style:italic">&#34;NEXT_REVIEW&#34;</span>) (org-review-insert-last-review)) <span style="font-style:italic">&#34;TODO=\&#34;TODO\&#34;&#34;</span>)
+)
+
+
+(add-hook <span style="font-style:italic">&#39;org-mode-hook</span>
+  (lambda ()
+  (add-hook <span style="font-style:italic">&#39;before-save-hook</span> <span style="font-style:italic">&#39;my/org-add-next-review-property</span> <span style="font-style:italic">&#39;local</span>)))</code></pre></div>
+<p>The process will look something like this:</p>
+
+<ol>
+<li>Add a <code>TODO</code> task to inbox</li>
+<li>Once a file is saved the <code>*_REVIEW</code> properties are generated.</li>
+<li>&hellip; some time passess &hellip;</li>
+<li>Hit <code>C-c a R</code> to start the review mode.</li>
+<li>Hit <code>C-c C-r</code> to review selected items.</li>
+</ol>
+
+      </div>
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "yourdiscussshortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>General Nerdery.</p>
+    
+    
+      
+        © 2020
+      
+       Dmitry M 
+    
+    
+       · 
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

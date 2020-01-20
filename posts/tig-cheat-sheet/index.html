@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Dmitry M">
+    <meta name="description" content="Dmitry&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Efficient commit workflow with tig"/>
+<meta name="twitter:description" content="One of the recommended source control practices is to commit frequently, and often. I prefer to keep my commits terse and focused, however in practice I’m working on a couple related but independent things in parallel. At commit time, I prefer to tease loosely related things apart and commit them separately.
+One way to do that is with the interactive git-add facility that can be invoked with git add -p:"/>
+
+    <meta property="og:title" content="Efficient commit workflow with tig" />
+<meta property="og:description" content="One of the recommended source control practices is to commit frequently, and often. I prefer to keep my commits terse and focused, however in practice I’m working on a couple related but independent things in parallel. At commit time, I prefer to tease loosely related things apart and commit them separately.
+One way to do that is with the interactive git-add facility that can be invoked with git add -p:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.example.com/posts/tig-cheat-sheet/" />
+<meta property="article:published_time" content="2018-08-30T00:00:00-07:00"/>
+<meta property="article:modified_time" content="2020-01-14T11:11:25-08:00"/>
+
+
+    
+      <base href="http://www.example.com/posts/tig-cheat-sheet/">
+    
+    <title>
+  Efficient commit workflow with tig · Dmitry M - Veridis Quo
+</title>
+
+    
+      <link rel="canonical" href="http://www.example.com/posts/tig-cheat-sheet/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="http://www.example.com/css/coder.min.28d751104f30c16da1aa1bb04015cbe662cacfe0d1b01af4f2240ad58580069c.css" integrity="sha256-KNdREE8wwW2hqhuwQBXL5mLKz&#43;DRsBr08iQK1YWABpw=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="http://www.example.com/css/custom.css" />
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="http://www.example.com/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://www.example.com/img/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.55.6" />
+  </head>
+
+  
+  
+  <body class="colorscheme-light">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="http://www.example.com/">
+      Dmitry M - Veridis Quo
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://www.example.com/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://www.example.com/tags/">Tags</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://www.example.com/pages/about/">About</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Efficient commit workflow with tig</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2018-08-30T00:00:00-07:00'>
+                August 30, 2018
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              2 minutes read
+            </span>
+          </div>
+          
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="http://www.example.com/tags/development/">Development</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        <p>One of the recommended source control practices is to <a href="http://stackoverflow.com/questions/107264/how-often-to-commit-changes-to-source-control">commit frequently, and often</a>.   I prefer to keep my commits terse and focused, however in practice I’m working on a couple related but independent things in parallel. At commit time, I prefer to tease loosely related things apart and commit them separately.</p>
+
+<p>One way to do that is with the interactive git-add facility that can be invoked with <code>git add -p</code>:</p>
+
+<figure>
+    <img src="http://www.example.com/ox-hugo/screenshot_2020-01-07_16-16-56.png"/> 
+</figure>
+
+
+<p>It’s a lovely little interface:</p>
+
+<ul>
+<li>file name is shown at the top of the output</li>
+<li>location of the change set is shown</li>
+<li>the prompt is asking whether I want to stage the change (<code>y</code>),  ignore the changes this file (<code>d</code>) and various other obscure options.</li>
+</ul>
+
+<p>This process works for the majority of my commit needs. It allows me to review every change before staging it to ensure that only necessary changes get pushed to the central repo.</p>
+
+<p>My main issue with this process is that it’s too linear. When the number of changes exceeds a certain threshold I have trouble remembering what functionality I’m currently committing. I can’t easily inspect the existing staged hunks. The process becomes cumbersome.</p>
+
+<p>This is where <a href="http://jonas.nitro.dk/tig/">tig</a>, a <strong>text-mode interface for Git</strong> comes in. I’m a huge fan of console tools because they are incredibly fast and <strong>tig</strong> is no exception.</p>
+
+<p>Upon launching <strong>tig</strong> you’re presented with the following view:</p>
+
+<figure>
+    <img src="http://www.example.com/ox-hugo/screenshot_2020-01-07_16-21-55.png"/> 
+</figure>
+
+
+<p>I’m currently interested in the “unstaged changes”. Hitting <code>enter</code> shows a diff between HEAD and current working directory.</p>
+
+<p>But we’re interested more in the stage view that can be activated by hitting <code>S</code> (case matters!):</p>
+
+<figure>
+    <img src="http://www.example.com/ox-hugo/screenshot_2020-01-07_16-23-51.png"/> 
+</figure>
+
+
+<p>This view should be familiar to anyone who has used <code>git status</code>.  This main view can be navigated with arrow keys. Hitting <code>enter</code> on a file name  will show a secondary window with a diff. This view can be navigated with the <code>j</code> and <code>k</code> keys (vi-like).</p>
+
+<figure>
+    <img src="http://www.example.com/ox-hugo/screenshot_2020-01-07_16-19-48.png"/> 
+</figure>
+
+
+<p>At this point, we can select individuals lines to stage with the <code>1</code> key, or hit <code>u</code> to stage the whole file.  Individual lines can be staged when there’s some cruft you don’t want to commit - such as debugging statements.</p>
+
+<p>When all changes have been staged, you can hit  <code>C</code> to commit from inside <strong>tig</strong>, or exit (<code>q</code>) and commit as you normally would from command line.</p>
+
+<p>Here’s a small <a href="http://ricostacruz.com/cheatsheets/tig.html">tig cheat sheet</a> for reference.</p>
+
+      </div>
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "yourdiscussshortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>General Nerdery.</p>
+    
+    
+      
+        © 2020
+      
+       Dmitry M 
+    
+    
+       · 
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emacs on Dmitry M - Veridis Quo</title>
+    <link>http://www.example.com/tags/emacs/</link>
+    <description>Recent content in Emacs on Dmitry M - Veridis Quo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 07 Jan 2020 00:00:00 -0800</lastBuildDate>
+    
+	<atom:link href="http://www.example.com/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Omnifocus style reviews with org-mode</title>
+      <link>http://www.example.com/posts/omnifocus-review-with-org-mode/</link>
+      <pubDate>Tue, 07 Jan 2020 00:00:00 -0800</pubDate>
+      
+      <guid>http://www.example.com/posts/omnifocus-review-with-org-mode/</guid>
+      <description>I started using Emacs and org-mode in earnest in the middle of 2019. At that point in time I was using Omnifocus to track my tasks and Bearapp for notes. I was missing plaintext functionality. Since then I&amp;rsquo;ve reproduced most of the functionality that Omnifocus offerred except one particular feature: reviews.
+In GTD, reviews occupy a pretty important niche. Without regular task and project reviews task lists tend to grow out of control and become polutted.</description>
+    </item>
+    
+  </channel>
+</rss>

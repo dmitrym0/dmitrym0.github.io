@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://www.example.com/pages/about/</loc>
+    <lastmod>2020-01-14T11:15:30-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/tags/development/</loc>
+    <lastmod>2020-01-14T11:14:32-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/</loc>
+    <lastmod>2020-01-14T11:15:30-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/posts/</loc>
+    <lastmod>2020-01-14T11:14:32-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/tags/swift/</loc>
+    <lastmod>2020-01-14T11:12:01-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/posts/swift-optionals-for-objc-programmers/</loc>
+    <lastmod>2020-01-14T11:12:01-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/tags/</loc>
+    <lastmod>2020-01-14T11:15:30-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/tags/emacs/</loc>
+    <lastmod>2020-01-14T11:12:13-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/posts/omnifocus-review-with-org-mode/</loc>
+    <lastmod>2020-01-14T11:12:13-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/posts/reading-font-from-/</loc>
+    <lastmod>2020-01-07T15:43:38-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/posts/reading-font-from-file-an/</loc>
+    <lastmod>2020-01-07T15:43:40-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/tags/orgmode/</loc>
+    <lastmod>2020-01-14T11:12:13-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/categories/</loc>
+    <lastmod>2020-01-07T13:58:33-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/categories/test/</loc>
+    <lastmod>2020-01-07T13:58:33-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/posts/post-title-in-slug-form-3/</loc>
+    <lastmod>2020-01-07T13:58:33-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/posts/diy-lithium-battery-part-1/</loc>
+    <lastmod>2020-01-12T15:22:50-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/tags/macos/</loc>
+    <lastmod>2020-01-14T11:14:32-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/posts/safari-app-extensions-migrating-from-safariextz/</loc>
+    <lastmod>2020-01-14T11:14:32-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/posts/how-to-check-for-x-sendfile/</loc>
+    <lastmod>2020-01-14T11:11:34-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/posts/tig-cheat-sheet/</loc>
+    <lastmod>2020-01-14T11:11:25-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/posts/post-title-in-slug-form-2/</loc>
+    <lastmod>2020-01-07T13:58:33-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/posts/post-title-in-slug-form-1/</loc>
+    <lastmod>2020-01-07T13:58:32-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/tags/post/</loc>
+    <lastmod>2020-01-07T13:58:32-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/tags/tags/</loc>
+    <lastmod>2020-01-07T13:58:32-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/posts/xterra-switched-outlet-howto/</loc>
+    <lastmod>2019-07-12T11:16:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/posts/ncdu-ncurses-disk-usage/</loc>
+    <lastmod>2020-01-14T11:11:42-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/posts/raid5-multiple-disk-recovery/</loc>
+    <lastmod>2020-01-07T15:51:34-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/tags/linux/</loc>
+    <lastmod>2020-01-14T11:11:10-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/posts/tircd-twitter-gateway/</loc>
+    <lastmod>2020-01-14T11:11:10-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/posts/shared-memory-on-os-x/</loc>
+    <lastmod>2020-01-14T11:11:46-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/tags/cocoa/</loc>
+    <lastmod>2020-01-14T11:10:57-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/posts/reading-font-from-file-and-making-it-available-to-cocoa/</loc>
+    <lastmod>2020-01-14T11:10:57-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/tags/general/</loc>
+    <lastmod>2020-01-14T11:15:30-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/pages/</loc>
+    <lastmod>2020-01-14T11:15:30-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
