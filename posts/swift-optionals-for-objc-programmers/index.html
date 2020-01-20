@@ -22,7 +22,7 @@ Due to Objective-C&rsquo;s, C lineage you could do things like this:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://dmitrym0.github.io/posts/swift-optionals-for-objc-programmers/" />
 <meta property="article:published_time" content="2020-01-12T00:00:00-08:00"/>
-<meta property="article:modified_time" content="2020-01-14T11:12:01-08:00"/>
+<meta property="article:modified_time" content="2020-01-19T20:45:34-08:00"/>
 
 
     
@@ -141,11 +141,11 @@ Due to Objective-C&rsquo;s, C lineage you could do things like this:" />
 </span><span style="font-style:italic"></span>} <span style="font-weight:bold">else</span> {
   <span style="font-style:italic">// nil
 </span><span style="font-style:italic"></span>}</code></pre></div>
-<p>or like this, where <code>aString</code> might be `nil`, but perfectly legal in Objective-C:</p>
+<p>or like this, where <code>aString</code> might be <code>nil</code>, but perfectly legal in Objective-C:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C">NSString* aString = [someObject thatReturnsAString];
 
 NSLog(<span style="">@</span><span style="font-style:italic">&#34;Lenght of string: %@&#34;</span>, [aString length]); // migght be nil, who knows?</code></pre></div>
-<p>Swift introduces a new type, called <code>Optional</code>. An Optional is either defined or is `nil`. In that an optional string (<code>String?</code>) is very similar to it&rsquo;s Objective-C counterpart.
+<p>Swift introduces a new type, called <code>Optional</code>. An Optional is either defined or is <code>nil</code>. In that, an optional string (<code>String?</code>) is very similar to it&rsquo;s Objective-C counterpart.
 Where things do get interesting is we use a non-optional, <code>String</code>:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C">var anOptionalString: String? = maybeReturnsAString(); <span style="font-style:italic">// maybe returns a string who knows
 </span><span style="font-style:italic"></span>var aString: String = hasToReturnAstring(); // gotta be a string, <span style="font-weight:bold">else</span> a compiler error</code></pre></div>
