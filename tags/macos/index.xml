@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MacOS on Dmitry M - Veridis Quo</title>
-    <link>https//dmitrym0.github.com/tags/macos/</link>
+    <link>https://dmitrym0.github.io/tags/macos/</link>
     <description>Recent content in MacOS on Dmitry M - Veridis Quo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 08 Oct 2018 00:00:00 -0700</lastBuildDate>
     
-	<atom:link href="https//dmitrym0.github.com/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dmitrym0.github.io/tags/macos/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Safari App Extensions; migrating from .safariextz</title>
-      <link>https//dmitrym0.github.com/posts/safari-app-extensions-migrating-from-safariextz/</link>
+      <link>https://dmitrym0.github.io/posts/safari-app-extensions-migrating-from-safariextz/</link>
       <pubDate>Mon, 08 Oct 2018 00:00:00 -0700</pubDate>
       
-      <guid>https//dmitrym0.github.com/posts/safari-app-extensions-migrating-from-safariextz/</guid>
+      <guid>https://dmitrym0.github.io/posts/safari-app-extensions-migrating-from-safariextz/</guid>
       <description>I’ve dabbled with a Safari extension for a project on and off for a while. For Safari 12, I read that .safariextz-style extensions are no longer supported. I went forth to investigate what changed and how I could port my old extension to Safari 12.
 The short story is that the packaging has changed, but the bulk of the existing extension should just work once new conventions are adopted. I imagine the new changes are spurred by Apple’s desire to unify distribution — new extensions are wrapped as a mac application, require a signature and are distributed through the Mac App Store.</description>
     </item>
     
     <item>
       <title>Reading a font from file an making it available to Cocoa</title>
-      <link>https//dmitrym0.github.com/posts/reading-font-from-file-and-making-it-available-to-cocoa/</link>
+      <link>https://dmitrym0.github.io/posts/reading-font-from-file-and-making-it-available-to-cocoa/</link>
       <pubDate>Fri, 06 Feb 2009 00:00:00 -0800</pubDate>
       
-      <guid>https//dmitrym0.github.com/posts/reading-font-from-file-and-making-it-available-to-cocoa/</guid>
+      <guid>https://dmitrym0.github.io/posts/reading-font-from-file-and-making-it-available-to-cocoa/</guid>
       <description>This is another programming related post.
 Say you have a true type font that&amp;rsquo;s not part of the OS font set in a file. You&amp;rsquo;ve read the contents of the file into memory and now want to make it available to Cocoa. How?
 Turns out that ATSUI comes to the rescue:

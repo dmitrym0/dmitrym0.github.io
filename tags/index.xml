@@ -2,102 +2,102 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Dmitry M - Veridis Quo</title>
-    <link>https//dmitrym0.github.com/tags/</link>
+    <link>https://dmitrym0.github.io/tags/</link>
     <description>Recent content in Tags on Dmitry M - Veridis Quo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 12 Jan 2020 00:00:00 -0800</lastBuildDate>
     
-	<atom:link href="https//dmitrym0.github.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dmitrym0.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Development</title>
-      <link>https//dmitrym0.github.com/tags/development/</link>
+      <link>https://dmitrym0.github.io/tags/development/</link>
       <pubDate>Sun, 12 Jan 2020 00:00:00 -0800</pubDate>
       
-      <guid>https//dmitrym0.github.com/tags/development/</guid>
+      <guid>https://dmitrym0.github.io/tags/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Swift</title>
-      <link>https//dmitrym0.github.com/tags/swift/</link>
+      <link>https://dmitrym0.github.io/tags/swift/</link>
       <pubDate>Sun, 12 Jan 2020 00:00:00 -0800</pubDate>
       
-      <guid>https//dmitrym0.github.com/tags/swift/</guid>
+      <guid>https://dmitrym0.github.io/tags/swift/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Emacs</title>
-      <link>https//dmitrym0.github.com/tags/emacs/</link>
+      <link>https://dmitrym0.github.io/tags/emacs/</link>
       <pubDate>Tue, 07 Jan 2020 00:00:00 -0800</pubDate>
       
-      <guid>https//dmitrym0.github.com/tags/emacs/</guid>
+      <guid>https://dmitrym0.github.io/tags/emacs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>orgmode</title>
-      <link>https//dmitrym0.github.com/tags/orgmode/</link>
+      <link>https://dmitrym0.github.io/tags/orgmode/</link>
       <pubDate>Tue, 07 Jan 2020 00:00:00 -0800</pubDate>
       
-      <guid>https//dmitrym0.github.com/tags/orgmode/</guid>
+      <guid>https://dmitrym0.github.io/tags/orgmode/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MacOS</title>
-      <link>https//dmitrym0.github.com/tags/macos/</link>
+      <link>https://dmitrym0.github.io/tags/macos/</link>
       <pubDate>Mon, 08 Oct 2018 00:00:00 -0700</pubDate>
       
-      <guid>https//dmitrym0.github.com/tags/macos/</guid>
+      <guid>https://dmitrym0.github.io/tags/macos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>post</title>
-      <link>https//dmitrym0.github.com/tags/post/</link>
+      <link>https://dmitrym0.github.io/tags/post/</link>
       <pubDate>Tue, 19 Dec 2017 00:00:00 -0800</pubDate>
       
-      <guid>https//dmitrym0.github.com/tags/post/</guid>
+      <guid>https://dmitrym0.github.io/tags/post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tags</title>
-      <link>https//dmitrym0.github.com/tags/tags/</link>
+      <link>https://dmitrym0.github.io/tags/tags/</link>
       <pubDate>Tue, 19 Dec 2017 00:00:00 -0800</pubDate>
       
-      <guid>https//dmitrym0.github.com/tags/tags/</guid>
+      <guid>https://dmitrym0.github.io/tags/tags/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>https//dmitrym0.github.com/tags/linux/</link>
+      <link>https://dmitrym0.github.io/tags/linux/</link>
       <pubDate>Sun, 17 Mar 2013 00:00:00 -0700</pubDate>
       
-      <guid>https//dmitrym0.github.com/tags/linux/</guid>
+      <guid>https://dmitrym0.github.io/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cocoa</title>
-      <link>https//dmitrym0.github.com/tags/cocoa/</link>
+      <link>https://dmitrym0.github.io/tags/cocoa/</link>
       <pubDate>Fri, 06 Feb 2009 00:00:00 -0800</pubDate>
       
-      <guid>https//dmitrym0.github.com/tags/cocoa/</guid>
+      <guid>https://dmitrym0.github.io/tags/cocoa/</guid>
       <description></description>
     </item>
     
     <item>
       <title>General</title>
-      <link>https//dmitrym0.github.com/tags/general/</link>
+      <link>https://dmitrym0.github.io/tags/general/</link>
       <pubDate>Fri, 07 Dec 2001 00:00:00 -0800</pubDate>
       
-      <guid>https//dmitrym0.github.com/tags/general/</guid>
+      <guid>https://dmitrym0.github.io/tags/general/</guid>
       <description></description>
     </item>
     

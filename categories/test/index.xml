@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>test on Dmitry M - Veridis Quo</title>
-    <link>https//dmitrym0.github.com/categories/test/</link>
+    <link>https://dmitrym0.github.io/categories/test/</link>
     <description>Recent content in test on Dmitry M - Veridis Quo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 12 Jul 2019 00:00:00 -0700</lastBuildDate>
     
-	<atom:link href="https//dmitrym0.github.com/categories/test/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dmitrym0.github.io/categories/test/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>test post 99</title>
-      <link>https//dmitrym0.github.com/posts/post-title-in-slug-form-3/</link>
+      <link>https://dmitrym0.github.io/posts/post-title-in-slug-form-3/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 -0700</pubDate>
       
-      <guid>https//dmitrym0.github.com/posts/post-title-in-slug-form-3/</guid>
+      <guid>https://dmitrym0.github.io/posts/post-title-in-slug-form-3/</guid>
       <description>this is a post</description>
     </item>
     

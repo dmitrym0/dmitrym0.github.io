@@ -22,20 +22,20 @@ Say you have a true type font that&rsquo;s not part of the OS font set in a file
 Turns out that ATSUI comes to the rescue:
 ATSFontContainerRef container; OSStatus status = ATSFontActivateFromMemory((LogicalAddress)[fontData bytes], // buffer with font data  [fontData length], // size of font data  kATSFontContextLocal, // for use only in this application  kATSFontFormatUnspecified, // reserved  NULL, // reserved  kATSOptionFlagsDefault, // reserved  &amp;container); // on output, will contain the activated font // find the number of font references in the container (goes to numItems) ItemCount numItems; status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, 0, NULL, &amp;numItems); NSLog(@&#34;There are %d references in the container\n&#34;, numItems); // load the individual fonts ATSFontRef *ioArray = malloc(numItems * sizeof(ATSFontRef)); status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, numItems, ioArray, &amp;numItems); CFStringRef fontName = nil; ATSFontGetName (ioArray[fontIndex], kATSOptionFlagsDefault, &amp;fontName); NSFont* myFont = [NSFont fontWithName:(NSString*)fontName size:24];  myFont now contains the NSFont reference to your font." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https//dmitrym0.github.com/posts/reading-font-from-file-and-making-it-available-to-cocoa/" />
+<meta property="og:url" content="https://dmitrym0.github.io/posts/reading-font-from-file-and-making-it-available-to-cocoa/" />
 <meta property="article:published_time" content="2009-02-06T00:00:00-08:00"/>
 <meta property="article:modified_time" content="2020-01-14T11:10:57-08:00"/>
 
 
     
-      <base href="https//dmitrym0.github.com/posts/reading-font-from-file-and-making-it-available-to-cocoa/">
+      <base href="https://dmitrym0.github.io/posts/reading-font-from-file-and-making-it-available-to-cocoa/">
     
     <title>
   Reading a font from file an making it available to Cocoa · Dmitry M - Veridis Quo
 </title>
 
     
-      <link rel="canonical" href="https//dmitrym0.github.com/posts/reading-font-from-file-and-making-it-available-to-cocoa/">
+      <link rel="canonical" href="https://dmitrym0.github.io/posts/reading-font-from-file-and-making-it-available-to-cocoa/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
@@ -45,7 +45,7 @@ ATSFontContainerRef container; OSStatus status = ATSFontActivateFromMemory((Logi
     
       
       
-      <link rel="stylesheet" href="https//dmitrym0.github.com/css/coder.min.28d751104f30c16da1aa1bb04015cbe662cacfe0d1b01af4f2240ad58580069c.css" integrity="sha256-KNdREE8wwW2hqhuwQBXL5mLKz&#43;DRsBr08iQK1YWABpw=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="https://dmitrym0.github.io/css/coder.min.28d751104f30c16da1aa1bb04015cbe662cacfe0d1b01af4f2240ad58580069c.css" integrity="sha256-KNdREE8wwW2hqhuwQBXL5mLKz&#43;DRsBr08iQK1YWABpw=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -53,15 +53,15 @@ ATSFontContainerRef container; OSStatus status = ATSFontActivateFromMemory((Logi
     
 
     
-      <link rel="stylesheet" href="https//dmitrym0.github.com/css/custom.css" />
+      <link rel="stylesheet" href="https://dmitrym0.github.io/css/custom.css" />
     
 
     
 
     
 
-    <link rel="icon" type="image/png" href="https//dmitrym0.github.com/img/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="https//dmitrym0.github.com/img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://dmitrym0.github.io/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://dmitrym0.github.io/img/favicon-16x16.png" sizes="16x16">
 
     <meta name="generator" content="Hugo 0.55.6" />
   </head>
@@ -72,7 +72,7 @@ ATSFontContainerRef container; OSStatus status = ATSFontActivateFromMemory((Logi
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="https//dmitrym0.github.com/">
+    <a class="navigation-title" href="https://dmitrym0.github.io/">
       Dmitry M - Veridis Quo
     </a>
     <input type="checkbox" id="menu-toggle" />
@@ -81,15 +81,15 @@ ATSFontContainerRef container; OSStatus status = ATSFontActivateFromMemory((Logi
       
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https//dmitrym0.github.com/posts/">Blog</a>
+            <a class="navigation-link" href="https://dmitrym0.github.io/posts/">Blog</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https//dmitrym0.github.com/tags/">Tags</a>
+            <a class="navigation-link" href="https://dmitrym0.github.io/tags/">Tags</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https//dmitrym0.github.com/pages/about/">About</a>
+            <a class="navigation-link" href="https://dmitrym0.github.io/pages/about/">About</a>
           </li>
         
       
@@ -123,9 +123,9 @@ ATSFontContainerRef container; OSStatus status = ATSFontActivateFromMemory((Logi
           
           <div class="tags">
   <i class="fas fa-tag"></i>
-    <a href="https//dmitrym0.github.com/tags/cocoa/">Cocoa</a>
+    <a href="https://dmitrym0.github.io/tags/cocoa/">Cocoa</a>
       <span class="separator">•</span>
-    <a href="https//dmitrym0.github.com/tags/macos/">MacOS</a></div>
+    <a href="https://dmitrym0.github.io/tags/macos/">MacOS</a></div>
 
         </div>
       </header>

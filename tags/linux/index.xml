@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on Dmitry M - Veridis Quo</title>
-    <link>https//dmitrym0.github.com/tags/linux/</link>
+    <link>https://dmitrym0.github.io/tags/linux/</link>
     <description>Recent content in Linux on Dmitry M - Veridis Quo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 17 Mar 2013 00:00:00 -0700</lastBuildDate>
     
-	<atom:link href="https//dmitrym0.github.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dmitrym0.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>tircd, irc twitter gateway</title>
-      <link>https//dmitrym0.github.com/posts/tircd-twitter-gateway/</link>
+      <link>https://dmitrym0.github.io/posts/tircd-twitter-gateway/</link>
       <pubDate>Sun, 17 Mar 2013 00:00:00 -0700</pubDate>
       
-      <guid>https//dmitrym0.github.com/posts/tircd-twitter-gateway/</guid>
+      <guid>https://dmitrym0.github.io/posts/tircd-twitter-gateway/</guid>
       <description>I published my tircd branch. If you&amp;rsquo;re unfamiliar with tircd it&amp;rsquo;s a daemon that presents Twitter as an IRC channel. I merged this really old branch that implements Twitter lists as channels with the semi official google code mirror branch. I created a pull request but it hasn&amp;rsquo;t been acted on yet.
 I consume my instant messaging via IRC (with the help of minbif) and now Twitter too. Quite convenient.</description>
     </item>
