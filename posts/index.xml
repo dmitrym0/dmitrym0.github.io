@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Dmitry M - Veridis Quo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 12 Jan 2020 00:00:00 -0800</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jan 2020 00:00:00 -0800</lastBuildDate>
     
 	<atom:link href="https://dmitrym0.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Managing  secrets in open source iOS apps</title>
+      <link>https://dmitrym0.github.io/posts/managing-secrets-in-ios-apps/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 -0800</pubDate>
+      
+      <guid>https://dmitrym0.github.io/posts/managing-secrets-in-ios-apps/</guid>
+      <description>One of the issues that open source authors have to deal with is secrets management. The small utility app I&amp;rsquo;m working on relies on Dropbox API. Before you can work with Dropbox API though, you have to generate an API key. The API key identifies the application to Dropbox and needs to remain mostly secret. A bad actor could impersonate the application author by stealing the API key.
+This is a long winded way of saying that API keys must be kept out of public repositories.</description>
+    </item>
     
     <item>
       <title>Swift optionals for Objective-C programmers</title>
@@ -30,48 +40,6 @@ Due to Objective-C&amp;rsquo;s, C lineage you could do things like this:</descri
       <guid>https://dmitrym0.github.io/posts/omnifocus-review-with-org-mode/</guid>
       <description>I started using Emacs and org-mode in earnest in the middle of 2019. At that point in time I was using Omnifocus to track my tasks and Bearapp for notes. I was missing plaintext functionality. Since then I&amp;rsquo;ve reproduced most of the functionality that Omnifocus offerred except one particular feature: reviews.
 In GTD, reviews occupy a pretty important niche. Without regular task and project reviews task lists tend to grow out of control and become polutted.</description>
-    </item>
-    
-    <item>
-      <title>Reading a font from file an making it available to Cocoa</title>
-      <link>https://dmitrym0.github.io/posts/reading-font-from-/</link>
-      <pubDate>Tue, 07 Jan 2020 00:00:00 -0800</pubDate>
-      
-      <guid>https://dmitrym0.github.io/posts/reading-font-from-/</guid>
-      <description>This is another programming related post.
-Say you have a true type font that&amp;rsquo;s not part of the OS font set in a file. You&amp;rsquo;ve read the contents of the file into memory and now want to make it available to Cocoa. How?
-Turns out that ATSUI comes to the rescue:
-ATSFontContainerRef container; OSStatus status = ATSFontActivateFromMemory((LogicalAddress)[fontData bytes], // buffer with font data  [fontData length], // size of font data  kATSFontContextLocal, // for use only in this application  kATSFontFormatUnspecified, // reserved  NULL, // reserved  kATSOptionFlagsDefault, // reserved  &amp;amp;container); // on output, will contain the activated font // find the number of font references in the container (goes to numItems) ItemCount numItems; status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, 0, NULL, &amp;amp;numItems); NSLog(@&amp;#34;There are %d references in the container\n&amp;#34;, numItems); // load the individual fonts ATSFontRef *ioArray = malloc(numItems * sizeof(ATSFontRef)); status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, numItems, ioArray, &amp;amp;numItems); CFStringRef fontName = nil; ATSFontGetName (ioArray[fontIndex], kATSOptionFlagsDefault, &amp;amp;fontName); NSFont* myFont = [NSFont fontWithName:(NSString*)fontName size:24];  myFont now contains the NSFont reference to your font.</description>
-    </item>
-    
-    <item>
-      <title>Reading a font from file an making it available to Cocoa</title>
-      <link>https://dmitrym0.github.io/posts/reading-font-from-file-an/</link>
-      <pubDate>Tue, 07 Jan 2020 00:00:00 -0800</pubDate>
-      
-      <guid>https://dmitrym0.github.io/posts/reading-font-from-file-an/</guid>
-      <description>This is another programming related post.
-Say you have a true type font that&amp;rsquo;s not part of the OS font set in a file. You&amp;rsquo;ve read the contents of the file into memory and now want to make it available to Cocoa. How?
-Turns out that ATSUI comes to the rescue:
-ATSFontContainerRef container; OSStatus status = ATSFontActivateFromMemory((LogicalAddress)[fontData bytes], // buffer with font data  [fontData length], // size of font data  kATSFontContextLocal, // for use only in this application  kATSFontFormatUnspecified, // reserved  NULL, // reserved  kATSOptionFlagsDefault, // reserved  &amp;amp;container); // on output, will contain the activated font // find the number of font references in the container (goes to numItems) ItemCount numItems; status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, 0, NULL, &amp;amp;numItems); NSLog(@&amp;#34;There are %d references in the container\n&amp;#34;, numItems); // load the individual fonts ATSFontRef *ioArray = malloc(numItems * sizeof(ATSFontRef)); status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, numItems, ioArray, &amp;amp;numItems); CFStringRef fontName = nil; ATSFontGetName (ioArray[fontIndex], kATSOptionFlagsDefault, &amp;amp;fontName); NSFont* myFont = [NSFont fontWithName:(NSString*)fontName size:24];  myFont now contains the NSFont reference to your font.</description>
-    </item>
-    
-    <item>
-      <title>test post 99</title>
-      <link>https://dmitrym0.github.io/posts/post-title-in-slug-form-3/</link>
-      <pubDate>Fri, 12 Jul 2019 00:00:00 -0700</pubDate>
-      
-      <guid>https://dmitrym0.github.io/posts/post-title-in-slug-form-3/</guid>
-      <description>this is a post</description>
-    </item>
-    
-    <item>
-      <title>Swift optionals for Objective-C programmers</title>
-      <link>https://dmitrym0.github.io/posts/diy-lithium-battery-part-1/</link>
-      <pubDate>Tue, 12 Mar 2019 00:00:00 -0700</pubDate>
-      
-      <guid>https://dmitrym0.github.io/posts/diy-lithium-battery-part-1/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -104,36 +72,6 @@ The biggest one is performance. NGINX and Apache are significantly better and fa
       <guid>https://dmitrym0.github.io/posts/tig-cheat-sheet/</guid>
       <description>One of the recommended source control practices is to commit frequently, and often. I prefer to keep my commits terse and focused, however in practice I’m working on a couple related but independent things in parallel. At commit time, I prefer to tease loosely related things apart and commit them separately.
 One way to do that is with the interactive git-add facility that can be invoked with git add -p:</description>
-    </item>
-    
-    <item>
-      <title>ANother post</title>
-      <link>https://dmitrym0.github.io/posts/post-title-in-slug-form-2/</link>
-      <pubDate>Tue, 19 Dec 2017 00:00:00 -0800</pubDate>
-      
-      <guid>https://dmitrym0.github.io/posts/post-title-in-slug-form-2/</guid>
-      <description>test asdf</description>
-    </item>
-    
-    <item>
-      <title>Post Title</title>
-      <link>https://dmitrym0.github.io/posts/post-title-in-slug-form-1/</link>
-      <pubDate>Tue, 19 Dec 2017 00:00:00 -0800</pubDate>
-      
-      <guid>https://dmitrym0.github.io/posts/post-title-in-slug-form-1/</guid>
-      <description>Content test More content asdf Even more
-echo &amp;#39;Some source code content&amp;#39; echo &amp;#39;This line will be highlighted&amp;#39; echo &amp;#34;This one won&amp;#39;t&amp;#34; </description>
-    </item>
-    
-    <item>
-      <title>XTerra Switched Outlet Howto</title>
-      <link>https://dmitrym0.github.io/posts/xterra-switched-outlet-howto/</link>
-      <pubDate>Thu, 23 Mar 2017 00:00:00 -0700</pubDate>
-      
-      <guid>https://dmitrym0.github.io/posts/xterra-switched-outlet-howto/</guid>
-      <description>XTerra Switched outlet For some reason truck and SUV 12v outlets are always hot. This is true in my wife’s F150 and my 2010 Nissan XTerra. This is a bit of annoyance since I’d like to use a bluetooth transmitter to connect my iPhone to the radio. Thankfully, it’s fairly easy to add a second, switched outlet in the XTerra.
-The short of it is:
- acquire OEM cigarette outlet wire it via an add-a-fuse  As far as electrical mods go this one is very mild and simple.</description>
     </item>
     
     <item>

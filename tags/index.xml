@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Dmitry M - Veridis Quo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 12 Jan 2020 00:00:00 -0800</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jan 2020 00:00:00 -0800</lastBuildDate>
     
 	<atom:link href="https://dmitrym0.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,27 @@
     <item>
       <title>Development</title>
       <link>https://dmitrym0.github.io/tags/development/</link>
-      <pubDate>Sun, 12 Jan 2020 00:00:00 -0800</pubDate>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 -0800</pubDate>
       
       <guid>https://dmitrym0.github.io/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OpenSource</title>
+      <link>https://dmitrym0.github.io/tags/opensource/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 -0800</pubDate>
+      
+      <guid>https://dmitrym0.github.io/tags/opensource/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iOS</title>
+      <link>https://dmitrym0.github.io/tags/ios/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 -0800</pubDate>
+      
+      <guid>https://dmitrym0.github.io/tags/ios/</guid>
       <description></description>
     </item>
     
@@ -53,24 +71,6 @@
       <pubDate>Mon, 08 Oct 2018 00:00:00 -0700</pubDate>
       
       <guid>https://dmitrym0.github.io/tags/macos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>post</title>
-      <link>https://dmitrym0.github.io/tags/post/</link>
-      <pubDate>Tue, 19 Dec 2017 00:00:00 -0800</pubDate>
-      
-      <guid>https://dmitrym0.github.io/tags/post/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tags</title>
-      <link>https://dmitrym0.github.io/tags/tags/</link>
-      <pubDate>Tue, 19 Dec 2017 00:00:00 -0800</pubDate>
-      
-      <guid>https://dmitrym0.github.io/tags/tags/</guid>
       <description></description>
     </item>
     
