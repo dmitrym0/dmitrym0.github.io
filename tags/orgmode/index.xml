@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>orgmode on Dmitry M - Veridis Quo</title>
+    <title>Orgmode on Dmitry M - Veridis Quo</title>
     <link>https://dmitrym0.github.io/tags/orgmode/</link>
-    <description>Recent content in orgmode on Dmitry M - Veridis Quo</description>
+    <description>Recent content in Orgmode on Dmitry M - Veridis Quo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 07 Jan 2020 00:00:00 -0800</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jan 2020 00:00:00 -0800</lastBuildDate>
     
 	<atom:link href="https://dmitrym0.github.io/tags/orgmode/index.xml" rel="self" type="application/rss+xml" />
     
@@ -19,6 +19,17 @@
       <guid>https://dmitrym0.github.io/posts/omnifocus-review-with-org-mode/</guid>
       <description>I started using Emacs and org-mode in earnest in the middle of 2019. At that point in time I was using Omnifocus to track my tasks and Bearapp for notes. I was missing plaintext functionality. Since then I&amp;rsquo;ve reproduced most of the functionality that Omnifocus offerred except one particular feature: reviews.
 In GTD, reviews occupy a pretty important niche. Without regular task and project reviews task lists tend to grow out of control and become polutted.</description>
+    </item>
+    
+    <item>
+      <title>Personal agile: Iteration 1</title>
+      <link>https://dmitrym0.github.io/posts/personal-agile-iteration-1/</link>
+      <pubDate>Sat, 25 Jan 2020 00:00:00 -0800</pubDate>
+      
+      <guid>https://dmitrym0.github.io/posts/personal-agile-iteration-1/</guid>
+      <description>There&amp;rsquo;s lots to love about agile, but my personal faves are two things:
+ timeboxed iterations retrospectives  The ultimate goal of agile is to shorten feedback loops. If something is not working it&amp;rsquo;s easier to identify and correct the issue at the point of occurence rather than months down the line. This of it as a REPL loop for productivity.
+I&amp;rsquo;ve been quite successful doing this at work, so I figured why not try it for personal productivity as well?</description>
     </item>
     
   </channel>

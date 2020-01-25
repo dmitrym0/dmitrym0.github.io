@@ -10,22 +10,26 @@
     <meta name="keywords" content="blog,developer,personal">
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Swift optionals for Objective-C programmers"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Building a lithium ion battery, part 1: “Why”"/>
+<meta name="twitter:description" content="Why build a battery? Why build a battery from scratch? I’ll tell you.
+Why build a battery from scratch? Battery technology is becoming very important. Cell phones, laptops and now cars rely on batteries for power. More importantly, I needed a battery unit for reasons (more on this later).
+I could’ve purchased a battery off the shelf, but consumer units are quite expensive. For example [Goal Zero Yeti 400 Lithium is $800."/>
 
-    <meta property="og:title" content="Swift optionals for Objective-C programmers" />
-<meta property="og:description" content="" />
+    <meta property="og:title" content="Building a lithium ion battery, part 1: “Why”" />
+<meta property="og:description" content="Why build a battery? Why build a battery from scratch? I’ll tell you.
+Why build a battery from scratch? Battery technology is becoming very important. Cell phones, laptops and now cars rely on batteries for power. More importantly, I needed a battery unit for reasons (more on this later).
+I could’ve purchased a battery off the shelf, but consumer units are quite expensive. For example [Goal Zero Yeti 400 Lithium is $800." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://dmitrym0.github.io/posts/diy-lithium-battery-part-1/" />
 <meta property="article:published_time" content="2019-03-12T00:00:00-07:00"/>
-<meta property="article:modified_time" content="2020-01-12T15:22:50-05:00"/>
+<meta property="article:modified_time" content="2020-01-25T10:02:47-08:00"/>
 
 
     
       <base href="https://dmitrym0.github.io/posts/diy-lithium-battery-part-1/">
     
     <title>
-  Swift optionals for Objective-C programmers · Dmitry M - Veridis Quo
+  Building a lithium ion battery, part 1: “Why” · Dmitry M - Veridis Quo
 </title>
 
     
@@ -99,7 +103,7 @@
     <article>
       <header>
         <div class="post-title">
-          <h1 class="title">Swift optionals for Objective-C programmers</h1>
+          <h1 class="title">Building a lithium ion battery, part 1: “Why”</h1>
         </div>
         <div class="post-meta">
           <div class="date">
@@ -111,7 +115,7 @@
             </span>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              0 minutes read
+              2 minutes read
             </span>
           </div>
           
@@ -121,6 +125,46 @@
 
       <div>
         
+
+<p>Why build a battery? Why build a battery from scratch? I’ll tell you.</p>
+
+<h2 id="why-build-a-battery-from-scratch">Why build a battery from scratch?</h2>
+
+<p>Battery technology is becoming very important. Cell phones, laptops and now cars rely on batteries for power. More importantly, I needed a battery unit for reasons (more on this later).</p>
+
+<p>I could’ve purchased a battery off the shelf, but consumer units are quite expensive. For example [<a href="https://www.mec.ca/en/product/5055-474/Yeti-400-Lithium">Goal Zero Yeti 400 Lithium</a> is $800. I thought I could build one for about a <sup>1</sup>&frasl;<sub>3</sub> of the price.</p>
+
+<p>I was also curious to understand how modern lithium batteries work. So really, the combination of wanting to save money and nerd out and learn something about electronics/battery tech were the two driving reasons behind this experiment.</p>
+
+<h2 id="why-do-i-need-a-battery-at-all">Why do I need a battery at all?</h2>
+
+<p>I’d like to have a massive power bank for when we go camping. I also have a small portable projector for watching movies when we’re car camping. I know purists will disagree, but here we are. Also nerding out.</p>
+
+<h2 id="why-lithium-batteries">Why lithium batteries?</h2>
+
+<p>Briefly, there are two types of batteries:</p>
+
+<ul>
+<li>lead acid  - like the starter battery in your car</li>
+<li>lithium ion- like the one in your cell phone</li>
+</ul>
+
+<p>Lead acid tend to be easier to maintain, while lithium ion are quite finicky. However lead acid battery are typically 3-5 times heavier than an equivalent lithium ion battery. Lithium ion batteries have a better cycle life and are therefore more energy dense.</p>
+
+<p>I also thought I could go on craigslist and purchase some reclaimed lithium ion cells to  bring the overall cost down.</p>
+
+<p>Overall cost to performance ratio is in favour of lithium ion cells.</p>
+
+<p>In the next instalment I’ll describe my prototyping efforts. Here’s the teaser, a functional 4S6P 18650 battery.</p>
+
+<figure>
+    <img src="https://dmitrym0.github.io/ox-hugo/screenshot_2019-07-12_11-06-27.png"/> 
+</figure>
+
+
+<p>#blog
+#public</p>
+
       </div>
 
       <footer>
@@ -140,7 +184,7 @@
             return;
         }
         var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "yourdiscussshortname" + '.disqus.com/embed.js';
+        s.src = '//' + "dmitry-m-viridis-quo" + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();

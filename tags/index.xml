@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Dmitry M - Veridis Quo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 23 Jan 2020 00:00:00 -0800</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jan 2020 00:00:00 -0800</lastBuildDate>
     
 	<atom:link href="https://dmitrym0.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Agile</title>
+      <link>https://dmitrym0.github.io/tags/agile/</link>
+      <pubDate>Sat, 25 Jan 2020 00:00:00 -0800</pubDate>
+      
+      <guid>https://dmitrym0.github.io/tags/agile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Orgmode</title>
+      <link>https://dmitrym0.github.io/tags/orgmode/</link>
+      <pubDate>Sat, 25 Jan 2020 00:00:00 -0800</pubDate>
+      
+      <guid>https://dmitrym0.github.io/tags/orgmode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>https://dmitrym0.github.io/tags/productivity/</link>
+      <pubDate>Sat, 25 Jan 2020 00:00:00 -0800</pubDate>
+      
+      <guid>https://dmitrym0.github.io/tags/productivity/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Development</title>
@@ -57,15 +84,6 @@
     </item>
     
     <item>
-      <title>orgmode</title>
-      <link>https://dmitrym0.github.io/tags/orgmode/</link>
-      <pubDate>Tue, 07 Jan 2020 00:00:00 -0800</pubDate>
-      
-      <guid>https://dmitrym0.github.io/tags/orgmode/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>MacOS</title>
       <link>https://dmitrym0.github.io/tags/macos/</link>
       <pubDate>Mon, 08 Oct 2018 00:00:00 -0700</pubDate>
@@ -77,7 +95,7 @@
     <item>
       <title>Linux</title>
       <link>https://dmitrym0.github.io/tags/linux/</link>
-      <pubDate>Sun, 17 Mar 2013 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 07 Dec 2016 00:00:00 -0800</pubDate>
       
       <guid>https://dmitrym0.github.io/tags/linux/</guid>
       <description></description>
