@@ -6,7 +6,7 @@
     <description>Recent content on Dmitry M - Veridis Quo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 25 Jan 2020 00:00:00 -0800</lastBuildDate>
+    <lastBuildDate>Sun, 09 Feb 2020 00:00:00 -0800</lastBuildDate>
     
 	<atom:link href="https://dmitrym0.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -21,7 +21,17 @@
     </item>
     
     <item>
-      <title>Personal agile: Iteration 1</title>
+      <title>Personal Agile: Iteration 2</title>
+      <link>https://dmitrym0.github.io/posts/personal-agile-iteration-2/</link>
+      <pubDate>Sun, 09 Feb 2020 00:00:00 -0800</pubDate>
+      
+      <guid>https://dmitrym0.github.io/posts/personal-agile-iteration-2/</guid>
+      <description>The goal for this iteration was to:
+ work on my little SwiftUI app finish reading a book (&amp;ldquo;The first 90 days&amp;rdquo;) maintain my fitness habits    Conclusions Overall the iteration went well. In the screenshot above, you can tell that I wildly underestimated how much time summarizing the current book would take: I estimated an hour, but it ended up being 3 times as much (3 hours).</description>
+    </item>
+    
+    <item>
+      <title>Personal Agile: Iteration 1</title>
       <link>https://dmitrym0.github.io/posts/personal-agile-iteration-1/</link>
       <pubDate>Sat, 25 Jan 2020 00:00:00 -0800</pubDate>
       
