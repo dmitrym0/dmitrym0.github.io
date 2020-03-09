@@ -10,28 +10,30 @@
     <meta name="keywords" content="blog,developer,personal">
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Efficient commit workflow with tig"/>
-<meta name="twitter:description" content="One of the recommended source control practices is to commit frequently, and often. I prefer to keep my commits terse and focused, however in practice I’m working on a couple related but independent things in parallel. At commit time, I prefer to tease loosely related things apart and commit them separately.
-One way to do that is with the interactive git-add facility that can be invoked with git add -p:"/>
+<meta name="twitter:title" content="Personal Agile: Iteration 4"/>
+<meta name="twitter:description" content="Interesting iteration. Overall agile approach has been a net positive. I likely would&rsquo;ve have been approximately as successful, but deliberate approach to planning and reviews yields interesting artifacts (of which this blog post is one) and provides for an interesting trajectory overview.
+I made good progress on my tasks this iteration:
+ adding two additional chapters reviewed to &ldquo;First 90 days&rdquo;. It&rsquo;s becoming a bit tedious, but I feel it&rsquo;s critical to finish this book."/>
 
-    <meta property="og:title" content="Efficient commit workflow with tig" />
-<meta property="og:description" content="One of the recommended source control practices is to commit frequently, and often. I prefer to keep my commits terse and focused, however in practice I’m working on a couple related but independent things in parallel. At commit time, I prefer to tease loosely related things apart and commit them separately.
-One way to do that is with the interactive git-add facility that can be invoked with git add -p:" />
+    <meta property="og:title" content="Personal Agile: Iteration 4" />
+<meta property="og:description" content="Interesting iteration. Overall agile approach has been a net positive. I likely would&rsquo;ve have been approximately as successful, but deliberate approach to planning and reviews yields interesting artifacts (of which this blog post is one) and provides for an interesting trajectory overview.
+I made good progress on my tasks this iteration:
+ adding two additional chapters reviewed to &ldquo;First 90 days&rdquo;. It&rsquo;s becoming a bit tedious, but I feel it&rsquo;s critical to finish this book." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://dmitrym0.github.io/posts/tig-cheat-sheet/" />
-<meta property="article:published_time" content="2018-08-30T00:00:00-07:00"/>
-<meta property="article:modified_time" content="2020-03-09T11:09:45-07:00"/>
+<meta property="og:url" content="https://dmitrym0.github.io/posts/personal-agile-iteration-4/" />
+<meta property="article:published_time" content="2020-03-09T00:00:00-07:00"/>
+<meta property="article:modified_time" content="2020-03-09T11:11:25-07:00"/>
 
 
     
-      <base href="https://dmitrym0.github.io/posts/tig-cheat-sheet/">
+      <base href="https://dmitrym0.github.io/posts/personal-agile-iteration-4/">
     
     <title>
-  Efficient commit workflow with tig · Dmitry M - Veridis Quo
+  Personal Agile: Iteration 4 · Dmitry M - Veridis Quo
 </title>
 
     
-      <link rel="canonical" href="https://dmitrym0.github.io/posts/tig-cheat-sheet/">
+      <link rel="canonical" href="https://dmitrym0.github.io/posts/personal-agile-iteration-4/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
@@ -101,14 +103,14 @@ One way to do that is with the interactive git-add facility that can be invoked 
     <article>
       <header>
         <div class="post-title">
-          <h1 class="title">Efficient commit workflow with tig</h1>
+          <h1 class="title">Personal Agile: Iteration 4</h1>
         </div>
         <div class="post-meta">
           <div class="date">
             <span class="posted-on">
               <i class="fas fa-calendar"></i>
-              <time datetime='2018-08-30T00:00:00-07:00'>
-                August 30, 2018
+              <time datetime='2020-03-09T00:00:00-07:00'>
+                March 9, 2020
               </time>
             </span>
             <span class="reading-time">
@@ -119,63 +121,57 @@ One way to do that is with the interactive git-add facility that can be invoked 
           
           <div class="tags">
   <i class="fas fa-tag"></i>
-    <a href="https://dmitrym0.github.io/tags/development/">Development</a></div>
+    <a href="https://dmitrym0.github.io/tags/agile/">Agile</a>
+      <span class="separator">•</span>
+    <a href="https://dmitrym0.github.io/tags/productivity/">Productivity</a>
+      <span class="separator">•</span>
+    <a href="https://dmitrym0.github.io/tags/orgmode/">Orgmode</a></div>
 
         </div>
       </header>
 
       <div>
-        <p>One of the recommended source control practices is to <a href="http://stackoverflow.com/questions/107264/how-often-to-commit-changes-to-source-control">commit frequently, and often</a>.   I prefer to keep my commits terse and focused, however in practice I’m working on a couple related but independent things in parallel. At commit time, I prefer to tease loosely related things apart and commit them separately.</p>
+        
 
-<p>One way to do that is with the interactive git-add facility that can be invoked with <code>git add -p</code>:</p>
+<p>Interesting iteration. Overall agile approach has been a net positive. I likely would&rsquo;ve have been approximately as successful, but deliberate approach to planning and reviews yields interesting artifacts (of which this blog post is one) and provides for an interesting trajectory overview.</p>
 
-<figure>
-    <img src="https://dmitrym0.github.io/ox-hugo/screenshot_2020-01-07_16-16-56.png"/> 
-</figure>
-
-
-<p>It’s a lovely little interface:</p>
+<p>I made good progress on my tasks this iteration:</p>
 
 <ul>
-<li>file name is shown at the top of the output</li>
-<li>location of the change set is shown</li>
-<li>the prompt is asking whether I want to stage the change (<code>y</code>),  ignore the changes this file (<code>d</code>) and various other obscure options.</li>
+<li>adding two additional chapters reviewed to &ldquo;First 90 days&rdquo;. It&rsquo;s becoming a bit tedious, but I feel it&rsquo;s critical to finish this book.</li>
+<li>moving forward with my <code>org-friend</code> SwiftUI project.</li>
 </ul>
 
-<p>This process works for the majority of my commit needs. It allows me to review every change before staging it to ensure that only necessary changes get pushed to the central repo.</p>
+<p>In terms of my application, I feel like I&rsquo;ve committed two cardinal sins of software engineering</p>
 
-<p>My main issue with this process is that it’s too linear. When the number of changes exceeds a certain threshold I have trouble remembering what functionality I’m currently committing. I can’t easily inspect the existing staged hunks. The process becomes cumbersome.</p>
+<ol>
+<li>I started gold plating.</li>
+<li>I added more work to an iteration that&rsquo;s already in progress.</li>
+</ol>
 
-<p>This is where <a href="http://jonas.nitro.dk/tig/">tig</a>, a <strong>text-mode interface for Git</strong> comes in. I’m a huge fan of console tools because they are incredibly fast and <strong>tig</strong> is no exception.</p>
+<h2 id="scope-creep-and-gold-plating">Scope creep and gold plating</h2>
 
-<p>Upon launching <strong>tig</strong> you’re presented with the following view:</p>
+<p>When I initially started this project, the goal was a really simple utility application. Which means minimal UI. However as things progressed, it became apparent that there needs to be a splash screen, a settings screen and a &ldquo;log view&rdquo;. Even though the fundamentally the application has been working since the second iteration, I haven&rsquo;t been happy with the overall visual appearance. So I&rsquo;m working on that now. I reached out to some folks that I know, but they are busy. I approach some contractors on Fiverr with some success. In any case, the takeaway here is that suddenly I&rsquo;m spending more time on look and feel for an application that&rsquo;s supposed to spend most of it&rsquo;s time in the background. The justification I use is that since this is a showcase for my work, a portfolio piece, I want it to look nice. First impressions and all.</p>
+
+<p>Here&rsquo;s a UI designed by a developer. No good.</p>
 
 <figure>
-    <img src="https://dmitrym0.github.io/ox-hugo/screenshot_2020-01-07_16-21-55.png"/> 
+    <img src="https://dmitrym0.github.io/ox-hugo/screenshot_2020-03-09_11-07-09.png"/> 
 </figure>
 
 
-<p>I’m currently interested in the “unstaged changes”. Hitting <code>enter</code> shows a diff between HEAD and current working directory.</p>
+<h2 id="adding-work-to-an-iteration-in-progress">Adding work to an iteration in progress</h2>
 
-<p>But we’re interested more in the stage view that can be activated by hitting <code>S</code> (case matters!):</p>
+<p>I got mixed feelings about this one. Personally I don&rsquo;t think this is a huge problem if negotiated properly. In a team of 1 it&rsquo;s really easy. In a larger team this would have to be managed very carefully and be an exception. I&rsquo;m doing this for fun largely so I roll with it.</p>
 
-<figure>
-    <img src="https://dmitrym0.github.io/ox-hugo/screenshot_2020-01-07_16-23-51.png"/> 
-</figure>
+<h2 id="conclusion">Conclusion</h2>
 
-
-<p>This view should be familiar to anyone who has used <code>git status</code>.  This main view can be navigated with arrow keys. Hitting <code>enter</code> on a file name  will show a secondary window with a diff. This view can be navigated with the <code>j</code> and <code>k</code> keys (vi-like).</p>
+<p>Overall a healthy and productive iteration. I made progress on both of my little projects. One area where I hope to improve is time tracking. I know I&rsquo;m missing time here. This is largely the function of learning Emacs.</p>
 
 <figure>
-    <img src="https://dmitrym0.github.io/ox-hugo/screenshot_2020-01-07_16-19-48.png"/> 
+    <img src="https://dmitrym0.github.io/ox-hugo/screenshot_2020-03-09_11-09-27.png"/> 
 </figure>
 
-
-<p>At this point, we can select individuals lines to stage with the <code>1</code> key, or hit <code>u</code> to stage the whole file.  Individual lines can be staged when there’s some cruft you don’t want to commit - such as debugging statements.</p>
-
-<p>When all changes have been staged, you can hit  <code>C</code> to commit from inside <strong>tig</strong>, or exit (<code>q</code>) and commit as you normally would from command line.</p>
-
-<p>Here’s a small <a href="http://ricostacruz.com/cheatsheets/tig.html">tig cheat sheet</a> for reference.</p>
 
       </div>
 
