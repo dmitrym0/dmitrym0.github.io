@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Dmitry M - Veridis Quo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 09 Mar 2020 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 24 Mar 2020 00:00:00 -0700</lastBuildDate>
     
 	<atom:link href="https://dmitrym0.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Agile</title>
       <link>https://dmitrym0.github.io/tags/agile/</link>
-      <pubDate>Mon, 09 Mar 2020 00:00:00 -0700</pubDate>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 -0700</pubDate>
       
       <guid>https://dmitrym0.github.io/tags/agile/</guid>
       <description></description>
@@ -23,7 +23,7 @@
     <item>
       <title>Orgmode</title>
       <link>https://dmitrym0.github.io/tags/orgmode/</link>
-      <pubDate>Mon, 09 Mar 2020 00:00:00 -0700</pubDate>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 -0700</pubDate>
       
       <guid>https://dmitrym0.github.io/tags/orgmode/</guid>
       <description></description>
@@ -32,9 +32,18 @@
     <item>
       <title>Productivity</title>
       <link>https://dmitrym0.github.io/tags/productivity/</link>
-      <pubDate>Mon, 09 Mar 2020 00:00:00 -0700</pubDate>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 -0700</pubDate>
       
       <guid>https://dmitrym0.github.io/tags/productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UIUX</title>
+      <link>https://dmitrym0.github.io/tags/uiux/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 -0700</pubDate>
+      
+      <guid>https://dmitrym0.github.io/tags/uiux/</guid>
       <description></description>
     </item>
     
