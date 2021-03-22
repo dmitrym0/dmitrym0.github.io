@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Dmitry M - Veridis Quo</title>
@@ -6,11 +6,7 @@
     <description>Recent content in Tags on Dmitry M - Veridis Quo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Mar 2020 00:00:00 -0700</lastBuildDate>
-    
-	<atom:link href="https://dmitrym0.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 24 Mar 2020 00:00:00 -0700</lastBuildDate><atom:link href="https://dmitrym0.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Agile</title>
       <link>https://dmitrym0.github.io/tags/agile/</link>
@@ -21,7 +17,7 @@
     </item>
     
     <item>
-      <title>Orgmode</title>
+      <title>orgmode</title>
       <link>https://dmitrym0.github.io/tags/orgmode/</link>
       <pubDate>Tue, 24 Mar 2020 00:00:00 -0700</pubDate>
       
@@ -57,20 +53,20 @@
     </item>
     
     <item>
-      <title>OpenSource</title>
-      <link>https://dmitrym0.github.io/tags/opensource/</link>
-      <pubDate>Thu, 23 Jan 2020 00:00:00 -0800</pubDate>
-      
-      <guid>https://dmitrym0.github.io/tags/opensource/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>iOS</title>
       <link>https://dmitrym0.github.io/tags/ios/</link>
       <pubDate>Thu, 23 Jan 2020 00:00:00 -0800</pubDate>
       
       <guid>https://dmitrym0.github.io/tags/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OpenSource</title>
+      <link>https://dmitrym0.github.io/tags/opensource/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 -0800</pubDate>
+      
+      <guid>https://dmitrym0.github.io/tags/opensource/</guid>
       <description></description>
     </item>
     
@@ -98,6 +94,24 @@
       <pubDate>Mon, 08 Oct 2018 00:00:00 -0700</pubDate>
       
       <guid>https://dmitrym0.github.io/tags/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>post</title>
+      <link>https://dmitrym0.github.io/tags/post/</link>
+      <pubDate>Tue, 19 Dec 2017 00:00:00 -0800</pubDate>
+      
+      <guid>https://dmitrym0.github.io/tags/post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tags</title>
+      <link>https://dmitrym0.github.io/tags/tags/</link>
+      <pubDate>Tue, 19 Dec 2017 00:00:00 -0800</pubDate>
+      
+      <guid>https://dmitrym0.github.io/tags/tags/</guid>
       <description></description>
     </item>
     

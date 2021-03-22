@@ -1,197 +1,143 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://dmitrym0.github.io/pages/about/</loc>
-    <lastmod>2020-03-24T10:41:39-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dmitrym0.github.io/tags/agile/</loc>
-    <lastmod>2020-03-24T10:41:41-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-28T11:16:20-07:00</lastmod>
+  </url><url>
     <loc>https://dmitrym0.github.io/</loc>
-    <lastmod>2020-03-24T10:41:48-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://dmitrym0.github.io/tags/orgmode/</loc>
-    <lastmod>2020-03-24T10:41:41-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://dmitrym0.github.io/posts/personal-agile-iteration-5/</loc>
-    <lastmod>2020-03-24T10:41:41-07:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-03-22T07:05:59-07:00</lastmod>
+  </url><url>
     <loc>https://dmitrym0.github.io/posts/</loc>
-    <lastmod>2020-03-24T10:41:48-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+    <lastmod>2021-03-22T07:05:59-07:00</lastmod>
+  </url><url>
+    <loc>https://dmitrym0.github.io/posts/still-around/</loc>
+    <lastmod>2021-03-22T07:05:59-07:00</lastmod>
+  </url><url>
+    <loc>https://dmitrym0.github.io/posts/book-review-first-90-days/</loc>
+    <lastmod>2020-04-28T12:19:20-07:00</lastmod>
+  </url><url>
+    <loc>https://dmitrym0.github.io/tags/agile/</loc>
+    <lastmod>2020-04-28T11:16:22-07:00</lastmod>
+  </url><url>
+    <loc>https://dmitrym0.github.io/tags/orgmode/</loc>
+    <lastmod>2020-04-28T11:16:22-07:00</lastmod>
+  </url><url>
+    <loc>https://dmitrym0.github.io/posts/personal-agile-iteration-5/</loc>
+    <lastmod>2020-04-28T11:16:22-07:00</lastmod>
+  </url><url>
     <loc>https://dmitrym0.github.io/tags/productivity/</loc>
-    <lastmod>2020-03-24T10:41:41-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-28T11:16:22-07:00</lastmod>
+  </url><url>
     <loc>https://dmitrym0.github.io/tags/</loc>
-    <lastmod>2020-03-24T10:41:48-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-28T11:16:23-07:00</lastmod>
+  </url><url>
     <loc>https://dmitrym0.github.io/tags/uiux/</loc>
-    <lastmod>2020-03-24T10:41:41-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-28T11:16:22-07:00</lastmod>
+  </url><url>
     <loc>https://dmitrym0.github.io/posts/personal-agile-iteration-4/</loc>
-    <lastmod>2020-03-24T10:41:41-07:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-28T11:16:22-07:00</lastmod>
+  </url><url>
     <loc>https://dmitrym0.github.io/posts/personal-agile-iteration-2/</loc>
-    <lastmod>2020-03-24T10:41:41-07:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-28T11:16:21-07:00</lastmod>
+  </url><url>
     <loc>https://dmitrym0.github.io/posts/personal-agile-iteration-1/</loc>
-    <lastmod>2020-03-24T10:41:41-07:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-28T11:16:21-07:00</lastmod>
+  </url><url>
     <loc>https://dmitrym0.github.io/tags/development/</loc>
-    <lastmod>2020-03-24T10:41:48-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://dmitrym0.github.io/posts/managing-secrets-in-ios-apps/</loc>
-    <lastmod>2020-03-24T10:41:48-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dmitrym0.github.io/tags/opensource/</loc>
-    <lastmod>2020-03-24T10:41:48-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-28T11:16:23-07:00</lastmod>
+  </url><url>
     <loc>https://dmitrym0.github.io/tags/ios/</loc>
-    <lastmod>2020-03-24T10:41:48-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-28T11:16:23-07:00</lastmod>
+  </url><url>
+    <loc>https://dmitrym0.github.io/posts/managing-secrets-in-ios-apps/</loc>
+    <lastmod>2020-04-28T11:16:23-07:00</lastmod>
+  </url><url>
+    <loc>https://dmitrym0.github.io/tags/opensource/</loc>
+    <lastmod>2020-04-28T11:16:23-07:00</lastmod>
+  </url><url>
     <loc>https://dmitrym0.github.io/tags/swift/</loc>
-    <lastmod>2020-03-24T10:41:47-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-28T11:16:23-07:00</lastmod>
+  </url><url>
     <loc>https://dmitrym0.github.io/posts/swift-optionals-for-objc-programmers/</loc>
-    <lastmod>2020-03-24T10:41:47-07:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-28T11:16:23-07:00</lastmod>
+  </url><url>
     <loc>https://dmitrym0.github.io/tags/emacs/</loc>
-    <lastmod>2020-03-24T10:41:40-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-28T11:16:20-07:00</lastmod>
+  </url><url>
     <loc>https://dmitrym0.github.io/posts/omnifocus-review-with-org-mode/</loc>
-    <lastmod>2020-03-24T10:41:40-07:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-28T11:16:20-07:00</lastmod>
+  </url><url>
+    <loc>https://dmitrym0.github.io/posts/reading-font-from-/</loc>
+    <lastmod>2020-01-07T15:43:38-08:00</lastmod>
+  </url><url>
+    <loc>https://dmitrym0.github.io/posts/reading-font-from-file-an/</loc>
+    <lastmod>2020-01-07T15:43:40-08:00</lastmod>
+  </url><url>
+    <loc>https://dmitrym0.github.io/categories/</loc>
+    <lastmod>2020-01-07T13:58:33-08:00</lastmod>
+  </url><url>
+    <loc>https://dmitrym0.github.io/categories/test/</loc>
+    <lastmod>2020-01-07T13:58:33-08:00</lastmod>
+  </url><url>
+    <loc>https://dmitrym0.github.io/posts/post-title-in-slug-form-3/</loc>
+    <lastmod>2020-01-07T13:58:33-08:00</lastmod>
+  </url><url>
     <loc>https://dmitrym0.github.io/posts/diy-lithium-battery-part-1/</loc>
-    <lastmod>2020-03-24T10:41:47-07:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-28T11:16:22-07:00</lastmod>
+  </url><url>
     <loc>https://dmitrym0.github.io/tags/macos/</loc>
-    <lastmod>2020-03-24T10:41:47-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-28T11:16:22-07:00</lastmod>
+  </url><url>
     <loc>https://dmitrym0.github.io/posts/safari-app-extensions-migrating-from-safariextz/</loc>
-    <lastmod>2020-03-24T10:41:47-07:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-28T11:16:22-07:00</lastmod>
+  </url><url>
     <loc>https://dmitrym0.github.io/posts/how-to-check-for-x-sendfile/</loc>
-    <lastmod>2020-03-24T10:41:47-07:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-28T11:16:22-07:00</lastmod>
+  </url><url>
     <loc>https://dmitrym0.github.io/posts/tig-cheat-sheet/</loc>
-    <lastmod>2020-03-24T10:41:40-07:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-28T11:16:21-07:00</lastmod>
+  </url><url>
+    <loc>https://dmitrym0.github.io/posts/post-title-in-slug-form-2/</loc>
+    <lastmod>2020-01-07T13:58:33-08:00</lastmod>
+  </url><url>
+    <loc>https://dmitrym0.github.io/tags/post/</loc>
+    <lastmod>2020-01-07T13:58:32-08:00</lastmod>
+  </url><url>
+    <loc>https://dmitrym0.github.io/posts/post-title-in-slug-form-1/</loc>
+    <lastmod>2020-01-07T13:58:32-08:00</lastmod>
+  </url><url>
+    <loc>https://dmitrym0.github.io/tags/tags/</loc>
+    <lastmod>2020-01-07T13:58:32-08:00</lastmod>
+  </url><url>
+    <loc>https://dmitrym0.github.io/posts/xterra-switched-outlet-howto/</loc>
+    <lastmod>2019-07-12T11:16:44-04:00</lastmod>
+  </url><url>
     <loc>https://dmitrym0.github.io/tags/linux/</loc>
-    <lastmod>2020-03-24T10:41:40-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-28T11:16:21-07:00</lastmod>
+  </url><url>
     <loc>https://dmitrym0.github.io/posts/ncdu-ncurses-disk-usage/</loc>
     <lastmod>2020-01-25T10:37:58-08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dmitrym0.github.io/posts/raid5-multiple-disk-recovery/</loc>
-    <lastmod>2020-03-24T10:41:40-07:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-28T11:16:21-07:00</lastmod>
+  </url><url>
     <loc>https://dmitrym0.github.io/posts/tircd-twitter-gateway/</loc>
-    <lastmod>2020-03-24T10:41:40-07:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-28T11:16:20-07:00</lastmod>
+  </url><url>
     <loc>https://dmitrym0.github.io/posts/shared-memory-on-os-x/</loc>
-    <lastmod>2020-03-24T10:41:47-07:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-28T11:16:23-07:00</lastmod>
+  </url><url>
     <loc>https://dmitrym0.github.io/tags/cocoa/</loc>
-    <lastmod>2020-03-24T10:41:40-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-28T11:16:21-07:00</lastmod>
+  </url><url>
     <loc>https://dmitrym0.github.io/posts/reading-font-from-file-and-making-it-available-to-cocoa/</loc>
-    <lastmod>2020-03-24T10:41:40-07:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-28T11:16:21-07:00</lastmod>
+  </url><url>
     <loc>https://dmitrym0.github.io/tags/general/</loc>
-    <lastmod>2020-03-24T10:41:39-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-28T11:16:20-07:00</lastmod>
+  </url><url>
     <loc>https://dmitrym0.github.io/pages/</loc>
-    <lastmod>2020-03-24T10:41:39-07:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2020-04-28T11:16:20-07:00</lastmod>
   </url>
-  
-  <url>
-    <loc>https://dmitrym0.github.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
 </urlset>

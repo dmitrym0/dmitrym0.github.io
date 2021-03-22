@@ -18,9 +18,10 @@ In GTD, reviews occupy a pretty important niche. Without regular task and projec
 <meta property="og:description" content="I started using Emacs and org-mode in earnest in the middle of 2019. At that point in time I was using Omnifocus to track my tasks and Bearapp for notes. I was missing plaintext functionality. Since then I&rsquo;ve reproduced most of the functionality that Omnifocus offerred except one particular feature: reviews.
 In GTD, reviews occupy a pretty important niche. Without regular task and project reviews task lists tend to grow out of control and become polutted." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://dmitrym0.github.io/posts/omnifocus-review-with-org-mode/" />
-<meta property="article:published_time" content="2020-01-07T00:00:00-08:00"/>
-<meta property="article:modified_time" content="2020-03-24T10:41:40-07:00"/>
+<meta property="og:url" content="https://dmitrym0.github.io/posts/omnifocus-review-with-org-mode/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-01-07T00:00:00-08:00" />
+<meta property="article:modified_time" content="2020-04-28T11:16:20-07:00" />
+
 
 
     
@@ -59,7 +60,7 @@ In GTD, reviews occupy a pretty important niche. Without regular task and projec
     <link rel="icon" type="image/png" href="https://dmitrym0.github.io/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://dmitrym0.github.io/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.82.0" />
   </head>
 
   
@@ -129,17 +130,12 @@ In GTD, reviews occupy a pretty important niche. Without regular task and projec
       <div>
         <p>I started using Emacs and org-mode in earnest in the middle of 2019. At that point in time I was using Omnifocus to track my tasks and Bearapp for notes. I was missing
 plaintext functionality. Since then I&rsquo;ve reproduced most of the functionality that Omnifocus offerred except one particular feature: reviews.</p>
-
 <p>In GTD, reviews occupy a pretty important niche. Without regular task and project reviews task lists tend to grow out of control and become polutted. One important consideration for a
 task list is for it to closely resemble the actual state of what you have to do.</p>
-
 <p>I went looking for a way to do automated reviews in org, and found <a href="https://github.com/brabalan/org-review">org-review</a>.</p>
-
 <p>org-review relies on the <code>LAST_REVIEW</code> property to determine when the next review (<code>NEXT_REVIEW</code>) should happen and out of the box this property is not generated.</p>
-
 <p>I wrote a bit of elisp to auto generate these properties for all <code>TODO</code> entries when a file is saved. This guarantees that the entry will bubble up for review a month after creation. Month is a default review duration
 that can be configured via <code>REVIEW_DELAY</code> property.</p>
-
 <p>Add this somewhere in <code>~/.emacs</code> or similar.</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(defun my/org-add-next-review-property ()
   <span style="font-style:italic">&#34;Add NEXT_REVIEW property to headlines that don&#39;t have one&#34;</span>
@@ -150,9 +146,8 @@ that can be configured via <code>REVIEW_DELAY</code> property.</p>
 
 (add-hook <span style="font-style:italic">&#39;org-mode-hook</span>
   (lambda ()
-  (add-hook <span style="font-style:italic">&#39;before-save-hook</span> <span style="font-style:italic">&#39;my/org-add-next-review-property</span> <span style="font-style:italic">&#39;local</span>)))</code></pre></div>
-<p>The process will look something like this:</p>
-
+  (add-hook <span style="font-style:italic">&#39;before-save-hook</span> <span style="font-style:italic">&#39;my/org-add-next-review-property</span> <span style="font-style:italic">&#39;local</span>)))
+</code></pre></div><p>The process will look something like this:</p>
 <ol>
 <li>Add a <code>TODO</code> task to inbox</li>
 <li>Once a file is saved the <code>*_REVIEW</code> properties are generated.</li>
@@ -220,7 +215,7 @@ that can be configured via <code>REVIEW_DELAY</code> property.</p>
     
     
       
-        © 2020
+        © 2021
       
        Dmitry M 
     

@@ -18,9 +18,10 @@ One way to do that is with the interactive git-add facility that can be invoked 
 <meta property="og:description" content="One of the recommended source control practices is to commit frequently, and often. I prefer to keep my commits terse and focused, however in practice I’m working on a couple related but independent things in parallel. At commit time, I prefer to tease loosely related things apart and commit them separately.
 One way to do that is with the interactive git-add facility that can be invoked with git add -p:" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://dmitrym0.github.io/posts/tig-cheat-sheet/" />
-<meta property="article:published_time" content="2018-08-30T00:00:00-07:00"/>
-<meta property="article:modified_time" content="2020-03-24T10:41:40-07:00"/>
+<meta property="og:url" content="https://dmitrym0.github.io/posts/tig-cheat-sheet/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2018-08-30T00:00:00-07:00" />
+<meta property="article:modified_time" content="2020-04-28T11:16:21-07:00" />
+
 
 
     
@@ -59,7 +60,7 @@ One way to do that is with the interactive git-add facility that can be invoked 
     <link rel="icon" type="image/png" href="https://dmitrym0.github.io/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://dmitrym0.github.io/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.82.0" />
   </head>
 
   
@@ -126,56 +127,40 @@ One way to do that is with the interactive git-add facility that can be invoked 
 
       <div>
         <p>One of the recommended source control practices is to <a href="http://stackoverflow.com/questions/107264/how-often-to-commit-changes-to-source-control">commit frequently, and often</a>.   I prefer to keep my commits terse and focused, however in practice I’m working on a couple related but independent things in parallel. At commit time, I prefer to tease loosely related things apart and commit them separately.</p>
-
 <p>One way to do that is with the interactive git-add facility that can be invoked with <code>git add -p</code>:</p>
-
 <figure>
     <img src="https://dmitrym0.github.io/ox-hugo/screenshot_2020-01-07_16-16-56.png"/> 
 </figure>
 
-
 <p>It’s a lovely little interface:</p>
-
 <ul>
 <li>file name is shown at the top of the output</li>
 <li>location of the change set is shown</li>
 <li>the prompt is asking whether I want to stage the change (<code>y</code>),  ignore the changes this file (<code>d</code>) and various other obscure options.</li>
 </ul>
-
 <p>This process works for the majority of my commit needs. It allows me to review every change before staging it to ensure that only necessary changes get pushed to the central repo.</p>
-
 <p>My main issue with this process is that it’s too linear. When the number of changes exceeds a certain threshold I have trouble remembering what functionality I’m currently committing. I can’t easily inspect the existing staged hunks. The process becomes cumbersome.</p>
-
 <p>This is where <a href="http://jonas.nitro.dk/tig/">tig</a>, a <strong>text-mode interface for Git</strong> comes in. I’m a huge fan of console tools because they are incredibly fast and <strong>tig</strong> is no exception.</p>
-
 <p>Upon launching <strong>tig</strong> you’re presented with the following view:</p>
-
 <figure>
     <img src="https://dmitrym0.github.io/ox-hugo/screenshot_2020-01-07_16-21-55.png"/> 
 </figure>
 
-
 <p>I’m currently interested in the “unstaged changes”. Hitting <code>enter</code> shows a diff between HEAD and current working directory.</p>
-
 <p>But we’re interested more in the stage view that can be activated by hitting <code>S</code> (case matters!):</p>
-
 <figure>
     <img src="https://dmitrym0.github.io/ox-hugo/screenshot_2020-01-07_16-23-51.png"/> 
 </figure>
 
-
 <p>This view should be familiar to anyone who has used <code>git status</code>.  This main view can be navigated with arrow keys. Hitting <code>enter</code> on a file name  will show a secondary window with a diff. This view can be navigated with the <code>j</code> and <code>k</code> keys (vi-like).</p>
-
 <figure>
     <img src="https://dmitrym0.github.io/ox-hugo/screenshot_2020-01-07_16-19-48.png"/> 
 </figure>
 
-
 <p>At this point, we can select individuals lines to stage with the <code>1</code> key, or hit <code>u</code> to stage the whole file.  Individual lines can be staged when there’s some cruft you don’t want to commit - such as debugging statements.</p>
-
 <p>When all changes have been staged, you can hit  <code>C</code> to commit from inside <strong>tig</strong>, or exit (<code>q</code>) and commit as you normally would from command line.</p>
-
 <p>Here’s a small <a href="http://ricostacruz.com/cheatsheets/tig.html">tig cheat sheet</a> for reference.</p>
+<h2 id=""></h2>
 
       </div>
 
@@ -236,7 +221,7 @@ One way to do that is with the interactive git-add facility that can be invoked 
     
     
       
-        © 2020
+        © 2021
       
        Dmitry M 
     

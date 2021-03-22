@@ -22,9 +22,10 @@ Why?
 There are a couple of reasons.
 The biggest one is performance. NGINX and Apache are significantly better and faster at serving files than a Ruby process." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://dmitrym0.github.io/posts/how-to-check-for-x-sendfile/" />
-<meta property="article:published_time" content="2018-09-11T00:00:00-07:00"/>
-<meta property="article:modified_time" content="2020-03-24T10:41:47-07:00"/>
+<meta property="og:url" content="https://dmitrym0.github.io/posts/how-to-check-for-x-sendfile/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2018-09-11T00:00:00-07:00" />
+<meta property="article:modified_time" content="2020-04-28T11:16:22-07:00" />
+
 
 
     
@@ -63,7 +64,7 @@ The biggest one is performance. NGINX and Apache are significantly better and fa
     <link rel="icon" type="image/png" href="https://dmitrym0.github.io/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://dmitrym0.github.io/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.82.0" />
   </head>
 
   
@@ -130,30 +131,18 @@ The biggest one is performance. NGINX and Apache are significantly better and fa
 
       <div>
         <p>Some web requests should not be handled by the application framework. Requests hitting a dynamic API endpoint should be processed by application (in my case typically Ruby on Rails). Static assets (such as files) should be served by the webserver, bypassing Ruby on Rails completely.</p>
-
 <p>Why?</p>
-
 <p>There are a couple of reasons.</p>
-
 <p>The biggest one is performance. NGINX and Apache are significantly better and faster at serving files than a Ruby process. It’s the whole reason for their existence.</p>
-
 <p>Secondly, leaving Ruby processes out of serving static files frees that process up to serve dynamic requests.</p>
-
 <p>For example, here Ruby is serving a font file. It ties the ruby process up for over half a second for no reason.</p>
-
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-7ang" data-lang="7ang">I, [2018-09-02T22:50:21.284547 #33169]  INFO — : Sent file ff133.ttf (0.3ms)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">I, [2018-09-02T22:50:21.284547 #33169]  INFO — : Sent file ff133.ttf (0.3ms)
 I, [2018-09-02T22:50:21.284839 #33169]  INFO — : Completed 200 OK in 633ms (ActiveRecord: 61.4ms)</code></pre></div>
-
 <p>It should be noted, that webservers typically have hundreds of threads serving requests, whereas the application (Ruby on Rails) has on the order of tens of processes. So tying a ruby process up to serve files is wasteful.</p>
-
 <p>The alternative is <a href="https://www.nginx.com/resources/wiki/start/topics/examples/xsendfile/">XSendfile</a>. Once the application determines that it does not need to serve the file it can signal the webserver to take over.</p>
-
 <p>I always struggle to remember how  to identify requests served by Rails vs requests served by the web server.</p>
-
 <p>Turns out it’s pretty simple.</p>
-
 <p>If the response contains `X-Request-ID` header, then it was served by Rails. Otherwise it was served by the webserver.</p>
-
 <p><a href="https://mattbrictson.com/accelerated-rails-downloads">Matt Bricston</a> has more info.</p>
 
       </div>
@@ -215,7 +204,7 @@ I, [2018-09-02T22:50:21.284839 #33169]  INFO — : Completed 200 OK in 633ms (Ac
     
     
       
-        © 2020
+        © 2021
       
        Dmitry M 
     

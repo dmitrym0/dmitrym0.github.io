@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dmitry M - Veridis Quo</title>
@@ -6,11 +6,7 @@
     <description>Recent content on Dmitry M - Veridis Quo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Mar 2020 00:00:00 -0700</lastBuildDate>
-    
-	<atom:link href="https://dmitrym0.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 22 Mar 2021 00:00:00 -0700</lastBuildDate><atom:link href="https://dmitrym0.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://dmitrym0.github.io/pages/about/</link>
@@ -18,6 +14,26 @@
       
       <guid>https://dmitrym0.github.io/pages/about/</guid>
       <description>I like building stuff.</description>
+    </item>
+    
+    <item>
+      <title>Still Around</title>
+      <link>https://dmitrym0.github.io/posts/still-around/</link>
+      <pubDate>Mon, 22 Mar 2021 00:00:00 -0700</pubDate>
+      
+      <guid>https://dmitrym0.github.io/posts/still-around/</guid>
+      <description>Nearly a year after my previous entry, I&amp;rsquo;m trying to get into blogging yet again. I&amp;rsquo;ve got a huge backlog of posts I&amp;rsquo;m interested in sharing but it&amp;rsquo;s been a challenge to get through it for various reasons. It&amp;rsquo;s not New Year&amp;rsquo;s, but here&amp;rsquo;s a commitment, write one post every two weeks. Should be doable?</description>
+    </item>
+    
+    <item>
+      <title>Book review: &#34;First 90 days&#34;</title>
+      <link>https://dmitrym0.github.io/posts/book-review-first-90-days/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 -0700</pubDate>
+      
+      <guid>https://dmitrym0.github.io/posts/book-review-first-90-days/</guid>
+      <description>The &amp;ldquo;First 90 days&amp;rdquo; lays out a comprehensive plan on how to become productive in a new role, whether it&amp;rsquo;s a promotion or a position in a new company.
+ It’s a mistake to believe that you will be successful in your new job by continuing to do what you did in your previous job, only more so
+ The advice is wide ranging. What&amp;rsquo;s useful about this book is that there&amp;rsquo;s nearly a step by step process for every category of advice.</description>
     </item>
     
     <item>
@@ -95,6 +111,39 @@ In GTD, reviews occupy a pretty important niche. Without regular task and projec
     </item>
     
     <item>
+      <title>Reading a font from file an making it available to Cocoa</title>
+      <link>https://dmitrym0.github.io/posts/reading-font-from-/</link>
+      <pubDate>Tue, 07 Jan 2020 00:00:00 -0800</pubDate>
+      
+      <guid>https://dmitrym0.github.io/posts/reading-font-from-/</guid>
+      <description>This is another programming related post.
+Say you have a true type font that&amp;rsquo;s not part of the OS font set in a file. You&amp;rsquo;ve read the contents of the file into memory and now want to make it available to Cocoa. How?
+Turns out that ATSUI comes to the rescue:
+ATSFontContainerRef container; OSStatus status = ATSFontActivateFromMemory((LogicalAddress)[fontData bytes], // buffer with font data  [fontData length], // size of font data  kATSFontContextLocal, // for use only in this application  kATSFontFormatUnspecified, // reserved  NULL, // reserved  kATSOptionFlagsDefault, // reserved  &amp;amp;container); // on output, will contain the activated font // find the number of font references in the container (goes to numItems) ItemCount numItems; status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, 0, NULL, &amp;amp;numItems); NSLog(@&amp;#34;There are %d references in the container\n&amp;#34;, numItems); // load the individual fonts ATSFontRef *ioArray = malloc(numItems * sizeof(ATSFontRef)); status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, numItems, ioArray, &amp;amp;numItems); CFStringRef fontName = nil; ATSFontGetName (ioArray[fontIndex], kATSOptionFlagsDefault, &amp;amp;fontName); NSFont* myFont = [NSFont fontWithName:(NSString*)fontName size:24]; myFont now contains the NSFont reference to your font.</description>
+    </item>
+    
+    <item>
+      <title>Reading a font from file an making it available to Cocoa</title>
+      <link>https://dmitrym0.github.io/posts/reading-font-from-file-an/</link>
+      <pubDate>Tue, 07 Jan 2020 00:00:00 -0800</pubDate>
+      
+      <guid>https://dmitrym0.github.io/posts/reading-font-from-file-an/</guid>
+      <description>This is another programming related post.
+Say you have a true type font that&amp;rsquo;s not part of the OS font set in a file. You&amp;rsquo;ve read the contents of the file into memory and now want to make it available to Cocoa. How?
+Turns out that ATSUI comes to the rescue:
+ATSFontContainerRef container; OSStatus status = ATSFontActivateFromMemory((LogicalAddress)[fontData bytes], // buffer with font data  [fontData length], // size of font data  kATSFontContextLocal, // for use only in this application  kATSFontFormatUnspecified, // reserved  NULL, // reserved  kATSOptionFlagsDefault, // reserved  &amp;amp;container); // on output, will contain the activated font // find the number of font references in the container (goes to numItems) ItemCount numItems; status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, 0, NULL, &amp;amp;numItems); NSLog(@&amp;#34;There are %d references in the container\n&amp;#34;, numItems); // load the individual fonts ATSFontRef *ioArray = malloc(numItems * sizeof(ATSFontRef)); status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, numItems, ioArray, &amp;amp;numItems); CFStringRef fontName = nil; ATSFontGetName (ioArray[fontIndex], kATSOptionFlagsDefault, &amp;amp;fontName); NSFont* myFont = [NSFont fontWithName:(NSString*)fontName size:24]; myFont now contains the NSFont reference to your font.</description>
+    </item>
+    
+    <item>
+      <title>test post 99</title>
+      <link>https://dmitrym0.github.io/posts/post-title-in-slug-form-3/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 -0700</pubDate>
+      
+      <guid>https://dmitrym0.github.io/posts/post-title-in-slug-form-3/</guid>
+      <description>this is a post</description>
+    </item>
+    
+    <item>
       <title>Building a lithium ion battery, part 1: “Why”</title>
       <link>https://dmitrym0.github.io/posts/diy-lithium-battery-part-1/</link>
       <pubDate>Tue, 12 Mar 2019 00:00:00 -0700</pubDate>
@@ -138,6 +187,36 @@ One way to do that is with the interactive git-add facility that can be invoked 
     </item>
     
     <item>
+      <title>ANother post</title>
+      <link>https://dmitrym0.github.io/posts/post-title-in-slug-form-2/</link>
+      <pubDate>Tue, 19 Dec 2017 00:00:00 -0800</pubDate>
+      
+      <guid>https://dmitrym0.github.io/posts/post-title-in-slug-form-2/</guid>
+      <description>test asdf</description>
+    </item>
+    
+    <item>
+      <title>Post Title</title>
+      <link>https://dmitrym0.github.io/posts/post-title-in-slug-form-1/</link>
+      <pubDate>Tue, 19 Dec 2017 00:00:00 -0800</pubDate>
+      
+      <guid>https://dmitrym0.github.io/posts/post-title-in-slug-form-1/</guid>
+      <description>Content test More content asdf Even more
+echo &amp;#39;Some source code content&amp;#39; echo &amp;#39;This line will be highlighted&amp;#39; echo &amp;#34;This one won&amp;#39;t&amp;#34; </description>
+    </item>
+    
+    <item>
+      <title>XTerra Switched Outlet Howto</title>
+      <link>https://dmitrym0.github.io/posts/xterra-switched-outlet-howto/</link>
+      <pubDate>Thu, 23 Mar 2017 00:00:00 -0700</pubDate>
+      
+      <guid>https://dmitrym0.github.io/posts/xterra-switched-outlet-howto/</guid>
+      <description>XTerra Switched outlet For some reason truck and SUV 12v outlets are always hot. This is true in my wife’s F150 and my 2010 Nissan XTerra. This is a bit of annoyance since I’d like to use a bluetooth transmitter to connect my iPhone to the radio. Thankfully, it’s fairly easy to add a second, switched outlet in the XTerra.
+The short of it is:
+ acquire OEM cigarette outlet wire it via an add-a-fuse  As far as electrical mods go this one is very mild and simple.</description>
+    </item>
+    
+    <item>
       <title>ncdu - ncurses disk usage</title>
       <link>https://dmitrym0.github.io/posts/ncdu-ncurses-disk-usage/</link>
       <pubDate>Wed, 07 Dec 2016 00:00:00 -0800</pubDate>
@@ -153,7 +232,7 @@ So useful key bindings:</description>
       <pubDate>Mon, 13 Jul 2015 00:00:00 -0700</pubDate>
       
       <guid>https://dmitrym0.github.io/posts/raid5-multiple-disk-recovery/</guid>
-      <description>RAID is amazing technology. It lets us take a bunch of cheap disks an arrange them in various configurations that present these disks as one large disk. A particularly popular type of RAID for home users is RAID5. A RAID5 array is typically comprised of 3 disks, however only 2&amp;frasl;3 of the disk space is available since 1&amp;frasl;3 of the space is used for recovery purposes if one of the disks fail.</description>
+      <description>RAID is amazing technology. It lets us take a bunch of cheap disks an arrange them in various configurations that present these disks as one large disk. A particularly popular type of RAID for home users is RAID5. A RAID5 array is typically comprised of 3 disks, however only 2/3 of the disk space is available since 1/3 of the space is used for recovery purposes if one of the disks fail.</description>
     </item>
     
     <item>
@@ -186,7 +265,7 @@ sysctl -A|grep shm If you&amp;rsquo;d like these settings to remain after you re
       <description>This is another programming related post.
 Say you have a true type font that&amp;rsquo;s not part of the OS font set in a file. You&amp;rsquo;ve read the contents of the file into memory and now want to make it available to Cocoa. How?
 Turns out that ATSUI comes to the rescue:
-ATSFontContainerRef container; OSStatus status = ATSFontActivateFromMemory((LogicalAddress)[fontData bytes], // buffer with font data  [fontData length], // size of font data  kATSFontContextLocal, // for use only in this application  kATSFontFormatUnspecified, // reserved  NULL, // reserved  kATSOptionFlagsDefault, // reserved  &amp;amp;container); // on output, will contain the activated font // find the number of font references in the container (goes to numItems) ItemCount numItems; status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, 0, NULL, &amp;amp;numItems); NSLog(@&amp;#34;There are %d references in the container\n&amp;#34;, numItems); // load the individual fonts ATSFontRef *ioArray = malloc(numItems * sizeof(ATSFontRef)); status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, numItems, ioArray, &amp;amp;numItems); CFStringRef fontName = nil; ATSFontGetName (ioArray[fontIndex], kATSOptionFlagsDefault, &amp;amp;fontName); NSFont* myFont = [NSFont fontWithName:(NSString*)fontName size:24];  myFont now contains the NSFont reference to your font.</description>
+ATSFontContainerRef container; OSStatus status = ATSFontActivateFromMemory((LogicalAddress)[fontData bytes], // buffer with font data  [fontData length], // size of font data  kATSFontContextLocal, // for use only in this application  kATSFontFormatUnspecified, // reserved  NULL, // reserved  kATSOptionFlagsDefault, // reserved  &amp;amp;container); // on output, will contain the activated font // find the number of font references in the container (goes to numItems) ItemCount numItems; status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, 0, NULL, &amp;amp;numItems); NSLog(@&amp;#34;There are %d references in the container\n&amp;#34;, numItems); // load the individual fonts ATSFontRef *ioArray = malloc(numItems * sizeof(ATSFontRef)); status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, numItems, ioArray, &amp;amp;numItems); CFStringRef fontName = nil; ATSFontGetName (ioArray[fontIndex], kATSOptionFlagsDefault, &amp;amp;fontName); NSFont* myFont = [NSFont fontWithName:(NSString*)fontName size:24]; myFont now contains the NSFont reference to your font.</description>
     </item>
     
   </channel>

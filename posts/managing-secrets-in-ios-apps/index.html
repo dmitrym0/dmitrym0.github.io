@@ -18,9 +18,10 @@ This is a long winded way of saying that API keys must be kept out of public rep
 <meta property="og:description" content="One of the issues that open source authors have to deal with is secrets management. The small utility app I&rsquo;m working on relies on Dropbox API. Before you can work with Dropbox API though, you have to generate an API key. The API key identifies the application to Dropbox and needs to remain mostly secret. A bad actor could impersonate the application author by stealing the API key.
 This is a long winded way of saying that API keys must be kept out of public repositories." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://dmitrym0.github.io/posts/managing-secrets-in-ios-apps/" />
-<meta property="article:published_time" content="2020-01-23T00:00:00-08:00"/>
-<meta property="article:modified_time" content="2020-03-24T10:41:48-07:00"/>
+<meta property="og:url" content="https://dmitrym0.github.io/posts/managing-secrets-in-ios-apps/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-01-23T00:00:00-08:00" />
+<meta property="article:modified_time" content="2020-04-28T11:16:23-07:00" />
+
 
 
     
@@ -59,7 +60,7 @@ This is a long winded way of saying that API keys must be kept out of public rep
     <link rel="icon" type="image/png" href="https://dmitrym0.github.io/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://dmitrym0.github.io/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.82.0" />
   </head>
 
   
@@ -129,17 +130,11 @@ This is a long winded way of saying that API keys must be kept out of public rep
       </header>
 
       <div>
-        
-
-<p>One of the issues that open source authors have to deal with is secrets management. The small utility app I&rsquo;m working on relies on Dropbox API. Before you can work with Dropbox API though, you have to generate an API key.
+        <p>One of the issues that open source authors have to deal with is secrets management. The small utility app I&rsquo;m working on relies on Dropbox API. Before you can work with Dropbox API though, you have to generate an API key.
 The API key identifies the application to Dropbox and needs to remain mostly secret. A bad actor could impersonate the application author by stealing the API key.</p>
-
 <p>This is a long winded way of saying that API keys must be kept out of public repositories. How can this be achieved?</p>
-
 <p>Turns out it&rsquo;s fairly straightforward. Xcode supports configuration schemes, via <code>xcconfig</code> files.</p>
-
 <p>The process is straightforward.</p>
-
 <ol>
 <li>Create a new configuration settings file (via File &gt; New File, use the filter box)</li>
 <li>Add the settings to file the (the format is <code>key = value</code>)</li>
@@ -147,50 +142,33 @@ The API key identifies the application to Dropbox and needs to remain mostly sec
 <li>Configure the <code>Info.plist</code> file (see below)</li>
 <li>Use in code.</li>
 </ol>
-
 <h2 id="config-file-and-settings">Config file and settings</h2>
-
 <figure>
     <img src="https://dmitrym0.github.io/ox-hugo/screenshot_2020-01-24_11-48-51.png"/> 
 </figure>
 
-
 <h2 id="contents-of-the-config-file">Contents of the config file</h2>
-
 <figure>
     <img src="https://dmitrym0.github.io/ox-hugo/screenshot_2020-01-24_11-54-09.png"/> 
 </figure>
 
-
 <h2 id="info-dot-plist">Info.plist</h2>
-
 <figure>
     <img src="https://dmitrym0.github.io/ox-hugo/screenshot_2020-01-24_11-55-34.png"/> 
 </figure>
 
-
-<dl>
-<dt>qq**** Using the variables in code</dt>
-</dl>
-
+<p>qq**** Using the variables in code</p>
 <p>:ID:       3A431845-B7FA-4C89-A1D7-AF6DC78E2319</p>
-
 <p><code>Info.plist</code> values are going to be set at compile time.  To retrieve them something like this can be used:</p>
-
 <p><code>let dropBoxApiKey = Bundle.main.object(forInfoDictionaryKey:&quot;DROPBOX_API_KEY&quot;)</code></p>
-
 <h2 id="references">References</h2>
-
 <p>There&rsquo;s some additional info in the following posts:</p>
-
 <ul>
 <li><a href="https://www.lordcodes.com/posts/managing-secrets-within-an-ios-app?utm%5Fsource=medium&amp;utm%5Fmedium=article&amp;utm%5Fcampaign=ios%5Fapp%5Fdevelopment">Managing secrets within an iOS app | Lord Codes</a></li>
 <li><a href="https://medium.com/ios-os-x-development/keeping-secrets-out-of-git-in-your-ios-app-c01a357e824b">Keeping secrets out of Git in iOS</a></li>
 <li><a href="https://www.appcoda.com/xcconfig-guide/">Using Xcode Configuration (.xcconfig) to Manage Different Build Settings</a></li>
 </ul>
-
 <h2 id="ps-removing-sensitive-data-from-git-history">PS: Removing sensitive data from git history</h2>
-
 <p>I would be remiss if I didn&rsquo;t include instructions <a href="https://medium.com/bam-tech/remove-sensitive-information-from-your-git-repository-10cb421f1b84">on how to remove sensitive data from you repository&rsquo;s history</a>.</p>
 
       </div>
@@ -252,7 +230,7 @@ The API key identifies the application to Dropbox and needs to remain mostly sec
     
     
       
-        © 2020
+        © 2021
       
        Dmitry M 
     

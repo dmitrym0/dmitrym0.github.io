@@ -20,9 +20,10 @@ Due to Objective-C&rsquo;s, C lineage you could do things like this:"/>
 Overall, Swift is very readable and I&rsquo;m fairly productive right out of the gate. One of the new language features that not familiar though, is Optionals.
 Due to Objective-C&rsquo;s, C lineage you could do things like this:" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://dmitrym0.github.io/posts/swift-optionals-for-objc-programmers/" />
-<meta property="article:published_time" content="2020-01-12T00:00:00-08:00"/>
-<meta property="article:modified_time" content="2020-03-24T10:41:47-07:00"/>
+<meta property="og:url" content="https://dmitrym0.github.io/posts/swift-optionals-for-objc-programmers/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-01-12T00:00:00-08:00" />
+<meta property="article:modified_time" content="2020-04-28T11:16:23-07:00" />
+
 
 
     
@@ -61,7 +62,7 @@ Due to Objective-C&rsquo;s, C lineage you could do things like this:" />
     <link rel="icon" type="image/png" href="https://dmitrym0.github.io/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://dmitrym0.github.io/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.82.0" />
   </head>
 
   
@@ -130,9 +131,7 @@ Due to Objective-C&rsquo;s, C lineage you could do things like this:" />
 
       <div>
         <p>I&rsquo;m trying my hand at some iOS programming after being away for a while. At this point it does not make sense to start a new project in Objective-C so I started in Swift.</p>
-
 <p>Overall, Swift is very readable and I&rsquo;m fairly productive right out of the gate. One of the new language features that not familiar though, is Optionals.</p>
-
 <p>Due to Objective-C&rsquo;s, C lineage you could do things like this:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C">NSString* aString = [someObject thatReturnsAString];
 
@@ -140,16 +139,16 @@ Due to Objective-C&rsquo;s, C lineage you could do things like this:" />
   <span style="font-style:italic">// not nil
 </span><span style="font-style:italic"></span>} <span style="font-weight:bold">else</span> {
   <span style="font-style:italic">// nil
-</span><span style="font-style:italic"></span>}</code></pre></div>
-<p>or like this, where <code>aString</code> might be <code>nil</code>, but perfectly legal in Objective-C:</p>
+</span><span style="font-style:italic"></span>}
+</code></pre></div><p>or like this, where <code>aString</code> might be <code>nil</code>, but perfectly legal in Objective-C:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C">NSString* aString = [someObject thatReturnsAString];
 
-NSLog(<span style="">@</span><span style="font-style:italic">&#34;Lenght of string: %@&#34;</span>, [aString length]); // migght be nil, who knows?</code></pre></div>
-<p>Swift introduces a new type, called <code>Optional</code>. An Optional is either defined or is <code>nil</code>. In that, an optional string (<code>String?</code>) is very similar to it&rsquo;s Objective-C counterpart.
+NSLog(<span style="">@</span><span style="font-style:italic">&#34;Lenght of string: %@&#34;</span>, [aString length]); <span style="font-style:italic">// migght be nil, who knows?
+</span></code></pre></div><p>Swift introduces a new type, called <code>Optional</code>. An Optional is either defined or is <code>nil</code>. In that, an optional string (<code>String?</code>) is very similar to it&rsquo;s Objective-C counterpart.
 Where things do get interesting is we use a non-optional, <code>String</code>:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C">var anOptionalString: String? = maybeReturnsAString(); <span style="font-style:italic">// maybe returns a string who knows
-</span><span style="font-style:italic"></span>var aString: String = hasToReturnAstring(); // gotta be a string, <span style="font-weight:bold">else</span> a compiler error</code></pre></div>
-<p>to get the value out of an optional you gotta &ldquo;unwrap it&rdquo;:</p>
+</span><span style="font-style:italic"></span>var aString: String = hasToReturnAstring(); <span style="font-style:italic">// gotta be a string, else a compiler error
+</span></code></pre></div><p>to get the value out of an optional you gotta &ldquo;unwrap it&rdquo;:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C">var anOptionalString: String? = maybeReturnsAString();
 
 <span style="font-weight:bold">if</span> let actualString = anOptionalString? {
@@ -157,9 +156,8 @@ Where things do get interesting is we use a non-optional, <code>String</code>:</
 </span><span style="font-style:italic"></span>  print(<span style="font-style:italic">&#34;String is \(actualString)&#34;</span>)
 } <span style="font-weight:bold">else</span> {
   <span style="font-style:italic">// nil
-</span><span style="font-style:italic"></span>}</code></pre></div>
-<p>In other words, it&rsquo;s reasonable to think of <code>Optional</code> as an Objective-C style ~nil~able pointer.</p>
-
+</span><span style="font-style:italic"></span>}
+</code></pre></div><p>In other words, it&rsquo;s reasonable to think of <code>Optional</code> as an Objective-C style ~nil~able pointer.</p>
 <ul>
 <li>There&rsquo;s a great <a href="https://stackoverflow.com/questions/24003642/what-is-an-optional-value-in-swift">post on stackoverflow</a> that goes through various gotchas and edge cases.</li>
 <li><a href="https://developer.apple.com/documentation/swift/optional">Apple&rsquo;s documentation</a> is also worth a look.</li>
@@ -224,7 +222,7 @@ Where things do get interesting is we use a non-optional, <code>String</code>:</
     
     
       
-        © 2020
+        © 2021
       
        Dmitry M 
     
