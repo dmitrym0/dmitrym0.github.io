@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>orgmode on Dmitry M - Veridis Quo</title>
+    <title>Orgmode on Dmitry M - Veridis Quo</title>
     <link>https://dmitrym0.github.io/tags/orgmode/</link>
-    <description>Recent content in orgmode on Dmitry M - Veridis Quo</description>
+    <description>Recent content in Orgmode on Dmitry M - Veridis Quo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Mar 2020 00:00:00 -0700</lastBuildDate><atom:link href="https://dmitrym0.github.io/tags/orgmode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Mar 2022 00:00:00 -0800</lastBuildDate><atom:link href="https://dmitrym0.github.io/tags/orgmode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Note taking and discovery</title>
+      <link>https://dmitrym0.github.io/posts/note-taking-and-discovery/</link>
+      <pubDate>Wed, 09 Mar 2022 00:00:00 -0800</pubDate>
+      
+      <guid>https://dmitrym0.github.io/posts/note-taking-and-discovery/</guid>
+      <description>I&amp;rsquo;ve been taking notes consistently, probably starting in university. The challenge for me was never capture but retrieval. I suspect that&amp;rsquo;s true for most people.
+The interesting thing about zettelcasten is how Luhramn optimized his sytem for retrieval. Related subjects were proximate, he used a linking system of sorts that allowed his cards to be filed under number of different topics.
+In digital note taking, proximity is difficult to simulate. Hyperlinking is the first step of course.</description>
+    </item>
+    
     <item>
       <title>Personal Agile: Iteration 5 (COVID-19 edition)</title>
       <link>https://dmitrym0.github.io/posts/personal-agile-iteration-5/</link>
