@@ -6,22 +6,20 @@
     <description>Recent content in Posts on Dmitry M - Veridis Quo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 17 Mar 2022 00:00:00 -0700</lastBuildDate><atom:link href="https://dmitrym0.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Mar 2022 00:00:00 -0400</lastBuildDate><atom:link href="https://dmitrym0.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What is hyper-scheduling?</title>
       <link>https://dmitrym0.github.io/posts/what-is-hyperscheduling/</link>
-      <pubDate>Thu, 17 Mar 2022 00:00:00 -0700</pubDate>
+      <pubDate>Thu, 17 Mar 2022 00:00:00 -0400</pubDate>
       
       <guid>https://dmitrym0.github.io/posts/what-is-hyperscheduling/</guid>
-      <description>Hyperscheduling?, TLDR Hyperscheduling is the idea of fully planning your day using a calendar. Every minute of the day is assigned to some task using a calendar.
-Hyperscheduling in more detail Hyperscheduling is only part of a productivity system. It helps me plan my day:
- Select a set of tasks for today (this is done outside of hyperscheduling, using GTD or another system). Prioritize your tasks in order of importance.</description>
+      <description></description>
     </item>
     
     <item>
       <title>Caddy 2 and TCP Proxying</title>
       <link>https://dmitrym0.github.io/posts/caddy2-and-tcp-proxying/</link>
-      <pubDate>Mon, 14 Mar 2022 00:00:00 -0700</pubDate>
+      <pubDate>Mon, 14 Mar 2022 00:00:00 -0400</pubDate>
       
       <guid>https://dmitrym0.github.io/posts/caddy2-and-tcp-proxying/</guid>
       <description>How to configure Caddy2 to proxy TCP streams.
@@ -32,7 +30,7 @@ To illustrate the architecture, I have the following entities running in Docker.
     <item>
       <title>Note taking and discovery</title>
       <link>https://dmitrym0.github.io/posts/note-taking-and-discovery/</link>
-      <pubDate>Wed, 09 Mar 2022 00:00:00 -0800</pubDate>
+      <pubDate>Wed, 09 Mar 2022 00:00:00 -0500</pubDate>
       
       <guid>https://dmitrym0.github.io/posts/note-taking-and-discovery/</guid>
       <description>I&amp;rsquo;ve been taking notes consistently, probably starting in university. The challenge for me was never capture but retrieval. I suspect that&amp;rsquo;s true for most people.
@@ -43,7 +41,7 @@ In digital note taking, proximity is difficult to simulate. Hyperlinking is the 
     <item>
       <title>Still Around</title>
       <link>https://dmitrym0.github.io/posts/still-around/</link>
-      <pubDate>Mon, 22 Mar 2021 00:00:00 -0700</pubDate>
+      <pubDate>Mon, 22 Mar 2021 00:00:00 -0400</pubDate>
       
       <guid>https://dmitrym0.github.io/posts/still-around/</guid>
       <description>Nearly a year after my previous entry, I&amp;rsquo;m trying to get into blogging yet again. I&amp;rsquo;ve got a huge backlog of posts I&amp;rsquo;m interested in sharing but it&amp;rsquo;s been a challenge to get through it for various reasons. It&amp;rsquo;s not New Year&amp;rsquo;s, but here&amp;rsquo;s a commitment, write one post every two weeks. Should be doable?</description>
@@ -52,7 +50,7 @@ In digital note taking, proximity is difficult to simulate. Hyperlinking is the 
     <item>
       <title>Book review: &#34;First 90 days&#34;</title>
       <link>https://dmitrym0.github.io/posts/book-review-first-90-days/</link>
-      <pubDate>Tue, 28 Apr 2020 00:00:00 -0700</pubDate>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 -0400</pubDate>
       
       <guid>https://dmitrym0.github.io/posts/book-review-first-90-days/</guid>
       <description>The &amp;ldquo;First 90 days&amp;rdquo; lays out a comprehensive plan on how to become productive in a new role, whether it&amp;rsquo;s a promotion or a position in a new company.
@@ -63,7 +61,7 @@ In digital note taking, proximity is difficult to simulate. Hyperlinking is the 
     <item>
       <title>Personal Agile: Iteration 5 (COVID-19 edition)</title>
       <link>https://dmitrym0.github.io/posts/personal-agile-iteration-5/</link>
-      <pubDate>Tue, 24 Mar 2020 00:00:00 -0700</pubDate>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 -0400</pubDate>
       
       <guid>https://dmitrym0.github.io/posts/personal-agile-iteration-5/</guid>
       <description>It&amp;rsquo;s been pretty hard to focus on anything other than what&amp;rsquo;s going on in the world the last two weeks. I didn&amp;rsquo;t really successfully complete the iteration. We&amp;rsquo;ve been sent home from work about a week ago which freed up a lot of time that&amp;rsquo;s been allocated to the commute. Theoretically. Unfortunately focus has been hard to come by.
@@ -73,7 +71,7 @@ The only take away I have from this iteration is that I&amp;rsquo;ve significant
     <item>
       <title>Personal Agile: Iteration 4</title>
       <link>https://dmitrym0.github.io/posts/personal-agile-iteration-4/</link>
-      <pubDate>Mon, 09 Mar 2020 00:00:00 -0700</pubDate>
+      <pubDate>Mon, 09 Mar 2020 00:00:00 -0400</pubDate>
       
       <guid>https://dmitrym0.github.io/posts/personal-agile-iteration-4/</guid>
       <description>Interesting iteration. Overall agile approach has been a net positive. I likely would&amp;rsquo;ve have been approximately as successful, but deliberate approach to planning and reviews yields interesting artifacts (of which this blog post is one) and provides for an interesting trajectory overview.
@@ -84,7 +82,7 @@ I made good progress on my tasks this iteration:
     <item>
       <title>Personal Agile: Iteration 2</title>
       <link>https://dmitrym0.github.io/posts/personal-agile-iteration-2/</link>
-      <pubDate>Sun, 09 Feb 2020 00:00:00 -0800</pubDate>
+      <pubDate>Sun, 09 Feb 2020 00:00:00 -0500</pubDate>
       
       <guid>https://dmitrym0.github.io/posts/personal-agile-iteration-2/</guid>
       <description>The goal for this iteration was to:
@@ -94,7 +92,7 @@ I made good progress on my tasks this iteration:
     <item>
       <title>Personal Agile: Iteration 1</title>
       <link>https://dmitrym0.github.io/posts/personal-agile-iteration-1/</link>
-      <pubDate>Sat, 25 Jan 2020 00:00:00 -0800</pubDate>
+      <pubDate>Sat, 25 Jan 2020 00:00:00 -0500</pubDate>
       
       <guid>https://dmitrym0.github.io/posts/personal-agile-iteration-1/</guid>
       <description>:LOGBOOK: nil:END:
@@ -106,7 +104,7 @@ I&amp;rsquo;ve been quite successful doing this at work, so I figured why not tr
     <item>
       <title>Managing  secrets in open source iOS apps</title>
       <link>https://dmitrym0.github.io/posts/managing-secrets-in-ios-apps/</link>
-      <pubDate>Thu, 23 Jan 2020 00:00:00 -0800</pubDate>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 -0500</pubDate>
       
       <guid>https://dmitrym0.github.io/posts/managing-secrets-in-ios-apps/</guid>
       <description>One of the issues that open source authors have to deal with is secrets management. The small utility app I&amp;rsquo;m working on relies on Dropbox API. Before you can work with Dropbox API though, you have to generate an API key. The API key identifies the application to Dropbox and needs to remain mostly secret. A bad actor could impersonate the application author by stealing the API key.
@@ -116,7 +114,7 @@ This is a long winded way of saying that API keys must be kept out of public rep
     <item>
       <title>Swift optionals for Objective-C programmers</title>
       <link>https://dmitrym0.github.io/posts/swift-optionals-for-objc-programmers/</link>
-      <pubDate>Sun, 12 Jan 2020 00:00:00 -0800</pubDate>
+      <pubDate>Sun, 12 Jan 2020 00:00:00 -0500</pubDate>
       
       <guid>https://dmitrym0.github.io/posts/swift-optionals-for-objc-programmers/</guid>
       <description>I&amp;rsquo;m trying my hand at some iOS programming after being away for a while. At this point it does not make sense to start a new project in Objective-C so I started in Swift.
@@ -135,9 +133,33 @@ In GTD, reviews occupy a pretty important niche. Without regular task and projec
     </item>
     
     <item>
+      <title>Reading a font from file an making it available to Cocoa</title>
+      <link>https://dmitrym0.github.io/posts/reading-font-from-/</link>
+      <pubDate>Tue, 07 Jan 2020 00:00:00 -0800</pubDate>
+      
+      <guid>https://dmitrym0.github.io/posts/reading-font-from-/</guid>
+      <description>This is another programming related post.
+Say you have a true type font that&amp;rsquo;s not part of the OS font set in a file. You&amp;rsquo;ve read the contents of the file into memory and now want to make it available to Cocoa. How?
+Turns out that ATSUI comes to the rescue:
+ATSFontContainerRef container; OSStatus status = ATSFontActivateFromMemory((LogicalAddress)[fontData bytes], // buffer with font data  [fontData length], // size of font data  kATSFontContextLocal, // for use only in this application  kATSFontFormatUnspecified, // reserved  NULL, // reserved  kATSOptionFlagsDefault, // reserved  &amp;amp;container); // on output, will contain the activated font // find the number of font references in the container (goes to numItems) ItemCount numItems; status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, 0, NULL, &amp;amp;numItems); NSLog(@&amp;#34;There are %d references in the container\n&amp;#34;, numItems); // load the individual fonts ATSFontRef *ioArray = malloc(numItems * sizeof(ATSFontRef)); status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, numItems, ioArray, &amp;amp;numItems); CFStringRef fontName = nil; ATSFontGetName (ioArray[fontIndex], kATSOptionFlagsDefault, &amp;amp;fontName); NSFont* myFont = [NSFont fontWithName:(NSString*)fontName size:24]; myFont now contains the NSFont reference to your font.</description>
+    </item>
+    
+    <item>
+      <title>Reading a font from file an making it available to Cocoa</title>
+      <link>https://dmitrym0.github.io/posts/reading-font-from-file-an/</link>
+      <pubDate>Tue, 07 Jan 2020 00:00:00 -0800</pubDate>
+      
+      <guid>https://dmitrym0.github.io/posts/reading-font-from-file-an/</guid>
+      <description>This is another programming related post.
+Say you have a true type font that&amp;rsquo;s not part of the OS font set in a file. You&amp;rsquo;ve read the contents of the file into memory and now want to make it available to Cocoa. How?
+Turns out that ATSUI comes to the rescue:
+ATSFontContainerRef container; OSStatus status = ATSFontActivateFromMemory((LogicalAddress)[fontData bytes], // buffer with font data  [fontData length], // size of font data  kATSFontContextLocal, // for use only in this application  kATSFontFormatUnspecified, // reserved  NULL, // reserved  kATSOptionFlagsDefault, // reserved  &amp;amp;container); // on output, will contain the activated font // find the number of font references in the container (goes to numItems) ItemCount numItems; status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, 0, NULL, &amp;amp;numItems); NSLog(@&amp;#34;There are %d references in the container\n&amp;#34;, numItems); // load the individual fonts ATSFontRef *ioArray = malloc(numItems * sizeof(ATSFontRef)); status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, numItems, ioArray, &amp;amp;numItems); CFStringRef fontName = nil; ATSFontGetName (ioArray[fontIndex], kATSOptionFlagsDefault, &amp;amp;fontName); NSFont* myFont = [NSFont fontWithName:(NSString*)fontName size:24]; myFont now contains the NSFont reference to your font.</description>
+    </item>
+    
+    <item>
       <title>Building a lithium ion battery, part 1: “Why”</title>
       <link>https://dmitrym0.github.io/posts/diy-lithium-battery-part-1/</link>
-      <pubDate>Tue, 12 Mar 2019 00:00:00 -0700</pubDate>
+      <pubDate>Tue, 12 Mar 2019 00:00:00 -0400</pubDate>
       
       <guid>https://dmitrym0.github.io/posts/diy-lithium-battery-part-1/</guid>
       <description>Why build a battery? Why build a battery from scratch? I’ll tell you.
@@ -148,7 +170,7 @@ I could’ve purchased a battery off the shelf, but consumer units are quite exp
     <item>
       <title>Safari App Extensions; migrating from .safariextz</title>
       <link>https://dmitrym0.github.io/posts/safari-app-extensions-migrating-from-safariextz/</link>
-      <pubDate>Mon, 08 Oct 2018 00:00:00 -0700</pubDate>
+      <pubDate>Mon, 08 Oct 2018 00:00:00 -0400</pubDate>
       
       <guid>https://dmitrym0.github.io/posts/safari-app-extensions-migrating-from-safariextz/</guid>
       <description>I’ve dabbled with a Safari extension for a project on and off for a while. For Safari 12, I read that .safariextz-style extensions are no longer supported. I went forth to investigate what changed and how I could port my old extension to Safari 12.
@@ -158,7 +180,7 @@ The short story is that the packaging has changed, but the bulk of the existing 
     <item>
       <title>How to check for X-Send-File (or X-Accel-Redirect)</title>
       <link>https://dmitrym0.github.io/posts/how-to-check-for-x-sendfile/</link>
-      <pubDate>Tue, 11 Sep 2018 00:00:00 -0700</pubDate>
+      <pubDate>Tue, 11 Sep 2018 00:00:00 -0400</pubDate>
       
       <guid>https://dmitrym0.github.io/posts/how-to-check-for-x-sendfile/</guid>
       <description>Some web requests should not be handled by the application framework. Requests hitting a dynamic API endpoint should be processed by application (in my case typically Ruby on Rails). Static assets (such as files) should be served by the webserver, bypassing Ruby on Rails completely.
@@ -170,7 +192,7 @@ The biggest one is performance. NGINX and Apache are significantly better and fa
     <item>
       <title>Efficient commit workflow with tig</title>
       <link>https://dmitrym0.github.io/posts/tig-cheat-sheet/</link>
-      <pubDate>Thu, 30 Aug 2018 00:00:00 -0700</pubDate>
+      <pubDate>Thu, 30 Aug 2018 00:00:00 -0400</pubDate>
       
       <guid>https://dmitrym0.github.io/posts/tig-cheat-sheet/</guid>
       <description>One of the recommended source control practices is to commit frequently, and often. I prefer to keep my commits terse and focused, however in practice I’m working on a couple related but independent things in parallel. At commit time, I prefer to tease loosely related things apart and commit them separately.
@@ -178,9 +200,39 @@ One way to do that is with the interactive git-add facility that can be invoked 
     </item>
     
     <item>
+      <title>ANother post</title>
+      <link>https://dmitrym0.github.io/posts/post-title-in-slug-form-2/</link>
+      <pubDate>Tue, 19 Dec 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://dmitrym0.github.io/posts/post-title-in-slug-form-2/</guid>
+      <description>test asdf</description>
+    </item>
+    
+    <item>
+      <title>Post Title</title>
+      <link>https://dmitrym0.github.io/posts/post-title-in-slug-form-1/</link>
+      <pubDate>Tue, 19 Dec 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://dmitrym0.github.io/posts/post-title-in-slug-form-1/</guid>
+      <description>Content test More content asdf Even more
+echo &amp;#39;Some source code content&amp;#39; echo &amp;#39;This line will be highlighted&amp;#39; echo &amp;#34;This one won&amp;#39;t&amp;#34; </description>
+    </item>
+    
+    <item>
+      <title>XTerra Switched Outlet Howto</title>
+      <link>https://dmitrym0.github.io/posts/xterra-switched-outlet-howto/</link>
+      <pubDate>Thu, 23 Mar 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://dmitrym0.github.io/posts/xterra-switched-outlet-howto/</guid>
+      <description>XTerra Switched outlet For some reason truck and SUV 12v outlets are always hot. This is true in my wife’s F150 and my 2010 Nissan XTerra. This is a bit of annoyance since I’d like to use a bluetooth transmitter to connect my iPhone to the radio. Thankfully, it’s fairly easy to add a second, switched outlet in the XTerra.
+The short of it is:
+ acquire OEM cigarette outlet wire it via an add-a-fuse  As far as electrical mods go this one is very mild and simple.</description>
+    </item>
+    
+    <item>
       <title>ncdu - ncurses disk usage</title>
       <link>https://dmitrym0.github.io/posts/ncdu-ncurses-disk-usage/</link>
-      <pubDate>Wed, 07 Dec 2016 00:00:00 -0800</pubDate>
+      <pubDate>Wed, 07 Dec 2016 00:00:00 -0500</pubDate>
       
       <guid>https://dmitrym0.github.io/posts/ncdu-ncurses-disk-usage/</guid>
       <description>At some point harddrive space was cheap, but with the advent of SSDs and cheap “Cloud VMs” that is no longer the case. For example, the cheapest VM on VULTR is $5/month and has a 15 gig SSD drive. It&amp;rsquo;s suddenly very important to maximize drive usage again. This is where ncdu comes in. It displays a nice ncurses interface that visualizes the usage breakdown.
@@ -209,7 +261,7 @@ I consume my instant messaging via IRC (with the help of minbif) and now Twitter
     <item>
       <title>Working with shared memory on OS X</title>
       <link>https://dmitrym0.github.io/posts/shared-memory-on-os-x/</link>
-      <pubDate>Mon, 05 Apr 2010 00:00:00 -0700</pubDate>
+      <pubDate>Mon, 05 Apr 2010 00:00:00 -0400</pubDate>
       
       <guid>https://dmitrym0.github.io/posts/shared-memory-on-os-x/</guid>
       <description>If you&amp;rsquo;re working with Qt&amp;rsquo;s QSharedMemory, on Mac OS X you&amp;rsquo;re working with System V shared memory subsystem. If your data is sizable, the first limit you&amp;rsquo;ll hit in the maximum segment size, which is for some reason around 4 megs. To increase it invoke this magic incantation:

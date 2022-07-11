@@ -6,14 +6,29 @@
     <description>Recent content in Pages on Dmitry M - Veridis Quo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 07 Dec 2001 00:00:00 -0800</lastBuildDate><atom:link href="https://dmitrym0.github.io/pages/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Dec 2001 00:00:00 -0500</lastBuildDate><atom:link href="https://dmitrym0.github.io/pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://dmitrym0.github.io/pages/about/</link>
-      <pubDate>Fri, 07 Dec 2001 00:00:00 -0800</pubDate>
+      <pubDate>Fri, 07 Dec 2001 00:00:00 -0500</pubDate>
       
       <guid>https://dmitrym0.github.io/pages/about/</guid>
       <description>I like building stuff.</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://dmitrym0.github.io/pages/projects/</link>
+      <pubDate>Fri, 07 Dec 2001 00:00:00 -0500</pubDate>
+      
+      <guid>https://dmitrym0.github.io/pages/projects/</guid>
+      <description>org-hyperscheduler org-hyperscheduler is an Emacs package that uses a calendar web component to visualize org-mode agenda.
+More information is available on GitHub.
+Also onMELPA.
+simple-lets-encrypt-docker-compose-sample simple-lets-encrypt-docker-compose-sample is a sample docker-compose.yml that shows how to leverage docker-letsencrypt-nginx-proxy-companion to automatically terminate SSL connections.
+org-reminders-importer A SwiftUI iOS app to grab reminders and dump them into a text file on Dropbox.
+paratroopers An SDL based iOS game:
+ Here&amp;rsquo;s what the original looked like:</description>
     </item>
     
   </channel>
