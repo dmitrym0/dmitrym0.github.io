@@ -6,11 +6,11 @@
     <description>Recent content in Linux on Dmitry M - Veridis Quo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 07 Dec 2016 00:00:00 -0500</lastBuildDate><atom:link href="https://dmitrym0.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Dec 2016 00:00:00 -0800</lastBuildDate><atom:link href="https://dmitrym0.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ncdu - ncurses disk usage</title>
       <link>https://dmitrym0.github.io/posts/ncdu-ncurses-disk-usage/</link>
-      <pubDate>Wed, 07 Dec 2016 00:00:00 -0500</pubDate>
+      <pubDate>Wed, 07 Dec 2016 00:00:00 -0800</pubDate>
       
       <guid>https://dmitrym0.github.io/posts/ncdu-ncurses-disk-usage/</guid>
       <description>At some point harddrive space was cheap, but with the advent of SSDs and cheap “Cloud VMs” that is no longer the case. For example, the cheapest VM on VULTR is $5/month and has a 15 gig SSD drive. It&amp;rsquo;s suddenly very important to maximize drive usage again. This is where ncdu comes in. It displays a nice ncurses interface that visualizes the usage breakdown.

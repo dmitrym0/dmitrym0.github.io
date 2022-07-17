@@ -6,11 +6,21 @@
     <description>Recent content in Emacs on Dmitry M - Veridis Quo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 17 Mar 2022 00:00:00 -0400</lastBuildDate><atom:link href="https://dmitrym0.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Jul 2022 00:00:00 -0700</lastBuildDate><atom:link href="https://dmitrym0.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Journaling prompts in Emacs</title>
+      <link>https://dmitrym0.github.io/posts/journaling-prompts-with-emacs/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 -0700</pubDate>
+      
+      <guid>https://dmitrym0.github.io/posts/journaling-prompts-with-emacs/</guid>
+      <description>One of my daily rituals is journaling. It&amp;rsquo;s been shown to have positive impact on quality of life (citation needed). I find it helps me decompress but it&amp;rsquo;s also a permanent record of my thoughts and my life&amp;rsquo;s minutiae.
+I usually set a timer for 5 minutes and go to town. One particular challenge I have, is that some times I don&amp;rsquo;t really know what to write about. Recently I came upon the idea of journaling prompts.</description>
+    </item>
+    
     <item>
       <title>What is hyper-scheduling?</title>
       <link>https://dmitrym0.github.io/posts/what-is-hyperscheduling/</link>
-      <pubDate>Thu, 17 Mar 2022 00:00:00 -0400</pubDate>
+      <pubDate>Thu, 17 Mar 2022 00:00:00 -0700</pubDate>
       
       <guid>https://dmitrym0.github.io/posts/what-is-hyperscheduling/</guid>
       <description></description>
@@ -19,7 +29,7 @@
     <item>
       <title>Note taking and discovery</title>
       <link>https://dmitrym0.github.io/posts/note-taking-and-discovery/</link>
-      <pubDate>Wed, 09 Mar 2022 00:00:00 -0500</pubDate>
+      <pubDate>Wed, 09 Mar 2022 00:00:00 -0800</pubDate>
       
       <guid>https://dmitrym0.github.io/posts/note-taking-and-discovery/</guid>
       <description>I&amp;rsquo;ve been taking notes consistently, probably starting in university. The challenge for me was never capture but retrieval. I suspect that&amp;rsquo;s true for most people.

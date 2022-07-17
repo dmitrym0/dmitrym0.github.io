@@ -10,29 +10,29 @@
     <meta name="keywords" content="blog,developer,personal">
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Personal Agile: Iteration 2"/>
-<meta name="twitter:description" content="The goal for this iteration was to:
- work on my little SwiftUI app finish reading a book (&ldquo;The first 90 days&rdquo;) maintain my fitness habits    Conclusions Overall the iteration went well. In the screenshot above, you can tell that I wildly underestimated how much time summarizing the current book would take: I estimated an hour, but it ended up being 3 times as much (3 hours)."/>
+<meta name="twitter:title" content="Journaling prompts in Emacs"/>
+<meta name="twitter:description" content="One of my daily rituals is journaling. It&rsquo;s been shown to have positive impact on quality of life (citation needed). I find it helps me decompress but it&rsquo;s also a permanent record of my thoughts and my life&rsquo;s minutiae.
+I usually set a timer for 5 minutes and go to town. One particular challenge I have, is that some times I don&rsquo;t really know what to write about. Recently I came upon the idea of journaling prompts."/>
 
-    <meta property="og:title" content="Personal Agile: Iteration 2" />
-<meta property="og:description" content="The goal for this iteration was to:
- work on my little SwiftUI app finish reading a book (&ldquo;The first 90 days&rdquo;) maintain my fitness habits    Conclusions Overall the iteration went well. In the screenshot above, you can tell that I wildly underestimated how much time summarizing the current book would take: I estimated an hour, but it ended up being 3 times as much (3 hours)." />
+    <meta property="og:title" content="Journaling prompts in Emacs" />
+<meta property="og:description" content="One of my daily rituals is journaling. It&rsquo;s been shown to have positive impact on quality of life (citation needed). I find it helps me decompress but it&rsquo;s also a permanent record of my thoughts and my life&rsquo;s minutiae.
+I usually set a timer for 5 minutes and go to town. One particular challenge I have, is that some times I don&rsquo;t really know what to write about. Recently I came upon the idea of journaling prompts." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://dmitrym0.github.io/posts/personal-agile-iteration-2/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-02-09T00:00:00-08:00" />
-<meta property="article:modified_time" content="2022-07-17T13:11:13-07:00" />
+<meta property="og:url" content="https://dmitrym0.github.io/posts/journaling-prompts-with-emacs/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-07-17T00:00:00-07:00" />
+<meta property="article:modified_time" content="2022-07-17T13:11:18-07:00" />
 
 
 
     
-      <base href="https://dmitrym0.github.io/posts/personal-agile-iteration-2/">
+      <base href="https://dmitrym0.github.io/posts/journaling-prompts-with-emacs/">
     
     <title>
-  Personal Agile: Iteration 2 · Dmitry M - Veridis Quo
+  Journaling prompts in Emacs · Dmitry M - Veridis Quo
 </title>
 
     
-      <link rel="canonical" href="https://dmitrym0.github.io/posts/personal-agile-iteration-2/">
+      <link rel="canonical" href="https://dmitrym0.github.io/posts/journaling-prompts-with-emacs/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
@@ -106,55 +106,63 @@
     <article>
       <header>
         <div class="post-title">
-          <h1 class="title">Personal Agile: Iteration 2</h1>
+          <h1 class="title">Journaling prompts in Emacs</h1>
         </div>
         <div class="post-meta">
           <div class="date">
             <span class="posted-on">
               <i class="fas fa-calendar"></i>
-              <time datetime='2020-02-09T00:00:00-08:00'>
-                February 9, 2020
+              <time datetime='2022-07-17T00:00:00-07:00'>
+                July 17, 2022
               </time>
             </span>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              One minute read
+              2 minutes read
             </span>
           </div>
           
           <div class="tags">
   <i class="fas fa-tag"></i>
-    <a href="https://dmitrym0.github.io/tags/agile/">Agile</a>
+    <a href="https://dmitrym0.github.io/tags/emacs/">Emacs</a>
       <span class="separator">•</span>
-    <a href="https://dmitrym0.github.io/tags/productivity/">Productivity</a>
-      <span class="separator">•</span>
-    <a href="https://dmitrym0.github.io/tags/orgmode/">Orgmode</a></div>
+    <a href="https://dmitrym0.github.io/tags/misc/">Misc</a></div>
 
         </div>
       </header>
 
       <div>
-        <p>The goal for this iteration was to:</p>
-<ul>
-<li>work on my little SwiftUI app</li>
-<li>finish reading a book (&ldquo;The first 90 days&rdquo;)</li>
-<li>maintain my fitness habits</li>
-</ul>
+        <p>One of my daily rituals is journaling. It&rsquo;s been shown to have positive impact on quality of life (citation needed). I find it helps me decompress but it&rsquo;s also a permanent record of my thoughts and my life&rsquo;s minutiae.</p>
+<p>I usually set a timer for 5 minutes and go to town. One particular challenge I have, is that some times I don&rsquo;t really know what to write about. Recently I came upon the idea of journaling prompts. So far, journaling prompts come in the form of questions:</p>
+<blockquote>
+<p>What do I know to be true that I didn’t know a year ago?</p>
+<p>What distractions get in the way of being my most productive?</p>
+</blockquote>
+<p>In Emacs, it&rsquo;s trivial to automate prompt generation. I used org-mode&rsquo;s capture templates and here&rsquo;s what I came up with:</p>
+<p>A function to grab a prompt:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(defun dm/get-journaling-prompt ()
+  <span style="font-style:italic">&#34;Returns a single line from journaling prompts.&#34;</span>
+  (save-window-excursion
+    (find-file (concat org-roam-directory <span style="font-style:italic">&#34;journaling_prompts.org&#34;</span>))
+    (goto-char (point-max))
+    (let* ((number-of-prompts (- (line-number-at-pos) 10)))
+      (goto-line (+ 10 (random number-of-prompts)))
+      (s-chomp (thing-at-point <span style="font-style:italic">&#39;line</span> t)))))
+</code></pre></div><p>and then in my capture templates:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(<span style="font-style:italic">&#34;dj&#34;</span> <span style="font-style:italic">&#34;Journal&#34;</span> entry
+ (file+olp+datetree ,(concat org-directory <span style="font-style:italic">&#34;/personal-daily-2022.org&#34;</span>))
+ <span style="font-style:italic">&#34;* Entered on %U
+</span><span style="font-style:italic">
+</span><span style="font-style:italic">  Prompt: %(dm/get-journaling-prompt)
+</span><span style="font-style:italic">
+</span><span style="font-style:italic">%?&#34;</span>)
+</code></pre></div><p>It&rsquo;s wonderfully simple, the <code>%(dm/get-journaling-prompt)</code> simply executes the expression and returns the result. As usual, more in the <a href="https://orgmode.org/manual/Template-expansion.html">docs</a>.</p>
+<p>The result looks like this:</p>
 <figure>
-    <img src="https://dmitrym0.github.io/ox-hugo/screenshot_2020-02-09_21-06-26.png"/> 
+    <img src="https://dmitrym0.github.io/ox-hugo/2022-07-17_13-10-28_screenshot.png"/> 
 </figure>
 
-<h2 id="conclusions">Conclusions</h2>
-<p>Overall the iteration went well. In the screenshot above, you can tell that I wildly underestimated how much time summarizing the current book would take: I estimated an hour, but it ended up being 3 times as much (3 hours).</p>
-<p>Then, I spent way too much on my app, 10 pomodoros (roughly 5 hours) vs 3 hours initially estimated.</p>
-<p>The big fitness goals (workouts) were met, but smaller (morning stretches) didn&rsquo;t pan out. Oh well.</p>
-<p>I also forgot to add time to plan for the next iteration, although I did include a task to create a template (which I didn&rsquo;t do).</p>
-<p>So, moving forward:</p>
-<ul>
-<li>create an iteration template (that should include: estimation task and postmortem task).</li>
-<li>record the velocity (current sprint is somewhat unusual: I&rsquo;m on vacation).</li>
-<li>be very careful of over-committing. Err on the side of not having enough work (to avoid guilt etc).</li>
-</ul>
+<p>It&rsquo;s an easy way to get journaling if nothing else comes up.</p>
 
       </div>
 
