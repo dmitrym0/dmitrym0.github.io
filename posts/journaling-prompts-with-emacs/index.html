@@ -52,6 +52,8 @@ I usually set a timer for 5 minutes and go to town. One particular challenge I h
     
       <link rel="stylesheet" href="https://dmitrym0.github.io/css/custom.css" />
     
+      <link rel="stylesheet" href="https://dmitrym0.github.io/images/syntax.css" />
+    
 
     
 
@@ -140,23 +142,50 @@ I usually set a timer for 5 minutes and go to town. One particular challenge I h
 </blockquote>
 <p>In Emacs, it&rsquo;s trivial to automate prompt generation. I used org-mode&rsquo;s capture templates and here&rsquo;s what I came up with:</p>
 <p>A function to grab a prompt:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(defun dm/get-journaling-prompt ()
-  <span style="font-style:italic">&#34;Returns a single line from journaling prompts.&#34;</span>
-  (save-window-excursion
-    (find-file (concat org-roam-directory <span style="font-style:italic">&#34;journaling_prompts.org&#34;</span>))
-    (goto-char (point-max))
-    (let* ((number-of-prompts (- (line-number-at-pos) 10)))
-      (goto-line (+ 10 (random number-of-prompts)))
-      (s-chomp (thing-at-point <span style="font-style:italic">&#39;line</span> t)))))
-</code></pre></div><p>and then in my capture templates:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(<span style="font-style:italic">&#34;dj&#34;</span> <span style="font-style:italic">&#34;Journal&#34;</span> entry
- (file+olp+datetree ,(concat org-directory <span style="font-style:italic">&#34;/personal-daily-2022.org&#34;</span>))
- <span style="font-style:italic">&#34;* Entered on %U
-</span><span style="font-style:italic">
-</span><span style="font-style:italic">  Prompt: %(dm/get-journaling-prompt)
-</span><span style="font-style:italic">
-</span><span style="font-style:italic">%?&#34;</span>)
-</code></pre></div><p>It&rsquo;s wonderfully simple, the <code>%(dm/get-journaling-prompt)</code> simply executes the expression and returns the result. As usual, more in the <a href="https://orgmode.org/manual/Template-expansion.html">docs</a>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Lisp" data-lang="Lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">dm/get-journaling-prompt</span> <span class="p">()</span>
+  <span class="s">&#34;Returns a single line from journaling prompts.&#34;</span>
+  <span class="p">(</span><span class="nv">save-window-excursion</span>
+    <span class="p">(</span><span class="nv">find-file</span> <span class="p">(</span><span class="nv">concat</span> <span class="nv">org-roam-directory</span> <span class="s">&#34;journaling_prompts.org&#34;</span><span class="p">))</span>
+    <span class="p">(</span><span class="nv">goto-char</span> <span class="p">(</span><span class="nv">point-max</span><span class="p">))</span>
+    <span class="p">(</span><span class="k">let*</span> <span class="p">((</span><span class="nv">number-of-prompts</span> <span class="p">(</span><span class="nf">-</span> <span class="p">(</span><span class="nv">line-number-at-pos</span><span class="p">)</span> <span class="mi">10</span><span class="p">)))</span>
+      <span class="p">(</span><span class="nv">goto-line</span> <span class="p">(</span><span class="nf">+</span> <span class="mi">10</span> <span class="p">(</span><span class="nf">random</span> <span class="nv">number-of-prompts</span><span class="p">)))</span>
+      <span class="p">(</span><span class="nv">s-chomp</span> <span class="p">(</span><span class="nv">thing-at-point</span> <span class="ss">&#39;line</span> <span class="no">t</span><span class="p">)))))</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>and then in my capture templates:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Lisp" data-lang="Lisp"><span class="p">(</span><span class="s">&#34;dj&#34;</span> <span class="s">&#34;Journal&#34;</span> <span class="nv">entry</span>
+ <span class="p">(</span><span class="nv">file+olp+datetree</span> <span class="o">,</span><span class="p">(</span><span class="nv">concat</span> <span class="nv">org-directory</span> <span class="s">&#34;/personal-daily-2022.org&#34;</span><span class="p">))</span>
+ <span class="s">&#34;* Entered on %U
+</span><span class="s">
+</span><span class="s">  Prompt: %(dm/get-journaling-prompt)
+</span><span class="s">
+</span><span class="s">%?&#34;</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>It&rsquo;s wonderfully simple, the <code>%(dm/get-journaling-prompt)</code> simply executes the expression and returns the result. As usual, more in the <a href="https://orgmode.org/manual/Template-expansion.html">docs</a>.</p>
 <p>The result looks like this:</p>
 <figure>
     <img src="https://dmitrym0.github.io/ox-hugo/2022-07-17_13-10-28_screenshot.png"/> 

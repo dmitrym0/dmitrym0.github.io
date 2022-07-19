@@ -67,8 +67,8 @@ One way to do that is with the interactive git-add facility that can be invoked 
       
       <guid>https://dmitrym0.github.io/posts/shared-memory-on-os-x/</guid>
       <description>If you&amp;rsquo;re working with Qt&amp;rsquo;s QSharedMemory, on Mac OS X you&amp;rsquo;re working with System V shared memory subsystem. If your data is sizable, the first limit you&amp;rsquo;ll hit in the maximum segment size, which is for some reason around 4 megs. To increase it invoke this magic incantation:
-sudo sysctl -w kern.sysv.shmmax=33554432 and to see other shared mem related kernel variables:
-sysctl -A|grep shm If you&amp;rsquo;d like these settings to remain after you reboot your machine follow the instruction here.</description>
+1  sudo sysctl -w kern.sysv.shmmax=33554432   and to see other shared mem related kernel variables:
+1  sysctl -A|grep shm   If you&amp;rsquo;d like these settings to remain after you reboot your machine follow the instruction here.</description>
     </item>
     
   </channel>

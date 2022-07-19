@@ -56,6 +56,8 @@ The biggest one is performance. NGINX and Apache are significantly better and fa
     
       <link rel="stylesheet" href="https://dmitrym0.github.io/css/custom.css" />
     
+      <link rel="stylesheet" href="https://dmitrym0.github.io/images/syntax.css" />
+    
 
     
 
@@ -140,8 +142,16 @@ The biggest one is performance. NGINX and Apache are significantly better and fa
 <p>The biggest one is performance. NGINX and Apache are significantly better and faster at serving files than a Ruby process. It’s the whole reason for their existence.</p>
 <p>Secondly, leaving Ruby processes out of serving static files frees that process up to serve dynamic requests.</p>
 <p>For example, here Ruby is serving a font file. It ties the ruby process up for over half a second for no reason.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">I, [2018-09-02T22:50:21.284547 #33169]  INFO — : Sent file ff133.ttf (0.3ms)
-I, [2018-09-02T22:50:21.284839 #33169]  INFO — : Completed 200 OK in 633ms (ActiveRecord: 61.4ms)</code></pre></div>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">I, [2018-09-02T22:50:21.284547 #33169]  INFO — : Sent file ff133.ttf (0.3ms)
+I, [2018-09-02T22:50:21.284839 #33169]  INFO — : Completed 200 OK in 633ms (ActiveRecord: 61.4ms)</code></pre></td></tr></table>
+</div>
+</div>
 <p>It should be noted, that webservers typically have hundreds of threads serving requests, whereas the application (Ruby on Rails) has on the order of tens of processes. So tying a ruby process up to serve files is wasteful.</p>
 <p>The alternative is <a href="https://www.nginx.com/resources/wiki/start/topics/examples/xsendfile/">XSendfile</a>. Once the application determines that it does not need to serve the file it can signal the webserver to take over.</p>
 <p>I always struggle to remember how  to identify requests served by Rails vs requests served by the web server.</p>

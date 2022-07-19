@@ -54,6 +54,8 @@ To illustrate the architecture, I have the following entities running in Docker.
     
       <link rel="stylesheet" href="https://dmitrym0.github.io/css/custom.css" />
     
+      <link rel="stylesheet" href="https://dmitrym0.github.io/images/syntax.css" />
+    
 
     
 
@@ -138,51 +140,110 @@ To illustrate the architecture, I have the following entities running in Docker.
 <p>I&rsquo;m using <a href="https://caddyserver.com">Caddy 2</a> as a reverse proxy, but it looks like it supports many more scenarios. Previously I used nginx, or traeffic. The appeal of Caddy is that it supports TLS (with LetsEncrypt) out of the box and integrates with <a href="https://caddyserver.com/docs/modules/caddy.storage.consul">Consul</a> for an eventual clustering solution with Nomad.</p>
 <p>Startup with Caddy was very simple. Configuration with <code>Caddyfile</code> is quite straightforward. I was up and proxying internal HTTP services in no time. I did hit a snag when I needed to proxy non HTTP, in this case an MQTT stream. Turns out it&rsquo;s not very difficult but there&rsquo;s no good description of how to do it.</p>
 <p>First, you need to build caddy with <a href="https://github.com/mholt/caddy-l4">caddy-l4</a> plugin:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dockerfile" data-lang="dockerfile"><span style="font-weight:bold">FROM</span><span style="font-style:italic"> caddy:2-builder AS builder</span><span style="">
-</span><span style="">
-</span><span style=""></span><span style="font-weight:bold">RUN</span> xcaddy build <span style="font-weight:bold;font-style:italic">\
-</span><span style="font-weight:bold;font-style:italic"></span>    --with github.com/mholt/caddy-l4<span style="">
-</span><span style="">
-</span><span style=""></span><span style="font-weight:bold">FROM</span><span style="font-style:italic"> caddy:2</span><span style="">
-</span><span style="">
-</span><span style=""></span><span style="font-weight:bold">COPY</span> --from=builder /usr/bin/caddy /usr/bin/caddy<span style="">
-</span></code></pre></div><p>Since <code>caddy-l4</code> does not support <code>Caddyfile</code> s, the configuration needs to be in JSON. Since I already started with a <code>Caddyfile</code>, I converted it to JSON:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">caddy adapt —config Caddyfile —adapter Caddyfile
-</code></pre></div><p>I then merged the output with the following manually crafted JSON:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="font-style:italic">&#34;layer4&#34;</span><span style="">:</span> {
-    <span style="font-weight:bold">&#34;servers&#34;</span>: {
-        <span style="font-weight:bold">&#34;servername&#34;</span>: {
-            <span style="font-weight:bold">&#34;listen&#34;</span>: [<span style="font-style:italic">&#34;0.0.0.0:1883&#34;</span>],
-            <span style="font-weight:bold">&#34;routes&#34;</span>: [
-                {
-                    <span style="font-weight:bold">&#34;handle&#34;</span>: [
-                        {<span style="font-weight:bold">&#34;handler&#34;</span>: <span style="font-style:italic">&#34;tls&#34;</span>},
-                        {<span style="font-weight:bold">&#34;handler&#34;</span>: <span style="font-style:italic">&#34;proxy&#34;</span>, <span style="font-weight:bold">&#34;upstreams&#34;</span>: [{<span style="font-weight:bold">&#34;dial&#34;</span>: [<span style="font-style:italic">&#34;mqtt-server:1883&#34;</span>]}]}
-                    ]
-                }
-            ]
-        }
-    }
-}
-</code></pre></div><p>This JSON directs Caddy to:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-dockerfile" data-lang="dockerfile"><span class="k">FROM</span><span class="s"> caddy:2-builder AS builder</span><span class="err">
+</span><span class="err">
+</span><span class="err"></span><span class="k">RUN</span> xcaddy build <span class="se">\
+</span><span class="se"></span>    --with github.com/mholt/caddy-l4<span class="err">
+</span><span class="err">
+</span><span class="err"></span><span class="k">FROM</span><span class="s"> caddy:2</span><span class="err">
+</span><span class="err">
+</span><span class="err"></span><span class="k">COPY</span> --from<span class="o">=</span>builder /usr/bin/caddy /usr/bin/caddy<span class="err">
+</span></code></pre></td></tr></table>
+</div>
+</div><p>Since <code>caddy-l4</code> does not support <code>Caddyfile</code> s, the configuration needs to be in JSON. Since I already started with a <code>Caddyfile</code>, I converted it to JSON:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">caddy adapt —config Caddyfile —adapter Caddyfile
+</code></pre></td></tr></table>
+</div>
+</div><p>I then merged the output with the following manually crafted JSON:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-json" data-lang="json"><span class="s2">&#34;layer4&#34;</span><span class="err">:</span> <span class="p">{</span>
+    <span class="nt">&#34;servers&#34;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&#34;servername&#34;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&#34;listen&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;0.0.0.0:1883&#34;</span><span class="p">],</span>
+            <span class="nt">&#34;routes&#34;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&#34;handle&#34;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span><span class="nt">&#34;handler&#34;</span><span class="p">:</span> <span class="s2">&#34;tls&#34;</span><span class="p">},</span>
+                        <span class="p">{</span><span class="nt">&#34;handler&#34;</span><span class="p">:</span> <span class="s2">&#34;proxy&#34;</span><span class="p">,</span> <span class="nt">&#34;upstreams&#34;</span><span class="p">:</span> <span class="p">[{</span><span class="nt">&#34;dial&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;mqtt-server:1883&#34;</span><span class="p">]}]}</span>
+                    <span class="p">]</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>This JSON directs Caddy to:</p>
 <ol>
 <li>establish a connection on port 1883</li>
 <li>terminate the TLS</li>
 <li>pass the unencrypted connection to <code>mqtt-server</code> (this hostname is provided and resolved by Docker)</li>
 </ol>
 <p>Finally, I had to modify the default execution string for the caddy container in my <code>docker-compose.yml</code>:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml"><span style="font-weight:bold">caddy</span>:
-  <span style="font-weight:bold">image</span>: falcon-caddy:2
-  <span style="font-weight:bold">restart</span>: unless-stopped
-  <span style="font-weight:bold">ports</span>:
-    - <span style="font-style:italic">&#34;80:80&#34;</span>
-    - <span style="font-style:italic">&#34;443:443&#34;</span>
-    - <span style="font-style:italic">&#34;1883:1883&#34;</span>   <span style="font-style:italic"># mqtt</span>
-  <span style="font-weight:bold">volumes</span>:
-    - ./caddy/caddyfile.json:/etc/caddy/caddyfile.json
-  <span style="font-weight:bold">environment</span>:
-  <span style="font-weight:bold">command</span>: [<span style="font-style:italic">&#39;caddy&#39;</span>, <span style="font-style:italic">&#39;run&#39;</span>, <span style="font-style:italic">&#39;-config&#39;</span>, <span style="font-style:italic">&#39;/etc/caddy/caddyfile.json&#39;</span>]
-</code></pre></div>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-yml" data-lang="yml"><span class="nt">caddy</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">falcon-caddy:2</span><span class="w">
+</span><span class="w">  </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">unless-stopped</span><span class="w">
+</span><span class="w">  </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span>- <span class="s2">&#34;80:80&#34;</span><span class="w">
+</span><span class="w">    </span>- <span class="s2">&#34;443:443&#34;</span><span class="w">
+</span><span class="w">    </span>- <span class="s2">&#34;1883:1883&#34;</span><span class="w">   </span><span class="c"># mqtt</span><span class="w">
+</span><span class="w">  </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span>- <span class="l">./caddy/caddyfile.json:/etc/caddy/caddyfile.json</span><span class="w">
+</span><span class="w">  </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;caddy&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;run&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;-config&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;/etc/caddy/caddyfile.json&#39;</span><span class="p">]</span><span class="w">
+</span></code></pre></td></tr></table>
+</div>
+</div>
       </div>
 
       <footer>

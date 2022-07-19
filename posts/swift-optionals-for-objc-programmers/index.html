@@ -54,6 +54,8 @@ Due to Objective-C&rsquo;s, C lineage you could do things like this:" />
     
       <link rel="stylesheet" href="https://dmitrym0.github.io/css/custom.css" />
     
+      <link rel="stylesheet" href="https://dmitrym0.github.io/images/syntax.css" />
+    
 
     
 
@@ -137,31 +139,75 @@ Due to Objective-C&rsquo;s, C lineage you could do things like this:" />
         <p>I&rsquo;m trying my hand at some iOS programming after being away for a while. At this point it does not make sense to start a new project in Objective-C so I started in Swift.</p>
 <p>Overall, Swift is very readable and I&rsquo;m fairly productive right out of the gate. One of the new language features that not familiar though, is Optionals.</p>
 <p>Due to Objective-C&rsquo;s, C lineage you could do things like this:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C">NSString* aString = [someObject thatReturnsAString];
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-C" data-lang="C"><span class="n">NSString</span><span class="o">*</span> <span class="n">aString</span> <span class="o">=</span> <span class="p">[</span><span class="n">someObject</span> <span class="n">thatReturnsAString</span><span class="p">];</span>
 
-<span style="font-weight:bold">if</span> (aString) {
-  <span style="font-style:italic">// not nil
-</span><span style="font-style:italic"></span>} <span style="font-weight:bold">else</span> {
-  <span style="font-style:italic">// nil
-</span><span style="font-style:italic"></span>}
-</code></pre></div><p>or like this, where <code>aString</code> might be <code>nil</code>, but perfectly legal in Objective-C:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C">NSString* aString = [someObject thatReturnsAString];
+<span class="k">if</span> <span class="p">(</span><span class="n">aString</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// not nil
+</span><span class="c1"></span><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="c1">// nil
+</span><span class="c1"></span><span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>or like this, where <code>aString</code> might be <code>nil</code>, but perfectly legal in Objective-C:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-C" data-lang="C"><span class="n">NSString</span><span class="o">*</span> <span class="n">aString</span> <span class="o">=</span> <span class="p">[</span><span class="n">someObject</span> <span class="n">thatReturnsAString</span><span class="p">];</span>
 
-NSLog(<span style="">@</span><span style="font-style:italic">&#34;Lenght of string: %@&#34;</span>, [aString length]); <span style="font-style:italic">// migght be nil, who knows?
-</span></code></pre></div><p>Swift introduces a new type, called <code>Optional</code>. An Optional is either defined or is <code>nil</code>. In that, an optional string (<code>String?</code>) is very similar to it&rsquo;s Objective-C counterpart.
+<span class="n">NSLog</span><span class="p">(</span><span class="err">@</span><span class="s">&#34;Lenght of string: %@&#34;</span><span class="p">,</span> <span class="p">[</span><span class="n">aString</span> <span class="n">length</span><span class="p">]);</span> <span class="c1">// migght be nil, who knows?
+</span></code></pre></td></tr></table>
+</div>
+</div><p>Swift introduces a new type, called <code>Optional</code>. An Optional is either defined or is <code>nil</code>. In that, an optional string (<code>String?</code>) is very similar to it&rsquo;s Objective-C counterpart.
 Where things do get interesting is we use a non-optional, <code>String</code>:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C">var anOptionalString: String? = maybeReturnsAString(); <span style="font-style:italic">// maybe returns a string who knows
-</span><span style="font-style:italic"></span>var aString: String = hasToReturnAstring(); <span style="font-style:italic">// gotta be a string, else a compiler error
-</span></code></pre></div><p>to get the value out of an optional you gotta &ldquo;unwrap it&rdquo;:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C">var anOptionalString: String? = maybeReturnsAString();
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-C" data-lang="C"><span class="n">var</span> <span class="nl">anOptionalString</span><span class="p">:</span> <span class="n">String</span><span class="o">?</span> <span class="o">=</span> <span class="n">maybeReturnsAString</span><span class="p">();</span> <span class="c1">// maybe returns a string who knows
+</span><span class="c1"></span><span class="n">var</span> <span class="nl">aString</span><span class="p">:</span> <span class="n">String</span> <span class="o">=</span> <span class="n">hasToReturnAstring</span><span class="p">();</span> <span class="c1">// gotta be a string, else a compiler error
+</span></code></pre></td></tr></table>
+</div>
+</div><p>to get the value out of an optional you gotta &ldquo;unwrap it&rdquo;:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-C" data-lang="C"><span class="n">var</span> <span class="nl">anOptionalString</span><span class="p">:</span> <span class="n">String</span><span class="o">?</span> <span class="o">=</span> <span class="n">maybeReturnsAString</span><span class="p">();</span>
 
-<span style="font-weight:bold">if</span> let actualString = anOptionalString? {
-  <span style="font-style:italic">// there is a string value in there, in other words anOptionalString is not nil
-</span><span style="font-style:italic"></span>  print(<span style="font-style:italic">&#34;String is \(actualString)&#34;</span>)
-} <span style="font-weight:bold">else</span> {
-  <span style="font-style:italic">// nil
-</span><span style="font-style:italic"></span>}
-</code></pre></div><p>In other words, it&rsquo;s reasonable to think of <code>Optional</code> as an Objective-C style ~nil~able pointer.</p>
+<span class="k">if</span> <span class="n">let</span> <span class="n">actualString</span> <span class="o">=</span> <span class="n">anOptionalString</span><span class="o">?</span> <span class="p">{</span>
+  <span class="c1">// there is a string value in there, in other words anOptionalString is not nil
+</span><span class="c1"></span>  <span class="n">print</span><span class="p">(</span><span class="s">&#34;String is \(actualString)&#34;</span><span class="p">)</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="c1">// nil
+</span><span class="c1"></span><span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>In other words, it&rsquo;s reasonable to think of <code>Optional</code> as an Objective-C style ~nil~able pointer.</p>
 <ul>
 <li>There&rsquo;s a great <a href="https://stackoverflow.com/questions/24003642/what-is-an-optional-value-in-swift">post on stackoverflow</a> that goes through various gotchas and edge cases.</li>
 <li><a href="https://developer.apple.com/documentation/swift/optional">Apple&rsquo;s documentation</a> is also worth a look.</li>

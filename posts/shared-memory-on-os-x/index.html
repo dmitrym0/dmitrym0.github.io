@@ -12,13 +12,13 @@
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Working with shared memory on OS X"/>
 <meta name="twitter:description" content="If you&rsquo;re working with Qt&rsquo;s QSharedMemory, on Mac OS X you&rsquo;re working with System V shared memory subsystem. If your data is sizable, the first limit you&rsquo;ll hit in the maximum segment size, which is for some reason around 4 megs. To increase it invoke this magic incantation:
-sudo sysctl -w kern.sysv.shmmax=33554432 and to see other shared mem related kernel variables:
-sysctl -A|grep shm If you&rsquo;d like these settings to remain after you reboot your machine follow the instruction here."/>
+1  sudo sysctl -w kern.sysv.shmmax=33554432   and to see other shared mem related kernel variables:
+1  sysctl -A|grep shm   If you&rsquo;d like these settings to remain after you reboot your machine follow the instruction here."/>
 
     <meta property="og:title" content="Working with shared memory on OS X" />
 <meta property="og:description" content="If you&rsquo;re working with Qt&rsquo;s QSharedMemory, on Mac OS X you&rsquo;re working with System V shared memory subsystem. If your data is sizable, the first limit you&rsquo;ll hit in the maximum segment size, which is for some reason around 4 megs. To increase it invoke this magic incantation:
-sudo sysctl -w kern.sysv.shmmax=33554432 and to see other shared mem related kernel variables:
-sysctl -A|grep shm If you&rsquo;d like these settings to remain after you reboot your machine follow the instruction here." />
+1  sudo sysctl -w kern.sysv.shmmax=33554432   and to see other shared mem related kernel variables:
+1  sysctl -A|grep shm   If you&rsquo;d like these settings to remain after you reboot your machine follow the instruction here." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://dmitrym0.github.io/posts/shared-memory-on-os-x/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2010-04-05T00:00:00-07:00" />
@@ -53,6 +53,8 @@ sysctl -A|grep shm If you&rsquo;d like these settings to remain after you reboot
 
     
       <link rel="stylesheet" href="https://dmitrym0.github.io/css/custom.css" />
+    
+      <link rel="stylesheet" href="https://dmitrym0.github.io/images/syntax.css" />
     
 
     
@@ -133,10 +135,24 @@ sysctl -A|grep shm If you&rsquo;d like these settings to remain after you reboot
 
       <div>
         <p>If you&rsquo;re working with Qt&rsquo;s <a href="https://duckduckgo.com/?q=qsharedmemory&amp;t=osx&amp;ia=web">QSharedMemory</a>, on Mac OS X you&rsquo;re working with System V shared memory subsystem. If your data is sizable, the first limit you&rsquo;ll hit in the maximum segment size, which is for some reason around 4 megs. To increase it invoke this magic incantation:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo sysctl -w kern.sysv.shmmax=33554432
-</code></pre></div><p>and to see other shared mem related kernel variables:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sysctl -A|grep shm
-</code></pre></div><p>If you&rsquo;d like these settings to remain after you reboot your machine follow the instruction <a href="http://www.spy-hill.net/help/apple/SharedMemory.html">here</a>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">sudo sysctl -w kern.sysv.shmmax<span class="o">=</span><span class="m">33554432</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>and to see other shared mem related kernel variables:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">sysctl -A<span class="p">|</span>grep shm
+</code></pre></td></tr></table>
+</div>
+</div><p>If you&rsquo;d like these settings to remain after you reboot your machine follow the instruction <a href="http://www.spy-hill.net/help/apple/SharedMemory.html">here</a>.</p>
 <p>The other problem you&rsquo;re likely to hit is that shared memory persists between processes (as it probably should) unless you detach and then destroy the QSharedMemory object. This makes testing somewhat inconvenient. You can monitor
 and remove shared segments with <code>ipcs</code> and <code>ipcrm</code> commands. The first command lists shared segments, the second deletes them.</p>
 <p>Again, I&rsquo;ve only verified this on Mac OS X 10.5, but it should work on other Unix-like systems that support System V IPC.</p>

@@ -52,6 +52,8 @@ In GTD, reviews occupy a pretty important niche. Without regular task and projec
     
       <link rel="stylesheet" href="https://dmitrym0.github.io/css/custom.css" />
     
+      <link rel="stylesheet" href="https://dmitrym0.github.io/images/syntax.css" />
+    
 
     
 
@@ -141,17 +143,33 @@ task list is for it to closely resemble the actual state of what you have to do.
 <p>I wrote a bit of elisp to auto generate these properties for all <code>TODO</code> entries when a file is saved. This guarantees that the entry will bubble up for review a month after creation. Month is a default review duration
 that can be configured via <code>REVIEW_DELAY</code> property.</p>
 <p>Add this somewhere in <code>~/.emacs</code> or similar.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(defun my/org-add-next-review-property ()
-  <span style="font-style:italic">&#34;Add NEXT_REVIEW property to headlines that don&#39;t have one&#34;</span>
-  (interactive)
-  (org-map-entries &#39;(unless (org-entry-get nil <span style="font-style:italic">&#34;NEXT_REVIEW&#34;</span>) (org-review-insert-last-review)) <span style="font-style:italic">&#34;TODO=\&#34;TODO\&#34;&#34;</span>)
-)
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-elisp" data-lang="elisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">my/org-add-next-review-property</span> <span class="p">()</span>
+  <span class="s">&#34;Add NEXT_REVIEW property to headlines that don&#39;t have one&#34;</span>
+  <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
+  <span class="p">(</span><span class="nv">org-map-entries</span> <span class="o">&#39;</span><span class="p">(</span><span class="nb">unless</span> <span class="p">(</span><span class="nv">org-entry-get</span> <span class="no">nil</span> <span class="s">&#34;NEXT_REVIEW&#34;</span><span class="p">)</span> <span class="p">(</span><span class="nv">org-review-insert-last-review</span><span class="p">))</span> <span class="s">&#34;TODO=\&#34;TODO\&#34;&#34;</span><span class="p">)</span>
+<span class="p">)</span>
 
 
-(add-hook <span style="font-style:italic">&#39;org-mode-hook</span>
-  (lambda ()
-  (add-hook <span style="font-style:italic">&#39;before-save-hook</span> <span style="font-style:italic">&#39;my/org-add-next-review-property</span> <span style="font-style:italic">&#39;local</span>)))
-</code></pre></div><p>The process will look something like this:</p>
+<span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;org-mode-hook</span>
+  <span class="p">(</span><span class="nb">lambda</span> <span class="p">()</span>
+  <span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;before-save-hook</span> <span class="ss">&#39;my/org-add-next-review-property</span> <span class="ss">&#39;local</span><span class="p">)))</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>The process will look something like this:</p>
 <ol>
 <li>Add a <code>TODO</code> task to inbox</li>
 <li>Once a file is saved the <code>*_REVIEW</code> properties are generated.</li>

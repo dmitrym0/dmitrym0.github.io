@@ -247,8 +247,8 @@ I consume my instant messaging via IRC (with the help of minbif) and now Twitter
       
       <guid>https://dmitrym0.github.io/posts/shared-memory-on-os-x/</guid>
       <description>If you&amp;rsquo;re working with Qt&amp;rsquo;s QSharedMemory, on Mac OS X you&amp;rsquo;re working with System V shared memory subsystem. If your data is sizable, the first limit you&amp;rsquo;ll hit in the maximum segment size, which is for some reason around 4 megs. To increase it invoke this magic incantation:
-sudo sysctl -w kern.sysv.shmmax=33554432 and to see other shared mem related kernel variables:
-sysctl -A|grep shm If you&amp;rsquo;d like these settings to remain after you reboot your machine follow the instruction here.</description>
+1  sudo sysctl -w kern.sysv.shmmax=33554432   and to see other shared mem related kernel variables:
+1  sysctl -A|grep shm   If you&amp;rsquo;d like these settings to remain after you reboot your machine follow the instruction here.</description>
     </item>
     
     <item>
@@ -260,7 +260,7 @@ sysctl -A|grep shm If you&amp;rsquo;d like these settings to remain after you re
       <description>This is another programming related post.
 Say you have a true type font that&amp;rsquo;s not part of the OS font set in a file. You&amp;rsquo;ve read the contents of the file into memory and now want to make it available to Cocoa. How?
 Turns out that ATSUI comes to the rescue:
-ATSFontContainerRef container; OSStatus status = ATSFontActivateFromMemory((LogicalAddress)[fontData bytes], // buffer with font data  [fontData length], // size of font data  kATSFontContextLocal, // for use only in this application  kATSFontFormatUnspecified, // reserved  NULL, // reserved  kATSOptionFlagsDefault, // reserved  &amp;amp;container); // on output, will contain the activated font // find the number of font references in the container (goes to numItems) ItemCount numItems; status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, 0, NULL, &amp;amp;numItems); NSLog(@&amp;#34;There are %d references in the container\n&amp;#34;, numItems); // load the individual fonts ATSFontRef *ioArray = malloc(numItems * sizeof(ATSFontRef)); status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, numItems, ioArray, &amp;amp;numItems); CFStringRef fontName = nil; ATSFontGetName (ioArray[fontIndex], kATSOptionFlagsDefault, &amp;amp;fontName); NSFont* myFont = [NSFont fontWithName:(NSString*)fontName size:24]; myFont now contains the NSFont reference to your font.</description>
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  ATSFontContainerRef container; OSStatus status = ATSFontActivateFromMemory((LogicalAddress)[fontData bytes], // buffer with font data  [fontData length], // size of font data  kATSFontContextLocal, // for use only in this application  kATSFontFormatUnspecified, // reserved  NULL, // reserved  kATSOptionFlagsDefault, // reserved  &amp;amp;container); // on output, will contain the activated font // find the number of font references in the container (goes to numItems) ItemCount numItems; status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, 0, NULL, &amp;amp;numItems); NSLog(@&amp;#34;There are %d references in the container\n&amp;#34;, numItems); // load the individual fonts ATSFontRef *ioArray = malloc(numItems * sizeof(ATSFontRef)); status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, numItems, ioArray, &amp;amp;numItems); CFStringRef fontName = nil; ATSFontGetName (ioArray[fontIndex], kATSOptionFlagsDefault, &amp;amp;fontName); NSFont* myFont = [NSFont fontWithName:(NSString*)fontName size:24];   myFont now contains the NSFont reference to your font.</description>
     </item>
     
   </channel>
