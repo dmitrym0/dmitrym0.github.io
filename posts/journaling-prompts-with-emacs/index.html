@@ -20,7 +20,7 @@ I usually set a timer for 5 minutes and go to town. One particular challenge I h
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://dmitrym0.github.io/posts/journaling-prompts-with-emacs/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-07-17T00:00:00-07:00" />
-<meta property="article:modified_time" content="2022-07-18T08:16:11-07:00" />
+<meta property="article:modified_time" content="2022-07-25T10:47:33-07:00" />
 
 
 
@@ -154,12 +154,12 @@ I usually set a timer for 5 minutes and go to town. One particular challenge I h
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Lisp" data-lang="Lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">dm/get-journaling-prompt</span> <span class="p">()</span>
+<pre class="chroma"><code class="language-elisp" data-lang="elisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">dm/get-journaling-prompt</span> <span class="p">()</span>
   <span class="s">&#34;Returns a single line from journaling prompts.&#34;</span>
-  <span class="p">(</span><span class="nv">save-window-excursion</span>
-    <span class="p">(</span><span class="nv">find-file</span> <span class="p">(</span><span class="nv">concat</span> <span class="nv">org-roam-directory</span> <span class="s">&#34;journaling_prompts.org&#34;</span><span class="p">))</span>
-    <span class="p">(</span><span class="nv">goto-char</span> <span class="p">(</span><span class="nv">point-max</span><span class="p">))</span>
-    <span class="p">(</span><span class="k">let*</span> <span class="p">((</span><span class="nv">number-of-prompts</span> <span class="p">(</span><span class="nf">-</span> <span class="p">(</span><span class="nv">line-number-at-pos</span><span class="p">)</span> <span class="mi">10</span><span class="p">)))</span>
+  <span class="p">(</span><span class="nb">save-window-excursion</span>
+    <span class="p">(</span><span class="nv">find-file</span> <span class="p">(</span><span class="nf">concat</span> <span class="nv">org-roam-directory</span> <span class="s">&#34;journaling_prompts.org&#34;</span><span class="p">))</span>
+    <span class="p">(</span><span class="nf">goto-char</span> <span class="p">(</span><span class="nf">point-max</span><span class="p">))</span>
+    <span class="p">(</span><span class="nb">let*</span> <span class="p">((</span><span class="nv">number-of-prompts</span> <span class="p">(</span><span class="nf">-</span> <span class="p">(</span><span class="nv">line-number-at-pos</span><span class="p">)</span> <span class="mi">10</span><span class="p">)))</span>
       <span class="p">(</span><span class="nv">goto-line</span> <span class="p">(</span><span class="nf">+</span> <span class="mi">10</span> <span class="p">(</span><span class="nf">random</span> <span class="nv">number-of-prompts</span><span class="p">)))</span>
       <span class="p">(</span><span class="nv">s-chomp</span> <span class="p">(</span><span class="nv">thing-at-point</span> <span class="ss">&#39;line</span> <span class="no">t</span><span class="p">)))))</span>
 </code></pre></td></tr></table>
@@ -176,8 +176,8 @@ I usually set a timer for 5 minutes and go to town. One particular challenge I h
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Lisp" data-lang="Lisp"><span class="p">(</span><span class="s">&#34;dj&#34;</span> <span class="s">&#34;Journal&#34;</span> <span class="nv">entry</span>
- <span class="p">(</span><span class="nv">file+olp+datetree</span> <span class="o">,</span><span class="p">(</span><span class="nv">concat</span> <span class="nv">org-directory</span> <span class="s">&#34;/personal-daily-2022.org&#34;</span><span class="p">))</span>
+<pre class="chroma"><code class="language-elisp" data-lang="elisp"><span class="p">(</span><span class="s">&#34;dj&#34;</span> <span class="s">&#34;Journal&#34;</span> <span class="nv">entry</span>
+ <span class="p">(</span><span class="nv">file+olp+datetree</span> <span class="o">,</span><span class="p">(</span><span class="nf">concat</span> <span class="nv">org-directory</span> <span class="s">&#34;/personal-daily-2022.org&#34;</span><span class="p">))</span>
  <span class="s">&#34;* Entered on %U
 </span><span class="s">
 </span><span class="s">  Prompt: %(dm/get-journaling-prompt)

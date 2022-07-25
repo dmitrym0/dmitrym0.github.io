@@ -6,13 +6,31 @@
     <description>Recent content in Tags on Dmitry M - Veridis Quo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 17 Jul 2022 00:00:00 -0700</lastBuildDate><atom:link href="https://dmitrym0.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Jul 2022 00:00:00 -0700</lastBuildDate><atom:link href="https://dmitrym0.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Development</title>
+      <link>https://dmitrym0.github.io/tags/development/</link>
+      <pubDate>Sun, 24 Jul 2022 00:00:00 -0700</pubDate>
+      
+      <guid>https://dmitrym0.github.io/tags/development/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Emacs</title>
       <link>https://dmitrym0.github.io/tags/emacs/</link>
-      <pubDate>Sun, 17 Jul 2022 00:00:00 -0700</pubDate>
+      <pubDate>Sun, 24 Jul 2022 00:00:00 -0700</pubDate>
       
       <guid>https://dmitrym0.github.io/tags/emacs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OpenSource</title>
+      <link>https://dmitrym0.github.io/tags/opensource/</link>
+      <pubDate>Sun, 24 Jul 2022 00:00:00 -0700</pubDate>
+      
+      <guid>https://dmitrym0.github.io/tags/opensource/</guid>
       <description></description>
     </item>
     
@@ -31,6 +49,15 @@
       <pubDate>Thu, 17 Mar 2022 00:00:00 -0700</pubDate>
       
       <guid>https://dmitrym0.github.io/tags/productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DevOps</title>
+      <link>https://dmitrym0.github.io/tags/devops/</link>
+      <pubDate>Mon, 14 Mar 2022 00:00:00 -0700</pubDate>
+      
+      <guid>https://dmitrym0.github.io/tags/devops/</guid>
       <description></description>
     </item>
     
@@ -62,29 +89,11 @@
     </item>
     
     <item>
-      <title>Development</title>
-      <link>https://dmitrym0.github.io/tags/development/</link>
-      <pubDate>Thu, 23 Jan 2020 00:00:00 -0800</pubDate>
-      
-      <guid>https://dmitrym0.github.io/tags/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>iOS</title>
       <link>https://dmitrym0.github.io/tags/ios/</link>
       <pubDate>Thu, 23 Jan 2020 00:00:00 -0800</pubDate>
       
       <guid>https://dmitrym0.github.io/tags/ios/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>OpenSource</title>
-      <link>https://dmitrym0.github.io/tags/opensource/</link>
-      <pubDate>Thu, 23 Jan 2020 00:00:00 -0800</pubDate>
-      
-      <guid>https://dmitrym0.github.io/tags/opensource/</guid>
       <description></description>
     </item>
     

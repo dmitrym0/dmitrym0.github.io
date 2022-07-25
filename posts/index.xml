@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Dmitry M - Veridis Quo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 17 Jul 2022 00:00:00 -0700</lastBuildDate><atom:link href="https://dmitrym0.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Jul 2022 00:00:00 -0700</lastBuildDate><atom:link href="https://dmitrym0.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Achievement Unlocked: Open Source Contribution</title>
+      <link>https://dmitrym0.github.io/posts/open-source-contribution/</link>
+      <pubDate>Sun, 24 Jul 2022 00:00:00 -0700</pubDate>
+      
+      <guid>https://dmitrym0.github.io/posts/open-source-contribution/</guid>
+      <description>I did it. My Emacs package, org-hyperscheduler, is now live on MELPA, here.
+I&amp;rsquo;m overjoyed. It&amp;rsquo;s a big deal for me, because I&amp;rsquo;ve been a long time beneficiary of open source software and I&amp;rsquo;m glad to finally be able to give back. It&amp;rsquo;s the first piece of software that I started out writing for myself and got to a state where it&amp;rsquo;s useable for other folks.
+Once version 1 was stable, I submitted a pull request to MELPA.</description>
+    </item>
+    
     <item>
       <title>Journaling prompts in Emacs</title>
       <link>https://dmitrym0.github.io/posts/journaling-prompts-with-emacs/</link>
@@ -60,7 +71,8 @@ In digital note taking, proximity is difficult to simulate. Hyperlinking is the 
     </item>
     
     <item>
-      <title>Book review: &#34;First 90 days&#34;</title>
+      <title>  Book review: &#34;First 90 days&#34;
+  </title>
       <link>https://dmitrym0.github.io/posts/book-review-first-90-days/</link>
       <pubDate>Tue, 28 Apr 2020 00:00:00 -0700</pubDate>
       
@@ -145,6 +157,30 @@ In GTD, reviews occupy a pretty important niche. Without regular task and projec
     </item>
     
     <item>
+      <title>Reading a font from file an making it available to Cocoa</title>
+      <link>https://dmitrym0.github.io/posts/reading-font-from-/</link>
+      <pubDate>Tue, 07 Jan 2020 00:00:00 -0800</pubDate>
+      
+      <guid>https://dmitrym0.github.io/posts/reading-font-from-/</guid>
+      <description>This is another programming related post.
+Say you have a true type font that&amp;rsquo;s not part of the OS font set in a file. You&amp;rsquo;ve read the contents of the file into memory and now want to make it available to Cocoa. How?
+Turns out that ATSUI comes to the rescue:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  ATSFontContainerRef container; OSStatus status = ATSFontActivateFromMemory((LogicalAddress)[fontData bytes], // buffer with font data  [fontData length], // size of font data  kATSFontContextLocal, // for use only in this application  kATSFontFormatUnspecified, // reserved  NULL, // reserved  kATSOptionFlagsDefault, // reserved  &amp;amp;container); // on output, will contain the activated font // find the number of font references in the container (goes to numItems) ItemCount numItems; status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, 0, NULL, &amp;amp;numItems); NSLog(@&amp;#34;There are %d references in the container\n&amp;#34;, numItems); // load the individual fonts ATSFontRef *ioArray = malloc(numItems * sizeof(ATSFontRef)); status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, numItems, ioArray, &amp;amp;numItems); CFStringRef fontName = nil; ATSFontGetName (ioArray[fontIndex], kATSOptionFlagsDefault, &amp;amp;fontName); NSFont* myFont = [NSFont fontWithName:(NSString*)fontName size:24];   myFont now contains the NSFont reference to your font.</description>
+    </item>
+    
+    <item>
+      <title>Reading a font from file an making it available to Cocoa</title>
+      <link>https://dmitrym0.github.io/posts/reading-font-from-file-an/</link>
+      <pubDate>Tue, 07 Jan 2020 00:00:00 -0800</pubDate>
+      
+      <guid>https://dmitrym0.github.io/posts/reading-font-from-file-an/</guid>
+      <description>This is another programming related post.
+Say you have a true type font that&amp;rsquo;s not part of the OS font set in a file. You&amp;rsquo;ve read the contents of the file into memory and now want to make it available to Cocoa. How?
+Turns out that ATSUI comes to the rescue:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  ATSFontContainerRef container; OSStatus status = ATSFontActivateFromMemory((LogicalAddress)[fontData bytes], // buffer with font data  [fontData length], // size of font data  kATSFontContextLocal, // for use only in this application  kATSFontFormatUnspecified, // reserved  NULL, // reserved  kATSOptionFlagsDefault, // reserved  &amp;amp;container); // on output, will contain the activated font // find the number of font references in the container (goes to numItems) ItemCount numItems; status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, 0, NULL, &amp;amp;numItems); NSLog(@&amp;#34;There are %d references in the container\n&amp;#34;, numItems); // load the individual fonts ATSFontRef *ioArray = malloc(numItems * sizeof(ATSFontRef)); status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, numItems, ioArray, &amp;amp;numItems); CFStringRef fontName = nil; ATSFontGetName (ioArray[fontIndex], kATSOptionFlagsDefault, &amp;amp;fontName); NSFont* myFont = [NSFont fontWithName:(NSString*)fontName size:24];   myFont now contains the NSFont reference to your font.</description>
+    </item>
+    
+    <item>
       <title>Building a lithium ion battery, part 1: “Why”</title>
       <link>https://dmitrym0.github.io/posts/diy-lithium-battery-part-1/</link>
       <pubDate>Tue, 12 Mar 2019 00:00:00 -0700</pubDate>
@@ -185,6 +221,26 @@ The biggest one is performance. NGINX and Apache are significantly better and fa
       <guid>https://dmitrym0.github.io/posts/tig-cheat-sheet/</guid>
       <description>One of the recommended source control practices is to commit frequently, and often. I prefer to keep my commits terse and focused, however in practice I’m working on a couple related but independent things in parallel. At commit time, I prefer to tease loosely related things apart and commit them separately.
 One way to do that is with the interactive git-add facility that can be invoked with git add -p:</description>
+    </item>
+    
+    <item>
+      <title>ANother post</title>
+      <link>https://dmitrym0.github.io/posts/post-title-in-slug-form-2/</link>
+      <pubDate>Tue, 19 Dec 2017 00:00:00 -0800</pubDate>
+      
+      <guid>https://dmitrym0.github.io/posts/post-title-in-slug-form-2/</guid>
+      <description>test asdf</description>
+    </item>
+    
+    <item>
+      <title>XTerra Switched Outlet Howto</title>
+      <link>https://dmitrym0.github.io/posts/xterra-switched-outlet-howto/</link>
+      <pubDate>Thu, 23 Mar 2017 00:00:00 -0700</pubDate>
+      
+      <guid>https://dmitrym0.github.io/posts/xterra-switched-outlet-howto/</guid>
+      <description>XTerra Switched outlet For some reason truck and SUV 12v outlets are always hot. This is true in my wife’s F150 and my 2010 Nissan XTerra. This is a bit of annoyance since I’d like to use a bluetooth transmitter to connect my iPhone to the radio. Thankfully, it’s fairly easy to add a second, switched outlet in the XTerra.
+The short of it is:
+ acquire OEM cigarette outlet wire it via an add-a-fuse  As far as electrical mods go this one is very mild and simple.</description>
     </item>
     
     <item>
