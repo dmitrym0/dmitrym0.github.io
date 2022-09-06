@@ -62,7 +62,7 @@ In GTD, reviews occupy a pretty important niche. Without regular task and projec
     <link rel="icon" type="image/png" href="https://dmitrym0.github.io/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://dmitrym0.github.io/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.82.0" />
+    <meta name="generator" content="Hugo 0.102.3" />
   </head>
 
   
@@ -145,7 +145,7 @@ that can be configured via <code>REVIEW_DELAY</code> property.</p>
 <p>Add this somewhere in <code>~/.emacs</code> or similar.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -157,17 +157,17 @@ that can be configured via <code>REVIEW_DELAY</code> property.</p>
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-elisp" data-lang="elisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">my/org-add-next-review-property</span> <span class="p">()</span>
-  <span class="s">&#34;Add NEXT_REVIEW property to headlines that don&#39;t have one&#34;</span>
-  <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
-  <span class="p">(</span><span class="nv">org-map-entries</span> <span class="o">&#39;</span><span class="p">(</span><span class="nb">unless</span> <span class="p">(</span><span class="nv">org-entry-get</span> <span class="no">nil</span> <span class="s">&#34;NEXT_REVIEW&#34;</span><span class="p">)</span> <span class="p">(</span><span class="nv">org-review-insert-last-review</span><span class="p">))</span> <span class="s">&#34;TODO=\&#34;TODO\&#34;&#34;</span><span class="p">)</span>
-<span class="p">)</span>
-
-
-<span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;org-mode-hook</span>
-  <span class="p">(</span><span class="nb">lambda</span> <span class="p">()</span>
-  <span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;before-save-hook</span> <span class="ss">&#39;my/org-add-next-review-property</span> <span class="ss">&#39;local</span><span class="p">)))</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-elisp" data-lang="elisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">defun</span> <span class="nv">my/org-add-next-review-property</span> <span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="s">&#34;Add NEXT_REVIEW property to headlines that don&#39;t have one&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">org-map-entries</span> <span class="o">&#39;</span><span class="p">(</span><span class="nb">unless</span> <span class="p">(</span><span class="nv">org-entry-get</span> <span class="no">nil</span> <span class="s">&#34;NEXT_REVIEW&#34;</span><span class="p">)</span> <span class="p">(</span><span class="nv">org-review-insert-last-review</span><span class="p">))</span> <span class="s">&#34;TODO=\&#34;TODO\&#34;&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;org-mode-hook</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">lambda</span> <span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;before-save-hook</span> <span class="ss">&#39;my/org-add-next-review-property</span> <span class="ss">&#39;local</span><span class="p">)))</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>The process will look something like this:</p>
 <ol>
@@ -186,7 +186,7 @@ that can be configured via <code>REVIEW_DELAY</code> property.</p>
 
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

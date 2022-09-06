@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on Dmitry M - Veridis Quo</title>
+    <link>https://dmitrym0.github.io/tags/git/</link>
+    <description>Recent content in Git on Dmitry M - Veridis Quo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 02 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dmitrym0.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3 ways to context switch with Git</title>
+      <link>https://dmitrym0.github.io/posts/three-ways-to-context-switch-with-git/</link>
+      <pubDate>Fri, 02 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym0.github.io/posts/three-ways-to-context-switch-with-git/</guid>
+      <description>Blog What do I mean by &amp;ldquo;switching code context&amp;rdquo;? Imagine you&amp;rsquo;re working on a branch and then you have to jump into a production issue, or inspiration strikes you want to try something new.
+There are 2 options I knew of and a third I discovered recently:
+Check in your code. Stash your code. Create a new worktree. Checking in Check in is an obvious option:
+1 2 git add -p git commit -m &amp;#39;WIP&amp;#39; I find that checking code is a distinct and separate activity from writing code.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -13,16 +13,18 @@
 <meta name="twitter:title" content="Caddy 2 and TCP Proxying"/>
 <meta name="twitter:description" content="How to configure Caddy2 to proxy TCP streams.
 To illustrate the architecture, I have the following entities running in Docker.
-  I&rsquo;m using Caddy 2 as a reverse proxy, but it looks like it supports many more scenarios. Previously I used nginx, or traeffic. The appeal of Caddy is that it supports TLS (with LetsEncrypt) out of the box and integrates with Consul for an eventual clustering solution with Nomad."/>
+I&rsquo;m using Caddy 2 as a reverse proxy, but it looks like it supports many more scenarios. Previously I used nginx, or traeffic. The appeal of Caddy is that it supports TLS (with LetsEncrypt) out of the box and integrates with Consul for an eventual clustering solution with Nomad.
+Startup with Caddy was very simple."/>
 
     <meta property="og:title" content="Caddy 2 and TCP Proxying" />
 <meta property="og:description" content="How to configure Caddy2 to proxy TCP streams.
 To illustrate the architecture, I have the following entities running in Docker.
-  I&rsquo;m using Caddy 2 as a reverse proxy, but it looks like it supports many more scenarios. Previously I used nginx, or traeffic. The appeal of Caddy is that it supports TLS (with LetsEncrypt) out of the box and integrates with Consul for an eventual clustering solution with Nomad." />
+I&rsquo;m using Caddy 2 as a reverse proxy, but it looks like it supports many more scenarios. Previously I used nginx, or traeffic. The appeal of Caddy is that it supports TLS (with LetsEncrypt) out of the box and integrates with Consul for an eventual clustering solution with Nomad.
+Startup with Caddy was very simple." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://dmitrym0.github.io/posts/caddy2-and-tcp-proxying/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-03-14T00:00:00-07:00" />
-<meta property="article:modified_time" content="2022-07-25T10:47:38-07:00" />
+<meta property="article:published_time" content="2022-03-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-09-05T11:01:14-07:00" />
 
 
 
@@ -64,7 +66,7 @@ To illustrate the architecture, I have the following entities running in Docker.
     <link rel="icon" type="image/png" href="https://dmitrym0.github.io/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://dmitrym0.github.io/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.82.0" />
+    <meta name="generator" content="Hugo 0.102.3" />
   </head>
 
   
@@ -116,7 +118,7 @@ To illustrate the architecture, I have the following entities running in Docker.
           <div class="date">
             <span class="posted-on">
               <i class="fas fa-calendar"></i>
-              <time datetime='2022-03-14T00:00:00-07:00'>
+              <time datetime='2022-03-14T00:00:00Z'>
                 March 14, 2022
               </time>
             </span>
@@ -136,8 +138,7 @@ To illustrate the architecture, I have the following entities running in Docker.
       <div>
         <p>How to configure Caddy2 to proxy TCP streams.</p>
 <p>To illustrate the architecture, I have the following entities running in Docker.</p>
-<figure>
-    <img src="https://dmitrym0.github.io/ox-hugo/gateway-overview-v1.png"/> 
+<figure><img src="https://dmitrym0.github.io/ox-hugo/gateway-overview-v1.png"/>
 </figure>
 
 <p>I&rsquo;m using <a href="https://caddyserver.com">Caddy 2</a> as a reverse proxy, but it looks like it supports many more scenarios. Previously I used nginx, or traeffic. The appeal of Caddy is that it supports TLS (with LetsEncrypt) out of the box and integrates with <a href="https://caddyserver.com/docs/modules/caddy.storage.consul">Consul</a> for an eventual clustering solution with Nomad.</p>
@@ -145,7 +146,7 @@ To illustrate the architecture, I have the following entities running in Docker.
 <p>First, you need to build caddy with <a href="https://github.com/mholt/caddy-l4">caddy-l4</a> plugin:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -155,29 +156,29 @@ To illustrate the architecture, I have the following entities running in Docker.
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-dockerfile" data-lang="dockerfile"><span class="k">FROM</span><span class="s"> caddy:2-builder AS builder</span><span class="err">
-</span><span class="err">
-</span><span class="err"></span><span class="k">RUN</span> xcaddy build <span class="se">\
-</span><span class="se"></span>    --with github.com/mholt/caddy-l4<span class="err">
-</span><span class="err">
-</span><span class="err"></span><span class="k">FROM</span><span class="s"> caddy:2</span><span class="err">
-</span><span class="err">
-</span><span class="err"></span><span class="k">COPY</span> --from<span class="o">=</span>builder /usr/bin/caddy /usr/bin/caddy<span class="err">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-dockerfile" data-lang="dockerfile"><span class="line"><span class="cl"><span class="k">FROM</span><span class="s"> caddy:2-builder AS builder</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">RUN</span> xcaddy build <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    --with github.com/mholt/caddy-l4<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">FROM</span><span class="s"> caddy:2</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">COPY</span> --from<span class="o">=</span>builder /usr/bin/caddy /usr/bin/caddy<span class="err">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>Since <code>caddy-l4</code> does not support <code>Caddyfile</code> s, the configuration needs to be in JSON. Since I already started with a <code>Caddyfile</code>, I converted it to JSON:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh">caddy adapt —config Caddyfile —adapter Caddyfile
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">caddy adapt —config Caddyfile —adapter Caddyfile
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>I then merged the output with the following manually crafted JSON:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -194,22 +195,22 @@ To illustrate the architecture, I have the following entities running in Docker.
 </span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-json" data-lang="json"><span class="s2">&#34;layer4&#34;</span><span class="err">:</span> <span class="p">{</span>
-    <span class="nt">&#34;servers&#34;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&#34;servername&#34;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&#34;listen&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;0.0.0.0:1883&#34;</span><span class="p">],</span>
-            <span class="nt">&#34;routes&#34;</span><span class="p">:</span> <span class="p">[</span>
-                <span class="p">{</span>
-                    <span class="nt">&#34;handle&#34;</span><span class="p">:</span> <span class="p">[</span>
-                        <span class="p">{</span><span class="nt">&#34;handler&#34;</span><span class="p">:</span> <span class="s2">&#34;tls&#34;</span><span class="p">},</span>
-                        <span class="p">{</span><span class="nt">&#34;handler&#34;</span><span class="p">:</span> <span class="s2">&#34;proxy&#34;</span><span class="p">,</span> <span class="nt">&#34;upstreams&#34;</span><span class="p">:</span> <span class="p">[{</span><span class="nt">&#34;dial&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;mqtt-server:1883&#34;</span><span class="p">]}]}</span>
-                    <span class="p">]</span>
-                <span class="p">}</span>
-            <span class="p">]</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="s2">&#34;layer4&#34;</span><span class="err">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;servers&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;servername&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;listen&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;0.0.0.0:1883&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;routes&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;handle&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">{</span><span class="nt">&#34;handler&#34;</span><span class="p">:</span> <span class="s2">&#34;tls&#34;</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">{</span><span class="nt">&#34;handler&#34;</span><span class="p">:</span> <span class="s2">&#34;proxy&#34;</span><span class="p">,</span> <span class="nt">&#34;upstreams&#34;</span><span class="p">:</span> <span class="p">[{</span><span class="nt">&#34;dial&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;mqtt-server:1883&#34;</span><span class="p">]}]}</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">]</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>This JSON directs Caddy to:</p>
 <ol>
@@ -220,7 +221,7 @@ To illustrate the architecture, I have the following entities running in Docker.
 <p>Finally, I had to modify the default execution string for the caddy container in my <code>docker-compose.yml</code>:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -233,18 +234,18 @@ To illustrate the architecture, I have the following entities running in Docker.
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-yml" data-lang="yml"><span class="nt">caddy</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">falcon-caddy:2</span><span class="w">
-</span><span class="w">  </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">unless-stopped</span><span class="w">
-</span><span class="w">  </span><span class="nt">ports</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span>- <span class="s2">&#34;80:80&#34;</span><span class="w">
-</span><span class="w">    </span>- <span class="s2">&#34;443:443&#34;</span><span class="w">
-</span><span class="w">    </span>- <span class="s2">&#34;1883:1883&#34;</span><span class="w">   </span><span class="c"># mqtt</span><span class="w">
-</span><span class="w">  </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span>- <span class="l">./caddy/caddyfile.json:/etc/caddy/caddyfile.json</span><span class="w">
-</span><span class="w">  </span><span class="nt">environment</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;caddy&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;run&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;-config&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;/etc/caddy/caddyfile.json&#39;</span><span class="p">]</span><span class="w">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="cl"><span class="nt">caddy</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">falcon-caddy:2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">unless-stopped</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="s2">&#34;80:80&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="s2">&#34;443:443&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="s2">&#34;1883:1883&#34;</span><span class="w">   </span><span class="c"># mqtt</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">./caddy/caddyfile.json:/etc/caddy/caddyfile.json</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;caddy&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;run&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;-config&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;/etc/caddy/caddyfile.json&#39;</span><span class="p">]</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div>
       </div>
@@ -255,7 +256,7 @@ To illustrate the architecture, I have the following entities running in Docker.
 
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

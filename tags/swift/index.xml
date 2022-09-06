@@ -6,11 +6,11 @@
     <description>Recent content in Swift on Dmitry M - Veridis Quo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 12 Jan 2020 00:00:00 -0800</lastBuildDate><atom:link href="https://dmitrym0.github.io/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://dmitrym0.github.io/tags/swift/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Swift optionals for Objective-C programmers</title>
       <link>https://dmitrym0.github.io/posts/swift-optionals-for-objc-programmers/</link>
-      <pubDate>Sun, 12 Jan 2020 00:00:00 -0800</pubDate>
+      <pubDate>Sun, 12 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://dmitrym0.github.io/posts/swift-optionals-for-objc-programmers/</guid>
       <description>I&amp;rsquo;m trying my hand at some iOS programming after being away for a while. At this point it does not make sense to start a new project in Objective-C so I started in Swift.

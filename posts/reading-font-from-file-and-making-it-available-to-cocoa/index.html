@@ -14,13 +14,13 @@
 <meta name="twitter:description" content="This is another programming related post.
 Say you have a true type font that&rsquo;s not part of the OS font set in a file. You&rsquo;ve read the contents of the file into memory and now want to make it available to Cocoa. How?
 Turns out that ATSUI comes to the rescue:
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  ATSFontContainerRef container; OSStatus status = ATSFontActivateFromMemory((LogicalAddress)[fontData bytes], // buffer with font data  [fontData length], // size of font data  kATSFontContextLocal, // for use only in this application  kATSFontFormatUnspecified, // reserved  NULL, // reserved  kATSOptionFlagsDefault, // reserved  &amp;container); // on output, will contain the activated font // find the number of font references in the container (goes to numItems) ItemCount numItems; status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, 0, NULL, &amp;numItems); NSLog(@&#34;There are %d references in the container\n&#34;, numItems); // load the individual fonts ATSFontRef *ioArray = malloc(numItems * sizeof(ATSFontRef)); status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, numItems, ioArray, &amp;numItems); CFStringRef fontName = nil; ATSFontGetName (ioArray[fontIndex], kATSOptionFlagsDefault, &amp;fontName); NSFont* myFont = [NSFont fontWithName:(NSString*)fontName size:24];   myFont now contains the NSFont reference to your font."/>
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 ATSFontContainerRef container; OSStatus status = ATSFontActivateFromMemory((LogicalAddress)[fontData bytes], // buffer with font data [fontData length], // size of font data kATSFontContextLocal, // for use only in this application kATSFontFormatUnspecified, // reserved NULL, // reserved kATSOptionFlagsDefault, // reserved &amp;container); // on output, will contain the activated font // find the number of font references in the container (goes to numItems) ItemCount numItems; status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, 0, NULL, &amp;numItems); NSLog(@&#34;There are %d references in the container\n&#34;, numItems); // load the individual fonts ATSFontRef *ioArray = malloc(numItems * sizeof(ATSFontRef)); status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, numItems, ioArray, &amp;numItems); CFStringRef fontName = nil; ATSFontGetName (ioArray[fontIndex], kATSOptionFlagsDefault, &amp;fontName); NSFont* myFont = [NSFont fontWithName:(NSString*)fontName size:24]; myFont now contains the NSFont reference to your font."/>
 
     <meta property="og:title" content="Reading a font from file an making it available to Cocoa" />
 <meta property="og:description" content="This is another programming related post.
 Say you have a true type font that&rsquo;s not part of the OS font set in a file. You&rsquo;ve read the contents of the file into memory and now want to make it available to Cocoa. How?
 Turns out that ATSUI comes to the rescue:
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  ATSFontContainerRef container; OSStatus status = ATSFontActivateFromMemory((LogicalAddress)[fontData bytes], // buffer with font data  [fontData length], // size of font data  kATSFontContextLocal, // for use only in this application  kATSFontFormatUnspecified, // reserved  NULL, // reserved  kATSOptionFlagsDefault, // reserved  &amp;container); // on output, will contain the activated font // find the number of font references in the container (goes to numItems) ItemCount numItems; status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, 0, NULL, &amp;numItems); NSLog(@&#34;There are %d references in the container\n&#34;, numItems); // load the individual fonts ATSFontRef *ioArray = malloc(numItems * sizeof(ATSFontRef)); status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, numItems, ioArray, &amp;numItems); CFStringRef fontName = nil; ATSFontGetName (ioArray[fontIndex], kATSOptionFlagsDefault, &amp;fontName); NSFont* myFont = [NSFont fontWithName:(NSString*)fontName size:24];   myFont now contains the NSFont reference to your font." />
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 ATSFontContainerRef container; OSStatus status = ATSFontActivateFromMemory((LogicalAddress)[fontData bytes], // buffer with font data [fontData length], // size of font data kATSFontContextLocal, // for use only in this application kATSFontFormatUnspecified, // reserved NULL, // reserved kATSOptionFlagsDefault, // reserved &amp;container); // on output, will contain the activated font // find the number of font references in the container (goes to numItems) ItemCount numItems; status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, 0, NULL, &amp;numItems); NSLog(@&#34;There are %d references in the container\n&#34;, numItems); // load the individual fonts ATSFontRef *ioArray = malloc(numItems * sizeof(ATSFontRef)); status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, numItems, ioArray, &amp;numItems); CFStringRef fontName = nil; ATSFontGetName (ioArray[fontIndex], kATSOptionFlagsDefault, &amp;fontName); NSFont* myFont = [NSFont fontWithName:(NSString*)fontName size:24]; myFont now contains the NSFont reference to your font." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://dmitrym0.github.io/posts/reading-font-from-file-and-making-it-available-to-cocoa/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2009-02-06T00:00:00-08:00" />
@@ -66,7 +66,7 @@ Turns out that ATSUI comes to the rescue:
     <link rel="icon" type="image/png" href="https://dmitrym0.github.io/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://dmitrym0.github.io/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.82.0" />
+    <meta name="generator" content="Hugo 0.102.3" />
   </head>
 
   
@@ -143,7 +143,7 @@ Turns out that ATSUI comes to the rescue:
 <p>Turns out that ATSUI comes to the rescue:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -164,26 +164,26 @@ Turns out that ATSUI comes to the rescue:
 </span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-C++" data-lang="C++">
-<span class="n">ATSFontContainerRef</span> <span class="n">container</span><span class="p">;</span>
-<span class="n">OSStatus</span> <span class="n">status</span> <span class="o">=</span> <span class="n">ATSFontActivateFromMemory</span><span class="p">((</span><span class="n">LogicalAddress</span><span class="p">)[</span><span class="n">fontData</span> <span class="n">bytes</span><span class="p">],</span>           <span class="c1">// buffer with font data
-</span><span class="c1"></span>            <span class="p">[</span><span class="n">fontData</span> <span class="n">length</span><span class="p">],</span>          <span class="c1">// size of font data
-</span><span class="c1"></span>            <span class="n">kATSFontContextLocal</span><span class="p">,</span>       <span class="c1">// for use only in this application
-</span><span class="c1"></span>            <span class="n">kATSFontFormatUnspecified</span><span class="p">,</span>  <span class="c1">// reserved
-</span><span class="c1"></span>            <span class="nb">NULL</span><span class="p">,</span>                       <span class="c1">// reserved
-</span><span class="c1"></span>            <span class="n">kATSOptionFlagsDefault</span><span class="p">,</span>     <span class="c1">// reserved
-</span><span class="c1"></span>            <span class="o">&amp;</span><span class="n">container</span><span class="p">);</span>                <span class="c1">// on output, will contain the activated font
-</span><span class="c1">// find the number of font references in the container (goes to numItems)
-</span><span class="c1"></span><span class="n">ItemCount</span> <span class="n">numItems</span><span class="p">;</span>
-<span class="n">status</span> <span class="o">=</span> <span class="n">ATSFontFindFromContainer</span><span class="p">(</span><span class="n">container</span><span class="p">,</span> <span class="n">kATSOptionFlagsDefault</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">numItems</span><span class="p">);</span>
-<span class="n">NSLog</span><span class="p">(</span><span class="err">@</span><span class="s">&#34;There are %d references in the container</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">numItems</span><span class="p">);</span>
-<span class="c1">// load the individual fonts
-</span><span class="c1"></span><span class="n">ATSFontRef</span> <span class="o">*</span><span class="n">ioArray</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="n">numItems</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">ATSFontRef</span><span class="p">));</span>
-<span class="n">status</span> <span class="o">=</span> <span class="n">ATSFontFindFromContainer</span><span class="p">(</span><span class="n">container</span><span class="p">,</span> <span class="n">kATSOptionFlagsDefault</span><span class="p">,</span> <span class="n">numItems</span><span class="p">,</span> <span class="n">ioArray</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">numItems</span><span class="p">);</span>
-<span class="n">CFStringRef</span> <span class="n">fontName</span> <span class="o">=</span> <span class="n">nil</span><span class="p">;</span>
-<span class="n">ATSFontGetName</span> <span class="p">(</span><span class="n">ioArray</span><span class="p">[</span><span class="n">fontIndex</span><span class="p">],</span> <span class="n">kATSOptionFlagsDefault</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">fontName</span><span class="p">);</span>
-<span class="n">NSFont</span><span class="o">*</span> <span class="n">myFont</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSFont</span> <span class="nl">fontWithName</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="n">fontName</span> <span class="nl">size</span><span class="p">:</span><span class="mi">24</span><span class="p">];</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ATSFontContainerRef</span> <span class="n">container</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">OSStatus</span> <span class="n">status</span> <span class="o">=</span> <span class="n">ATSFontActivateFromMemory</span><span class="p">((</span><span class="n">LogicalAddress</span><span class="p">)[</span><span class="n">fontData</span> <span class="n">bytes</span><span class="p">],</span>           <span class="c1">// buffer with font data
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="p">[</span><span class="n">fontData</span> <span class="n">length</span><span class="p">],</span>          <span class="c1">// size of font data
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">kATSFontContextLocal</span><span class="p">,</span>       <span class="c1">// for use only in this application
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">kATSFontFormatUnspecified</span><span class="p">,</span>  <span class="c1">// reserved
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="nb">NULL</span><span class="p">,</span>                       <span class="c1">// reserved
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">kATSOptionFlagsDefault</span><span class="p">,</span>     <span class="c1">// reserved
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="o">&amp;</span><span class="n">container</span><span class="p">);</span>                <span class="c1">// on output, will contain the activated font
+</span></span></span><span class="line"><span class="cl"><span class="c1">// find the number of font references in the container (goes to numItems)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">ItemCount</span> <span class="n">numItems</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">status</span> <span class="o">=</span> <span class="n">ATSFontFindFromContainer</span><span class="p">(</span><span class="n">container</span><span class="p">,</span> <span class="n">kATSOptionFlagsDefault</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">numItems</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">NSLog</span><span class="p">(</span><span class="err">@</span><span class="s">&#34;There are %d references in the container</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">numItems</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// load the individual fonts
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">ATSFontRef</span> <span class="o">*</span><span class="n">ioArray</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="n">numItems</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">ATSFontRef</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"><span class="n">status</span> <span class="o">=</span> <span class="n">ATSFontFindFromContainer</span><span class="p">(</span><span class="n">container</span><span class="p">,</span> <span class="n">kATSOptionFlagsDefault</span><span class="p">,</span> <span class="n">numItems</span><span class="p">,</span> <span class="n">ioArray</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">numItems</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">CFStringRef</span> <span class="n">fontName</span> <span class="o">=</span> <span class="n">nil</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">ATSFontGetName</span> <span class="p">(</span><span class="n">ioArray</span><span class="p">[</span><span class="n">fontIndex</span><span class="p">],</span> <span class="n">kATSOptionFlagsDefault</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">fontName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">NSFont</span><span class="o">*</span> <span class="n">myFont</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSFont</span> <span class="nl">fontWithName</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="n">fontName</span> <span class="nl">size</span><span class="p">:</span><span class="mi">24</span><span class="p">];</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>myFont</code> now contains the NSFont reference to your font. Easy.</p>
 
@@ -195,7 +195,7 @@ Turns out that ATSUI comes to the rescue:
 
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
