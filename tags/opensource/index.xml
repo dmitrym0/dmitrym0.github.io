@@ -6,7 +6,18 @@
     <description>Recent content in OpenSource on Dmitry M - Veridis Quo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 24 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dmitrym0.github.io/tags/opensource/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 May 2023 00:00:00 -0700</lastBuildDate><atom:link href="https://dmitrym0.github.io/tags/opensource/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>org-noter: I&#39;m an official maintainer!</title>
+      <link>https://dmitrym0.github.io/posts/org-noter-official-maintainer/</link>
+      <pubDate>Mon, 22 May 2023 00:00:00 -0700</pubDate>
+      
+      <guid>https://dmitrym0.github.io/posts/org-noter-official-maintainer/</guid>
+      <description>I haven&amp;rsquo;t contributed to open source software much until last year. It&amp;rsquo;s been an interesting and rewarding process.
+Last year when I released my scheduling package for Emacs, org-hyperscheduler. Later in 2022 I found a fantastic package for taking notes, org-noter.
+When I dicovered org-noter in the summer of 2022, it was not actively maintained. The last update was at the end of 2019. I asked if anyone wanted to collaborate on a fork on github and made a post on reddit.</description>
+    </item>
+    
     <item>
       <title>Achievement Unlocked: Open Source Contribution</title>
       <link>https://dmitrym0.github.io/posts/open-source-contribution/</link>
@@ -16,16 +27,6 @@
       <description>I did it. My Emacs package, org-hyperscheduler, is now live on MELPA, here.
 I&amp;rsquo;m overjoyed. It&amp;rsquo;s a big deal for me, because I&amp;rsquo;ve been a long time beneficiary of open source software and I&amp;rsquo;m glad to finally be able to give back. It&amp;rsquo;s the first piece of software that I started out writing for myself and got to a state where it&amp;rsquo;s useable for other folks.
 Once version 1 was stable, I submitted a pull request to MELPA.</description>
-    </item>
-    
-    <item>
-      <title>Managing  secrets in open source iOS apps</title>
-      <link>https://dmitrym0.github.io/posts/managing-secrets-in-ios-apps/</link>
-      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://dmitrym0.github.io/posts/managing-secrets-in-ios-apps/</guid>
-      <description>One of the issues that open source authors have to deal with is secrets management. The small utility app I&amp;rsquo;m working on relies on Dropbox API. Before you can work with Dropbox API though, you have to generate an API key. The API key identifies the application to Dropbox and needs to remain mostly secret. A bad actor could impersonate the application author by stealing the API key.
-This is a long winded way of saying that API keys must be kept out of public repositories.</description>
     </item>
     
   </channel>

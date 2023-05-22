@@ -13,10 +13,7 @@
       <pubDate>Fri, 02 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://dmitrym0.github.io/posts/three-ways-to-context-switch-with-git/</guid>
-      <description>Blog What do I mean by &amp;ldquo;switching code context&amp;rdquo;? Imagine you&amp;rsquo;re working on a branch and then you have to jump into a production issue, or inspiration strikes you want to try something new.
-There are 2 options I knew of and a third I discovered recently:
-Check in your code. Stash your code. Create a new worktree. Checking in Check in is an obvious option:
-1 2 git add -p git commit -m &amp;#39;WIP&amp;#39; I find that checking code is a distinct and separate activity from writing code.</description>
+      <description></description>
     </item>
     
   </channel>

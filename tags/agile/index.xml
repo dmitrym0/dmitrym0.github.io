@@ -39,17 +39,5 @@ work on my little SwiftUI app finish reading a book (&amp;ldquo;The first 90 day
 Then, I spent way too much on my app, 10 pomodoros (roughly 5 hours) vs 3 hours initially estimated.</description>
     </item>
     
-    <item>
-      <title>Personal Agile: Iteration 1</title>
-      <link>https://dmitrym0.github.io/posts/personal-agile-iteration-1/</link>
-      <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://dmitrym0.github.io/posts/personal-agile-iteration-1/</guid>
-      <description>:LOGBOOK: nil:END:
-There&amp;rsquo;s lots to love about agile, but my personal faves are two things:
-timeboxed iterations retrospectives The ultimate goal of agile is to shorten feedback loops. If something is not working it&amp;rsquo;s easier to identify and correct the issue at the point of occurence rather than months down the line. This of it as a REPL loop for productivity.
-I&amp;rsquo;ve been quite successful doing this at work, so I figured why not try it for personal productivity as well?</description>
-    </item>
-    
   </channel>
 </rss>

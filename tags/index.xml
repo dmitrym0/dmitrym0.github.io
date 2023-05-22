@@ -6,7 +6,25 @@
     <description>Recent content in Tags on Dmitry M - Veridis Quo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 02 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dmitrym0.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 May 2023 00:00:00 -0700</lastBuildDate><atom:link href="https://dmitrym0.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenSource</title>
+      <link>https://dmitrym0.github.io/tags/opensource/</link>
+      <pubDate>Mon, 22 May 2023 00:00:00 -0700</pubDate>
+      
+      <guid>https://dmitrym0.github.io/tags/opensource/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>org-noter</title>
+      <link>https://dmitrym0.github.io/tags/org-noter/</link>
+      <pubDate>Mon, 22 May 2023 00:00:00 -0700</pubDate>
+      
+      <guid>https://dmitrym0.github.io/tags/org-noter/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Development</title>
       <link>https://dmitrym0.github.io/tags/development/</link>
@@ -31,15 +49,6 @@
       <pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://dmitrym0.github.io/tags/emacs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>OpenSource</title>
-      <link>https://dmitrym0.github.io/tags/opensource/</link>
-      <pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://dmitrym0.github.io/tags/opensource/</guid>
       <description></description>
     </item>
     
@@ -98,47 +107,11 @@
     </item>
     
     <item>
-      <title>iOS</title>
-      <link>https://dmitrym0.github.io/tags/ios/</link>
-      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://dmitrym0.github.io/tags/ios/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Swift</title>
-      <link>https://dmitrym0.github.io/tags/swift/</link>
-      <pubDate>Sun, 12 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://dmitrym0.github.io/tags/swift/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MacOS</title>
-      <link>https://dmitrym0.github.io/tags/macos/</link>
-      <pubDate>Mon, 08 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://dmitrym0.github.io/tags/macos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Linux</title>
       <link>https://dmitrym0.github.io/tags/linux/</link>
-      <pubDate>Wed, 07 Dec 2016 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 13 Jul 2015 00:00:00 -0700</pubDate>
       
       <guid>https://dmitrym0.github.io/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cocoa</title>
-      <link>https://dmitrym0.github.io/tags/cocoa/</link>
-      <pubDate>Fri, 06 Feb 2009 00:00:00 -0800</pubDate>
-      
-      <guid>https://dmitrym0.github.io/tags/cocoa/</guid>
       <description></description>
     </item>
     
