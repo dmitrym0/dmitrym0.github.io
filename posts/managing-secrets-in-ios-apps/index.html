@@ -18,21 +18,21 @@ This is a long winded way of saying that API keys must be kept out of public rep
 <meta property="og:description" content="One of the issues that open source authors have to deal with is secrets management. The small utility app I&rsquo;m working on relies on Dropbox API. Before you can work with Dropbox API though, you have to generate an API key. The API key identifies the application to Dropbox and needs to remain mostly secret. A bad actor could impersonate the application author by stealing the API key.
 This is a long winded way of saying that API keys must be kept out of public repositories." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://dmitrym0.github.io/posts/managing-secrets-in-ios-apps/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://dmitrym.online/posts/managing-secrets-in-ios-apps/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-01-23T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-04-28T11:16:23-07:00" />
+<meta property="article:modified_time" content="2023-05-22T12:33:09-07:00" />
 
 
 
     
-      <base href="https://dmitrym0.github.io/posts/managing-secrets-in-ios-apps/">
+      <base href="https://dmitrym.online/posts/managing-secrets-in-ios-apps/">
     
     <title>
   Managing  secrets in open source iOS apps · Dmitry M - Veridis Quo
 </title>
 
     
-      <link rel="canonical" href="https://dmitrym0.github.io/posts/managing-secrets-in-ios-apps/">
+      <link rel="canonical" href="https://dmitrym.online/posts/managing-secrets-in-ios-apps/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
@@ -42,7 +42,7 @@ This is a long winded way of saying that API keys must be kept out of public rep
     
       
       
-      <link rel="stylesheet" href="https://dmitrym0.github.io/css/coder.min.8a0620e4f0e4dc1d46e4547e92d30120d90b9c9d55f9b1301a8646c76ffe6d3b.css" integrity="sha256-igYg5PDk3B1G5FR&#43;ktMBINkLnJ1V&#43;bEwGoZGx2/&#43;bTs=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="https://dmitrym.online/css/coder.min.8a0620e4f0e4dc1d46e4547e92d30120d90b9c9d55f9b1301a8646c76ffe6d3b.css" integrity="sha256-igYg5PDk3B1G5FR&#43;ktMBINkLnJ1V&#43;bEwGoZGx2/&#43;bTs=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -50,17 +50,17 @@ This is a long winded way of saying that API keys must be kept out of public rep
     
 
     
-      <link rel="stylesheet" href="https://dmitrym0.github.io/css/custom.css" />
+      <link rel="stylesheet" href="https://dmitrym.online/css/custom.css" />
     
-      <link rel="stylesheet" href="https://dmitrym0.github.io/images/syntax.css" />
-    
-
+      <link rel="stylesheet" href="https://dmitrym.online/images/syntax.css" />
     
 
     
 
-    <link rel="icon" type="image/png" href="https://dmitrym0.github.io/img/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="https://dmitrym0.github.io/img/favicon-16x16.png" sizes="16x16">
+    
+
+    <link rel="icon" type="image/png" href="https://dmitrym.online/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://dmitrym.online/img/favicon-16x16.png" sizes="16x16">
 
     <meta name="generator" content="Hugo 0.102.3" />
   </head>
@@ -71,7 +71,7 @@ This is a long winded way of saying that API keys must be kept out of public rep
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="https://dmitrym0.github.io/">
+    <a class="navigation-title" href="https://dmitrym.online/">
       Dmitry M - Veridis Quo
     </a>
     <input type="checkbox" id="menu-toggle" />
@@ -80,19 +80,19 @@ This is a long winded way of saying that API keys must be kept out of public rep
       
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://dmitrym0.github.io/posts/">Blog</a>
+            <a class="navigation-link" href="https://dmitrym.online/posts/">Blog</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://dmitrym0.github.io/tags/">Tags</a>
+            <a class="navigation-link" href="https://dmitrym.online/tags/">Tags</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://dmitrym0.github.io/pages/about/">About</a>
+            <a class="navigation-link" href="https://dmitrym.online/pages/about/">About</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://dmitrym0.github.io/pages/projects/">Projects</a>
+            <a class="navigation-link" href="https://dmitrym.online/pages/projects/">Projects</a>
           </li>
         
       
@@ -126,11 +126,11 @@ This is a long winded way of saying that API keys must be kept out of public rep
           
           <div class="tags">
   <i class="fas fa-tag"></i>
-    <a href="https://dmitrym0.github.io/tags/development/">Development</a>
+    <a href="https://dmitrym.online/tags/development/">Development</a>
       <span class="separator">•</span>
-    <a href="https://dmitrym0.github.io/tags/opensource/">OpenSource</a>
+    <a href="https://dmitrym.online/tags/opensource/">OpenSource</a>
       <span class="separator">•</span>
-    <a href="https://dmitrym0.github.io/tags/ios/">iOS</a></div>
+    <a href="https://dmitrym.online/tags/ios/">iOS</a></div>
 
         </div>
       </header>
@@ -149,25 +149,24 @@ The API key identifies the application to Dropbox and needs to remain mostly sec
 <li>Use in code.</li>
 </ol>
 <h2 id="config-file-and-settings">Config file and settings</h2>
-<figure><img src="https://dmitrym0.github.io/ox-hugo/screenshot_2020-01-24_11-48-51.png"/>
+<figure><img src="https://dmitrym.online/ox-hugo/screenshot_2020-01-24_11-48-51.png"/>
 </figure>
 
 <h2 id="contents-of-the-config-file">Contents of the config file</h2>
-<figure><img src="https://dmitrym0.github.io/ox-hugo/screenshot_2020-01-24_11-54-09.png"/>
+<figure><img src="https://dmitrym.online/ox-hugo/screenshot_2020-01-24_11-54-09.png"/>
 </figure>
 
 <h2 id="info-dot-plist">Info.plist</h2>
-<figure><img src="https://dmitrym0.github.io/ox-hugo/screenshot_2020-01-24_11-55-34.png"/>
+<figure><img src="https://dmitrym.online/ox-hugo/screenshot_2020-01-24_11-55-34.png"/>
 </figure>
 
 <p>qq**** Using the variables in code</p>
-<p>:ID:       3A431845-B7FA-4C89-A1D7-AF6DC78E2319</p>
 <p><code>Info.plist</code> values are going to be set at compile time.  To retrieve them something like this can be used:</p>
 <p><code>let dropBoxApiKey = Bundle.main.object(forInfoDictionaryKey:&quot;DROPBOX_API_KEY&quot;)</code></p>
 <h2 id="references">References</h2>
 <p>There&rsquo;s some additional info in the following posts:</p>
 <ul>
-<li><a href="https://www.lordcodes.com/posts/managing-secrets-within-an-ios-app?utm%5Fsource=medium&amp;utm%5Fmedium=article&amp;utm%5Fcampaign=ios%5Fapp%5Fdevelopment">Managing secrets within an iOS app | Lord Codes</a></li>
+<li><a href="https://www.lordcodes.com/posts/managing-secrets-within-an-ios-app?utm_source=medium&amp;utm_medium=article&amp;utm_campaign=ios_app_development">Managing secrets within an iOS app | Lord Codes</a></li>
 <li><a href="https://medium.com/ios-os-x-development/keeping-secrets-out-of-git-in-your-ios-app-c01a357e824b">Keeping secrets out of Git in iOS</a></li>
 <li><a href="https://www.appcoda.com/xcconfig-guide/">Using Xcode Configuration (.xcconfig) to Manage Different Build Settings</a></li>
 </ul>
@@ -233,7 +232,7 @@ The API key identifies the application to Dropbox and needs to remain mostly sec
     
     
       
-        © 2022
+        © 2023
       
        Dmitry M 
     
