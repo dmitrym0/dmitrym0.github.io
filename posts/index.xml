@@ -14,7 +14,7 @@
       
       <guid>https://dmitrym.online/posts/org-noter-official-maintainer/</guid>
       <description>I haven&amp;rsquo;t contributed to open source software much until last year. It&amp;rsquo;s been an interesting and rewarding process.
-Last year when I released my scheduling package for Emacs, org-hyperscheduler. Later in 2022 I found a fantastic package for taking notes, org-noter.
+My first large contribution was last year when I released my scheduling package for Emacs, org-hyperscheduler. Later in 2022 I found a fantastic package for taking notes, org-noter.
 When I dicovered org-noter in the summer of 2022, it was not actively maintained. The last update was at the end of 2019. I asked if anyone wanted to collaborate on a fork on github and made a post on reddit.</description>
     </item>
     
