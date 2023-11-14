@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on Dmitry M - Veridis Quo</title>
+    <link>https://dmitrym.online/tags/development/</link>
+    <description>Recent content in Development on Dmitry M - Veridis Quo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 02 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dmitrym.online/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3 ways to context switch with Git</title>
+      <link>https://dmitrym.online/posts/three-ways-to-context-switch-with-git/</link>
+      <pubDate>Fri, 02 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/three-ways-to-context-switch-with-git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Achievement Unlocked: Open Source Contribution</title>
+      <link>https://dmitrym.online/posts/open-source-contribution/</link>
+      <pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/open-source-contribution/</guid>
+      <description>I did it. My Emacs package, org-hyperscheduler, is now live on MELPA, here.
+I&amp;rsquo;m overjoyed. It&amp;rsquo;s a big deal for me, because I&amp;rsquo;ve been a long time beneficiary of open source software and I&amp;rsquo;m glad to finally be able to give back. It&amp;rsquo;s the first piece of software that I started out writing for myself and got to a state where it&amp;rsquo;s useable for other folks.
+Once version 1 was stable, I submitted a pull request to MELPA.</description>
+    </item>
+    
+    <item>
+      <title>Managing  secrets in open source iOS apps</title>
+      <link>https://dmitrym.online/posts/managing-secrets-in-ios-apps/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/managing-secrets-in-ios-apps/</guid>
+      <description>One of the issues that open source authors have to deal with is secrets management. The small utility app I&amp;rsquo;m working on relies on Dropbox API. Before you can work with Dropbox API though, you have to generate an API key. The API key identifies the application to Dropbox and needs to remain mostly secret. A bad actor could impersonate the application author by stealing the API key.
+This is a long winded way of saying that API keys must be kept out of public repositories.</description>
+    </item>
+    
+    <item>
+      <title>Safari App Extensions; migrating from .safariextz</title>
+      <link>https://dmitrym.online/posts/safari-app-extensions-migrating-from-safariextz/</link>
+      <pubDate>Mon, 08 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/safari-app-extensions-migrating-from-safariextz/</guid>
+      <description>I’ve dabbled with a Safari extension for a project on and off for a while. For Safari 12, I read that .safariextz-style extensions are no longer supported. I went forth to investigate what changed and how I could port my old extension to Safari 12.
+The short story is that the packaging has changed, but the bulk of the existing extension should just work once new conventions are adopted. I imagine the new changes are spurred by Apple’s desire to unify distribution — new extensions are wrapped as a mac application, require a signature and are distributed through the Mac App Store.</description>
+    </item>
+    
+    <item>
+      <title>How to check for X-Send-File (or X-Accel-Redirect)</title>
+      <link>https://dmitrym.online/posts/how-to-check-for-x-sendfile/</link>
+      <pubDate>Tue, 11 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/how-to-check-for-x-sendfile/</guid>
+      <description>Some web requests should not be handled by the application framework. Requests hitting a dynamic API endpoint should be processed by application (in my case typically Ruby on Rails). Static assets (such as files) should be served by the webserver, bypassing Ruby on Rails completely.
+Why?
+There are a couple of reasons.
+The biggest one is performance. NGINX and Apache are significantly better and faster at serving files than a Ruby process.</description>
+    </item>
+    
+    <item>
+      <title>Efficient commit workflow with tig</title>
+      <link>https://dmitrym.online/posts/tig-cheat-sheet/</link>
+      <pubDate>Thu, 30 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/tig-cheat-sheet/</guid>
+      <description>One of the recommended source control practices is to commit frequently, and often. I prefer to keep my commits terse and focused, however in practice I’m working on a couple related but independent things in parallel. At commit time, I prefer to tease loosely related things apart and commit them separately.
+One way to do that is with the interactive git-add facility that can be invoked with git add -p:</description>
+    </item>
+    
+    <item>
+      <title>Working with shared memory on OS X</title>
+      <link>https://dmitrym.online/posts/shared-memory-on-os-x/</link>
+      <pubDate>Mon, 05 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/shared-memory-on-os-x/</guid>
+      <description>If you&amp;rsquo;re working with Qt&amp;rsquo;s QSharedMemory, on Mac OS X you&amp;rsquo;re working with System V shared memory subsystem. If your data is sizable, the first limit you&amp;rsquo;ll hit in the maximum segment size, which is for some reason around 4 megs. To increase it invoke this magic incantation:
+1 sudo sysctl -w kern.sysv.shmmax=33554432 and to see other shared mem related kernel variables:
+1 sysctl -A|grep shm If you&amp;rsquo;d like these settings to remain after you reboot your machine follow the instruction here.</description>
+    </item>
+    
+  </channel>
+</rss>

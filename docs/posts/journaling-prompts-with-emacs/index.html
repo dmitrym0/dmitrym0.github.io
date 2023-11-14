@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Dmitry M">
+    <meta name="description" content="Dmitry&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Journaling prompts in Emacs"/>
+<meta name="twitter:description" content="One of my daily rituals is journaling. It&rsquo;s been shown to have positive impact on quality of life (citation needed). I find it helps me decompress but it&rsquo;s also a permanent record of my thoughts and my life&rsquo;s minutiae.
+I usually set a timer for 5 minutes and go to town. One particular challenge I have, is that some times I don&rsquo;t really know what to write about. Recently I came upon the idea of journaling prompts."/>
+
+    <meta property="og:title" content="Journaling prompts in Emacs" />
+<meta property="og:description" content="One of my daily rituals is journaling. It&rsquo;s been shown to have positive impact on quality of life (citation needed). I find it helps me decompress but it&rsquo;s also a permanent record of my thoughts and my life&rsquo;s minutiae.
+I usually set a timer for 5 minutes and go to town. One particular challenge I have, is that some times I don&rsquo;t really know what to write about. Recently I came upon the idea of journaling prompts." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dmitrym.online/posts/journaling-prompts-with-emacs/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-07-17T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-05-22T12:33:08-07:00" />
+
+
+
+    
+      <base href="https://dmitrym.online/posts/journaling-prompts-with-emacs/">
+    
+    <title>
+  Journaling prompts in Emacs · Dmitry M - Veridis Quo
+</title>
+
+    
+      <link rel="canonical" href="https://dmitrym.online/posts/journaling-prompts-with-emacs/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://dmitrym.online/css/coder.min.8a0620e4f0e4dc1d46e4547e92d30120d90b9c9d55f9b1301a8646c76ffe6d3b.css" integrity="sha256-igYg5PDk3B1G5FR&#43;ktMBINkLnJ1V&#43;bEwGoZGx2/&#43;bTs=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="https://dmitrym.online/css/custom.css" />
+    
+      <link rel="stylesheet" href="https://dmitrym.online/images/syntax.css" />
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://dmitrym.online/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://dmitrym.online/img/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.102.3" />
+  </head>
+
+  
+  
+  <body class="colorscheme-light">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://dmitrym.online/">
+      Dmitry M - Veridis Quo
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://dmitrym.online/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://til.dmitrym.online/">TIL</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://dmitrym.online/tags/">Tags</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://dmitrym.online/pages/about/">About</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://dmitrym.online/pages/projects/">Projects</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Journaling prompts in Emacs</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2022-07-17T00:00:00Z'>
+                July 17, 2022
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              2 minutes read
+            </span>
+          </div>
+          
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://dmitrym.online/tags/emacs/">Emacs</a>
+      <span class="separator">•</span>
+    <a href="https://dmitrym.online/tags/misc/">Misc</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        <p>One of my daily rituals is journaling. It&rsquo;s been shown to have positive impact on quality of life (citation needed). I find it helps me decompress but it&rsquo;s also a permanent record of my thoughts and my life&rsquo;s minutiae.</p>
+<p>I usually set a timer for 5 minutes and go to town. One particular challenge I have, is that some times I don&rsquo;t really know what to write about. Recently I came upon the idea of journaling prompts. So far, journaling prompts come in the form of questions:</p>
+<blockquote>
+<p>What do I know to be true that I didn’t know a year ago?</p>
+<p>What distractions get in the way of being my most productive?</p>
+</blockquote>
+<p>In Emacs, it&rsquo;s trivial to automate prompt generation. I used org-mode&rsquo;s capture templates and here&rsquo;s what I came up with:</p>
+<p>A function to grab a prompt:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-elisp" data-lang="elisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">defun</span> <span class="nv">dm/get-journaling-prompt</span> <span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="s">&#34;Returns a single line from journaling prompts.&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">save-window-excursion</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">find-file</span> <span class="p">(</span><span class="nf">concat</span> <span class="nv">org-roam-directory</span> <span class="s">&#34;journaling_prompts.org&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nf">goto-char</span> <span class="p">(</span><span class="nf">point-max</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">let*</span> <span class="p">((</span><span class="nv">number-of-prompts</span> <span class="p">(</span><span class="nf">-</span> <span class="p">(</span><span class="nv">line-number-at-pos</span><span class="p">)</span> <span class="mi">10</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nv">goto-line</span> <span class="p">(</span><span class="nf">+</span> <span class="mi">10</span> <span class="p">(</span><span class="nf">random</span> <span class="nv">number-of-prompts</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nv">s-chomp</span> <span class="p">(</span><span class="nv">thing-at-point</span> <span class="ss">&#39;line</span> <span class="no">t</span><span class="p">)))))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>and then in my capture templates:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-elisp" data-lang="elisp"><span class="line"><span class="cl"><span class="p">(</span><span class="s">&#34;dj&#34;</span> <span class="s">&#34;Journal&#34;</span> <span class="nv">entry</span>
+</span></span><span class="line"><span class="cl"> <span class="p">(</span><span class="nv">file+olp+datetree</span> <span class="o">,</span><span class="p">(</span><span class="nf">concat</span> <span class="nv">org-directory</span> <span class="s">&#34;/personal-daily-2022.org&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"> <span class="s">&#34;* Entered on %U
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">  Prompt: %(dm/get-journaling-prompt)
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">%?&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>It&rsquo;s wonderfully simple, the <code>%(dm/get-journaling-prompt)</code> simply executes the expression and returns the result. As usual, more in the <a href="https://orgmode.org/manual/Template-expansion.html">docs</a>.</p>
+<p>The result looks like this:</p>
+<figure><img src="https://dmitrym.online/ox-hugo/2022-07-17_13-10-28_screenshot.png"/>
+</figure>
+
+<p>It&rsquo;s an easy way to get journaling if nothing else comes up.</p>
+
+      </div>
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "dmitry-m-viridis-quo" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>General Nerdery.</p>
+    
+    
+      
+        © 2023
+      
+       Dmitry M 
+    
+    
+       · 
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

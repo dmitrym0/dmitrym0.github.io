@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>org-noter on Dmitry M - Veridis Quo</title>
+    <link>https://dmitrym.online/tags/org-noter/</link>
+    <description>Recent content in org-noter on Dmitry M - Veridis Quo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 22 May 2023 00:00:00 -0700</lastBuildDate><atom:link href="https://dmitrym.online/tags/org-noter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>org-noter: I&#39;m an official maintainer!</title>
+      <link>https://dmitrym.online/posts/org-noter-official-maintainer/</link>
+      <pubDate>Mon, 22 May 2023 00:00:00 -0700</pubDate>
+      
+      <guid>https://dmitrym.online/posts/org-noter-official-maintainer/</guid>
+      <description>I haven&amp;rsquo;t contributed to open source software much until last year. It&amp;rsquo;s been an interesting and rewarding process.
+My first large contribution was last year when I released my scheduling package for Emacs, org-hyperscheduler. Later in 2022 I found a fantastic package for taking notes, org-noter.
+When I dicovered org-noter in the summer of 2022, it was not actively maintained. The last update was at the end of 2019. I asked if anyone wanted to collaborate on a fork on github and made a post on reddit.</description>
+    </item>
+    
+  </channel>
+</rss>

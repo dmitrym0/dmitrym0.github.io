@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cocoa on Dmitry M - Veridis Quo</title>
+    <link>https://dmitrym.online/tags/cocoa/</link>
+    <description>Recent content in Cocoa on Dmitry M - Veridis Quo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 06 Feb 2009 00:00:00 -0800</lastBuildDate><atom:link href="https://dmitrym.online/tags/cocoa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reading a font from file an making it available to Cocoa</title>
+      <link>https://dmitrym.online/posts/reading-font-from-file-and-making-it-available-to-cocoa/</link>
+      <pubDate>Fri, 06 Feb 2009 00:00:00 -0800</pubDate>
+      
+      <guid>https://dmitrym.online/posts/reading-font-from-file-and-making-it-available-to-cocoa/</guid>
+      <description>This is another programming related post.
+Say you have a true type font that&amp;rsquo;s not part of the OS font set in a file. You&amp;rsquo;ve read the contents of the file into memory and now want to make it available to Cocoa. How?
+Turns out that ATSUI comes to the rescue:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 ATSFontContainerRef container; OSStatus status = ATSFontActivateFromMemory((LogicalAddress)[fontData bytes], // buffer with font data [fontData length], // size of font data kATSFontContextLocal, // for use only in this application kATSFontFormatUnspecified, // reserved NULL, // reserved kATSOptionFlagsDefault, // reserved &amp;amp;container); // on output, will contain the activated font // find the number of font references in the container (goes to numItems) ItemCount numItems; status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, 0, NULL, &amp;amp;numItems); NSLog(@&amp;#34;There are %d references in the container\n&amp;#34;, numItems); // load the individual fonts ATSFontRef *ioArray = malloc(numItems * sizeof(ATSFontRef)); status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, numItems, ioArray, &amp;amp;numItems); CFStringRef fontName = nil; ATSFontGetName (ioArray[fontIndex], kATSOptionFlagsDefault, &amp;amp;fontName); NSFont* myFont = [NSFont fontWithName:(NSString*)fontName size:24]; myFont now contains the NSFont reference to your font.</description>
+    </item>
+    
+  </channel>
+</rss>

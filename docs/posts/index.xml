@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Dmitry M - Veridis Quo</title>
+    <link>https://dmitrym.online/posts/</link>
+    <description>Recent content in Posts on Dmitry M - Veridis Quo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 06 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://dmitrym.online/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Back to Personal Agile</title>
+      <link>https://dmitrym.online/posts/back-to-personal-agile/</link>
+      <pubDate>Mon, 06 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/back-to-personal-agile/</guid>
+      <description>Life&amp;rsquo;s been kinda busy. Between family and work, hobbies take a back seat. The quote that applies is &amp;ldquo;A goal without a plan is just a wish&amp;rdquo;. So I want to make a plan.
+A goal without a plan is just a wish.
+In IT world, &amp;ldquo;Agile&amp;rdquo; is an invective. Rightfully so. I&amp;rsquo;ve never seen it properly implemented. Usually it&amp;rsquo;s a way to mask the lack of any process. &amp;ldquo;Oh we are agile&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>org-noter: I&#39;m an official maintainer!</title>
+      <link>https://dmitrym.online/posts/org-noter-official-maintainer/</link>
+      <pubDate>Mon, 22 May 2023 00:00:00 -0700</pubDate>
+      
+      <guid>https://dmitrym.online/posts/org-noter-official-maintainer/</guid>
+      <description>I haven&amp;rsquo;t contributed to open source software much until last year. It&amp;rsquo;s been an interesting and rewarding process.
+My first large contribution was last year when I released my scheduling package for Emacs, org-hyperscheduler. Later in 2022 I found a fantastic package for taking notes, org-noter.
+When I dicovered org-noter in the summer of 2022, it was not actively maintained. The last update was at the end of 2019. I asked if anyone wanted to collaborate on a fork on github and made a post on reddit.</description>
+    </item>
+    
+    <item>
+      <title>3 ways to context switch with Git</title>
+      <link>https://dmitrym.online/posts/three-ways-to-context-switch-with-git/</link>
+      <pubDate>Fri, 02 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/three-ways-to-context-switch-with-git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Achievement Unlocked: Open Source Contribution</title>
+      <link>https://dmitrym.online/posts/open-source-contribution/</link>
+      <pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/open-source-contribution/</guid>
+      <description>I did it. My Emacs package, org-hyperscheduler, is now live on MELPA, here.
+I&amp;rsquo;m overjoyed. It&amp;rsquo;s a big deal for me, because I&amp;rsquo;ve been a long time beneficiary of open source software and I&amp;rsquo;m glad to finally be able to give back. It&amp;rsquo;s the first piece of software that I started out writing for myself and got to a state where it&amp;rsquo;s useable for other folks.
+Once version 1 was stable, I submitted a pull request to MELPA.</description>
+    </item>
+    
+    <item>
+      <title>Journaling prompts in Emacs</title>
+      <link>https://dmitrym.online/posts/journaling-prompts-with-emacs/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/journaling-prompts-with-emacs/</guid>
+      <description>One of my daily rituals is journaling. It&amp;rsquo;s been shown to have positive impact on quality of life (citation needed). I find it helps me decompress but it&amp;rsquo;s also a permanent record of my thoughts and my life&amp;rsquo;s minutiae.
+I usually set a timer for 5 minutes and go to town. One particular challenge I have, is that some times I don&amp;rsquo;t really know what to write about. Recently I came upon the idea of journaling prompts.</description>
+    </item>
+    
+    <item>
+      <title>What is hyper-scheduling?</title>
+      <link>https://dmitrym.online/posts/what-is-hyperscheduling/</link>
+      <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/what-is-hyperscheduling/</guid>
+      <description>Hyperscheduling?; TLDR Hyperscheduling is the idea of fully planning your day using a calendar. Every minute of the day is assigned to some task using a calendar.
+Hyperscheduling in more detail Hyperscheduling is only part of a productivity system. It helps me plan my day:
+Select a set of tasks for today (this is done outside of hyperscheduling, using GTD or another system). Prioritize your tasks in order of importance. Lay your tasks out on the calendar.</description>
+    </item>
+    
+    <item>
+      <title>Caddy 2 and TCP Proxying</title>
+      <link>https://dmitrym.online/posts/caddy2-and-tcp-proxying/</link>
+      <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/caddy2-and-tcp-proxying/</guid>
+      <description>How to configure Caddy2 to proxy TCP streams.
+To illustrate the architecture, I have the following entities running in Docker.
+I&amp;rsquo;m using Caddy 2 as a reverse proxy, but it looks like it supports many more scenarios. Previously I used nginx, or traeffic. The appeal of Caddy is that it supports TLS (with LetsEncrypt) out of the box and integrates with Consul for an eventual clustering solution with Nomad.
+Startup with Caddy was very simple.</description>
+    </item>
+    
+    <item>
+      <title>Note taking and discovery</title>
+      <link>https://dmitrym.online/posts/note-taking-and-discovery/</link>
+      <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/note-taking-and-discovery/</guid>
+      <description>I&amp;rsquo;ve been taking notes consistently, probably starting in university. The challenge for me was never capture but retrieval. I suspect that&amp;rsquo;s true for most people.
+The interesting thing about zettelcasten is how Luhramn optimized his sytem for retrieval. Related subjects were proximate, he used a linking system of sorts that allowed his cards to be filed under number of different topics.
+In digital note taking, proximity is difficult to simulate. Hyperlinking is the first step of course.</description>
+    </item>
+    
+    <item>
+      <title>Still Around</title>
+      <link>https://dmitrym.online/posts/still-around/</link>
+      <pubDate>Mon, 22 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/still-around/</guid>
+      <description>Nearly a year after my previous entry, I&amp;rsquo;m trying to get into blogging yet again. I&amp;rsquo;ve got a huge backlog of posts I&amp;rsquo;m interested in sharing but it&amp;rsquo;s been a challenge to get through it for various reasons. It&amp;rsquo;s not New Year&amp;rsquo;s, but here&amp;rsquo;s a commitment, write one post every two weeks. Should be doable?</description>
+    </item>
+    
+    <item>
+      <title>  Book review: &#34;First 90 days&#34;
+  </title>
+      <link>https://dmitrym.online/posts/book-review-first-90-days/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 -0700</pubDate>
+      
+      <guid>https://dmitrym.online/posts/book-review-first-90-days/</guid>
+      <description>The &amp;ldquo;First 90 days&amp;rdquo; lays out a comprehensive plan on how to become productive in a new role, whether it&amp;rsquo;s a promotion or a position in a new company.
+It’s a mistake to believe that you will be successful in your new job by continuing to do what you did in your previous job, only more so
+The advice is wide ranging. What&amp;rsquo;s useful about this book is that there&amp;rsquo;s nearly a step by step process for every category of advice.</description>
+    </item>
+    
+    <item>
+      <title>Personal Agile: Iteration 5 (COVID-19 edition)</title>
+      <link>https://dmitrym.online/posts/personal-agile-iteration-5/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/personal-agile-iteration-5/</guid>
+      <description>It&amp;rsquo;s been pretty hard to focus on anything other than what&amp;rsquo;s going on in the world the last two weeks. I didn&amp;rsquo;t really successfully complete the iteration. We&amp;rsquo;ve been sent home from work about a week ago which freed up a lot of time that&amp;rsquo;s been allocated to the commute. Theoretically. Unfortunately focus has been hard to come by.
+The only take away I have from this iteration is that I&amp;rsquo;ve significantly reversed my position on UI/UX.</description>
+    </item>
+    
+    <item>
+      <title>Personal Agile: Iteration 4</title>
+      <link>https://dmitrym.online/posts/personal-agile-iteration-4/</link>
+      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/personal-agile-iteration-4/</guid>
+      <description>Interesting iteration. Overall agile approach has been a net positive. I likely would&amp;rsquo;ve have been approximately as successful, but deliberate approach to planning and reviews yields interesting artifacts (of which this blog post is one) and provides for an interesting trajectory overview.
+I made good progress on my tasks this iteration:
+adding two additional chapters reviewed to &amp;ldquo;First 90 days&amp;rdquo;. It&amp;rsquo;s becoming a bit tedious, but I feel it&amp;rsquo;s critical to finish this book.</description>
+    </item>
+    
+    <item>
+      <title>Personal Agile: Iteration 2</title>
+      <link>https://dmitrym.online/posts/personal-agile-iteration-2/</link>
+      <pubDate>Sun, 09 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/personal-agile-iteration-2/</guid>
+      <description>The goal for this iteration was to:
+work on my little SwiftUI app finish reading a book (&amp;ldquo;The first 90 days&amp;rdquo;) maintain my fitness habits Conclusions Overall the iteration went well. In the screenshot above, you can tell that I wildly underestimated how much time summarizing the current book would take: I estimated an hour, but it ended up being 3 times as much (3 hours).
+Then, I spent way too much on my app, 10 pomodoros (roughly 5 hours) vs 3 hours initially estimated.</description>
+    </item>
+    
+    <item>
+      <title>Personal Agile: Iteration 1</title>
+      <link>https://dmitrym.online/posts/personal-agile-iteration-1/</link>
+      <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/personal-agile-iteration-1/</guid>
+      <description>There&amp;rsquo;s lots to love about agile, but my personal faves are two things:
+timeboxed iterations retrospectives The ultimate goal of agile is to shorten feedback loops. If something is not working it&amp;rsquo;s easier to identify and correct the issue at the point of occurence rather than months down the line. This of it as a REPL loop for productivity.
+I&amp;rsquo;ve been quite successful doing this at work, so I figured why not try it for personal productivity as well?</description>
+    </item>
+    
+    <item>
+      <title>Managing  secrets in open source iOS apps</title>
+      <link>https://dmitrym.online/posts/managing-secrets-in-ios-apps/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/managing-secrets-in-ios-apps/</guid>
+      <description>One of the issues that open source authors have to deal with is secrets management. The small utility app I&amp;rsquo;m working on relies on Dropbox API. Before you can work with Dropbox API though, you have to generate an API key. The API key identifies the application to Dropbox and needs to remain mostly secret. A bad actor could impersonate the application author by stealing the API key.
+This is a long winded way of saying that API keys must be kept out of public repositories.</description>
+    </item>
+    
+    <item>
+      <title>Omnifocus style reviews with org-mode</title>
+      <link>https://dmitrym.online/posts/omnifocus-review-with-org-mode/</link>
+      <pubDate>Tue, 07 Jan 2020 00:00:00 -0800</pubDate>
+      
+      <guid>https://dmitrym.online/posts/omnifocus-review-with-org-mode/</guid>
+      <description>I started using Emacs and org-mode in earnest in the middle of 2019. At that point in time I was using Omnifocus to track my tasks and Bearapp for notes. I was missing plaintext functionality. Since then I&amp;rsquo;ve reproduced most of the functionality that Omnifocus offerred except one particular feature: reviews.
+In GTD, reviews occupy a pretty important niche. Without regular task and project reviews task lists tend to grow out of control and become polutted.</description>
+    </item>
+    
+    <item>
+      <title>Building a lithium ion battery, part 1: “Why”</title>
+      <link>https://dmitrym.online/posts/diy-lithium-battery-part-1/</link>
+      <pubDate>Tue, 12 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/diy-lithium-battery-part-1/</guid>
+      <description>Why build a battery? Why build a battery from scratch? I’ll tell you.
+Why build a battery from scratch? Battery technology is becoming very important. Cell phones, laptops and now cars rely on batteries for power. More importantly, I needed a battery unit for reasons (more on this later).
+I could’ve purchased a battery off the shelf, but consumer units are quite expensive. For example [Goal Zero Yeti 400 Lithium is $800.</description>
+    </item>
+    
+    <item>
+      <title>Safari App Extensions; migrating from .safariextz</title>
+      <link>https://dmitrym.online/posts/safari-app-extensions-migrating-from-safariextz/</link>
+      <pubDate>Mon, 08 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/safari-app-extensions-migrating-from-safariextz/</guid>
+      <description>I’ve dabbled with a Safari extension for a project on and off for a while. For Safari 12, I read that .safariextz-style extensions are no longer supported. I went forth to investigate what changed and how I could port my old extension to Safari 12.
+The short story is that the packaging has changed, but the bulk of the existing extension should just work once new conventions are adopted. I imagine the new changes are spurred by Apple’s desire to unify distribution — new extensions are wrapped as a mac application, require a signature and are distributed through the Mac App Store.</description>
+    </item>
+    
+    <item>
+      <title>How to check for X-Send-File (or X-Accel-Redirect)</title>
+      <link>https://dmitrym.online/posts/how-to-check-for-x-sendfile/</link>
+      <pubDate>Tue, 11 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/how-to-check-for-x-sendfile/</guid>
+      <description>Some web requests should not be handled by the application framework. Requests hitting a dynamic API endpoint should be processed by application (in my case typically Ruby on Rails). Static assets (such as files) should be served by the webserver, bypassing Ruby on Rails completely.
+Why?
+There are a couple of reasons.
+The biggest one is performance. NGINX and Apache are significantly better and faster at serving files than a Ruby process.</description>
+    </item>
+    
+    <item>
+      <title>Efficient commit workflow with tig</title>
+      <link>https://dmitrym.online/posts/tig-cheat-sheet/</link>
+      <pubDate>Thu, 30 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/tig-cheat-sheet/</guid>
+      <description>One of the recommended source control practices is to commit frequently, and often. I prefer to keep my commits terse and focused, however in practice I’m working on a couple related but independent things in parallel. At commit time, I prefer to tease loosely related things apart and commit them separately.
+One way to do that is with the interactive git-add facility that can be invoked with git add -p:</description>
+    </item>
+    
+    <item>
+      <title>ncdu - ncurses disk usage</title>
+      <link>https://dmitrym.online/posts/ncdu-ncurses-disk-usage/</link>
+      <pubDate>Wed, 07 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/ncdu-ncurses-disk-usage/</guid>
+      <description>At some point harddrive space was cheap, but with the advent of SSDs and cheap “Cloud VMs” that is no longer the case. For example, the cheapest VM on VULTR is $5/month and has a 15 gig SSD drive. It&amp;rsquo;s suddenly very important to maximize drive usage again. This is where ncdu comes in. It displays a nice ncurses interface that visualizes the usage breakdown.
+So useful key bindings:</description>
+    </item>
+    
+    <item>
+      <title>RAID5: Recovering from 2-drive failure during rebuild</title>
+      <link>https://dmitrym.online/posts/raid5-multiple-disk-recovery/</link>
+      <pubDate>Mon, 13 Jul 2015 00:00:00 -0700</pubDate>
+      
+      <guid>https://dmitrym.online/posts/raid5-multiple-disk-recovery/</guid>
+      <description>RAID is amazing technology. It lets us take a bunch of cheap disks an arrange them in various configurations that present these disks as one large disk. A particularly popular type of RAID for home users is RAID5. A RAID5 array is typically comprised of 3 disks, however only 2/3 of the disk space is available since 1/3 of the space is used for recovery purposes if one of the disks fail.</description>
+    </item>
+    
+    <item>
+      <title>tircd, irc twitter gateway</title>
+      <link>https://dmitrym.online/posts/tircd-twitter-gateway/</link>
+      <pubDate>Sun, 17 Mar 2013 00:00:00 -0700</pubDate>
+      
+      <guid>https://dmitrym.online/posts/tircd-twitter-gateway/</guid>
+      <description>I published my tircd branch. If you&amp;rsquo;re unfamiliar with tircd it&amp;rsquo;s a daemon that presents Twitter as an IRC channel. I merged this really old branch that implements Twitter lists as channels with the semi official google code mirror branch. I created a pull request but it hasn&amp;rsquo;t been acted on yet.
+I consume my instant messaging via IRC (with the help of minbif) and now Twitter too. Quite convenient.</description>
+    </item>
+    
+    <item>
+      <title>Working with shared memory on OS X</title>
+      <link>https://dmitrym.online/posts/shared-memory-on-os-x/</link>
+      <pubDate>Mon, 05 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/shared-memory-on-os-x/</guid>
+      <description>If you&amp;rsquo;re working with Qt&amp;rsquo;s QSharedMemory, on Mac OS X you&amp;rsquo;re working with System V shared memory subsystem. If your data is sizable, the first limit you&amp;rsquo;ll hit in the maximum segment size, which is for some reason around 4 megs. To increase it invoke this magic incantation:
+1 sudo sysctl -w kern.sysv.shmmax=33554432 and to see other shared mem related kernel variables:
+1 sysctl -A|grep shm If you&amp;rsquo;d like these settings to remain after you reboot your machine follow the instruction here.</description>
+    </item>
+    
+    <item>
+      <title>Reading a font from file an making it available to Cocoa</title>
+      <link>https://dmitrym.online/posts/reading-font-from-file-and-making-it-available-to-cocoa/</link>
+      <pubDate>Fri, 06 Feb 2009 00:00:00 -0800</pubDate>
+      
+      <guid>https://dmitrym.online/posts/reading-font-from-file-and-making-it-available-to-cocoa/</guid>
+      <description>This is another programming related post.
+Say you have a true type font that&amp;rsquo;s not part of the OS font set in a file. You&amp;rsquo;ve read the contents of the file into memory and now want to make it available to Cocoa. How?
+Turns out that ATSUI comes to the rescue:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 ATSFontContainerRef container; OSStatus status = ATSFontActivateFromMemory((LogicalAddress)[fontData bytes], // buffer with font data [fontData length], // size of font data kATSFontContextLocal, // for use only in this application kATSFontFormatUnspecified, // reserved NULL, // reserved kATSOptionFlagsDefault, // reserved &amp;amp;container); // on output, will contain the activated font // find the number of font references in the container (goes to numItems) ItemCount numItems; status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, 0, NULL, &amp;amp;numItems); NSLog(@&amp;#34;There are %d references in the container\n&amp;#34;, numItems); // load the individual fonts ATSFontRef *ioArray = malloc(numItems * sizeof(ATSFontRef)); status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, numItems, ioArray, &amp;amp;numItems); CFStringRef fontName = nil; ATSFontGetName (ioArray[fontIndex], kATSOptionFlagsDefault, &amp;amp;fontName); NSFont* myFont = [NSFont fontWithName:(NSString*)fontName size:24]; myFont now contains the NSFont reference to your font.</description>
+    </item>
+    
+  </channel>
+</rss>

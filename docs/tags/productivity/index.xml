@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Productivity on Dmitry M - Veridis Quo</title>
+    <link>https://dmitrym.online/tags/productivity/</link>
+    <description>Recent content in Productivity on Dmitry M - Veridis Quo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 06 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://dmitrym.online/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Back to Personal Agile</title>
+      <link>https://dmitrym.online/posts/back-to-personal-agile/</link>
+      <pubDate>Mon, 06 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/back-to-personal-agile/</guid>
+      <description>Life&amp;rsquo;s been kinda busy. Between family and work, hobbies take a back seat. The quote that applies is &amp;ldquo;A goal without a plan is just a wish&amp;rdquo;. So I want to make a plan.
+A goal without a plan is just a wish.
+In IT world, &amp;ldquo;Agile&amp;rdquo; is an invective. Rightfully so. I&amp;rsquo;ve never seen it properly implemented. Usually it&amp;rsquo;s a way to mask the lack of any process. &amp;ldquo;Oh we are agile&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>What is hyper-scheduling?</title>
+      <link>https://dmitrym.online/posts/what-is-hyperscheduling/</link>
+      <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/what-is-hyperscheduling/</guid>
+      <description>Hyperscheduling?; TLDR Hyperscheduling is the idea of fully planning your day using a calendar. Every minute of the day is assigned to some task using a calendar.
+Hyperscheduling in more detail Hyperscheduling is only part of a productivity system. It helps me plan my day:
+Select a set of tasks for today (this is done outside of hyperscheduling, using GTD or another system). Prioritize your tasks in order of importance. Lay your tasks out on the calendar.</description>
+    </item>
+    
+    <item>
+      <title>Note taking and discovery</title>
+      <link>https://dmitrym.online/posts/note-taking-and-discovery/</link>
+      <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/note-taking-and-discovery/</guid>
+      <description>I&amp;rsquo;ve been taking notes consistently, probably starting in university. The challenge for me was never capture but retrieval. I suspect that&amp;rsquo;s true for most people.
+The interesting thing about zettelcasten is how Luhramn optimized his sytem for retrieval. Related subjects were proximate, he used a linking system of sorts that allowed his cards to be filed under number of different topics.
+In digital note taking, proximity is difficult to simulate. Hyperlinking is the first step of course.</description>
+    </item>
+    
+    <item>
+      <title>Personal Agile: Iteration 5 (COVID-19 edition)</title>
+      <link>https://dmitrym.online/posts/personal-agile-iteration-5/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/personal-agile-iteration-5/</guid>
+      <description>It&amp;rsquo;s been pretty hard to focus on anything other than what&amp;rsquo;s going on in the world the last two weeks. I didn&amp;rsquo;t really successfully complete the iteration. We&amp;rsquo;ve been sent home from work about a week ago which freed up a lot of time that&amp;rsquo;s been allocated to the commute. Theoretically. Unfortunately focus has been hard to come by.
+The only take away I have from this iteration is that I&amp;rsquo;ve significantly reversed my position on UI/UX.</description>
+    </item>
+    
+    <item>
+      <title>Personal Agile: Iteration 4</title>
+      <link>https://dmitrym.online/posts/personal-agile-iteration-4/</link>
+      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/personal-agile-iteration-4/</guid>
+      <description>Interesting iteration. Overall agile approach has been a net positive. I likely would&amp;rsquo;ve have been approximately as successful, but deliberate approach to planning and reviews yields interesting artifacts (of which this blog post is one) and provides for an interesting trajectory overview.
+I made good progress on my tasks this iteration:
+adding two additional chapters reviewed to &amp;ldquo;First 90 days&amp;rdquo;. It&amp;rsquo;s becoming a bit tedious, but I feel it&amp;rsquo;s critical to finish this book.</description>
+    </item>
+    
+    <item>
+      <title>Personal Agile: Iteration 2</title>
+      <link>https://dmitrym.online/posts/personal-agile-iteration-2/</link>
+      <pubDate>Sun, 09 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/personal-agile-iteration-2/</guid>
+      <description>The goal for this iteration was to:
+work on my little SwiftUI app finish reading a book (&amp;ldquo;The first 90 days&amp;rdquo;) maintain my fitness habits Conclusions Overall the iteration went well. In the screenshot above, you can tell that I wildly underestimated how much time summarizing the current book would take: I estimated an hour, but it ended up being 3 times as much (3 hours).
+Then, I spent way too much on my app, 10 pomodoros (roughly 5 hours) vs 3 hours initially estimated.</description>
+    </item>
+    
+    <item>
+      <title>Personal Agile: Iteration 1</title>
+      <link>https://dmitrym.online/posts/personal-agile-iteration-1/</link>
+      <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/personal-agile-iteration-1/</guid>
+      <description>There&amp;rsquo;s lots to love about agile, but my personal faves are two things:
+timeboxed iterations retrospectives The ultimate goal of agile is to shorten feedback loops. If something is not working it&amp;rsquo;s easier to identify and correct the issue at the point of occurence rather than months down the line. This of it as a REPL loop for productivity.
+I&amp;rsquo;ve been quite successful doing this at work, so I figured why not try it for personal productivity as well?</description>
+    </item>
+    
+  </channel>
+</rss>
