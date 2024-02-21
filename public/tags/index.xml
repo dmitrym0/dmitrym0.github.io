@@ -8,15 +8,6 @@
     <language>en</language>
     <lastBuildDate>Wed, 21 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dmitrym.online/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>noter</title>
-      <link>https://dmitrym.online/tags/noter/</link>
-      <pubDate>Wed, 21 Feb 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://dmitrym.online/tags/noter/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>OpenSource</title>
       <link>https://dmitrym.online/tags/opensource/</link>
       <pubDate>Wed, 21 Feb 2024 00:00:00 +0000</pubDate>
@@ -26,11 +17,11 @@
     </item>
     
     <item>
-      <title>org</title>
-      <link>https://dmitrym.online/tags/org/</link>
+      <title>org-noter</title>
+      <link>https://dmitrym.online/tags/org-noter/</link>
       <pubDate>Wed, 21 Feb 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://dmitrym.online/tags/org/</guid>
+      <guid>https://dmitrym.online/tags/org-noter/</guid>
       <description></description>
     </item>
     
@@ -58,15 +49,6 @@
       <pubDate>Mon, 06 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://dmitrym.online/tags/productivity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>org-noter</title>
-      <link>https://dmitrym.online/tags/org-noter/</link>
-      <pubDate>Mon, 22 May 2023 00:00:00 -0700</pubDate>
-      
-      <guid>https://dmitrym.online/tags/org-noter/</guid>
       <description></description>
     </item>
     
