@@ -6,7 +6,7 @@
     <description>Recent content on Dmitry M - Veridis Quo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 24 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dmitrym.online/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 31 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dmitrym.online/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://dmitrym.online/pages/about/</link>
@@ -29,6 +29,16 @@ simple-lets-encrypt-docker-compose-sample simple-lets-encrypt-docker-compose-sam
 org-reminders-importer A SwiftUI iOS app to grab reminders and dump them into a text file on Dropbox.
 paratroopers An SDL based iOS game:
 Here&amp;rsquo;s what the original looked like:</description>
+    </item>
+    
+    <item>
+      <title>Perfectionism: just do it again</title>
+      <link>https://dmitrym.online/posts/do-it-again/</link>
+      <pubDate>Thu, 31 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://dmitrym.online/posts/do-it-again/</guid>
+      <description>There are two dimensions of perfectionism that I identify with. One is going above and beyond to make sure that folks dont think you&amp;rsquo;re not good enough. The other aspect is attempting to avoid rework. I want to address &amp;ldquo;rework&amp;rdquo;&amp;hellip;
+For many years, I thought that if I plan or analyse a problem long enough I&amp;rsquo;ll come up with one true solution that would apply, always. In fact, this is a lament I frequently hear at work.</description>
     </item>
     
     <item>
