@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Org-Noter on Dmitry M - Veridis Quo</title>
-    <link>http://localhost:1313/tags/org-noter/</link>
+    <link>https://dmitrym.online/tags/org-noter/</link>
     <description>Recent content in Org-Noter on Dmitry M - Veridis Quo</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 24 Apr 2024 13:23:34 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/org-noter/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dmitrym.online/tags/org-noter/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Org-noter download counts</title>
-      <link>http://localhost:1313/posts/org-noter-download-counts-2024/</link>
+      <link>https://dmitrym.online/posts/org-noter-download-counts-2024/</link>
       <pubDate>Wed, 21 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/org-noter-download-counts-2024/</guid>
+      <guid>https://dmitrym.online/posts/org-noter-download-counts-2024/</guid>
       <description>&lt;p&gt;Unfortunately &lt;a href=&#34;https://melpa.org/#/?q=org-noter&#34;&gt;melpa&lt;/a&gt; does not provide download counts for &lt;a href=&#34;https://github.com/org-noter/org-noter&#34;&gt;org-noter&lt;/a&gt;. This is an attempt to keep a manual record.&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s also hard to differentiate between new installs and upgrades. In any case it&amp;rsquo;s some indication of usage.&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Date&lt;/th&gt;&#xA;          &lt;th&gt;Count&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Feb 27, 2022&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://gist.github.com/CoolHandLouis/3f273a9eba9e9be07c91ee497f541b79&#34;&gt;32000&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Aug 11, 2023&lt;/td&gt;&#xA;          &lt;td&gt;50000&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Feb 21, 2024&lt;/td&gt;&#xA;          &lt;td&gt;61000&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;It&amp;rsquo;s interesting to note that the version in 2022 was marked 2019 so the doubling of downloads in 2 years is likely due to updates.&lt;/p&gt;</description>
     </item>
     <item>
       <title>org-noter: I&#39;m an official maintainer!</title>
-      <link>http://localhost:1313/posts/org-noter-official-maintainer/</link>
+      <link>https://dmitrym.online/posts/org-noter-official-maintainer/</link>
       <pubDate>Mon, 22 May 2023 00:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/org-noter-official-maintainer/</guid>
+      <guid>https://dmitrym.online/posts/org-noter-official-maintainer/</guid>
       <description>&lt;p&gt;I haven&amp;rsquo;t contributed to open source software much until last year. It&amp;rsquo;s been an interesting and rewarding process.&lt;/p&gt;&#xA;&lt;p&gt;My first large contribution was last year when I released my scheduling package for Emacs, &lt;a href=&#34;https://github.com/dmitrym0/org-hyperscheduler&#34;&gt;org-hyperscheduler.&lt;/a&gt;  Later in 2022 I found a fantastic package for taking notes, &lt;a href=&#34;https://github.com/org-noter/org-noter&#34;&gt;org-noter&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;When I dicovered org-noter in the summer of 2022, it was not actively maintained. The last update was at the end of 2019. I asked if &lt;a href=&#34;https://github.com/weirdNox/org-noter/pull/129#issuecomment-1181977664&#34;&gt;anyone wanted to collaborate on a fork&lt;/a&gt; on github and made a post on reddit.&lt;/p&gt;</description>
     </item>
   </channel>

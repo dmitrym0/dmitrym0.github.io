@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -17,7 +17,7 @@ Say you have a true type font that’s not part of the OS font set in a file. Yo
 Turns out that ATSUI comes to the rescue:
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 ATSFontContainerRef container; OSStatus status = ATSFontActivateFromMemory((LogicalAddress)[fontData bytes], // buffer with font data [fontData length], // size of font data kATSFontContextLocal, // for use only in this application kATSFontFormatUnspecified, // reserved NULL, // reserved kATSOptionFlagsDefault, // reserved &amp;container); // on output, will contain the activated font // find the number of font references in the container (goes to numItems) ItemCount numItems; status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, 0, NULL, &amp;numItems); NSLog(@&#34;There are %d references in the container\n&#34;, numItems); // load the individual fonts ATSFontRef *ioArray = malloc(numItems * sizeof(ATSFontRef)); status = ATSFontFindFromContainer(container, kATSOptionFlagsDefault, numItems, ioArray, &amp;numItems); CFStringRef fontName = nil; ATSFontGetName (ioArray[fontIndex], kATSOptionFlagsDefault, &amp;fontName); NSFont* myFont = [NSFont fontWithName:(NSString*)fontName size:24]; myFont now contains the NSFont reference to your font. Easy.">
 
-    <meta property="og:url" content="http://localhost:1313/posts/reading-font-from-file-and-making-it-available-to-cocoa/">
+    <meta property="og:url" content="https://dmitrym.online/posts/reading-font-from-file-and-making-it-available-to-cocoa/">
   <meta property="og:site_name" content="Dmitry M - Veridis Quo">
   <meta property="og:title" content="Reading a font from file an making it available to Cocoa">
   <meta property="og:description" content="This is another programming related post.
@@ -34,14 +34,14 @@ Turns out that ATSUI comes to the rescue:
 
 
     
-      <base href="http://localhost:1313/posts/reading-font-from-file-and-making-it-available-to-cocoa/">
+      <base href="https://dmitrym.online/posts/reading-font-from-file-and-making-it-available-to-cocoa/">
     
     <title>
   Reading a font from file an making it available to Cocoa · Dmitry M - Veridis Quo
 </title>
 
     
-      <link rel="canonical" href="http://localhost:1313/posts/reading-font-from-file-and-making-it-available-to-cocoa/">
+      <link rel="canonical" href="https://dmitrym.online/posts/reading-font-from-file-and-making-it-available-to-cocoa/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
@@ -51,7 +51,7 @@ Turns out that ATSUI comes to the rescue:
     
       
       
-      <link rel="stylesheet" href="/css/coder.css" media="screen">
+      <link rel="stylesheet" href="/css/coder.min.0fbabcf9de3ef7e9298ba41124eef14c2099b401b6f1588ec3e3d18f725fbb37.css" integrity="sha256-D7q8&#43;d4&#43;9&#43;kpi6QRJO7xTCCZtAG28ViOw&#43;PRj3Jfuzc=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -68,8 +68,8 @@ Turns out that ATSUI comes to the rescue:
 
     
 
-    <link rel="icon" type="image/png" href="http://localhost:1313/img/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="http://localhost:1313/img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://dmitrym.online/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://dmitrym.online/img/favicon-16x16.png" sizes="16x16">
 
     <meta name="generator" content="Hugo 0.147.7">
   </head>
@@ -89,7 +89,7 @@ Turns out that ATSUI comes to the rescue:
       
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://localhost:1313/posts/">Blog</a>
+            <a class="navigation-link" href="https://dmitrym.online/posts/">Blog</a>
           </li>
         
           <li class="navigation-item">
@@ -97,15 +97,15 @@ Turns out that ATSUI comes to the rescue:
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://localhost:1313/tags/">Tags</a>
+            <a class="navigation-link" href="https://dmitrym.online/tags/">Tags</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://localhost:1313/pages/about/">About</a>
+            <a class="navigation-link" href="https://dmitrym.online/pages/about/">About</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://localhost:1313/pages/projects/">Projects</a>
+            <a class="navigation-link" href="https://dmitrym.online/pages/projects/">Projects</a>
           </li>
         
       

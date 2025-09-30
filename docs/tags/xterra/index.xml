@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Xterra on Dmitry M - Veridis Quo</title>
-    <link>http://localhost:1313/tags/xterra/</link>
+    <link>https://dmitrym.online/tags/xterra/</link>
     <description>Recent content in Xterra on Dmitry M - Veridis Quo</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 24 Apr 2024 13:24:19 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/xterra/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dmitrym.online/tags/xterra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>XTerra Axle Swap Redux</title>
-      <link>http://localhost:1313/posts/xterra-axle-swap-redux/</link>
+      <link>https://dmitrym.online/posts/xterra-axle-swap-redux/</link>
       <pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/xterra-axle-swap-redux/</guid>
-      <description>&lt;p&gt;In March of 2023, I had an opportunity to buy an M226 axle out of a destroyed 2011 Pro4x Xterra. My Xterra trim does not come with an electric locking differential; whereas the pro4x does. Getting a full axle assembly from a pro4x trim and swapping it in is an economical way of getting a locking rear differential on xterra models that didn&amp;rsquo;t come with it.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/ox-hugo/2024-04-24_13-06-40_screenshot.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;I made a whole video about the process and posted it on Youtube:&lt;/p&gt;</description>
+      <guid>https://dmitrym.online/posts/xterra-axle-swap-redux/</guid>
+      <description>&lt;p&gt;In March of 2023, I had an opportunity to buy an M226 axle out of a destroyed 2011 Pro4x Xterra. My Xterra trim does not come with an electric locking differential; whereas the pro4x does. Getting a full axle assembly from a pro4x trim and swapping it in is an economical way of getting a locking rear differential on xterra models that didn&amp;rsquo;t come with it.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://dmitrym.online/ox-hugo/2024-04-24_13-06-40_screenshot.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;I made a whole video about the process and posted it on Youtube:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

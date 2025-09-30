@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DevOps on Dmitry M - Veridis Quo</title>
-    <link>http://localhost:1313/tags/devops/</link>
+    <link>https://dmitrym.online/tags/devops/</link>
     <description>Recent content in DevOps on Dmitry M - Veridis Quo</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 21 Feb 2024 09:52:38 -0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dmitrym.online/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Caddy 2 and TCP Proxying</title>
-      <link>http://localhost:1313/posts/caddy2-and-tcp-proxying/</link>
+      <link>https://dmitrym.online/posts/caddy2-and-tcp-proxying/</link>
       <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/caddy2-and-tcp-proxying/</guid>
-      <description>&lt;p&gt;How to configure Caddy2 to proxy TCP streams.&lt;/p&gt;&#xA;&lt;p&gt;To illustrate the architecture, I have the following entities running in Docker.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/ox-hugo/gateway-overview-v1.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;I&amp;rsquo;m using &lt;a href=&#34;https://caddyserver.com&#34;&gt;Caddy 2&lt;/a&gt; as a reverse proxy, but it looks like it supports many more scenarios. Previously I used nginx, or traeffic. The appeal of Caddy is that it supports TLS (with LetsEncrypt) out of the box and integrates with &lt;a href=&#34;https://caddyserver.com/docs/modules/caddy.storage.consul&#34;&gt;Consul&lt;/a&gt; for an eventual clustering solution with Nomad.&lt;/p&gt;&#xA;&lt;p&gt;Startup with Caddy was very simple. Configuration with &lt;code&gt;Caddyfile&lt;/code&gt; is quite straightforward. I was up and proxying internal HTTP services in no time. I did hit a snag when I needed to proxy non HTTP, in this case an MQTT stream. Turns out it&amp;rsquo;s not very difficult but there&amp;rsquo;s no good description of how to do it.&lt;/p&gt;</description>
+      <guid>https://dmitrym.online/posts/caddy2-and-tcp-proxying/</guid>
+      <description>&lt;p&gt;How to configure Caddy2 to proxy TCP streams.&lt;/p&gt;&#xA;&lt;p&gt;To illustrate the architecture, I have the following entities running in Docker.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://dmitrym.online/ox-hugo/gateway-overview-v1.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;I&amp;rsquo;m using &lt;a href=&#34;https://caddyserver.com&#34;&gt;Caddy 2&lt;/a&gt; as a reverse proxy, but it looks like it supports many more scenarios. Previously I used nginx, or traeffic. The appeal of Caddy is that it supports TLS (with LetsEncrypt) out of the box and integrates with &lt;a href=&#34;https://caddyserver.com/docs/modules/caddy.storage.consul&#34;&gt;Consul&lt;/a&gt; for an eventual clustering solution with Nomad.&lt;/p&gt;&#xA;&lt;p&gt;Startup with Caddy was very simple. Configuration with &lt;code&gt;Caddyfile&lt;/code&gt; is quite straightforward. I was up and proxying internal HTTP services in no time. I did hit a snag when I needed to proxy non HTTP, in this case an MQTT stream. Turns out it&amp;rsquo;s not very difficult but there&amp;rsquo;s no good description of how to do it.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

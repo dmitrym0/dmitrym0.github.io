@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Seedling on Dmitry M - Veridis Quo</title>
-    <link>http://localhost:1313/tags/seedling/</link>
+    <link>https://dmitrym.online/tags/seedling/</link>
     <description>Recent content in Seedling on Dmitry M - Veridis Quo</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 24 Apr 2024 13:24:19 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/seedling/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dmitrym.online/tags/seedling/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>XTerra Axle Swap Redux</title>
-      <link>http://localhost:1313/posts/xterra-axle-swap-redux/</link>
+      <link>https://dmitrym.online/posts/xterra-axle-swap-redux/</link>
       <pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/xterra-axle-swap-redux/</guid>
-      <description>&lt;p&gt;In March of 2023, I had an opportunity to buy an M226 axle out of a destroyed 2011 Pro4x Xterra. My Xterra trim does not come with an electric locking differential; whereas the pro4x does. Getting a full axle assembly from a pro4x trim and swapping it in is an economical way of getting a locking rear differential on xterra models that didn&amp;rsquo;t come with it.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/ox-hugo/2024-04-24_13-06-40_screenshot.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;I made a whole video about the process and posted it on Youtube:&lt;/p&gt;</description>
+      <guid>https://dmitrym.online/posts/xterra-axle-swap-redux/</guid>
+      <description>&lt;p&gt;In March of 2023, I had an opportunity to buy an M226 axle out of a destroyed 2011 Pro4x Xterra. My Xterra trim does not come with an electric locking differential; whereas the pro4x does. Getting a full axle assembly from a pro4x trim and swapping it in is an economical way of getting a locking rear differential on xterra models that didn&amp;rsquo;t come with it.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://dmitrym.online/ox-hugo/2024-04-24_13-06-40_screenshot.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;I made a whole video about the process and posted it on Youtube:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Org-noter download counts</title>
-      <link>http://localhost:1313/posts/org-noter-download-counts-2024/</link>
+      <link>https://dmitrym.online/posts/org-noter-download-counts-2024/</link>
       <pubDate>Wed, 21 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/org-noter-download-counts-2024/</guid>
+      <guid>https://dmitrym.online/posts/org-noter-download-counts-2024/</guid>
       <description>&lt;p&gt;Unfortunately &lt;a href=&#34;https://melpa.org/#/?q=org-noter&#34;&gt;melpa&lt;/a&gt; does not provide download counts for &lt;a href=&#34;https://github.com/org-noter/org-noter&#34;&gt;org-noter&lt;/a&gt;. This is an attempt to keep a manual record.&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s also hard to differentiate between new installs and upgrades. In any case it&amp;rsquo;s some indication of usage.&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Date&lt;/th&gt;&#xA;          &lt;th&gt;Count&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Feb 27, 2022&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://gist.github.com/CoolHandLouis/3f273a9eba9e9be07c91ee497f541b79&#34;&gt;32000&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Aug 11, 2023&lt;/td&gt;&#xA;          &lt;td&gt;50000&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Feb 21, 2024&lt;/td&gt;&#xA;          &lt;td&gt;61000&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;It&amp;rsquo;s interesting to note that the version in 2022 was marked 2019 so the doubling of downloads in 2 years is likely due to updates.&lt;/p&gt;</description>
     </item>
   </channel>

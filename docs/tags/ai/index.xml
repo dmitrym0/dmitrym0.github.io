@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ai on Dmitry M - Veridis Quo</title>
-    <link>http://localhost:1313/tags/ai/</link>
-    <description>Recent content in Ai on Dmitry M - Veridis Quo</description>
+    <title>AI on Dmitry M - Veridis Quo</title>
+    <link>https://dmitrym.online/tags/ai/</link>
+    <description>Recent content in AI on Dmitry M - Veridis Quo</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 30 Sep 2025 13:42:44 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dmitrym.online/tags/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI from the trenches</title>
-      <link>http://localhost:1313/posts/ai-from-the-trenches/</link>
+      <link>https://dmitrym.online/posts/ai-from-the-trenches/</link>
       <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ai-from-the-trenches/</guid>
+      <guid>https://dmitrym.online/posts/ai-from-the-trenches/</guid>
       <description>&lt;p&gt;I want to share some of my thoughts and experiences with the AI revolution. Although the argument about the nature of the LLMs is ongoing (&lt;a href=&#34;https://en.wikipedia.org/wiki/Stochastic_parrot&#34;&gt;stochastic parrots&lt;/a&gt; or not?) I&amp;rsquo;m somewhat reluctant to use the &amp;ldquo;AI&amp;rdquo; label. When I think AI, I think, higher level features, like perhaps Data from Star Trek. An elevated mind if you will. I&amp;rsquo;m with folks calling LLMs &amp;ldquo;fancy auto-completes&amp;rdquo;. Some of the failure modes I see don&amp;rsquo;t scream &amp;ldquo;intelligence&amp;rdquo; to me, but I&amp;rsquo;m not very firm on that. After all &lt;a href=&#34;https://en.wikipedia.org/wiki/ELIZA&#34;&gt;Eliza&lt;/a&gt; was very believable, had fairly high &lt;a href=&#34;https://en.wikipedia.org/wiki/Turing_test&#34;&gt;Turing test scores&lt;/a&gt;, but was at it&amp;rsquo;s core extremely simple and certainly not intelligent. I&amp;rsquo;ve been using Chatbots fairly extensively in my work, but I can&amp;rsquo;t share any of the specifics of course. I&amp;rsquo;ve also been using chatbots to improve my open source project, &lt;a href=&#34;https://github.com/dmitrym0/org-hyperscheduler&#34;&gt;org-hyperscheduler&lt;/a&gt;. Since it&amp;rsquo;s open source I can share a couple of interesting tidbits without exposing proprietary information.&lt;/p&gt;</description>
     </item>
   </channel>

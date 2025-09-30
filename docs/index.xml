@@ -2,235 +2,235 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dmitry M - Veridis Quo</title>
-    <link>http://localhost:1313/</link>
+    <link>https://dmitrym.online/</link>
     <description>Recent content on Dmitry M - Veridis Quo</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 30 Sep 2025 13:42:44 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dmitrym.online/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>http://localhost:1313/pages/about/</link>
+      <link>https://dmitrym.online/pages/about/</link>
       <pubDate>Fri, 07 Dec 2001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/about/</guid>
+      <guid>https://dmitrym.online/pages/about/</guid>
       <description>&lt;p&gt;I like building stuff.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Projects</title>
-      <link>http://localhost:1313/pages/projects/</link>
+      <link>https://dmitrym.online/pages/projects/</link>
       <pubDate>Fri, 07 Dec 2001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/projects/</guid>
+      <guid>https://dmitrym.online/pages/projects/</guid>
       <description>&lt;h2 id=&#34;org-hyperscheduler&#34;&gt;org-hyperscheduler&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/dmitrym0/org-hyperscheduler&#34;&gt;org-hyperscheduler&lt;/a&gt; is an Emacs package that uses a calendar web component to visualize org-mode agenda.&lt;/p&gt;&#xA;&lt;p&gt;More information is available on &lt;a href=&#34;https://github.com/dmitrym0/org-hyperscheduler&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Also on &lt;a href=&#34;https://melpa.org/#/org-hyperscheduler&#34;&gt;MELPA&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;simple-lets-encrypt-docker-compose-sample&#34;&gt;simple-lets-encrypt-docker-compose-sample&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/dmitrym0/simple-lets-encrypt-docker-compose-sample&#34;&gt;simple-lets-encrypt-docker-compose-sample&lt;/a&gt; is a sample &lt;code&gt;docker-compose.yml&lt;/code&gt; that shows how to leverage &lt;a href=&#34;https://github.com/jwilder/docker-letsencrypt-nginx-proxy-companion&#34;&gt;docker-letsencrypt-nginx-proxy-companion&lt;/a&gt; to automatically terminate SSL connections.&lt;/p&gt;&#xA;&lt;h2 id=&#34;org-reminders-importer&#34;&gt;org-reminders-importer&lt;/h2&gt;&#xA;&lt;p&gt;A SwiftUI iOS app to grab reminders and dump them into a text file on Dropbox.&lt;/p&gt;&#xA;&lt;h2 id=&#34;paratroopers&#34;&gt;paratroopers&lt;/h2&gt;&#xA;&lt;p&gt;An &lt;a href=&#34;https://www.libsdl.org&#34;&gt;SDL&lt;/a&gt; based iOS game:&lt;/p&gt;&#xA;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/sNO1A80wxOg&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s what the original looked like:&lt;/p&gt;</description>
     </item>
     <item>
       <title>AI from the trenches</title>
-      <link>http://localhost:1313/posts/ai-from-the-trenches/</link>
+      <link>https://dmitrym.online/posts/ai-from-the-trenches/</link>
       <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ai-from-the-trenches/</guid>
+      <guid>https://dmitrym.online/posts/ai-from-the-trenches/</guid>
       <description>&lt;p&gt;I want to share some of my thoughts and experiences with the AI revolution. Although the argument about the nature of the LLMs is ongoing (&lt;a href=&#34;https://en.wikipedia.org/wiki/Stochastic_parrot&#34;&gt;stochastic parrots&lt;/a&gt; or not?) I&amp;rsquo;m somewhat reluctant to use the &amp;ldquo;AI&amp;rdquo; label. When I think AI, I think, higher level features, like perhaps Data from Star Trek. An elevated mind if you will. I&amp;rsquo;m with folks calling LLMs &amp;ldquo;fancy auto-completes&amp;rdquo;. Some of the failure modes I see don&amp;rsquo;t scream &amp;ldquo;intelligence&amp;rdquo; to me, but I&amp;rsquo;m not very firm on that. After all &lt;a href=&#34;https://en.wikipedia.org/wiki/ELIZA&#34;&gt;Eliza&lt;/a&gt; was very believable, had fairly high &lt;a href=&#34;https://en.wikipedia.org/wiki/Turing_test&#34;&gt;Turing test scores&lt;/a&gt;, but was at it&amp;rsquo;s core extremely simple and certainly not intelligent. I&amp;rsquo;ve been using Chatbots fairly extensively in my work, but I can&amp;rsquo;t share any of the specifics of course. I&amp;rsquo;ve also been using chatbots to improve my open source project, &lt;a href=&#34;https://github.com/dmitrym0/org-hyperscheduler&#34;&gt;org-hyperscheduler&lt;/a&gt;. Since it&amp;rsquo;s open source I can share a couple of interesting tidbits without exposing proprietary information.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automatic Do not disturb mode for iPhone while in Google Meet</title>
-      <link>http://localhost:1313/posts/dnd-for-google-meet/</link>
+      <link>https://dmitrym.online/posts/dnd-for-google-meet/</link>
       <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/dnd-for-google-meet/</guid>
+      <guid>https://dmitrym.online/posts/dnd-for-google-meet/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been using Bose QuietComfort35s since 2017. I use it both for music, connected to my iPhone and for work calls. One issue is that when a call comes through on my phone, the audio is disconnected from my Macbook. This is very inconvenient during a work Google Meet call. I have to scramble then to reconnect the audio to my meeting.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m fixing this with an AppleScript + Apple Shortcut combo.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Perfectionism: just do it again</title>
-      <link>http://localhost:1313/posts/do-it-again/</link>
+      <link>https://dmitrym.online/posts/do-it-again/</link>
       <pubDate>Thu, 31 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/do-it-again/</guid>
+      <guid>https://dmitrym.online/posts/do-it-again/</guid>
       <description>&lt;p&gt;There are two dimensions of perfectionism that I identify with. One is going above and beyond to make sure that folks dont think you&amp;rsquo;re not good enough. The other aspect is attempting to avoid rework. I want to address &amp;ldquo;rework&amp;rdquo;&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;For many years, I thought that if I plan or analyse a problem long enough I&amp;rsquo;ll come up with one true solution that would apply, always. In fact, this is a lament I frequently hear at work. &amp;ldquo;If we spent just a bit more time&#xA;collecting requirements this project would&amp;rsquo;ve been so much easier!&amp;rdquo;. For me, it typically manifests in analysis paralysis. Did I spend enough time thinking about the problem? Did I consider all the angles? What have I missed?&lt;/p&gt;</description>
     </item>
     <item>
       <title>XTerra Axle Swap Redux</title>
-      <link>http://localhost:1313/posts/xterra-axle-swap-redux/</link>
+      <link>https://dmitrym.online/posts/xterra-axle-swap-redux/</link>
       <pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/xterra-axle-swap-redux/</guid>
-      <description>&lt;p&gt;In March of 2023, I had an opportunity to buy an M226 axle out of a destroyed 2011 Pro4x Xterra. My Xterra trim does not come with an electric locking differential; whereas the pro4x does. Getting a full axle assembly from a pro4x trim and swapping it in is an economical way of getting a locking rear differential on xterra models that didn&amp;rsquo;t come with it.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/ox-hugo/2024-04-24_13-06-40_screenshot.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;I made a whole video about the process and posted it on Youtube:&lt;/p&gt;</description>
+      <guid>https://dmitrym.online/posts/xterra-axle-swap-redux/</guid>
+      <description>&lt;p&gt;In March of 2023, I had an opportunity to buy an M226 axle out of a destroyed 2011 Pro4x Xterra. My Xterra trim does not come with an electric locking differential; whereas the pro4x does. Getting a full axle assembly from a pro4x trim and swapping it in is an economical way of getting a locking rear differential on xterra models that didn&amp;rsquo;t come with it.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://dmitrym.online/ox-hugo/2024-04-24_13-06-40_screenshot.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;I made a whole video about the process and posted it on Youtube:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Org-noter download counts</title>
-      <link>http://localhost:1313/posts/org-noter-download-counts-2024/</link>
+      <link>https://dmitrym.online/posts/org-noter-download-counts-2024/</link>
       <pubDate>Wed, 21 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/org-noter-download-counts-2024/</guid>
+      <guid>https://dmitrym.online/posts/org-noter-download-counts-2024/</guid>
       <description>&lt;p&gt;Unfortunately &lt;a href=&#34;https://melpa.org/#/?q=org-noter&#34;&gt;melpa&lt;/a&gt; does not provide download counts for &lt;a href=&#34;https://github.com/org-noter/org-noter&#34;&gt;org-noter&lt;/a&gt;. This is an attempt to keep a manual record.&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s also hard to differentiate between new installs and upgrades. In any case it&amp;rsquo;s some indication of usage.&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Date&lt;/th&gt;&#xA;          &lt;th&gt;Count&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Feb 27, 2022&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://gist.github.com/CoolHandLouis/3f273a9eba9e9be07c91ee497f541b79&#34;&gt;32000&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Aug 11, 2023&lt;/td&gt;&#xA;          &lt;td&gt;50000&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Feb 21, 2024&lt;/td&gt;&#xA;          &lt;td&gt;61000&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;It&amp;rsquo;s interesting to note that the version in 2022 was marked 2019 so the doubling of downloads in 2 years is likely due to updates.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Back to Personal Agile</title>
-      <link>http://localhost:1313/posts/back-to-personal-agile/</link>
+      <link>https://dmitrym.online/posts/back-to-personal-agile/</link>
       <pubDate>Mon, 06 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/back-to-personal-agile/</guid>
+      <guid>https://dmitrym.online/posts/back-to-personal-agile/</guid>
       <description>&lt;p&gt;Life&amp;rsquo;s been kinda busy. Between family and work, hobbies take a back seat. The quote that applies is &amp;ldquo;A goal without a plan is just a wish&amp;rdquo;. So I want to make a plan.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;A goal without a plan is just a wish.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;In IT world, &amp;ldquo;Agile&amp;rdquo; is an invective. Rightfully so. I&amp;rsquo;ve never seen it properly implemented. Usually it&amp;rsquo;s a way to mask the lack of any process. &amp;ldquo;Oh we are agile&amp;rdquo;. Nope, no real plan, permanent firefighting mode.&lt;/p&gt;</description>
     </item>
     <item>
       <title>org-noter: I&#39;m an official maintainer!</title>
-      <link>http://localhost:1313/posts/org-noter-official-maintainer/</link>
+      <link>https://dmitrym.online/posts/org-noter-official-maintainer/</link>
       <pubDate>Mon, 22 May 2023 00:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/org-noter-official-maintainer/</guid>
+      <guid>https://dmitrym.online/posts/org-noter-official-maintainer/</guid>
       <description>&lt;p&gt;I haven&amp;rsquo;t contributed to open source software much until last year. It&amp;rsquo;s been an interesting and rewarding process.&lt;/p&gt;&#xA;&lt;p&gt;My first large contribution was last year when I released my scheduling package for Emacs, &lt;a href=&#34;https://github.com/dmitrym0/org-hyperscheduler&#34;&gt;org-hyperscheduler.&lt;/a&gt;  Later in 2022 I found a fantastic package for taking notes, &lt;a href=&#34;https://github.com/org-noter/org-noter&#34;&gt;org-noter&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;When I dicovered org-noter in the summer of 2022, it was not actively maintained. The last update was at the end of 2019. I asked if &lt;a href=&#34;https://github.com/weirdNox/org-noter/pull/129#issuecomment-1181977664&#34;&gt;anyone wanted to collaborate on a fork&lt;/a&gt; on github and made a post on reddit.&lt;/p&gt;</description>
     </item>
     <item>
       <title>3 ways to context switch with Git</title>
-      <link>http://localhost:1313/posts/three-ways-to-context-switch-with-git/</link>
+      <link>https://dmitrym.online/posts/three-ways-to-context-switch-with-git/</link>
       <pubDate>Fri, 02 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/three-ways-to-context-switch-with-git/</guid>
+      <guid>https://dmitrym.online/posts/three-ways-to-context-switch-with-git/</guid>
       <description></description>
     </item>
     <item>
       <title>Achievement Unlocked: Open Source Contribution</title>
-      <link>http://localhost:1313/posts/open-source-contribution/</link>
+      <link>https://dmitrym.online/posts/open-source-contribution/</link>
       <pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/open-source-contribution/</guid>
+      <guid>https://dmitrym.online/posts/open-source-contribution/</guid>
       <description>&lt;p&gt;I did it. My Emacs package, &lt;a href=&#34;https://github.com/dmitrym0/org-hyperscheduler&#34;&gt;org-hyperscheduler&lt;/a&gt;, is now live on MELPA, &lt;a href=&#34;https://melpa.org/#/org-hyperscheduler&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m overjoyed. It&amp;rsquo;s a big deal for me, because I&amp;rsquo;ve been a long time beneficiary of open source software and I&amp;rsquo;m glad to finally be able to give back. It&amp;rsquo;s the first piece of software that I started out writing for myself and got to a state where it&amp;rsquo;s useable for other folks.&lt;/p&gt;&#xA;&lt;p&gt;Once version 1 was stable, I submitted a &lt;a href=&#34;https://github.com/melpa/melpa/pull/8057&#34;&gt;pull request&lt;/a&gt; to MELPA. Prior to that I ran through their &lt;a href=&#34;https://github.com/melpa/melpa/blob/master/CONTRIBUTING.org&#34;&gt;checklist&lt;/a&gt;. The checklist ensures that style guides are followed, deployment recipe works correctly, etc. Even though I went through the checklist twice, I still managed to miss a couple of things. The reviewer kindly pointed it out:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Journaling prompts in Emacs</title>
-      <link>http://localhost:1313/posts/journaling-prompts-with-emacs/</link>
+      <link>https://dmitrym.online/posts/journaling-prompts-with-emacs/</link>
       <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/journaling-prompts-with-emacs/</guid>
+      <guid>https://dmitrym.online/posts/journaling-prompts-with-emacs/</guid>
       <description>&lt;p&gt;One of my daily rituals is journaling. It&amp;rsquo;s been shown to have positive impact on quality of life (citation needed). I find it helps me decompress but it&amp;rsquo;s also a permanent record of my thoughts and my life&amp;rsquo;s minutiae.&lt;/p&gt;&#xA;&lt;p&gt;I usually set a timer for 5 minutes and go to town. One particular challenge I have, is that some times I don&amp;rsquo;t really know what to write about. Recently I came upon the idea of journaling prompts. So far, journaling prompts come in the form of questions:&lt;/p&gt;</description>
     </item>
     <item>
       <title>What is hyper-scheduling?</title>
-      <link>http://localhost:1313/posts/what-is-hyperscheduling/</link>
+      <link>https://dmitrym.online/posts/what-is-hyperscheduling/</link>
       <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/what-is-hyperscheduling/</guid>
+      <guid>https://dmitrym.online/posts/what-is-hyperscheduling/</guid>
       <description>&lt;h2 id=&#34;hyperscheduling-tldr&#34;&gt;Hyperscheduling?; TLDR&lt;/h2&gt;&#xA;&lt;p&gt;Hyperscheduling is the idea of fully planning your day using a calendar. Every minute of the day is assigned to some task using a calendar.&lt;/p&gt;&#xA;&lt;h2 id=&#34;hyperscheduling-in-more-detail&#34;&gt;Hyperscheduling in more detail&lt;/h2&gt;&#xA;&lt;p&gt;Hyperscheduling is only part of a productivity system. It helps me plan my day:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Select a set of tasks for today (this is done outside of hyperscheduling, using GTD or another system).&lt;/li&gt;&#xA;&lt;li&gt;Prioritize your tasks in order of importance.&lt;/li&gt;&#xA;&lt;li&gt;Lay your tasks out on the calendar.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Step #3 is where the magic is. By visually moving time blocks around on a calendar, I get the following benefits:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Caddy 2 and TCP Proxying</title>
-      <link>http://localhost:1313/posts/caddy2-and-tcp-proxying/</link>
+      <link>https://dmitrym.online/posts/caddy2-and-tcp-proxying/</link>
       <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/caddy2-and-tcp-proxying/</guid>
-      <description>&lt;p&gt;How to configure Caddy2 to proxy TCP streams.&lt;/p&gt;&#xA;&lt;p&gt;To illustrate the architecture, I have the following entities running in Docker.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/ox-hugo/gateway-overview-v1.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;I&amp;rsquo;m using &lt;a href=&#34;https://caddyserver.com&#34;&gt;Caddy 2&lt;/a&gt; as a reverse proxy, but it looks like it supports many more scenarios. Previously I used nginx, or traeffic. The appeal of Caddy is that it supports TLS (with LetsEncrypt) out of the box and integrates with &lt;a href=&#34;https://caddyserver.com/docs/modules/caddy.storage.consul&#34;&gt;Consul&lt;/a&gt; for an eventual clustering solution with Nomad.&lt;/p&gt;&#xA;&lt;p&gt;Startup with Caddy was very simple. Configuration with &lt;code&gt;Caddyfile&lt;/code&gt; is quite straightforward. I was up and proxying internal HTTP services in no time. I did hit a snag when I needed to proxy non HTTP, in this case an MQTT stream. Turns out it&amp;rsquo;s not very difficult but there&amp;rsquo;s no good description of how to do it.&lt;/p&gt;</description>
+      <guid>https://dmitrym.online/posts/caddy2-and-tcp-proxying/</guid>
+      <description>&lt;p&gt;How to configure Caddy2 to proxy TCP streams.&lt;/p&gt;&#xA;&lt;p&gt;To illustrate the architecture, I have the following entities running in Docker.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://dmitrym.online/ox-hugo/gateway-overview-v1.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;I&amp;rsquo;m using &lt;a href=&#34;https://caddyserver.com&#34;&gt;Caddy 2&lt;/a&gt; as a reverse proxy, but it looks like it supports many more scenarios. Previously I used nginx, or traeffic. The appeal of Caddy is that it supports TLS (with LetsEncrypt) out of the box and integrates with &lt;a href=&#34;https://caddyserver.com/docs/modules/caddy.storage.consul&#34;&gt;Consul&lt;/a&gt; for an eventual clustering solution with Nomad.&lt;/p&gt;&#xA;&lt;p&gt;Startup with Caddy was very simple. Configuration with &lt;code&gt;Caddyfile&lt;/code&gt; is quite straightforward. I was up and proxying internal HTTP services in no time. I did hit a snag when I needed to proxy non HTTP, in this case an MQTT stream. Turns out it&amp;rsquo;s not very difficult but there&amp;rsquo;s no good description of how to do it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Note taking and discovery</title>
-      <link>http://localhost:1313/posts/note-taking-and-discovery/</link>
+      <link>https://dmitrym.online/posts/note-taking-and-discovery/</link>
       <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/note-taking-and-discovery/</guid>
+      <guid>https://dmitrym.online/posts/note-taking-and-discovery/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been taking notes consistently, probably starting in university. The challenge for me was never capture but retrieval. I suspect that&amp;rsquo;s true for most people.&lt;/p&gt;&#xA;&lt;p&gt;The interesting thing about zettelcasten is how Luhramn optimized his sytem for retrieval. Related subjects were proximate, he used a linking system of sorts that allowed his cards to be filed under number of different topics.&lt;/p&gt;&#xA;&lt;p&gt;In digital note taking, proximity is difficult to simulate. Hyperlinking is the first step of course. My problem with hyperlinks is that they become lost in the content of the note. The only way to discover them is by scanning the text. This is very slow.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Still Around</title>
-      <link>http://localhost:1313/posts/still-around/</link>
+      <link>https://dmitrym.online/posts/still-around/</link>
       <pubDate>Mon, 22 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/still-around/</guid>
+      <guid>https://dmitrym.online/posts/still-around/</guid>
       <description>&lt;p&gt;Nearly a year after my previous entry, I&amp;rsquo;m trying to get into blogging yet again. I&amp;rsquo;ve got a huge backlog of posts I&amp;rsquo;m interested in sharing but it&amp;rsquo;s been a challenge to get through it for various reasons. It&amp;rsquo;s not New Year&amp;rsquo;s, but here&amp;rsquo;s a commitment, write one post every two weeks. Should be doable?&lt;/p&gt;</description>
     </item>
     <item>
       <title>  Book review: &#34;First 90 days&#34;
   </title>
-      <link>http://localhost:1313/posts/book-review-first-90-days/</link>
+      <link>https://dmitrym.online/posts/book-review-first-90-days/</link>
       <pubDate>Tue, 28 Apr 2020 00:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/book-review-first-90-days/</guid>
+      <guid>https://dmitrym.online/posts/book-review-first-90-days/</guid>
       <description>&lt;p&gt;The &amp;ldquo;First 90 days&amp;rdquo; lays out  a comprehensive plan on how to become productive in a new role, whether it&amp;rsquo;s a promotion or a position in a new company.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;It’s a mistake to believe that you will be successful in your new job by continuing to do what you did in your previous job, only more so&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;The advice is wide ranging. What&amp;rsquo;s useful about this book is that there&amp;rsquo;s nearly a step by step process for every category of advice.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Personal Agile: Iteration 5 (COVID-19 edition)</title>
-      <link>http://localhost:1313/posts/personal-agile-iteration-5/</link>
+      <link>https://dmitrym.online/posts/personal-agile-iteration-5/</link>
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/personal-agile-iteration-5/</guid>
+      <guid>https://dmitrym.online/posts/personal-agile-iteration-5/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s been pretty hard to focus on anything other than what&amp;rsquo;s going on in the world the last two weeks. I didn&amp;rsquo;t really successfully complete the iteration. We&amp;rsquo;ve been sent home from work about a week ago which freed up&#xA;a lot of time that&amp;rsquo;s been allocated to the commute. Theoretically. Unfortunately focus has been hard to come by.&lt;/p&gt;&#xA;&lt;p&gt;The only take away I have from this iteration is that I&amp;rsquo;ve significantly reversed my position on UI/UX.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Personal Agile: Iteration 4</title>
-      <link>http://localhost:1313/posts/personal-agile-iteration-4/</link>
+      <link>https://dmitrym.online/posts/personal-agile-iteration-4/</link>
       <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/personal-agile-iteration-4/</guid>
+      <guid>https://dmitrym.online/posts/personal-agile-iteration-4/</guid>
       <description>&lt;p&gt;Interesting iteration. Overall agile approach has been a net positive. I likely would&amp;rsquo;ve have been approximately as successful, but deliberate approach to planning and reviews yields interesting artifacts (of which this blog post is one) and provides for an interesting trajectory overview.&lt;/p&gt;&#xA;&lt;p&gt;I made good progress on my tasks this iteration:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;adding two additional chapters reviewed to &amp;ldquo;First 90 days&amp;rdquo;. It&amp;rsquo;s becoming a bit tedious, but I feel it&amp;rsquo;s critical to finish this book.&lt;/li&gt;&#xA;&lt;li&gt;moving forward with my &lt;code&gt;org-friend&lt;/code&gt; SwiftUI project.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;In terms of my application, I feel like I&amp;rsquo;ve committed two cardinal sins of software engineering&lt;/p&gt;</description>
     </item>
     <item>
       <title>Personal Agile: Iteration 2</title>
-      <link>http://localhost:1313/posts/personal-agile-iteration-2/</link>
+      <link>https://dmitrym.online/posts/personal-agile-iteration-2/</link>
       <pubDate>Sun, 09 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/personal-agile-iteration-2/</guid>
-      <description>&lt;p&gt;The goal for this iteration was to:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;work on my little SwiftUI app&lt;/li&gt;&#xA;&lt;li&gt;finish reading a book (&amp;ldquo;The first 90 days&amp;rdquo;)&lt;/li&gt;&#xA;&lt;li&gt;maintain my fitness habits&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/ox-hugo/screenshot_2020-02-09_21-06-26.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h2 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h2&gt;&#xA;&lt;p&gt;Overall the iteration went well. In the screenshot above, you can tell that I wildly underestimated how much time summarizing the current book would take: I estimated an hour, but it ended up being 3 times as much (3 hours).&lt;/p&gt;&#xA;&lt;p&gt;Then, I spent way too much on my app, 10 pomodoros (roughly 5 hours) vs 3 hours initially estimated.&lt;/p&gt;</description>
+      <guid>https://dmitrym.online/posts/personal-agile-iteration-2/</guid>
+      <description>&lt;p&gt;The goal for this iteration was to:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;work on my little SwiftUI app&lt;/li&gt;&#xA;&lt;li&gt;finish reading a book (&amp;ldquo;The first 90 days&amp;rdquo;)&lt;/li&gt;&#xA;&lt;li&gt;maintain my fitness habits&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://dmitrym.online/ox-hugo/screenshot_2020-02-09_21-06-26.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h2 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h2&gt;&#xA;&lt;p&gt;Overall the iteration went well. In the screenshot above, you can tell that I wildly underestimated how much time summarizing the current book would take: I estimated an hour, but it ended up being 3 times as much (3 hours).&lt;/p&gt;&#xA;&lt;p&gt;Then, I spent way too much on my app, 10 pomodoros (roughly 5 hours) vs 3 hours initially estimated.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Personal Agile: Iteration 1</title>
-      <link>http://localhost:1313/posts/personal-agile-iteration-1/</link>
+      <link>https://dmitrym.online/posts/personal-agile-iteration-1/</link>
       <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/personal-agile-iteration-1/</guid>
+      <guid>https://dmitrym.online/posts/personal-agile-iteration-1/</guid>
       <description>&lt;p&gt;There&amp;rsquo;s lots to love about agile, but my personal faves are two things:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;timeboxed iterations&lt;/li&gt;&#xA;&lt;li&gt;retrospectives&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;The ultimate goal of agile is to shorten feedback loops. If something is not working it&amp;rsquo;s easier to identify and correct the issue at the point of occurence rather than months down the line. This of it as a &lt;code&gt;REPL&lt;/code&gt;&#xA;loop for productivity.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve been quite successful doing this at work, so I figured why not try it for personal productivity as well? I&amp;rsquo;ve had a couple of projects on the go for a while. I&amp;rsquo;ve made little progress so I wanted to focus and get things truely completed.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Managing  secrets in open source iOS apps</title>
-      <link>http://localhost:1313/posts/managing-secrets-in-ios-apps/</link>
+      <link>https://dmitrym.online/posts/managing-secrets-in-ios-apps/</link>
       <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/managing-secrets-in-ios-apps/</guid>
+      <guid>https://dmitrym.online/posts/managing-secrets-in-ios-apps/</guid>
       <description>&lt;p&gt;One of the issues that open source authors have to deal with is secrets management. The small utility app I&amp;rsquo;m working on relies on Dropbox API. Before you can work with Dropbox API though, you have to generate an API key.&#xA;The API key identifies the application to Dropbox and needs to remain mostly secret. A bad actor could impersonate the application author by stealing the API key.&lt;/p&gt;&#xA;&lt;p&gt;This is a long winded way of saying that API keys must be kept out of public repositories. How can this be achieved?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Omnifocus style reviews with org-mode</title>
-      <link>http://localhost:1313/posts/omnifocus-review-with-org-mode/</link>
+      <link>https://dmitrym.online/posts/omnifocus-review-with-org-mode/</link>
       <pubDate>Tue, 07 Jan 2020 00:00:00 -0800</pubDate>
-      <guid>http://localhost:1313/posts/omnifocus-review-with-org-mode/</guid>
+      <guid>https://dmitrym.online/posts/omnifocus-review-with-org-mode/</guid>
       <description>&lt;p&gt;I started using Emacs and org-mode in earnest in the middle of 2019. At that point in time I was using Omnifocus to track my tasks and Bearapp for notes. I was missing&#xA;plaintext functionality. Since then I&amp;rsquo;ve reproduced most of the functionality that Omnifocus offerred except one particular feature: reviews.&lt;/p&gt;&#xA;&lt;p&gt;In GTD, reviews occupy a pretty important niche. Without regular task and project reviews task lists tend to grow out of control and become polutted. One important consideration for a&#xA;task list is for it to closely resemble the actual state of what you have to do.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Building a lithium ion battery, part 1: “Why”</title>
-      <link>http://localhost:1313/posts/diy-lithium-battery-part-1/</link>
+      <link>https://dmitrym.online/posts/diy-lithium-battery-part-1/</link>
       <pubDate>Tue, 12 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/diy-lithium-battery-part-1/</guid>
+      <guid>https://dmitrym.online/posts/diy-lithium-battery-part-1/</guid>
       <description>&lt;p&gt;Why build a battery? Why build a battery from scratch? I’ll tell you.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-build-a-battery-from-scratch&#34;&gt;Why build a battery from scratch?&lt;/h2&gt;&#xA;&lt;p&gt;Battery technology is becoming very important. Cell phones, laptops and now cars rely on batteries for power. More importantly, I needed a battery unit for reasons (more on this later).&lt;/p&gt;&#xA;&lt;p&gt;I could’ve purchased a battery off the shelf, but consumer units are quite expensive. For example [&lt;a href=&#34;https://www.mec.ca/en/product/5055-474/Yeti-400-Lithium&#34;&gt;Goal Zero Yeti 400 Lithium&lt;/a&gt; is $800. I thought I could build one for about a 1/3 of the price.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Safari App Extensions; migrating from .safariextz</title>
-      <link>http://localhost:1313/posts/safari-app-extensions-migrating-from-safariextz/</link>
+      <link>https://dmitrym.online/posts/safari-app-extensions-migrating-from-safariextz/</link>
       <pubDate>Mon, 08 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/safari-app-extensions-migrating-from-safariextz/</guid>
+      <guid>https://dmitrym.online/posts/safari-app-extensions-migrating-from-safariextz/</guid>
       <description>&lt;p&gt;I’ve dabbled with a Safari extension for a project on and off for a while. For Safari 12, I read that .safariextz-style extensions are no longer supported. I went forth to investigate what changed and how I could port my old extension to Safari 12.&lt;/p&gt;&#xA;&lt;p&gt;The short story is that the packaging has changed, but the bulk of the existing extension should just work once new conventions are adopted. I imagine the new changes are spurred by Apple’s desire to unify distribution — new extensions are wrapped as a mac application, require a signature and are distributed through the Mac App Store.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to check for X-Send-File (or X-Accel-Redirect)</title>
-      <link>http://localhost:1313/posts/how-to-check-for-x-sendfile/</link>
+      <link>https://dmitrym.online/posts/how-to-check-for-x-sendfile/</link>
       <pubDate>Tue, 11 Sep 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/how-to-check-for-x-sendfile/</guid>
+      <guid>https://dmitrym.online/posts/how-to-check-for-x-sendfile/</guid>
       <description>&lt;p&gt;Some web requests should not be handled by the application framework. Requests hitting a dynamic API endpoint should be processed by application (in my case typically Ruby on Rails). Static assets (such as files) should be served by the webserver, bypassing Ruby on Rails completely.&lt;/p&gt;&#xA;&lt;p&gt;Why?&lt;/p&gt;&#xA;&lt;p&gt;There are a couple of reasons.&lt;/p&gt;&#xA;&lt;p&gt;The biggest one is performance. NGINX and Apache are significantly better and faster at serving files than a Ruby process. It’s the whole reason for their existence.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Efficient commit workflow with tig</title>
-      <link>http://localhost:1313/posts/tig-cheat-sheet/</link>
+      <link>https://dmitrym.online/posts/tig-cheat-sheet/</link>
       <pubDate>Thu, 30 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/tig-cheat-sheet/</guid>
-      <description>&lt;p&gt;One of the recommended source control practices is to &lt;a href=&#34;http://stackoverflow.com/questions/107264/how-often-to-commit-changes-to-source-control&#34;&gt;commit frequently, and often&lt;/a&gt;.   I prefer to keep my commits terse and focused, however in practice I’m working on a couple related but independent things in parallel. At commit time, I prefer to tease loosely related things apart and commit them separately.&lt;/p&gt;&#xA;&lt;p&gt;One way to do that is with the interactive git-add facility that can be invoked with &lt;code&gt;git add -p&lt;/code&gt;:&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/ox-hugo/screenshot_2020-01-07_16-16-56.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;It’s a lovely little interface:&lt;/p&gt;</description>
+      <guid>https://dmitrym.online/posts/tig-cheat-sheet/</guid>
+      <description>&lt;p&gt;One of the recommended source control practices is to &lt;a href=&#34;http://stackoverflow.com/questions/107264/how-often-to-commit-changes-to-source-control&#34;&gt;commit frequently, and often&lt;/a&gt;.   I prefer to keep my commits terse and focused, however in practice I’m working on a couple related but independent things in parallel. At commit time, I prefer to tease loosely related things apart and commit them separately.&lt;/p&gt;&#xA;&lt;p&gt;One way to do that is with the interactive git-add facility that can be invoked with &lt;code&gt;git add -p&lt;/code&gt;:&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://dmitrym.online/ox-hugo/screenshot_2020-01-07_16-16-56.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;It’s a lovely little interface:&lt;/p&gt;</description>
     </item>
     <item>
       <title>ncdu - ncurses disk usage</title>
-      <link>http://localhost:1313/posts/ncdu-ncurses-disk-usage/</link>
+      <link>https://dmitrym.online/posts/ncdu-ncurses-disk-usage/</link>
       <pubDate>Wed, 07 Dec 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ncdu-ncurses-disk-usage/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/ox-hugo/screenshot_2019-07-12_11-15-18.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;At some point harddrive space was cheap, but with the advent of SSDs and cheap “Cloud VMs” that is no longer the case. For example, the cheapest VM on VULTR is $5/month and has a 15 gig SSD drive. It&amp;rsquo;s suddenly very important to maximize drive usage again. This is where &lt;a href=&#34;https://dev.yorhel.nl/ncdu&#34;&gt;ncdu&lt;/a&gt; comes in. It displays a nice ncurses interface that visualizes the usage breakdown.&lt;/p&gt;&#xA;&lt;p&gt;So useful key bindings:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;`?` - help&lt;/li&gt;&#xA;&lt;li&gt;`g` - to switch display modes&lt;/li&gt;&#xA;&lt;li&gt;`d` - to kill a subdirectory tree&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;There&amp;rsquo;s a commercial app for Mac that I use and love (because my Mac only has a 256 SSD) called &lt;a href=&#34;https://daisydiskapp.com/&#34;&gt;DaisyDisk&lt;/a&gt;.&lt;/p&gt;</description>
+      <guid>https://dmitrym.online/posts/ncdu-ncurses-disk-usage/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://dmitrym.online/ox-hugo/screenshot_2019-07-12_11-15-18.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;At some point harddrive space was cheap, but with the advent of SSDs and cheap “Cloud VMs” that is no longer the case. For example, the cheapest VM on VULTR is $5/month and has a 15 gig SSD drive. It&amp;rsquo;s suddenly very important to maximize drive usage again. This is where &lt;a href=&#34;https://dev.yorhel.nl/ncdu&#34;&gt;ncdu&lt;/a&gt; comes in. It displays a nice ncurses interface that visualizes the usage breakdown.&lt;/p&gt;&#xA;&lt;p&gt;So useful key bindings:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;`?` - help&lt;/li&gt;&#xA;&lt;li&gt;`g` - to switch display modes&lt;/li&gt;&#xA;&lt;li&gt;`d` - to kill a subdirectory tree&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;There&amp;rsquo;s a commercial app for Mac that I use and love (because my Mac only has a 256 SSD) called &lt;a href=&#34;https://daisydiskapp.com/&#34;&gt;DaisyDisk&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>RAID5: Recovering from 2-drive failure during rebuild</title>
-      <link>http://localhost:1313/posts/raid5-multiple-disk-recovery/</link>
+      <link>https://dmitrym.online/posts/raid5-multiple-disk-recovery/</link>
       <pubDate>Mon, 13 Jul 2015 00:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/raid5-multiple-disk-recovery/</guid>
+      <guid>https://dmitrym.online/posts/raid5-multiple-disk-recovery/</guid>
       <description>&lt;p&gt;RAID is amazing technology. It lets us take a bunch of cheap disks an arrange them in various configurations that present these disks as one large disk. A particularly popular type of RAID for home users is RAID5. A RAID5 array is typically comprised of 3 disks, however only 2/3 of the disk space is available since 1/3 of the space is used for recovery purposes if one of the disks fail. This is in fact the configuration I’ve arranged my home RAIDi in. I have a RAID5 that consists of 3 disks, 2TB each. The usable space is 4TB with the remaining 2TB used for redundancy (parity).&lt;/p&gt;</description>
     </item>
     <item>
       <title>tircd, irc twitter gateway</title>
-      <link>http://localhost:1313/posts/tircd-twitter-gateway/</link>
+      <link>https://dmitrym.online/posts/tircd-twitter-gateway/</link>
       <pubDate>Sun, 17 Mar 2013 00:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/tircd-twitter-gateway/</guid>
+      <guid>https://dmitrym.online/posts/tircd-twitter-gateway/</guid>
       <description>&lt;p&gt;I published my &lt;a href=&#34;https://github.com/dmitrym0/tircd&#34;&gt;tircd branch&lt;/a&gt;. If you&amp;rsquo;re&#xA;unfamiliar with &lt;a href=&#34;https://code.google.com/p/tircd/&#34;&gt;tircd&lt;/a&gt; it&amp;rsquo;s a daemon that&#xA;presents Twitter as an IRC channel. I merged &lt;a href=&#34;https://github.com/DexterTheDragon/tircd&#34;&gt;this really old branch&lt;/a&gt; that implements Twitter lists&#xA;as channels with the semi official &lt;a href=&#34;https://github.com/drags/tircd&#34;&gt;google code mirror branch&lt;/a&gt;.  I created a &lt;a href=&#34;https://github.com/drags/tircd/pull/1&#34;&gt;pull request&lt;/a&gt; but it hasn&amp;rsquo;t been acted on yet.&lt;/p&gt;&#xA;&lt;p&gt;I consume my instant messaging via IRC (with the help of&#xA;&lt;a href=&#34;https://symlink.me/projects/minbif/wiki&#34;&gt;minbif&lt;/a&gt;) and now Twitter too. Quite&#xA;convenient.&lt;/p&gt;&#xA;&lt;p&gt;This is what my Twitter looks like right now:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Working with shared memory on OS X</title>
-      <link>http://localhost:1313/posts/shared-memory-on-os-x/</link>
+      <link>https://dmitrym.online/posts/shared-memory-on-os-x/</link>
       <pubDate>Mon, 05 Apr 2010 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/shared-memory-on-os-x/</guid>
+      <guid>https://dmitrym.online/posts/shared-memory-on-os-x/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;re working with Qt&amp;rsquo;s &lt;a href=&#34;https://duckduckgo.com/?q=qsharedmemory&amp;amp;t=osx&amp;amp;ia=web&#34;&gt;QSharedMemory&lt;/a&gt;, on Mac OS X you&amp;rsquo;re working with System V shared memory subsystem. If your data is sizable, the first limit you&amp;rsquo;ll hit in the maximum segment size, which is for some reason around 4 megs. To increase it invoke this magic incantation:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;&#xA;&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo sysctl -w kern.sysv.shmmax&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;33554432&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&lt;p&gt;and to see other shared mem related kernel variables:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;&#xA;&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sysctl -A&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;grep shm&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&lt;p&gt;If you&amp;rsquo;d like these settings to remain after you reboot your machine follow the instruction &lt;a href=&#34;http://www.spy-hill.net/help/apple/SharedMemory.html&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Reading a font from file an making it available to Cocoa</title>
-      <link>http://localhost:1313/posts/reading-font-from-file-and-making-it-available-to-cocoa/</link>
+      <link>https://dmitrym.online/posts/reading-font-from-file-and-making-it-available-to-cocoa/</link>
       <pubDate>Fri, 06 Feb 2009 00:00:00 -0800</pubDate>
-      <guid>http://localhost:1313/posts/reading-font-from-file-and-making-it-available-to-cocoa/</guid>
+      <guid>https://dmitrym.online/posts/reading-font-from-file-and-making-it-available-to-cocoa/</guid>
       <description>&lt;p&gt;This is another programming related post.&lt;/p&gt;&#xA;&lt;p&gt;Say you have a true type font that&amp;rsquo;s not part of the OS font set in a file. You&amp;rsquo;ve read the contents of the file into memory and now want to make it available to Cocoa. How?&lt;/p&gt;&#xA;&lt;p&gt;Turns out that ATSUI comes to the rescue:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;&#xA;&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-C++&#34; data-lang=&#34;C++&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;ATSFontContainerRef&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;container&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;OSStatus&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;status&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ATSFontActivateFromMemory&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;LogicalAddress&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;fontData&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;bytes&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;           &lt;span class=&#34;c1&#34;&gt;// buffer with font data&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;            &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;fontData&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;length&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;          &lt;span class=&#34;c1&#34;&gt;// size of font data&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;            &lt;span class=&#34;n&#34;&gt;kATSFontContextLocal&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;       &lt;span class=&#34;c1&#34;&gt;// for use only in this application&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;            &lt;span class=&#34;n&#34;&gt;kATSFontFormatUnspecified&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;// reserved&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;            &lt;span class=&#34;nb&#34;&gt;NULL&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;                       &lt;span class=&#34;c1&#34;&gt;// reserved&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;            &lt;span class=&#34;n&#34;&gt;kATSOptionFlagsDefault&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;     &lt;span class=&#34;c1&#34;&gt;// reserved&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;            &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;container&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;                &lt;span class=&#34;c1&#34;&gt;// on output, will contain the activated font&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// find the number of font references in the container (goes to numItems)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ItemCount&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;numItems&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;status&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ATSFontFindFromContainer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;container&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;kATSOptionFlagsDefault&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;NULL&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;numItems&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;NSLog&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;There are %d references in the container&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\n&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;numItems&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// load the individual fonts&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ATSFontRef&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ioArray&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;malloc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;numItems&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;sizeof&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ATSFontRef&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;));&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;status&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ATSFontFindFromContainer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;container&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;kATSOptionFlagsDefault&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;numItems&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ioArray&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;numItems&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;CFStringRef&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;fontName&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nil&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;ATSFontGetName&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ioArray&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;fontIndex&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;kATSOptionFlagsDefault&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;fontName&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;NSFont&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;myFont&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;NSFont&lt;/span&gt; &lt;span class=&#34;nl&#34;&gt;fontWithName&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;NSString&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;fontName&lt;/span&gt; &lt;span class=&#34;nl&#34;&gt;size&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&lt;p&gt;&lt;code&gt;myFont&lt;/code&gt; now contains the NSFont reference to your font. Easy.&lt;/p&gt;</description>
     </item>
   </channel>
