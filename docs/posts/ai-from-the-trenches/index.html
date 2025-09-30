@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Dmitry M">
+    <meta name="description" content="Dmitry&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="AI from the trenches">
+  <meta name="twitter:description" content="I want to share some of my thoughts and experiences with the AI revolution. Although the argument about the nature of the LLMs is ongoing (stochastic parrots or not?) I’m somewhat reluctant to use the “AI” label. When I think AI, I think, higher level features, like perhaps Data from Star Trek. An elevated mind if you will. I’m with folks calling LLMs “fancy auto-completes”. Some of the failure modes I see don’t scream “intelligence” to me, but I’m not very firm on that. After all Eliza was very believable, had fairly high Turing test scores, but was at it’s core extremely simple and certainly not intelligent. I’ve been using Chatbots fairly extensively in my work, but I can’t share any of the specifics of course. I’ve also been using chatbots to improve my open source project, org-hyperscheduler. Since it’s open source I can share a couple of interesting tidbits without exposing proprietary information.">
+
+    <meta property="og:url" content="http://localhost:1313/posts/ai-from-the-trenches/">
+  <meta property="og:site_name" content="Dmitry M - Veridis Quo">
+  <meta property="og:title" content="AI from the trenches">
+  <meta property="og:description" content="I want to share some of my thoughts and experiences with the AI revolution. Although the argument about the nature of the LLMs is ongoing (stochastic parrots or not?) I’m somewhat reluctant to use the “AI” label. When I think AI, I think, higher level features, like perhaps Data from Star Trek. An elevated mind if you will. I’m with folks calling LLMs “fancy auto-completes”. Some of the failure modes I see don’t scream “intelligence” to me, but I’m not very firm on that. After all Eliza was very believable, had fairly high Turing test scores, but was at it’s core extremely simple and certainly not intelligent. I’ve been using Chatbots fairly extensively in my work, but I can’t share any of the specifics of course. I’ve also been using chatbots to improve my open source project, org-hyperscheduler. Since it’s open source I can share a couple of interesting tidbits without exposing proprietary information.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-09-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-09-30T13:42:44-07:00">
+    <meta property="article:tag" content="OpenSource">
+    <meta property="article:tag" content="Ai">
+
+
+    
+      <base href="http://localhost:1313/posts/ai-from-the-trenches/">
+    
+    <title>
+  AI from the trenches · Dmitry M - Veridis Quo
+</title>
+
+    
+      <link rel="canonical" href="http://localhost:1313/posts/ai-from-the-trenches/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.css" media="screen">
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="/css/custom.css" />
+    
+      <link rel="stylesheet" href="/images/syntax.css" />
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="http://localhost:1313/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://localhost:1313/img/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.147.7">
+  </head>
+
+  
+  
+  <body class="colorscheme-light">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Dmitry M - Veridis Quo
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://localhost:1313/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://til.dmitrym.online/">TIL</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://localhost:1313/tags/">Tags</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://localhost:1313/pages/about/">About</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://localhost:1313/pages/projects/">Projects</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">AI from the trenches</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2025-09-30T00:00:00Z'>
+                September 30, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              8 minutes read
+            </span>
+          </div>
+          
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="/tags/opensource/">opensource</a>
+      <span class="separator">•</span>
+    <a href="/tags/ai/">AI</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        <p>I want to share some of my thoughts and experiences with the AI revolution. Although the argument about the nature of the LLMs is ongoing (<a href="https://en.wikipedia.org/wiki/Stochastic_parrot">stochastic parrots</a> or not?) I&rsquo;m somewhat reluctant to use the &ldquo;AI&rdquo; label. When I think AI, I think, higher level features, like perhaps Data from Star Trek. An elevated mind if you will. I&rsquo;m with folks calling LLMs &ldquo;fancy auto-completes&rdquo;. Some of the failure modes I see don&rsquo;t scream &ldquo;intelligence&rdquo; to me, but I&rsquo;m not very firm on that. After all <a href="https://en.wikipedia.org/wiki/ELIZA">Eliza</a> was very believable, had fairly high <a href="https://en.wikipedia.org/wiki/Turing_test">Turing test scores</a>, but was at it&rsquo;s core extremely simple and certainly not intelligent. I&rsquo;ve been using Chatbots fairly extensively in my work, but I can&rsquo;t share any of the specifics of course. I&rsquo;ve also been using chatbots to improve my open source project, <a href="https://github.com/dmitrym0/org-hyperscheduler">org-hyperscheduler</a>. Since it&rsquo;s open source I can share a couple of interesting tidbits without exposing proprietary information.</p>
+<p><a href="https://github.com/dmitrym0/org-hyperscheduler">org-hyperschedule</a> is an Emacs package for displaying calendar data. You can think of Emacs as being the server, with the calendar being rendered in the browser. The data comes in via web-sockets. I originally wrote a pretty basic, ugly implementation of the front end in plain JavaScript. I wanted to use Claude/ChatGPT to &ldquo;vibe-code&rdquo; a new, good looking front end and add some improvements to the server side (Emacs).</p>
+<p>This is a somewhat ideal scenario because there&rsquo;s relatively little code. The &ldquo;server&rdquo; is about 300 lines of Lisp code, so is the single page application. The heavy lifting is done by Emacs and the <a href="https://ui.toast.com/tui-calendar">tui-calendar</a> JavaScript component.</p>
+<h2 id="the-good">The Good</h2>
+<h3 id="svelte">Svelte</h3>
+<p>I initially wanted to create the new front end in React, but decided to go with something simpler, <a href="https://svelte.dev">Svelte</a>. My prompt was not very sophisticated. It asked for the plain JS front end to be converted to a Svelte project with the original functionality preserved. I also asked it to make it &ldquo;look pleasant&rdquo;. Within about 30 seconds, I had a decent looking Svelte based SPA that functioned well, with zero involvement from me.</p>
+<figure><img src="/ox-hugo/org-hyperscheduler-v2.png" width="75%">
+</figure>
+
+<h3 id="elisp-elegant-lisp">ELisp - Elegant Lisp</h3>
+<p>One of the new features I wanted, was to be able to classify calendar events based on event attributes. This is a feature that assigns colour and category to visually separate events in the calendar. This was the extent of my prompt, but I was surprised with the results:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-elisp" data-lang="elisp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">defcustom</span> <span class="nv">org-hyperscheduler-calendar-categories</span>
+</span></span><span class="line"><span class="cl">  <span class="o">&#39;</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">work</span>
+</span></span><span class="line"><span class="cl">     <span class="nb">:name</span> <span class="s">&#34;Work Calendar&#34;</span>
+</span></span><span class="line"><span class="cl">     <span class="nb">:color</span> <span class="s">&#34;#000000&#34;</span>
+</span></span><span class="line"><span class="cl">     <span class="nb">:bg-color</span> <span class="s">&#34;#FFFF6e&#34;</span>
+</span></span><span class="line"><span class="cl">     <span class="nb">:border-color</span> <span class="s">&#34;#FFFF6e&#34;</span>
+</span></span><span class="line"><span class="cl">     <span class="nb">:read-only</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl">     <span class="nb">:matcher</span> <span class="p">(</span><span class="nb">lambda</span> <span class="p">(</span><span class="nv">item</span><span class="p">)</span> <span class="p">(</span><span class="nv">string=</span> <span class="p">(</span><span class="nf">cdr</span> <span class="p">(</span><span class="nf">assoc</span> <span class="s">&#34;CALENDAR-ID&#34;</span> <span class="nv">item</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">                                      <span class="s">&#34;dmitr@work.com&#34;</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">done</span>
+</span></span><span class="line"><span class="cl">     <span class="nb">:name</span> <span class="s">&#34;Done Items&#34;</span>
+</span></span><span class="line"><span class="cl">     <span class="nb">:color</span> <span class="s">&#34;#000000&#34;</span>
+</span></span><span class="line"><span class="cl">     <span class="nb">:bg-color</span> <span class="s">&#34;#C0C0C0&#34;</span>
+</span></span><span class="line"><span class="cl">     <span class="nb">:border-color</span> <span class="s">&#34;#C0C0C0&#34;</span>
+</span></span><span class="line"><span class="cl">     <span class="nb">:read-only</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl">     <span class="nb">:matcher</span> <span class="p">(</span><span class="nb">lambda</span> <span class="p">(</span><span class="nv">item</span><span class="p">)</span> <span class="p">(</span><span class="nv">string=</span> <span class="p">(</span><span class="nf">cdr</span> <span class="p">(</span><span class="nf">assoc</span> <span class="s">&#34;TODO&#34;</span> <span class="nv">item</span><span class="p">))</span> <span class="s">&#34;DONE&#34;</span><span class="p">))))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>The revelation to me here, was the inclusion of the <code>matcher</code> lambda. I did not have a specific implementation in mind when I requested this, but the result was certainly more elegant than anticipated. I&rsquo;ve seen similar implementations prior but I&rsquo;m not sure I would&rsquo;ve been able to come up with this on my own.</p>
+<p>Briefly, when org-hyperscheduler iterates over events it runs each category&rsquo;s matcher lambda over each event until the matcher returns <code>true</code>. That signifies that the event has been categorized and no further processing is necessary. This is both flexible, clear and concise &ndash; hallmarks of good code in my opinion.</p>
+<h2 id="the-bad">The Bad</h2>
+<h3 id="caching">Caching</h3>
+<p>This is an example of poor prompting, but also why it&rsquo;s hard to call LLMs &ldquo;intelligent&rdquo;. Getting all of the calendar data is a relatively expensive operation, so I wanted the agenda to be cached in browser&rsquo;s session storage. There was a naive implementation in the old front end already. I asked Claude to improve caching using Svelte&rsquo;s modules. Claude (Sonnet 4 at the time) pulled in SvelteKit, which is a server side framework, implemented as a proxy in front of Emacs. I&rsquo;d argue here, that this is less than intelligent because introducing <span class="underline">another</span> server as part of this project makes zero sense in any context. I ended up rolling it back.</p>
+<h3 id="infinite-loops">Infinite Loops</h3>
+<p>Up till now, I&rsquo;ve never managed to completely hang Safari, so this was a new and interesting one for me. One feature I really wanted to add was incremental updates. Rather than having to send the full agenda on every update, I wanted to send individual changes. This clashed with the existing code causing an infinite loop that caused Safari to be completely inoperable, requiring a <code>kill -9</code>. I did manage to fix this with careful prompting. I described the symptoms and the potential cause of the issue and Claude successfully diagnosed it.</p>
+<h2 id="developer-experience">Developer Experience</h2>
+<p>I have used LLMs in a number of ways; via the chatbot interface directly and using specialty tools.</p>
+<p>Copying and pasting code into ChatGPT works fine, but it doesn&rsquo;t scale very far. It&rsquo;s decent for one off tiny shell scripts for instance. This is something I outgrew quite quickly.</p>
+<p>Of the specialty tools I have used <a href="https://cursor.com">Cursor</a>, <a href="https://aider.chat">Aider</a> and <a href="https://www.claude.com/product/claude-code">Claude Code</a>.</p>
+<p>Cursor is a modified VSCode distribution with some secret sauce sprinkled in. It&rsquo;s a good introduction to coding assistants and is generally quite pleasant. I have largely left it behind, primarily for the same reasons I left the original VSCode et al, in favor of Emacs. I prefer a more streamlined, keyboard driven experience.</p>
+<p>Claude Code and Aider are my daily drivers. The main difference between the two and Cursor is that Claude Code and Aider live in the terminal. Aider in particular can integrate with most any LLM back-ends via <a href="https://www.litellm.ai">LiteLLM</a>. Both of these tools run in the console and adopt a command line based approach. The biggest difference between the two is that Claude Code is happy to burn through large number of tokens to satisfy user&rsquo;s requests while Aider tries to be frugal. What this means in practice, is that you have to be more explicit with the scope of changes when working with Aider. Claude Code will run with what it has and try and figure things out on it&rsquo;s own but at an additional cost.</p>
+<p>In terms of prompting, I&rsquo;ve been fairly successful by decomposing features into very narrow slices of functionality. This is difficult to describe precisely, but it&rsquo;s primarily about removing any ambiguity from the prompt. A good rule of thumb for sizing agile user stories is &ldquo;big enough to contain useful functionality, but small enough to estimate somewhat accurately&rdquo;. I&rsquo;m using a similar approach to LLM prompting. I ask for code that I could write myself in no more than an hour. This allows me to inspect and understand the code that is being generated, constrain the context window somewhat and reduce the blast radius if we get off the rails. In practical terms it means that I start the prompt with &ldquo;Lets plan a new feature. This is what I need&rdquo; and then focus on a specific subset of the proposed functionality until I&rsquo;m satisfied that it&rsquo;s working as desired.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>I definitely had a bit of anxiety entering the AI era. There was a widespread expectation that LLMs would replace developers pretty damn soon and I got caught up in it. It&rsquo;s early enough that it might happen still. In &ldquo;<a href="https://en.wikipedia.org/wiki/No_Silver_Bullet">No Silver Bullet</a>&rdquo;, Brooks talks about <strong>essential complexity</strong> and <strong>accidental complexity</strong>. Accidental complexity is how to write a <code>for</code> loop in Golang. <a href="https://en.wikipedia.org/wiki/Programming_complexity">Essential complexity</a> is understanding and solving problems at a more conceptual level. The &ldquo;why&rdquo; of a business problem, for instance. While LLMs excel at solving accidental complexity problems &ndash; how do I deploy this application to kubertnetes &ndash; they are not quite there for essentially complexity problems. The evolution of AI and coding assistants seem comparable to the shift from low level to high level languages. The productivity gains have been incredible but they didn&rsquo;t solve the ultimate problem of software engineering.</p>
+<p>The other issue I&rsquo;m pondering is the craftsmanship of software engineering. Manually writing every line of code is very satisfying, but more than that, it&rsquo;s &ldquo;<a href="https://pages.cs.wisc.edu/~remzi/Naur.pdf">programming as theory building</a>&rdquo;:</p>
+<blockquote>
+<p>&hellip;the quality of the designing programmer’s work is related to the quality of the match between his theory of the problem and his theory of the solution&hellip;.the quality of a later programmer’s work is related to the match between his theories and the previous programmer’s theories.</p></blockquote>
+<p>In other words, my code is only as good as my understanding of the problem and the solution. If I&rsquo;m maintaining someone else&rsquo;s code my contributions are only as good as my understanding of the original author&rsquo;s solution. Moving forward, it seems as given that most code is going to be written by LLMs. We are likely to have only a surface level understanding of the solution space because we are not writing the code, and because reading code is genuinely hard:</p>
+<blockquote>
+<p>Everyone knows that debugging is twice as hard as writing a program in the first place. So if you’re as clever as you can be when you write it, how will you ever debug it?</p></blockquote>
+<p>So what does this all mean for the overall software industry? No idea, and I would be skeptical about any and all predictions. We are living through a tectonic shift in the software industry and it&rsquo;s exhilarating.</p>
+
+      </div>
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>General Nerdery.</p>
+    
+    
+      
+        © 2025
+      
+       Dmitry M 
+    
+    
+       · 
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

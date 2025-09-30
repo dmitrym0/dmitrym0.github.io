@@ -2,64 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>OpenSource on Dmitry M - Veridis Quo</title>
-    <link>https://dmitrym.online/tags/opensource/</link>
+    <link>http://localhost:1313/tags/opensource/</link>
     <description>Recent content in OpenSource on Dmitry M - Veridis Quo</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 21 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dmitrym.online/tags/opensource/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Apr 2024 13:23:34 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/opensource/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Org-noter download counts</title>
-      <link>https://dmitrym.online/posts/org-noter-download-counts-2024/</link>
+      <link>http://localhost:1313/posts/org-noter-download-counts-2024/</link>
       <pubDate>Wed, 21 Feb 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://dmitrym.online/posts/org-noter-download-counts-2024/</guid>
-      <description>Unfortunately melpa does not provide download counts for org-noter. This is an attempt to keep a manual record.
-It&amp;rsquo;s also hard to differentiate between new installs and upgrades. In any case it&amp;rsquo;s some indication of usage.
-Date Count Feb 27, 2022 32000 Aug 11, 2023 50000 Feb 21, 2024 61000 It&amp;rsquo;s interesting to note that the version in 2022 was marked 2019 so the doubling of downloads in 2 years is likely due to updates.</description>
+      <guid>http://localhost:1313/posts/org-noter-download-counts-2024/</guid>
+      <description>&lt;p&gt;Unfortunately &lt;a href=&#34;https://melpa.org/#/?q=org-noter&#34;&gt;melpa&lt;/a&gt; does not provide download counts for &lt;a href=&#34;https://github.com/org-noter/org-noter&#34;&gt;org-noter&lt;/a&gt;. This is an attempt to keep a manual record.&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s also hard to differentiate between new installs and upgrades. In any case it&amp;rsquo;s some indication of usage.&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Date&lt;/th&gt;&#xA;          &lt;th&gt;Count&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Feb 27, 2022&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://gist.github.com/CoolHandLouis/3f273a9eba9e9be07c91ee497f541b79&#34;&gt;32000&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Aug 11, 2023&lt;/td&gt;&#xA;          &lt;td&gt;50000&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Feb 21, 2024&lt;/td&gt;&#xA;          &lt;td&gt;61000&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;It&amp;rsquo;s interesting to note that the version in 2022 was marked 2019 so the doubling of downloads in 2 years is likely due to updates.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Back to Personal Agile</title>
-      <link>https://dmitrym.online/posts/back-to-personal-agile/</link>
+      <link>http://localhost:1313/posts/back-to-personal-agile/</link>
       <pubDate>Mon, 06 Nov 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://dmitrym.online/posts/back-to-personal-agile/</guid>
-      <description>Life&amp;rsquo;s been kinda busy. Between family and work, hobbies take a back seat. The quote that applies is &amp;ldquo;A goal without a plan is just a wish&amp;rdquo;. So I want to make a plan.
-A goal without a plan is just a wish.
-In IT world, &amp;ldquo;Agile&amp;rdquo; is an invective. Rightfully so. I&amp;rsquo;ve never seen it properly implemented. Usually it&amp;rsquo;s a way to mask the lack of any process. &amp;ldquo;Oh we are agile&amp;rdquo;.</description>
+      <guid>http://localhost:1313/posts/back-to-personal-agile/</guid>
+      <description>&lt;p&gt;Life&amp;rsquo;s been kinda busy. Between family and work, hobbies take a back seat. The quote that applies is &amp;ldquo;A goal without a plan is just a wish&amp;rdquo;. So I want to make a plan.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;A goal without a plan is just a wish.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;In IT world, &amp;ldquo;Agile&amp;rdquo; is an invective. Rightfully so. I&amp;rsquo;ve never seen it properly implemented. Usually it&amp;rsquo;s a way to mask the lack of any process. &amp;ldquo;Oh we are agile&amp;rdquo;. Nope, no real plan, permanent firefighting mode.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>org-noter: I&#39;m an official maintainer!</title>
-      <link>https://dmitrym.online/posts/org-noter-official-maintainer/</link>
+      <link>http://localhost:1313/posts/org-noter-official-maintainer/</link>
       <pubDate>Mon, 22 May 2023 00:00:00 -0700</pubDate>
-      
-      <guid>https://dmitrym.online/posts/org-noter-official-maintainer/</guid>
-      <description>I haven&amp;rsquo;t contributed to open source software much until last year. It&amp;rsquo;s been an interesting and rewarding process.
-My first large contribution was last year when I released my scheduling package for Emacs, org-hyperscheduler. Later in 2022 I found a fantastic package for taking notes, org-noter.
-When I dicovered org-noter in the summer of 2022, it was not actively maintained. The last update was at the end of 2019. I asked if anyone wanted to collaborate on a fork on github and made a post on reddit.</description>
+      <guid>http://localhost:1313/posts/org-noter-official-maintainer/</guid>
+      <description>&lt;p&gt;I haven&amp;rsquo;t contributed to open source software much until last year. It&amp;rsquo;s been an interesting and rewarding process.&lt;/p&gt;&#xA;&lt;p&gt;My first large contribution was last year when I released my scheduling package for Emacs, &lt;a href=&#34;https://github.com/dmitrym0/org-hyperscheduler&#34;&gt;org-hyperscheduler.&lt;/a&gt;  Later in 2022 I found a fantastic package for taking notes, &lt;a href=&#34;https://github.com/org-noter/org-noter&#34;&gt;org-noter&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;When I dicovered org-noter in the summer of 2022, it was not actively maintained. The last update was at the end of 2019. I asked if &lt;a href=&#34;https://github.com/weirdNox/org-noter/pull/129#issuecomment-1181977664&#34;&gt;anyone wanted to collaborate on a fork&lt;/a&gt; on github and made a post on reddit.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Achievement Unlocked: Open Source Contribution</title>
-      <link>https://dmitrym.online/posts/open-source-contribution/</link>
+      <link>http://localhost:1313/posts/open-source-contribution/</link>
       <pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://dmitrym.online/posts/open-source-contribution/</guid>
-      <description>I did it. My Emacs package, org-hyperscheduler, is now live on MELPA, here.
-I&amp;rsquo;m overjoyed. It&amp;rsquo;s a big deal for me, because I&amp;rsquo;ve been a long time beneficiary of open source software and I&amp;rsquo;m glad to finally be able to give back. It&amp;rsquo;s the first piece of software that I started out writing for myself and got to a state where it&amp;rsquo;s useable for other folks.
-Once version 1 was stable, I submitted a pull request to MELPA.</description>
+      <guid>http://localhost:1313/posts/open-source-contribution/</guid>
+      <description>&lt;p&gt;I did it. My Emacs package, &lt;a href=&#34;https://github.com/dmitrym0/org-hyperscheduler&#34;&gt;org-hyperscheduler&lt;/a&gt;, is now live on MELPA, &lt;a href=&#34;https://melpa.org/#/org-hyperscheduler&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m overjoyed. It&amp;rsquo;s a big deal for me, because I&amp;rsquo;ve been a long time beneficiary of open source software and I&amp;rsquo;m glad to finally be able to give back. It&amp;rsquo;s the first piece of software that I started out writing for myself and got to a state where it&amp;rsquo;s useable for other folks.&lt;/p&gt;&#xA;&lt;p&gt;Once version 1 was stable, I submitted a &lt;a href=&#34;https://github.com/melpa/melpa/pull/8057&#34;&gt;pull request&lt;/a&gt; to MELPA. Prior to that I ran through their &lt;a href=&#34;https://github.com/melpa/melpa/blob/master/CONTRIBUTING.org&#34;&gt;checklist&lt;/a&gt;. The checklist ensures that style guides are followed, deployment recipe works correctly, etc. Even though I went through the checklist twice, I still managed to miss a couple of things. The reviewer kindly pointed it out:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Managing  secrets in open source iOS apps</title>
-      <link>https://dmitrym.online/posts/managing-secrets-in-ios-apps/</link>
+      <link>http://localhost:1313/posts/managing-secrets-in-ios-apps/</link>
       <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://dmitrym.online/posts/managing-secrets-in-ios-apps/</guid>
-      <description>One of the issues that open source authors have to deal with is secrets management. The small utility app I&amp;rsquo;m working on relies on Dropbox API. Before you can work with Dropbox API though, you have to generate an API key. The API key identifies the application to Dropbox and needs to remain mostly secret. A bad actor could impersonate the application author by stealing the API key.
-This is a long winded way of saying that API keys must be kept out of public repositories.</description>
+      <guid>http://localhost:1313/posts/managing-secrets-in-ios-apps/</guid>
+      <description>&lt;p&gt;One of the issues that open source authors have to deal with is secrets management. The small utility app I&amp;rsquo;m working on relies on Dropbox API. Before you can work with Dropbox API though, you have to generate an API key.&#xA;The API key identifies the application to Dropbox and needs to remain mostly secret. A bad actor could impersonate the application author by stealing the API key.&lt;/p&gt;&#xA;&lt;p&gt;This is a long winded way of saying that API keys must be kept out of public repositories. How can this be achieved?&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

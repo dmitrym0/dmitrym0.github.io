@@ -2,19 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>General on Dmitry M - Veridis Quo</title>
-    <link>https://dmitrym.online/tags/general/</link>
+    <link>http://localhost:1313/tags/general/</link>
     <description>Recent content in General on Dmitry M - Veridis Quo</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 07 Dec 2001 00:00:00 +0000</lastBuildDate><atom:link href="https://dmitrym.online/tags/general/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 May 2023 12:33:08 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/general/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://dmitrym.online/pages/about/</link>
+      <link>http://localhost:1313/pages/about/</link>
       <pubDate>Fri, 07 Dec 2001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dmitrym.online/pages/about/</guid>
-      <description>I like building stuff.</description>
+      <guid>http://localhost:1313/pages/about/</guid>
+      <description>&lt;p&gt;I like building stuff.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

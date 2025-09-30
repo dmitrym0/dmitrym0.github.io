@@ -2,34 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Dmitry M - Veridis Quo</title>
-    <link>https://dmitrym.online/pages/</link>
+    <link>http://localhost:1313/pages/</link>
     <description>Recent content in Pages on Dmitry M - Veridis Quo</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 07 Dec 2001 00:00:00 +0000</lastBuildDate><atom:link href="https://dmitrym.online/pages/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 May 2023 12:33:08 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://dmitrym.online/pages/about/</link>
+      <link>http://localhost:1313/pages/about/</link>
       <pubDate>Fri, 07 Dec 2001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dmitrym.online/pages/about/</guid>
-      <description>I like building stuff.</description>
+      <guid>http://localhost:1313/pages/about/</guid>
+      <description>&lt;p&gt;I like building stuff.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Projects</title>
-      <link>https://dmitrym.online/pages/projects/</link>
+      <link>http://localhost:1313/pages/projects/</link>
       <pubDate>Fri, 07 Dec 2001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dmitrym.online/pages/projects/</guid>
-      <description>org-hyperscheduler org-hyperscheduler is an Emacs package that uses a calendar web component to visualize org-mode agenda.
-More information is available on GitHub.
-Also on MELPA.
-simple-lets-encrypt-docker-compose-sample simple-lets-encrypt-docker-compose-sample is a sample docker-compose.yml that shows how to leverage docker-letsencrypt-nginx-proxy-companion to automatically terminate SSL connections.
-org-reminders-importer A SwiftUI iOS app to grab reminders and dump them into a text file on Dropbox.
-paratroopers An SDL based iOS game:
-Here&amp;rsquo;s what the original looked like:</description>
+      <guid>http://localhost:1313/pages/projects/</guid>
+      <description>&lt;h2 id=&#34;org-hyperscheduler&#34;&gt;org-hyperscheduler&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/dmitrym0/org-hyperscheduler&#34;&gt;org-hyperscheduler&lt;/a&gt; is an Emacs package that uses a calendar web component to visualize org-mode agenda.&lt;/p&gt;&#xA;&lt;p&gt;More information is available on &lt;a href=&#34;https://github.com/dmitrym0/org-hyperscheduler&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Also on &lt;a href=&#34;https://melpa.org/#/org-hyperscheduler&#34;&gt;MELPA&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;simple-lets-encrypt-docker-compose-sample&#34;&gt;simple-lets-encrypt-docker-compose-sample&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/dmitrym0/simple-lets-encrypt-docker-compose-sample&#34;&gt;simple-lets-encrypt-docker-compose-sample&lt;/a&gt; is a sample &lt;code&gt;docker-compose.yml&lt;/code&gt; that shows how to leverage &lt;a href=&#34;https://github.com/jwilder/docker-letsencrypt-nginx-proxy-companion&#34;&gt;docker-letsencrypt-nginx-proxy-companion&lt;/a&gt; to automatically terminate SSL connections.&lt;/p&gt;&#xA;&lt;h2 id=&#34;org-reminders-importer&#34;&gt;org-reminders-importer&lt;/h2&gt;&#xA;&lt;p&gt;A SwiftUI iOS app to grab reminders and dump them into a text file on Dropbox.&lt;/p&gt;&#xA;&lt;h2 id=&#34;paratroopers&#34;&gt;paratroopers&lt;/h2&gt;&#xA;&lt;p&gt;An &lt;a href=&#34;https://www.libsdl.org&#34;&gt;SDL&lt;/a&gt; based iOS game:&lt;/p&gt;&#xA;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/sNO1A80wxOg&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s what the original looked like:&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
