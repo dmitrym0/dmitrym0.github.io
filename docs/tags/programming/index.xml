@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Dmitry M - Veridis Quo</title>
-    <link>https://dmitrym.online/tags/projects/</link>
-    <description>Recent content in Projects on Dmitry M - Veridis Quo</description>
+    <title>Programming on Dmitry M - Veridis Quo</title>
+    <link>https://dmitrym.online/tags/programming/</link>
+    <description>Recent content in Programming on Dmitry M - Veridis Quo</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 28 Mar 2026 18:46:53 -0700</lastBuildDate>
-    <atom:link href="https://dmitrym.online/tags/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dmitrym.online/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What do LLMs know vs what they understand</title>
       <link>https://dmitrym.online/posts/what-do-llms-know-vs-understand/</link>
       <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://dmitrym.online/posts/what-do-llms-know-vs-understand/</guid>
       <description>&lt;p&gt;I’ve been working on my iOS app which I meant to build for a while. Of course I used Claude code.&#xA;It is interesting to explore the limits of LLMs. I definitely hit it (the limit) this time.&lt;/p&gt;&#xA;&lt;p&gt;The app is really simple — make a network request and display the result. The problem is Claude Code doesn’t seem to know how to structure UI and networking code.&lt;/p&gt;&#xA;&lt;p&gt;You don&amp;rsquo;t want to make any IO requests on the main thread because the main thread is used to keep the UI responsive. If you do end up making a request on the main thread, you&amp;rsquo;ll notice that your user interface stutters and becomes unresponsive since the execution is paused waiting for a network packet to come back. The way to avoid this particular problem is to delegate networking or any other IO to a background thread. This has been true ever since Apple introduced it&amp;rsquo;s first iPhone SDK back in the 2010s. This is also true for Android development.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Small Dashboard</title>
-      <link>https://dmitrym.online/posts/small-dashboard-project/</link>
-      <pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://dmitrym.online/posts/small-dashboard-project/</guid>
-      <description>&lt;p&gt;An impulse buy on Aliexpress resulted in a cool little project. I saw this on youtube somewhere, advertised as a companion to home assistant. For $9 canadian, I couldn&amp;rsquo;t pass it up.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://dmitrym.online/ox-hugo/2026-03-15_18-26-46_screenshot.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;It&amp;rsquo;s a 1.8&amp;quot; LCD display, driven by an ESP32 microcontroller. It connects to your WiFi and can display time/temperature, has a rudimentary image gallery. There are many different versions including ones that have a tap button on top; mine doesn&amp;rsquo;t.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

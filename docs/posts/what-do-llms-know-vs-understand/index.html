@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Dmitry M">
+    <meta name="description" content="Dmitry&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="What do LLMs know vs what they understand">
+  <meta name="twitter:description" content="I’ve been working on my iOS app which I meant to build for a while. Of course I used Claude code. It is interesting to explore the limits of LLMs. I definitely hit it (the limit) this time.
+The app is really simple — make a network request and display the result. The problem is Claude Code doesn’t seem to know how to structure UI and networking code.
+You don’t want to make any IO requests on the main thread because the main thread is used to keep the UI responsive. If you do end up making a request on the main thread, you’ll notice that your user interface stutters and becomes unresponsive since the execution is paused waiting for a network packet to come back. The way to avoid this particular problem is to delegate networking or any other IO to a background thread. This has been true ever since Apple introduced it’s first iPhone SDK back in the 2010s. This is also true for Android development.">
+
+    <meta property="og:url" content="https://dmitrym.online/posts/what-do-llms-know-vs-understand/">
+  <meta property="og:site_name" content="Dmitry M - Veridis Quo">
+  <meta property="og:title" content="What do LLMs know vs what they understand">
+  <meta property="og:description" content="I’ve been working on my iOS app which I meant to build for a while. Of course I used Claude code. It is interesting to explore the limits of LLMs. I definitely hit it (the limit) this time.
+The app is really simple — make a network request and display the result. The problem is Claude Code doesn’t seem to know how to structure UI and networking code.
+You don’t want to make any IO requests on the main thread because the main thread is used to keep the UI responsive. If you do end up making a request on the main thread, you’ll notice that your user interface stutters and becomes unresponsive since the execution is paused waiting for a network packet to come back. The way to avoid this particular problem is to delegate networking or any other IO to a background thread. This has been true ever since Apple introduced it’s first iPhone SDK back in the 2010s. This is also true for Android development.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-03-28T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-03-28T18:46:53-07:00">
+    <meta property="article:tag" content="Projects">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="Programming">
+
+
+    
+      <base href="https://dmitrym.online/posts/what-do-llms-know-vs-understand/">
+    
+    <title>
+  What do LLMs know vs what they understand · Dmitry M - Veridis Quo
+</title>
+
+    
+      <link rel="canonical" href="https://dmitrym.online/posts/what-do-llms-know-vs-understand/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.0fbabcf9de3ef7e9298ba41124eef14c2099b401b6f1588ec3e3d18f725fbb37.css" integrity="sha256-D7q8&#43;d4&#43;9&#43;kpi6QRJO7xTCCZtAG28ViOw&#43;PRj3Jfuzc=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="/css/custom.css" />
+    
+      <link rel="stylesheet" href="/images/syntax.css" />
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://dmitrym.online/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://dmitrym.online/img/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.147.7">
+  </head>
+
+  
+  
+  <body class="colorscheme-light">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Dmitry M - Veridis Quo
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://dmitrym.online/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://til.dmitrym.online/">TIL</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://dmitrym.online/tags/">Tags</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://dmitrym.online/pages/about/">About</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://dmitrym.online/pages/projects/">Projects</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">What do LLMs know vs what they understand</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2026-03-28T00:00:00Z'>
+                March 28, 2026
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              2 minutes read
+            </span>
+          </div>
+          
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="/tags/projects/">projects</a>
+      <span class="separator">•</span>
+    <a href="/tags/ai/">AI</a>
+      <span class="separator">•</span>
+    <a href="/tags/programming/">programming</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        <p>I’ve been working on my iOS app which I meant to build for a while. Of course I used Claude code.
+It is interesting to explore the limits of LLMs. I definitely hit it (the limit) this time.</p>
+<p>The app is really simple — make a network request and display the result. The problem is Claude Code doesn’t seem to know how to structure UI and networking code.</p>
+<p>You don&rsquo;t want to make any IO requests on the main thread because the main thread is used to keep the UI responsive. If you do end up making a request on the main thread, you&rsquo;ll notice that your user interface stutters and becomes unresponsive since the execution is paused waiting for a network packet to come back. The way to avoid this particular problem is to delegate networking or any other IO to a background thread. This has been true ever since Apple introduced it&rsquo;s first iPhone SDK back in the 2010s. This is also true for Android development.</p>
+<p>Yet, when I inspected Claude Code&rsquo;s output it was hapilly performing networking requests on the main thread. I&rsquo;ve been out of iOS/Android development for a long time so I wanted to double check. I asked Claude; so it does know about these problems:</p>
+<figure><img src="/ox-hugo/claude-2.png">
+</figure>
+
+<p>So if it knows that it&rsquo;s a bad idea, why is it still doing it?</p>
+<p>The obvious answer is that the model was trained this way…</p>
+<p>I wish I understood what that meant really. At the moment, I don’t have a good intuition about its limitations and intuition is a must for using something efficiently.</p>
+<p>It&rsquo;s really tempting to just let claude code run amock and trust it, but instead we have to remain professional and disciplined. Have to perform careful code reviews and rigorously test the generated code. At some point these tools may become excellent, but they are not there yet.</p>
+
+      </div>
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>General Nerdery.</p>
+    
+    
+      
+        © 2026
+      
+       Dmitry M 
+    
+    
+       · 
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>
