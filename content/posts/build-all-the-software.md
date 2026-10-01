@@ -2,8 +2,8 @@
 title = "Build all the software"
 author = ["Dmitry Markushevich"]
 date = 2026-10-01
-lastmod = 2026-10-01T12:44:39-07:00
-tags = ["development", "opensource", "xterra"]
+lastmod = 2026-10-01T13:03:00-07:00
+tags = ["development", "opensource", "xterra", "projects"]
 draft = false
 +++
 

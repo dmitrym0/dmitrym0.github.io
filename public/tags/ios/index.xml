@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IOS on Dmitry M - Veridis Quo</title>
-    <link>http://localhost:1313/tags/ios/</link>
+    <link>https://dmitrym.online/tags/ios/</link>
     <description>Recent content in IOS on Dmitry M - Veridis Quo</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 22 May 2023 12:33:09 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dmitrym.online/tags/ios/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Managing  secrets in open source iOS apps</title>
-      <link>http://localhost:1313/posts/managing-secrets-in-ios-apps/</link>
+      <link>https://dmitrym.online/posts/managing-secrets-in-ios-apps/</link>
       <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/managing-secrets-in-ios-apps/</guid>
+      <guid>https://dmitrym.online/posts/managing-secrets-in-ios-apps/</guid>
       <description>&lt;p&gt;One of the issues that open source authors have to deal with is secrets management. The small utility app I&amp;rsquo;m working on relies on Dropbox API. Before you can work with Dropbox API though, you have to generate an API key.&#xA;The API key identifies the application to Dropbox and needs to remain mostly secret. A bad actor could impersonate the application author by stealing the API key.&lt;/p&gt;&#xA;&lt;p&gt;This is a long winded way of saying that API keys must be kept out of public repositories. How can this be achieved?&lt;/p&gt;</description>
     </item>
   </channel>

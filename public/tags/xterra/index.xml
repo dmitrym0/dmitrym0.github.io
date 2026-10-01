@@ -2,18 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Xterra on Dmitry M - Veridis Quo</title>
-    <link>http://localhost:1313/tags/xterra/</link>
+    <link>https://dmitrym.online/tags/xterra/</link>
     <description>Recent content in Xterra on Dmitry M - Veridis Quo</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 24 Apr 2024 13:24:19 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/xterra/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Oct 2026 13:03:00 -0700</lastBuildDate>
+    <atom:link href="https://dmitrym.online/tags/xterra/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Build all the software</title>
+      <link>https://dmitrym.online/posts/build-all-the-software/</link>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://dmitrym.online/posts/build-all-the-software/</guid>
+      <description>&lt;p&gt;In the past 6 months I&amp;rsquo;ve built tons of personal software. This software is something that I wanted to build and the LLMs enabled me to, quickly and cheaply. Before I dive in, by the way of a disclaimer: this post was fully written by me and therefore all the load bearing assumptions are mine.&lt;/p&gt;&#xA;&lt;p&gt;In this post:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;desk control: lowering and raising my standing desk from my computer&lt;/li&gt;&#xA;&lt;li&gt;xterra dashboard: a touch screen to display information my old car cannot&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/dmitrym0/shepherd&#34;&gt;shepherd&lt;/a&gt;: a way to wrangle multiple LLM agents&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;desk-control&#34;&gt;Desk Control&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;ll start with my standing desk integration because it highlights an interesting LLM failure mode.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>XTerra Axle Swap Redux</title>
-      <link>http://localhost:1313/posts/xterra-axle-swap-redux/</link>
+      <link>https://dmitrym.online/posts/xterra-axle-swap-redux/</link>
       <pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/xterra-axle-swap-redux/</guid>
-      <description>&lt;p&gt;In March of 2023, I had an opportunity to buy an M226 axle out of a destroyed 2011 Pro4x Xterra. My Xterra trim does not come with an electric locking differential; whereas the pro4x does. Getting a full axle assembly from a pro4x trim and swapping it in is an economical way of getting a locking rear differential on xterra models that didn&amp;rsquo;t come with it.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/ox-hugo/2024-04-24_13-06-40_screenshot.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;I made a whole video about the process and posted it on Youtube:&lt;/p&gt;</description>
+      <guid>https://dmitrym.online/posts/xterra-axle-swap-redux/</guid>
+      <description>&lt;p&gt;In March of 2023, I had an opportunity to buy an M226 axle out of a destroyed 2011 Pro4x Xterra. My Xterra trim does not come with an electric locking differential; whereas the pro4x does. Getting a full axle assembly from a pro4x trim and swapping it in is an economical way of getting a locking rear differential on xterra models that didn&amp;rsquo;t come with it.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://dmitrym.online/ox-hugo/2024-04-24_13-06-40_screenshot.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;I made a whole video about the process and posted it on Youtube:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
