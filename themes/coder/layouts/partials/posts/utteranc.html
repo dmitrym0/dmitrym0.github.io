@@ -1,4 +1,4 @@
-{{- if and (isset .Site.Params.utteranc "repo") (not (eq .Site.Params.utteranc.repo "" )) (eq (.Params.disable_comments | default false) false) -}}
+{{- if and (index (site.Params.utteranc | default dict) "repo") (eq (.Params.disable_comments | default false) false) -}}
 <script src="https://utteranc.es/client.js"
   repo= "{{ .Site.Params.utteranc.repo }}"
   issue-term="{{ default "title" .Site.Params.utteranc.issueTerm }}"

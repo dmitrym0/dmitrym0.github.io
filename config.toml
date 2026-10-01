@@ -1,7 +1,7 @@
 baseurl = "https://dmitrym.online"
 title = "Dmitry M - Veridis Quo"
 theme = "coder"
-languagecode = "en"
+locale = "en"
 defaultcontentlanguage = "en"
 
 paginate = 20
@@ -11,7 +11,8 @@ pygmentsstyle = "bw"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-disqusShortname = "dmitry-m-viridis-quo"
+[services.disqus]
+  shortname = "dmitry-m-viridis-quo"
 
 [params]
     author = "Dmitry M"

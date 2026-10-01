@@ -2,74 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Orgmode on Dmitry M - Veridis Quo</title>
-    <link>https://dmitrym.online/tags/orgmode/</link>
+    <link>http://localhost:1313/tags/orgmode/</link>
     <description>Recent content in Orgmode on Dmitry M - Veridis Quo</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 09 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dmitrym.online/tags/orgmode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 May 2023 12:33:09 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/orgmode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Note taking and discovery</title>
-      <link>https://dmitrym.online/posts/note-taking-and-discovery/</link>
+      <link>http://localhost:1313/posts/note-taking-and-discovery/</link>
       <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://dmitrym.online/posts/note-taking-and-discovery/</guid>
-      <description>I&amp;rsquo;ve been taking notes consistently, probably starting in university. The challenge for me was never capture but retrieval. I suspect that&amp;rsquo;s true for most people.
-The interesting thing about zettelcasten is how Luhramn optimized his sytem for retrieval. Related subjects were proximate, he used a linking system of sorts that allowed his cards to be filed under number of different topics.
-In digital note taking, proximity is difficult to simulate. Hyperlinking is the first step of course.</description>
+      <guid>http://localhost:1313/posts/note-taking-and-discovery/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been taking notes consistently, probably starting in university. The challenge for me was never capture but retrieval. I suspect that&amp;rsquo;s true for most people.&lt;/p&gt;&#xA;&lt;p&gt;The interesting thing about zettelcasten is how Luhramn optimized his sytem for retrieval. Related subjects were proximate, he used a linking system of sorts that allowed his cards to be filed under number of different topics.&lt;/p&gt;&#xA;&lt;p&gt;In digital note taking, proximity is difficult to simulate. Hyperlinking is the first step of course. My problem with hyperlinks is that they become lost in the content of the note. The only way to discover them is by scanning the text. This is very slow.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Personal Agile: Iteration 5 (COVID-19 edition)</title>
-      <link>https://dmitrym.online/posts/personal-agile-iteration-5/</link>
+      <link>http://localhost:1313/posts/personal-agile-iteration-5/</link>
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://dmitrym.online/posts/personal-agile-iteration-5/</guid>
-      <description>It&amp;rsquo;s been pretty hard to focus on anything other than what&amp;rsquo;s going on in the world the last two weeks. I didn&amp;rsquo;t really successfully complete the iteration. We&amp;rsquo;ve been sent home from work about a week ago which freed up a lot of time that&amp;rsquo;s been allocated to the commute. Theoretically. Unfortunately focus has been hard to come by.
-The only take away I have from this iteration is that I&amp;rsquo;ve significantly reversed my position on UI/UX.</description>
+      <guid>http://localhost:1313/posts/personal-agile-iteration-5/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s been pretty hard to focus on anything other than what&amp;rsquo;s going on in the world the last two weeks. I didn&amp;rsquo;t really successfully complete the iteration. We&amp;rsquo;ve been sent home from work about a week ago which freed up&#xA;a lot of time that&amp;rsquo;s been allocated to the commute. Theoretically. Unfortunately focus has been hard to come by.&lt;/p&gt;&#xA;&lt;p&gt;The only take away I have from this iteration is that I&amp;rsquo;ve significantly reversed my position on UI/UX.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Personal Agile: Iteration 4</title>
-      <link>https://dmitrym.online/posts/personal-agile-iteration-4/</link>
+      <link>http://localhost:1313/posts/personal-agile-iteration-4/</link>
       <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://dmitrym.online/posts/personal-agile-iteration-4/</guid>
-      <description>Interesting iteration. Overall agile approach has been a net positive. I likely would&amp;rsquo;ve have been approximately as successful, but deliberate approach to planning and reviews yields interesting artifacts (of which this blog post is one) and provides for an interesting trajectory overview.
-I made good progress on my tasks this iteration:
-adding two additional chapters reviewed to &amp;ldquo;First 90 days&amp;rdquo;. It&amp;rsquo;s becoming a bit tedious, but I feel it&amp;rsquo;s critical to finish this book.</description>
+      <guid>http://localhost:1313/posts/personal-agile-iteration-4/</guid>
+      <description>&lt;p&gt;Interesting iteration. Overall agile approach has been a net positive. I likely would&amp;rsquo;ve have been approximately as successful, but deliberate approach to planning and reviews yields interesting artifacts (of which this blog post is one) and provides for an interesting trajectory overview.&lt;/p&gt;&#xA;&lt;p&gt;I made good progress on my tasks this iteration:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;adding two additional chapters reviewed to &amp;ldquo;First 90 days&amp;rdquo;. It&amp;rsquo;s becoming a bit tedious, but I feel it&amp;rsquo;s critical to finish this book.&lt;/li&gt;&#xA;&lt;li&gt;moving forward with my &lt;code&gt;org-friend&lt;/code&gt; SwiftUI project.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;In terms of my application, I feel like I&amp;rsquo;ve committed two cardinal sins of software engineering&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Personal Agile: Iteration 2</title>
-      <link>https://dmitrym.online/posts/personal-agile-iteration-2/</link>
+      <link>http://localhost:1313/posts/personal-agile-iteration-2/</link>
       <pubDate>Sun, 09 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://dmitrym.online/posts/personal-agile-iteration-2/</guid>
-      <description>The goal for this iteration was to:
-work on my little SwiftUI app finish reading a book (&amp;ldquo;The first 90 days&amp;rdquo;) maintain my fitness habits Conclusions Overall the iteration went well. In the screenshot above, you can tell that I wildly underestimated how much time summarizing the current book would take: I estimated an hour, but it ended up being 3 times as much (3 hours).
-Then, I spent way too much on my app, 10 pomodoros (roughly 5 hours) vs 3 hours initially estimated.</description>
+      <guid>http://localhost:1313/posts/personal-agile-iteration-2/</guid>
+      <description>&lt;p&gt;The goal for this iteration was to:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;work on my little SwiftUI app&lt;/li&gt;&#xA;&lt;li&gt;finish reading a book (&amp;ldquo;The first 90 days&amp;rdquo;)&lt;/li&gt;&#xA;&lt;li&gt;maintain my fitness habits&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/ox-hugo/screenshot_2020-02-09_21-06-26.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h2 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h2&gt;&#xA;&lt;p&gt;Overall the iteration went well. In the screenshot above, you can tell that I wildly underestimated how much time summarizing the current book would take: I estimated an hour, but it ended up being 3 times as much (3 hours).&lt;/p&gt;&#xA;&lt;p&gt;Then, I spent way too much on my app, 10 pomodoros (roughly 5 hours) vs 3 hours initially estimated.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Personal Agile: Iteration 1</title>
-      <link>https://dmitrym.online/posts/personal-agile-iteration-1/</link>
+      <link>http://localhost:1313/posts/personal-agile-iteration-1/</link>
       <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://dmitrym.online/posts/personal-agile-iteration-1/</guid>
-      <description>There&amp;rsquo;s lots to love about agile, but my personal faves are two things:
-timeboxed iterations retrospectives The ultimate goal of agile is to shorten feedback loops. If something is not working it&amp;rsquo;s easier to identify and correct the issue at the point of occurence rather than months down the line. This of it as a REPL loop for productivity.
-I&amp;rsquo;ve been quite successful doing this at work, so I figured why not try it for personal productivity as well?</description>
+      <guid>http://localhost:1313/posts/personal-agile-iteration-1/</guid>
+      <description>&lt;p&gt;There&amp;rsquo;s lots to love about agile, but my personal faves are two things:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;timeboxed iterations&lt;/li&gt;&#xA;&lt;li&gt;retrospectives&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;The ultimate goal of agile is to shorten feedback loops. If something is not working it&amp;rsquo;s easier to identify and correct the issue at the point of occurence rather than months down the line. This of it as a &lt;code&gt;REPL&lt;/code&gt;&#xA;loop for productivity.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve been quite successful doing this at work, so I figured why not try it for personal productivity as well? I&amp;rsquo;ve had a couple of projects on the go for a while. I&amp;rsquo;ve made little progress so I wanted to focus and get things truely completed.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Omnifocus style reviews with org-mode</title>
-      <link>https://dmitrym.online/posts/omnifocus-review-with-org-mode/</link>
+      <link>http://localhost:1313/posts/omnifocus-review-with-org-mode/</link>
       <pubDate>Tue, 07 Jan 2020 00:00:00 -0800</pubDate>
-      
-      <guid>https://dmitrym.online/posts/omnifocus-review-with-org-mode/</guid>
-      <description>I started using Emacs and org-mode in earnest in the middle of 2019. At that point in time I was using Omnifocus to track my tasks and Bearapp for notes. I was missing plaintext functionality. Since then I&amp;rsquo;ve reproduced most of the functionality that Omnifocus offerred except one particular feature: reviews.
-In GTD, reviews occupy a pretty important niche. Without regular task and project reviews task lists tend to grow out of control and become polutted.</description>
+      <guid>http://localhost:1313/posts/omnifocus-review-with-org-mode/</guid>
+      <description>&lt;p&gt;I started using Emacs and org-mode in earnest in the middle of 2019. At that point in time I was using Omnifocus to track my tasks and Bearapp for notes. I was missing&#xA;plaintext functionality. Since then I&amp;rsquo;ve reproduced most of the functionality that Omnifocus offerred except one particular feature: reviews.&lt;/p&gt;&#xA;&lt;p&gt;In GTD, reviews occupy a pretty important niche. Without regular task and project reviews task lists tend to grow out of control and become polutted. One important consideration for a&#xA;task list is for it to closely resemble the actual state of what you have to do.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
