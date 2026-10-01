@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Dmitry M - Veridis Quo</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 01 Oct 2026 12:44:39 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 13:03:00 -0700</lastBuildDate>
     <atom:link href="https://dmitrym.online/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Development</title>
@@ -16,10 +16,17 @@
       <description></description>
     </item>
     <item>
-      <title>OpenSource</title>
+      <title>Opensource</title>
       <link>https://dmitrym.online/tags/opensource/</link>
       <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://dmitrym.online/tags/opensource/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>https://dmitrym.online/tags/projects/</link>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://dmitrym.online/tags/projects/</guid>
       <description></description>
     </item>
     <item>
@@ -27,6 +34,27 @@
       <link>https://dmitrym.online/tags/xterra/</link>
       <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://dmitrym.online/tags/xterra/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI</title>
+      <link>https://dmitrym.online/tags/ai/</link>
+      <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://dmitrym.online/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>https://dmitrym.online/tags/programming/</link>
+      <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://dmitrym.online/tags/programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Misc</title>
+      <link>https://dmitrym.online/tags/misc/</link>
+      <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://dmitrym.online/tags/misc/</guid>
       <description></description>
     </item>
     <item>
@@ -69,13 +97,6 @@
       <link>https://dmitrym.online/tags/emacs/</link>
       <pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate>
       <guid>https://dmitrym.online/tags/emacs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Misc</title>
-      <link>https://dmitrym.online/tags/misc/</link>
-      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://dmitrym.online/tags/misc/</guid>
       <description></description>
     </item>
     <item>
