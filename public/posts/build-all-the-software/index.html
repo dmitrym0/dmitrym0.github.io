@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Dmitry M">
+    <meta name="description" content="Dmitry&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Build all the software">
+  <meta name="twitter:description" content="In the past 6 months I’ve built tons of personal software. This software is something that I wanted to build and the LLMs enabled me to, quickly and cheaply. Before I dive in, by the way of a disclaimer: this post was fully written by me and therefore all the load bearing assumptions are mine.
+In this post:
+desk control: lowering and raising my standing desk from my computer xterra dashboard: a touch screen to display information my old car cannot shepherd: a way to wrangle multiple LLM agents Desk Control I’ll start with my standing desk integration because it highlights an interesting LLM failure mode.">
+
+    <meta property="og:url" content="https://dmitrym.online/posts/build-all-the-software/">
+  <meta property="og:site_name" content="Dmitry M - Veridis Quo">
+  <meta property="og:title" content="Build all the software">
+  <meta property="og:description" content="In the past 6 months I’ve built tons of personal software. This software is something that I wanted to build and the LLMs enabled me to, quickly and cheaply. Before I dive in, by the way of a disclaimer: this post was fully written by me and therefore all the load bearing assumptions are mine.
+In this post:
+desk control: lowering and raising my standing desk from my computer xterra dashboard: a touch screen to display information my old car cannot shepherd: a way to wrangle multiple LLM agents Desk Control I’ll start with my standing desk integration because it highlights an interesting LLM failure mode.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-10-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-10-01T12:44:39-07:00">
+    <meta property="article:tag" content="Development">
+    <meta property="article:tag" content="OpenSource">
+    <meta property="article:tag" content="Xterra">
+
+
+    
+      <base href="https://dmitrym.online/posts/build-all-the-software/">
+    
+    <title>
+  Build all the software · Dmitry M - Veridis Quo
+</title>
+
+    
+      <link rel="canonical" href="https://dmitrym.online/posts/build-all-the-software/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://dmitrym.online/css/coder.min.8a0620e4f0e4dc1d46e4547e92d30120d90b9c9d55f9b1301a8646c76ffe6d3b.css" integrity="sha256-igYg5PDk3B1G5FR&#43;ktMBINkLnJ1V&#43;bEwGoZGx2/&#43;bTs=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="https://dmitrym.online/css/custom.css" />
+    
+      <link rel="stylesheet" href="https://dmitrym.online/images/syntax.css" />
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://dmitrym.online/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://dmitrym.online/img/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.161.1">
+  </head>
+
+  
+  
+  <body class="colorscheme-light">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://dmitrym.online/">
+      Dmitry M - Veridis Quo
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://dmitrym.online/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://til.dmitrym.online/">TIL</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://dmitrym.online/tags/">Tags</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://dmitrym.online/pages/about/">About</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://dmitrym.online/pages/projects/">Projects</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Build all the software</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2026-10-01T00:00:00Z'>
+                October 1, 2026
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              4 minutes read
+            </span>
+          </div>
+          
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://dmitrym.online/tags/development/">development</a>
+      <span class="separator">•</span>
+    <a href="https://dmitrym.online/tags/opensource/">opensource</a>
+      <span class="separator">•</span>
+    <a href="https://dmitrym.online/tags/xterra/">xterra</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        <p>In the past 6 months I&rsquo;ve built tons of personal software. This software is something that I wanted to build and the LLMs enabled me to, quickly and cheaply. Before I dive in, by the way of a disclaimer: this post was fully written by me and therefore all the load bearing assumptions are mine.</p>
+<p>In this post:</p>
+<ul>
+<li>desk control: lowering and raising my standing desk from my computer</li>
+<li>xterra dashboard: a touch screen to display information my old car cannot</li>
+<li><a href="https://github.com/dmitrym0/shepherd">shepherd</a>: a way to wrangle multiple LLM agents</li>
+</ul>
+<h2 id="desk-control">Desk Control</h2>
+<p>I&rsquo;ll start with my standing desk integration because it highlights an interesting LLM failure mode.</p>
+<p>I wanted two things:</p>
+<ul>
+<li>activate my desk going up and down from my computer</li>
+<li>track how much I actually stand and sit</li>
+</ul>
+<p>This desk has a bluetooth interface, so naturally someone reverse engineered the protocol, and there&rsquo;s a <a href="https://github.com/rhyst/linak-controller">linak-controller</a> python library that exposes most of the functionality.</p>
+<p>So claude created a wrapper for me. I can now invoke <a href="https://www.raycast.com/">Raycast</a> and lower/raise the desk without touching the controller:</p>
+<figure><img src="https://dmitrym.online/ox-hugo/2026-10-01_08-53-09_screenshot.png">
+</figure>
+
+<p>Furthermore, I have a persistent process running in the background that monitors how much time I spent sitting/standing/on the floor:</p>
+<figure><img src="https://dmitrym.online/ox-hugo/2026-10-01_08-54-22_screenshot.png">
+</figure>
+
+<p>It&rsquo;s a <a href="https://swiftbar.app/">swiftbar</a> plugin that queries the desk height and displays it in my menu bar. Today, I&rsquo;ve only been sitting, I should stand up.</p>
+<p>Now the failure mode. Every once in a while, the desk controller stops responding. I&rsquo;ve added plenty of debug logging to the daemon to capture what&rsquo;s going on. Yet Claude still cannot figure it out. The wrapper itself is 500+ lines of code.</p>
+<p>I&rsquo;ve tried multiple times to &ldquo;vibe-fix&rdquo; it with no success so far. I await a more sophisticated model that can troubleshoot a 500 line script.</p>
+<p>You can see what my full screen with the swiftbar controls looks below:</p>
+<figure><img src="https://dmitrym.online/ox-hugo/2026-10-01_10-51-11_screenshot.png">
+</figure>
+
+<h2 id="xterra-dashboard-obd2-scanning">xterra dashboard/obd2 scanning</h2>
+<p>My <a href="https://en.wikipedia.org/wiki/Nissan_Xterra">Nissan Xterra</a> was built in 2010 and while that&rsquo;s not that old, it&rsquo;s missing a number of handy features available in newer vehicles.</p>
+<p>When offroading, it&rsquo;s really handy to know how far the vehicle is leaned over. This helps to make sure you don&rsquo;t accidentally roll your vehicle. Newer vehicles typically include this by default but my xterra is too old.</p>
+<p>What I decided instead was to use an integrated eps32/lcd prototyping widget to build my own:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/M9A5KV2Q4B8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>The next step was to fetch tire pressure from the onboard computer. It does poll the tire pressure sensors but this information is not displayed anywhere. Only critically low pressure illuminates a dash light. I wanted to see the actual tire pressures so I can adust them while off-roading.</p>
+<p>This was a much more complicated endeavour. Nissan does not publish this information so with the help of Claude I built tool that sniffs CANBus traffic and managed to identify the data that the BCM recieves from the TPMS subsystem  that carries pressure data.</p>
+<figure><img src="https://dmitrym.online/ox-hugo/2026-10-01_11-18-55_screenshot.png">
+</figure>
+
+<p>At this point in time, I manage to shortout the obd2 connector, and spent a couple of hours looking for the correct fuse to replace.</p>
+<figure><img src="https://dmitrym.online/ox-hugo/2026-10-01_11-21-30_screenshot.png">
+</figure>
+
+<p>The bottom line here is that claude enabled me to build a fully functional dashboard on an esp32 in C++, a platform that I&rsquo;m not familiar in a language that I haven&rsquo;t used in over a decade.</p>
+<h2 id="shepherd">shepherd</h2>
+<p>I&rsquo;m typically working on multiple projects simulteneously. I prefer using claude code, or open code in the terminal. After about a couple of iTerm tabs, it becomes nearly impossible to manage the complexity.</p>
+<p>My solution was to extract tracking and monitoring subsystem from <a href="https://herdr.dev/">herdr</a>.</p>
+<p>My workflow is very simple. Run claude code or opencode via shepherd. Shepherd now manages the running instances of claude code. I poll shepherd to see if claude code needs my attention and raise a red flag.</p>
+<figure><img src="https://dmitrym.online/ox-hugo/2026-10-01_11-46-42_screenshot.png">
+</figure>
+
+<p>In the screenshot above, you can see nearly a dozen agents running. Most of them are idle, except the last one that needs my attention.</p>
+<p>I can either use the swiftbar shortcut to navigate to the appropriate agent tab, or use the raycast integration if I dont want to use the mouse.</p>
+<p>The credit here is to the herdr team that did all the heavy lifting.</p>
+<p>Shepherd itself is open source as well, find it it on github: <a href="https://github.com/dmitrym0/shepherd">spepherd on github</a>.</p>
+
+      </div>
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "dmitry-m-viridis-quo" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>General Nerdery.</p>
+    
+    
+      
+        © 2026
+      
+       Dmitry M 
+    
+    
+       · 
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>
